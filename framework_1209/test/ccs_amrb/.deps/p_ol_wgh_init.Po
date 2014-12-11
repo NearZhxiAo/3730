@@ -1,0 +1,16 @@
+p_ol_wgh_init.o p_ol_wgh_init.o: p_ol_wgh_init.c Pitch_ol_wgh.h typedef.h \
+  mode.h vad1.h cnst_vad.h cnst.h p_ol_wgh_reset.h
+
+Pitch_ol_wgh.h:
+
+typedef.h:
+
+mode.h:
+
+vad1.h:
+
+cnst_vad.h:
+
+cnst.h:
+
+p_ol_wgh_reset.h:

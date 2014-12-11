@@ -1,0 +1,18 @@
+build_cn_code.o build_cn_code.o: build_cn_code.c typedef.h basic_op.h \
+  table.h mode.h pred_lt_3or6.h oper_32b.h cnst.h pseudonoise.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+oper_32b.h:
+
+cnst.h:
+
+pseudonoise.h:

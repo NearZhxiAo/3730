@@ -1,0 +1,76 @@
+#ifndef _PARAMETERTYPE_AUTOGEN_
+#define _PARAMETERTYPE_AUTOGEN_
+/*	This file is a autogenerate file .
+ *	DONOT EDIT THIS FILE!!
+ *  Edit parameter_internal.ddf and parametertype.tpl instead
+ */
+
+#include "parameters/parameter_gbshm_mutex.h"
+#include "parameters/parameter_video_enc_param.h"
+#include "parameters/parameter_storage_size_param.h"
+#include "parameters/parameter_net_param.h"
+#include "parameters/parameter_alert_di_param.h"
+#include "parameters/parameter_alert_vloss_param.h"
+#include "parameters/parameter_alert_motion_param.h"
+#include "parameters/parameter_storage_setting_param.h"
+#include "parameters/parameter_ad_setting_param.h"
+#include "parameters/parameter_time_setting_param.h"
+#include "parameters/parameter_rs485_setting_param.h"
+#include "parameters/parameter_ptz_area_setting_param.h"
+#include "parameters/parameter_alg_setting_param.h"
+#include "parameters/parameter_working_state_param.h"
+#include "parameters/parameter_end_param.h"
+#include "parameters/parameter_runtime_device_status.h"
+#include "parameters/parameter_runtime_device_version.h"
+#include "parameter.h"
+
+#ifdef __cplusplus
+extern "C"{
+#endif
+
+
+#define system_gbshm_mutex_paratype	struct gbshm_mutex
+
+#define system_test_var_paratype	unsigned long 
+
+#define system_video_enc_param_paratype	struct video_enc_param
+
+#define system_storage_size_param_paratype	struct storage_size_param
+
+#define system_net_param_paratype	struct net_param
+
+#define system_alert_di_param_paratype	struct alert_di_param
+
+#define system_alert_vloss_param_paratype	struct alert_vloss_param
+
+#define system_alert_motion_param_paratype	struct alert_motion_param
+
+#define system_storage_setting_param_paratype	struct storage_setting_param
+
+#define system_ad_setting_param_paratype	struct ad_setting_param
+
+#define system_time_setting_param_paratype	struct time_setting_param
+
+#define system_rs485_setting_param_paratype	struct rs485_setting_param
+
+#define system_ptz_area_setting_param_paratype	struct ptz_area_setting_param
+
+#define system_alg_setting_param_paratype	struct alg_setting_param
+
+#define system_working_state_param_paratype	struct working_state_param
+
+#define system_end_param_paratype	unsigned long 
+
+#define system_runtime_device_status_paratype	struct runtime_device_status
+
+#define system_runtime_device_version_paratype	struct runtime_device_version
+
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif
+
+
+

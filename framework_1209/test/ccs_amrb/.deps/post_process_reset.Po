@@ -1,0 +1,6 @@
+post_process_reset.o post_process_reset.o: post_process_reset.c \
+  post_process.h typedef.h
+
+post_process.h:
+
+typedef.h:

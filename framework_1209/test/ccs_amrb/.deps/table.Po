@@ -1,0 +1,11 @@
+table.o table.o: table.c typedef.h cnst.h table.h mode.h pred_lt_3or6.h
+
+typedef.h:
+
+cnst.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:

@@ -1,0 +1,10 @@
+bgn_scd_reset.o bgn_scd_reset.o: bgn_scd_reset.c bgn_scd.h typedef.h \
+  cnst.h set_zero.h
+
+bgn_scd.h:
+
+typedef.h:
+
+cnst.h:
+
+set_zero.h:

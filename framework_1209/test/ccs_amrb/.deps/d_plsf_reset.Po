@@ -1,0 +1,16 @@
+d_plsf_reset.o d_plsf_reset.o: d_plsf_reset.c typedef.h table.h mode.h \
+  pred_lt_3or6.h cnst.h copy.h d_plsf.h
+
+typedef.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+cnst.h:
+
+copy.h:
+
+d_plsf.h:

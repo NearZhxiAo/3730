@@ -1,0 +1,10 @@
+q_plsf_init.o q_plsf_init.o: q_plsf_init.c q_plsf.h typedef.h cnst.h \
+  q_plsf_reset.h
+
+q_plsf.h:
+
+typedef.h:
+
+cnst.h:
+
+q_plsf_reset.h:

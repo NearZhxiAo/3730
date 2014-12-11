@@ -1,0 +1,6 @@
+pre_process_reset.o pre_process_reset.o: pre_process_reset.c \
+  pre_process.h typedef.h
+
+pre_process.h:
+
+typedef.h:

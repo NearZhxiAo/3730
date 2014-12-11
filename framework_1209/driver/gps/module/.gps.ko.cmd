@@ -1,0 +1,1 @@
+cmd_/opt/dm6467t/framework/driver/gps/module/gps.ko := arm_v5t_le-ld -EL  -r -o /opt/dm6467t/framework/driver/gps/module/gps.ko /opt/dm6467t/framework/driver/gps/module/gps.o /opt/dm6467t/framework/driver/gps/module/gps.mod.o

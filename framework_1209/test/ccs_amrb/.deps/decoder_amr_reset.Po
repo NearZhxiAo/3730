@@ -1,0 +1,67 @@
+decoder_amr_reset.o decoder_amr_reset.o: decoder_amr_reset.c typedef.h \
+  basic_op.h table.h mode.h pred_lt_3or6.h cnst.h copy.h set_zero.h \
+  frame.h decoder_amr.h dtx_dec.h dtx_def.h q_plsf.h gc_pred.h d_plsf.h \
+  cb_gain_average.h bgn_scd.h ph_disp.h lsp_avg.h ec_gain_code.h \
+  ec_gain_pitch.h d_plsf_reset.h ec_gain_pitch_reset.h \
+  ec_gain_code_reset.h cb_gain_average_reset.h bgn_scd_reset.h \
+  ph_disp_reset.h dtx_dec_reset.h lsp_avg_reset.h gc_pred_reset.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+cnst.h:
+
+copy.h:
+
+set_zero.h:
+
+frame.h:
+
+decoder_amr.h:
+
+dtx_dec.h:
+
+dtx_def.h:
+
+q_plsf.h:
+
+gc_pred.h:
+
+d_plsf.h:
+
+cb_gain_average.h:
+
+bgn_scd.h:
+
+ph_disp.h:
+
+lsp_avg.h:
+
+ec_gain_code.h:
+
+ec_gain_pitch.h:
+
+d_plsf_reset.h:
+
+ec_gain_pitch_reset.h:
+
+ec_gain_code_reset.h:
+
+cb_gain_average_reset.h:
+
+bgn_scd_reset.h:
+
+ph_disp_reset.h:
+
+dtx_dec_reset.h:
+
+lsp_avg_reset.h:
+
+gc_pred_reset.h:

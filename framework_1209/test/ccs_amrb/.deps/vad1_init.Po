@@ -1,0 +1,12 @@
+vad1_init.o vad1_init.o: vad1_init.c typedef.h vad1_reset.h vad1.h \
+  cnst_vad.h cnst.h
+
+typedef.h:
+
+vad1_reset.h:
+
+vad1.h:
+
+cnst_vad.h:
+
+cnst.h:

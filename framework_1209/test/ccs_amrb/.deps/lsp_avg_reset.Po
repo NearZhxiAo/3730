@@ -1,0 +1,16 @@
+lsp_avg_reset.o lsp_avg_reset.o: lsp_avg_reset.c lsp_avg.h typedef.h \
+  cnst.h table.h mode.h pred_lt_3or6.h copy.h
+
+lsp_avg.h:
+
+typedef.h:
+
+cnst.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+copy.h:

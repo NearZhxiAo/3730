@@ -1,0 +1,12 @@
+d_plsf_init.o d_plsf_init.o: d_plsf_init.c d_plsf.h typedef.h cnst.h \
+  mode.h d_plsf_reset.h
+
+d_plsf.h:
+
+typedef.h:
+
+cnst.h:
+
+mode.h:
+
+d_plsf_reset.h:

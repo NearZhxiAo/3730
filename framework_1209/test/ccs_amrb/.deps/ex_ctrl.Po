@@ -1,0 +1,22 @@
+ex_ctrl.o ex_ctrl.o: ex_ctrl.c typedef.h basic_op.h table.h mode.h \
+  pred_lt_3or6.h cnst.h copy.h set_zero.h gmed_n.h sqrt_l_exp.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+cnst.h:
+
+copy.h:
+
+set_zero.h:
+
+gmed_n.h:
+
+sqrt_l_exp.h:

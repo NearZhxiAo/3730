@@ -1,0 +1,68 @@
+#ifndef	_CORE_PRIVATE_H__ 
+#define _CORE_PRIVATE_H__
+
+#ifdef __cplusplus
+extern "C"{
+#endif
+
+#include "system_includes.h"
+#include "system_debug.h"
+#include "libcapture.h"
+#include "libdisplay.h"
+#include "libgbshm.h"
+#include "libunix.h"
+#include "libptz.h"
+
+#define JPEG_BUFFER_SIZE                640*480*2
+#define YUV_BUFFER_SIZE                 640*480*2
+#define CORE_PROCESS_POLL_COUNT_MAX     5
+
+typedef struct __CORE_PROCESS_PRIVATE_HANDLE
+{
+    Capture_Handle      capture_handle;
+    Display_Handle      display_handle;
+    //Gbshm_Handle        gbshm_handle;
+    Gbshm_Handle        gbshm_handle;
+    int                 unix_fd;
+    int                 capture_fd;
+    int                 display_fd;
+    int                 active_fdcount;
+	struct pollfd       polltimeout[CORE_PROCESS_POLL_COUNT_MAX];
+    pthread_mutex_t     state_lock;
+    int                 current_state;
+    char                *jpeg_inbuffer;     //yuv original data
+    char                *jpeg_outbuffer;    //jpeg picture data
+}CORE_PROCESS_PRIVATE_HANDLE;
+
+extern  CORE_PROCESS_PRIVATE_HANDLE  global_private_handle;
+extern CMEM_AllocParams cmem_params;
+
+
+typedef enum core_state 
+{
+    core_state_invalid = -1,
+    IDLE_STATE,
+    ALERT_STATE,
+    GRASP_STATE,
+    WAIT_STATE,
+    core_state_end,
+}core_state;
+
+static int get_core_state(CORE_PROCESS_PRIVATE_HANDLE *phandle)
+{
+    pthread_mutex_lock(&phandle->state_lock);
+    return phandle->current_state;
+    pthread_mutex_unlock(&phandle->state_lock);
+}
+
+static void set_core_state(CORE_PROCESS_PRIVATE_HANDLE *phandle, int new_state)
+{
+    pthread_mutex_lock(&phandle->state_lock);
+    phandle->current_state = new_state;
+    pthread_mutex_unlock(&phandle->state_lock);
+}
+
+#ifdef __cplusplus
+}
+#endif
+#endif  

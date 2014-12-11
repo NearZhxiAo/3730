@@ -1,0 +1,159 @@
+autogen definitions intercmd.tpl;
+
+category = { cat_name = flash;
+	cat_descript = "flash process";
+};
+
+category = { cat_name = misc;
+	cat_descript = "misc process";
+};
+
+
+category = { cat_name = clientpc;
+	cat_descript = "client pc process";
+};
+
+category = { cat_name = storage;
+	cat_descript = "storage process";
+};
+
+category = { cat_name = avenc;
+	cat_descript = "avenc process";
+};
+
+category = { cat_name = serial_manage;
+	cat_descript = "serial manage process";
+};
+ 
+category = { cat_name = qt;
+	cat_descript = "qt ui process";
+};
+
+
+avenc = { cmd_name = avenc_to_storage_jpeg_buffer_new_msg;
+	var_type = avenc_to_storage_jpeg_buffer_new_msg;
+	sendto_dest = "\" (1 << UNIX_STORAGE )   \"";
+	sendto_block = "0";
+	cmd_descript = "avenc send to storage process cmd buffer jpeg new message";};
+
+avenc = { cmd_name = avenc_to_storage_video_buffer_new_msg;
+	var_type = avenc_to_storage_video_buffer_new_msg;
+	sendto_dest = "\" (1 << UNIX_STORAGE )  \"";
+	sendto_block = "0";
+	cmd_descript = "avenc send to storage process cmd buffer video new message";};
+
+avenc = { cmd_name = avenc_to_storage_viddec_frame_ack;
+	uint_type;
+	sendto_dest = "\" (1 << UNIX_STORAGE )  \"";
+	sendto_block = "0";
+	cmd_descript = "avenc send to storage process cmd buffer viddec frame ack";};
+
+avenc = { cmd_name = avenc_to_storage_start_storage;
+	uint_type;
+	sendto_dest = "\" (1 << UNIX_STORAGE )  \"";
+	sendto_block = "0";
+	cmd_descript = "avenc send to storage process cmd to change state as start ";};
+
+avenc = { cmd_name = avenc_to_storage_stop_storage;
+	uint_type;
+	sendto_dest = "\" (1 << UNIX_STORAGE )  \"";
+	sendto_block = "0";
+	cmd_descript = "avenc send to storage process cmd to change state as stop ";};
+
+
+
+serial_manage = { cmd_name = serial_to_avenc_input_infrared;
+	uint_type ;
+	sendto_dest = "\" (1 << UNIX_AVENC )  \"";
+	sendto_block = "0";
+	cmd_descript = "serial_manage process send switch infrared cmd to avenc";};
+
+serial_manage = { cmd_name = serial_to_avenc_input_ccd;
+	uint_type ;
+	sendto_dest = "\" (1 << UNIX_AVENC )  \"";
+	sendto_block = "0";
+	cmd_descript = "serial_manage process send switch to ccd input cmd to avenc";};
+
+qt = { cmd_name = qt_to_avenc_input_infrared;
+	uint_type ;
+	sendto_dest = "\" (1 << UNIX_AVENC )  \"";
+	sendto_block = "0";
+	cmd_descript = "qt process send switch infrared cmd to avenc";};
+
+qt = { cmd_name = qt_to_avenc_input_ccd;
+	uint_type ;
+	sendto_dest = "\" (1 << UNIX_AVENC )  \"";
+	sendto_block = "0";
+	cmd_descript = "qt process send switch infrared cmd to avenc";};
+
+qt = { cmd_name = qt_to_serial_measure;
+	uint_type ;
+	sendto_dest = "\" (1 << UNIX_SERIAL_MANAGE )  \"";
+	sendto_block = "0";
+	cmd_descript = "qt process send  measure cmd to serial_manage_process";};
+
+qt = { cmd_name = qt_to_storage_start_loopback;
+	uint_type ;
+	sendto_dest = "\" (1 << UNIX_STORAGE )  \"";
+	sendto_block = "0";
+	cmd_descript = "qt process send  start read file data cmd to storage";};
+
+qt = { cmd_name = qt_to_storage_stop_loopback;
+	uint_type ;
+	sendto_dest = "\" (1 << UNIX_STORAGE )  \"";
+	sendto_block = "0";
+	cmd_descript = "qt process send  start read file data cmd to storage";};
+
+qt = { cmd_name = qt_to_storage_check_file_list;
+	uint_type ;
+	sendto_dest = "\" (1 << UNIX_STORAGE )  \"";
+	sendto_block = "0";
+	cmd_descript = "qt process send  check file list cmd to storage";};
+
+qt = { cmd_name = qt_to_storage_pause_loopback;
+	uint_type ;
+	sendto_dest = "\" (1 << UNIX_STORAGE ) | (1<<UNIX_AVENC) \"";
+	sendto_block = "0";
+	cmd_descript = "qt process send  check file list cmd to storage";};
+
+serial_manage = { cmd_name = serial_to_qt_display_distance;
+	var_type = serial_to_qt_display_distance ;
+	sendto_dest = "\" (1 << UNIX_QT )  \"";
+	sendto_block = "0";
+	cmd_descript = "serial process send  measure result cmd to qt";};
+
+serial_manage = { cmd_name = serial_to_qt_display_gps;
+	var_type = serial_to_qt_display_gps;
+	sendto_dest = "\" (1 << UNIX_QT )  \"";
+	sendto_block = "0";
+	cmd_descript = "serial process send  gps  cmd to qt";};
+
+serial_manage = { cmd_name = serial_to_qt_display_magnet;
+	var_type = serial_to_qt_display_magnet ;
+	sendto_dest = "\" (1 << UNIX_QT )  \"";
+	sendto_block = "0";
+	cmd_descript = "serial process send  magnet  cmd to qt";};
+
+storage = { cmd_name = storage_to_qt_file_list;
+	var_type =  storage_to_qt_file_list;
+	sendto_dest = "\" (1 << UNIX_QT )  \"";
+	sendto_block = "0";
+	cmd_descript = "storage process send  file list cmd to qt";};
+
+storage = { cmd_name = storage_to_avenc_dec_frame;
+	uint_type ;
+	sendto_dest = "\" (1 << UNIX_AVENC )  \"";
+	sendto_block = "0";
+	cmd_descript = "storage process send  dec frame cmd to avenc_process";};
+
+clientpc = { cmd_name = clientpc_to_storage_file_list;
+	uint_type;
+	sendto_dest = "\" (1 << UNIX_STORAGE ) \"";
+	sendto_block = "0";
+	cmd_descript = "clientpc send to storage process  check file list";};
+
+clientpc = { cmd_name = clientpc_to_storage_clean;
+	uint_type;
+	sendto_dest = "\" (1 << UNIX_STORAGE) \"";
+	sendto_block = "0";
+	cmd_descript = "clientpc send to storage process clean file cmd";};

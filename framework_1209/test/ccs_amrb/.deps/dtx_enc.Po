@@ -1,0 +1,37 @@
+dtx_enc.o dtx_enc.o: dtx_enc.c dtx_def.h typedef.h cnst.h q_plsf.h \
+  gc_pred.h mode.h basic_op.h table.h pred_lt_3or6.h oper_32b.h copy.h \
+  set_zero.h log2.h lsp_lsf.h reorder_lsf.h lsf_lsp.h q_plsf_3.h
+
+dtx_def.h:
+
+typedef.h:
+
+cnst.h:
+
+q_plsf.h:
+
+gc_pred.h:
+
+mode.h:
+
+basic_op.h:
+
+table.h:
+
+pred_lt_3or6.h:
+
+oper_32b.h:
+
+copy.h:
+
+set_zero.h:
+
+log2.h:
+
+lsp_lsf.h:
+
+reorder_lsf.h:
+
+lsf_lsp.h:
+
+q_plsf_3.h:

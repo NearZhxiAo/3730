@@ -1,0 +1,20 @@
+EXTRA_DIST =
+SUBDIRS =
+
+INCLUDES = -I$(top_srcdir)/include 
+AM_LDFLAGS = -L$(top_srcdir)/lib -L.
+
+sbin_PROGRAMS = gbshm_test_write gbshm_test_read
+
+#OTHERLIBRARIES= libgbshm.a
+
+#DRIVERNAME=gbshm
+#include ../Makefile.driver
+
+libgbshm_a_SOURCES = libgbshm.c
+
+gbshm_test_write_SOURCES = gbshm_test_write.c
+gbshm_test_write_LDADD = -lgbshm
+
+gbshm_test_read_SOURCES = gbshm_test_read.c
+gbshm_test_read_LDADD = -lgbshm

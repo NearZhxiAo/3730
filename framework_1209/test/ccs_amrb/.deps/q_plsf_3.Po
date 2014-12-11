@@ -1,0 +1,31 @@
+q_plsf_3.o q_plsf_3.o: q_plsf_3.c typedef.h basic_op.h table.h mode.h \
+  pred_lt_3or6.h lsp_lsf.h lsf_lsp.h reorder_lsf.h copy.h q_plsf.h cnst.h \
+  lsf_wt.h vq_subvec3.h vq_subvec4.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+lsp_lsf.h:
+
+lsf_lsp.h:
+
+reorder_lsf.h:
+
+copy.h:
+
+q_plsf.h:
+
+cnst.h:
+
+lsf_wt.h:
+
+vq_subvec3.h:
+
+vq_subvec4.h:

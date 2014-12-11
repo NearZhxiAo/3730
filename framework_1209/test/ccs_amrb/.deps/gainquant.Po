@@ -1,0 +1,100 @@
+gainquant.o gainquant.o: gainquant.c \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/stdio.h \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/features.h \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/predefs.h \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/sys/cdefs.h \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/wordsize.h \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/gnu/stubs.h \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../lib/gcc/armv5tl-montavista-linux-gnueabi/4.2.0/include/stddef.h \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/types.h \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/typesizes.h \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/libio.h \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/_G_config.h \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/wchar.h \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/wchar.h \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/gconv.h \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../lib/gcc/armv5tl-montavista-linux-gnueabi/4.2.0/include/stdarg.h \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/stdio_lim.h \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/sys_errlist.h \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/stdio.h \
+  typedef.h basic_op.h table.h mode.h pred_lt_3or6.h cnst.h gc_pred.h \
+  set_zero.h gc_pred_copy.h gc_pred_update.h qua_gain.h g_code.h \
+  gainquant.h gain_adapt.h q_gain_code.h calc_filt_energies.h \
+  calc_target_energy.h mr475_update_unq_pred.h mr475_gain_quant.h \
+  mr795_gain_quant.h
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/stdio.h:
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/features.h:
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/predefs.h:
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/sys/cdefs.h:
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/wordsize.h:
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/gnu/stubs.h:
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../lib/gcc/armv5tl-montavista-linux-gnueabi/4.2.0/include/stddef.h:
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/types.h:
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/typesizes.h:
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/libio.h:
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/_G_config.h:
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/wchar.h:
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/wchar.h:
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/gconv.h:
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../lib/gcc/armv5tl-montavista-linux-gnueabi/4.2.0/include/stdarg.h:
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/stdio_lim.h:
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/sys_errlist.h:
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/stdio.h:
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+cnst.h:
+
+gc_pred.h:
+
+set_zero.h:
+
+gc_pred_copy.h:
+
+gc_pred_update.h:
+
+qua_gain.h:
+
+g_code.h:
+
+gainquant.h:
+
+gain_adapt.h:
+
+q_gain_code.h:
+
+calc_filt_energies.h:
+
+calc_target_energy.h:
+
+mr475_update_unq_pred.h:
+
+mr475_gain_quant.h:
+
+mr795_gain_quant.h:

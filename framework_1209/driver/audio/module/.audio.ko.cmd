@@ -1,0 +1,1 @@
+cmd_/home/mru/0725/MRU_work/driver/audio/module/audio.ko := arm_v5t_le-ld -EL  -r -o /home/mru/0725/MRU_work/driver/audio/module/audio.ko /home/mru/0725/MRU_work/driver/audio/module/audio.o /home/mru/0725/MRU_work/driver/audio/module/audio.mod.o

@@ -1,0 +1,30 @@
+code_10i40_35bits.o code_10i40_35bits.o: code_10i40_35bits.c typedef.h \
+  basic_op.h table.h mode.h pred_lt_3or6.h cnst.h set_sign.h cor_h_x.h \
+  cor_h.h search_10and8i40.h build_code_10i40_35bits.h q_p.h \
+  set_sign12k2.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+cnst.h:
+
+set_sign.h:
+
+cor_h_x.h:
+
+cor_h.h:
+
+search_10and8i40.h:
+
+build_code_10i40_35bits.h:
+
+q_p.h:
+
+set_sign12k2.h:

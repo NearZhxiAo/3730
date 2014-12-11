@@ -1,0 +1,25 @@
+noinst_LIBRARIES   =$(OTHERLIBRARIES) 
+INCLUDE_DIR = $(CURDIR)/../../include -I$(CURDIR)/../include -I$(CURDIR)
+
+EXTRA_CFLAGS = -I$(INCLUDE_DIR)
+
+.PHONY: clean debug release install default
+
+TARGET = $(DRIVERNAME).ko
+
+$(TARGET):
+	@echo '======to make $(DRIVERNAME)======='	
+	if ! (test -d $(prefix)/mod);then  \
+        mkdir $(prefix)/mod;	\
+    fi
+	make -C module EXTRA_CFLAGS="$(EXTRA_CFLAGS)"
+	cp $(DRIVERNAME).ko $(prefix)/mod/
+
+all: $(OTHERLIBRARIES)  $(TARGET)
+
+clean:
+	@echo 'to clean module $(DRIVERNAME)';	\
+	rm *.ko;	\
+	rm *.o;        \
+	rm *.a;        \
+	make -C module clean;	

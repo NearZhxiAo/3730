@@ -1,0 +1,24 @@
+vad1.o vad1.o: vad1.c typedef.h basic_op.h table.h mode.h pred_lt_3or6.h \
+  oper_32b.h cnst_vad.h cnst.h vad1.h filter_bank.h vad_decision.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+oper_32b.h:
+
+cnst_vad.h:
+
+cnst.h:
+
+vad1.h:
+
+filter_bank.h:
+
+vad_decision.h:

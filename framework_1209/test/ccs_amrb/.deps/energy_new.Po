@@ -1,0 +1,16 @@
+energy_new.o energy_new.o: energy_new.c typedef.h basic_op.h table.h \
+  mode.h pred_lt_3or6.h cnst.h energy_old.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+cnst.h:
+
+energy_old.h:

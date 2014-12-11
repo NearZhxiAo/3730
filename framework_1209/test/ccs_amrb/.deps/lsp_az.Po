@@ -1,0 +1,16 @@
+lsp_az.o lsp_az.o: lsp_az.c typedef.h basic_op.h table.h mode.h \
+  pred_lt_3or6.h oper_32b.h get_lsp_pol.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+oper_32b.h:
+
+get_lsp_pol.h:

@@ -1,0 +1,14 @@
+#include "system_includes.h"
+#include "system_debug.h"
+#include "libptz.h"
+
+static succeed_type ptz_init(PTZ_HANDLE *phandle)
+{
+	return succeed_type_succeed;
+}
+
+succeed_type PTZ_INIT(PTZ_HANDLE *phandle )
+{
+	return ptz_init(phandle);
+}
+

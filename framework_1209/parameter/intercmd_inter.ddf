@@ -1,0 +1,1070 @@
+autogen definitions parameter.tpl;
+
+category = {
+	cat_name = flash;
+	cat_descript = "flash process";
+	};
+
+category = {
+	cat_name = misc;
+	cat_descript = "misc process";
+	};
+
+category = {
+	cat_name = clientpc;
+	cat_descript = "client pc process";
+	};
+
+category = {
+	cat_name = storage;
+	cat_descript = "storage process";
+	};
+
+category = {
+	cat_name = avenc;
+	cat_descript = "avenc process";
+	};
+
+category = {
+	cat_name = serial_manage;
+	cat_descript = "serial manage process";
+	};
+
+category = {
+	cat_name = qt;
+	cat_descript = "qt ui process";
+	};
+
+
+
+parameter = {
+
+	cat_name = clientpc;
+
+	cmd_name = clientpc_to_storage_file_list;
+
+	para_index = 1;
+	
+	sendto_dest = " (1 << UNIX_STORAGE ) ";
+	
+	sendto_flag = 0;
+	
+
+	cat_descript = "client pc process";
+
+
+
+
+
+
+
+
+	uint_type;
+
+
+
+
+
+
+
+
+
+
+
+
+
+	argument_count = 1;
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = clientpc;
+
+	cmd_name = clientpc_to_storage_clean;
+
+	para_index = 2;
+	
+	sendto_dest = " (1 << UNIX_STORAGE) ";
+	
+	sendto_flag = 0;
+	
+
+	cat_descript = "client pc process";
+
+
+
+
+
+
+
+
+	uint_type;
+
+
+
+
+
+
+
+
+
+
+
+
+
+	argument_count = 1;
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = storage;
+
+	cmd_name = storage_to_qt_file_list;
+
+	para_index = 1;
+	
+	sendto_dest = " (1 << UNIX_QT )  ";
+	
+	sendto_flag = 0;
+	
+
+	cat_descript = "storage process";
+
+
+
+
+
+
+
+
+	var_type = storage_to_qt_file_list;
+
+
+
+
+
+
+
+
+
+
+
+
+
+	argument_count = 1;
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = storage;
+
+	cmd_name = storage_to_avenc_dec_frame;
+
+	para_index = 2;
+	
+	sendto_dest = " (1 << UNIX_AVENC )  ";
+	
+	sendto_flag = 0;
+	
+
+	cat_descript = "storage process";
+
+
+
+
+
+
+
+
+	uint_type;
+
+
+
+
+
+
+
+
+
+
+
+
+
+	argument_count = 1;
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = avenc;
+
+	cmd_name = avenc_to_storage_jpeg_buffer_new_msg;
+
+	para_index = 1;
+	
+	sendto_dest = " (1 << UNIX_STORAGE )   ";
+	
+	sendto_flag = 0;
+	
+
+	cat_descript = "avenc process";
+
+
+
+
+
+
+
+
+	var_type = avenc_to_storage_jpeg_buffer_new_msg;
+
+
+
+
+
+
+
+
+
+
+
+
+
+	argument_count = 1;
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = avenc;
+
+	cmd_name = avenc_to_storage_video_buffer_new_msg;
+
+	para_index = 2;
+	
+	sendto_dest = " (1 << UNIX_STORAGE )  ";
+	
+	sendto_flag = 0;
+	
+
+	cat_descript = "avenc process";
+
+
+
+
+
+
+
+
+	var_type = avenc_to_storage_video_buffer_new_msg;
+
+
+
+
+
+
+
+
+
+
+
+
+
+	argument_count = 1;
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = avenc;
+
+	cmd_name = avenc_to_storage_viddec_frame_ack;
+
+	para_index = 3;
+	
+	sendto_dest = " (1 << UNIX_STORAGE )  ";
+	
+	sendto_flag = 0;
+	
+
+	cat_descript = "avenc process";
+
+
+
+
+
+
+
+
+	uint_type;
+
+
+
+
+
+
+
+
+
+
+
+
+
+	argument_count = 1;
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = avenc;
+
+	cmd_name = avenc_to_storage_start_storage;
+
+	para_index = 4;
+	
+	sendto_dest = " (1 << UNIX_STORAGE )  ";
+	
+	sendto_flag = 0;
+	
+
+	cat_descript = "avenc process";
+
+
+
+
+
+
+
+
+	uint_type;
+
+
+
+
+
+
+
+
+
+
+
+
+
+	argument_count = 1;
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = avenc;
+
+	cmd_name = avenc_to_storage_stop_storage;
+
+	para_index = 5;
+	
+	sendto_dest = " (1 << UNIX_STORAGE )  ";
+	
+	sendto_flag = 0;
+	
+
+	cat_descript = "avenc process";
+
+
+
+
+
+
+
+
+	uint_type;
+
+
+
+
+
+
+
+
+
+
+
+
+
+	argument_count = 1;
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = serial_manage;
+
+	cmd_name = serial_to_avenc_input_infrared;
+
+	para_index = 1;
+	
+	sendto_dest = " (1 << UNIX_AVENC )  ";
+	
+	sendto_flag = 0;
+	
+
+	cat_descript = "serial manage process";
+
+
+
+
+
+
+
+
+	uint_type;
+
+
+
+
+
+
+
+
+
+
+
+
+
+	argument_count = 1;
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = serial_manage;
+
+	cmd_name = serial_to_avenc_input_ccd;
+
+	para_index = 2;
+	
+	sendto_dest = " (1 << UNIX_AVENC )  ";
+	
+	sendto_flag = 0;
+	
+
+	cat_descript = "serial manage process";
+
+
+
+
+
+
+
+
+	uint_type;
+
+
+
+
+
+
+
+
+
+
+
+
+
+	argument_count = 1;
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = serial_manage;
+
+	cmd_name = serial_to_qt_display_distance;
+
+	para_index = 3;
+	
+	sendto_dest = " (1 << UNIX_QT )  ";
+	
+	sendto_flag = 0;
+	
+
+	cat_descript = "serial manage process";
+
+
+
+
+
+
+
+
+	var_type = serial_to_qt_display_distance;
+
+
+
+
+
+
+
+
+
+
+
+
+
+	argument_count = 1;
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = serial_manage;
+
+	cmd_name = serial_to_qt_display_gps;
+
+	para_index = 4;
+	
+	sendto_dest = " (1 << UNIX_QT )  ";
+	
+	sendto_flag = 0;
+	
+
+	cat_descript = "serial manage process";
+
+
+
+
+
+
+
+
+	var_type = serial_to_qt_display_gps;
+
+
+
+
+
+
+
+
+
+
+
+
+
+	argument_count = 1;
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = serial_manage;
+
+	cmd_name = serial_to_qt_display_magnet;
+
+	para_index = 5;
+	
+	sendto_dest = " (1 << UNIX_QT )  ";
+	
+	sendto_flag = 0;
+	
+
+	cat_descript = "serial manage process";
+
+
+
+
+
+
+
+
+	var_type = serial_to_qt_display_magnet;
+
+
+
+
+
+
+
+
+
+
+
+
+
+	argument_count = 1;
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = qt;
+
+	cmd_name = qt_to_avenc_input_infrared;
+
+	para_index = 1;
+	
+	sendto_dest = " (1 << UNIX_AVENC )  ";
+	
+	sendto_flag = 0;
+	
+
+	cat_descript = "qt ui process";
+
+
+
+
+
+
+
+
+	uint_type;
+
+
+
+
+
+
+
+
+
+
+
+
+
+	argument_count = 1;
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = qt;
+
+	cmd_name = qt_to_avenc_input_ccd;
+
+	para_index = 2;
+	
+	sendto_dest = " (1 << UNIX_AVENC )  ";
+	
+	sendto_flag = 0;
+	
+
+	cat_descript = "qt ui process";
+
+
+
+
+
+
+
+
+	uint_type;
+
+
+
+
+
+
+
+
+
+
+
+
+
+	argument_count = 1;
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = qt;
+
+	cmd_name = qt_to_serial_measure;
+
+	para_index = 3;
+	
+	sendto_dest = " (1 << UNIX_SERIAL_MANAGE )  ";
+	
+	sendto_flag = 0;
+	
+
+	cat_descript = "qt ui process";
+
+
+
+
+
+
+
+
+	uint_type;
+
+
+
+
+
+
+
+
+
+
+
+
+
+	argument_count = 1;
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = qt;
+
+	cmd_name = qt_to_storage_start_loopback;
+
+	para_index = 4;
+	
+	sendto_dest = " (1 << UNIX_STORAGE )  ";
+	
+	sendto_flag = 0;
+	
+
+	cat_descript = "qt ui process";
+
+
+
+
+
+
+
+
+	uint_type;
+
+
+
+
+
+
+
+
+
+
+
+
+
+	argument_count = 1;
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = qt;
+
+	cmd_name = qt_to_storage_stop_loopback;
+
+	para_index = 5;
+	
+	sendto_dest = " (1 << UNIX_STORAGE )  ";
+	
+	sendto_flag = 0;
+	
+
+	cat_descript = "qt ui process";
+
+
+
+
+
+
+
+
+	uint_type;
+
+
+
+
+
+
+
+
+
+
+
+
+
+	argument_count = 1;
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = qt;
+
+	cmd_name = qt_to_storage_check_file_list;
+
+	para_index = 6;
+	
+	sendto_dest = " (1 << UNIX_STORAGE )  ";
+	
+	sendto_flag = 0;
+	
+
+	cat_descript = "qt ui process";
+
+
+
+
+
+
+
+
+	uint_type;
+
+
+
+
+
+
+
+
+
+
+
+
+
+	argument_count = 1;
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = qt;
+
+	cmd_name = qt_to_storage_pause_loopback;
+
+	para_index = 7;
+	
+	sendto_dest = " (1 << UNIX_STORAGE ) | (1<<UNIX_AVENC) ";
+	
+	sendto_flag = 0;
+	
+
+	cat_descript = "qt ui process";
+
+
+
+
+
+
+
+
+	uint_type;
+
+
+
+
+
+
+
+
+
+
+
+
+
+	argument_count = 1;
+
+
+
+
+
+
+
+
+};
+
+
+
+para_indexes = {
+	count = 0;
+	cat_name = flash;
+};
+
+
+para_indexes = {
+	count = 0;
+	cat_name = misc;
+};
+
+
+para_indexes = {
+	count = 2;
+	cat_name = clientpc;
+};
+
+
+para_indexes = {
+	count = 2;
+	cat_name = storage;
+};
+
+
+para_indexes = {
+	count = 5;
+	cat_name = avenc;
+};
+
+
+para_indexes = {
+	count = 5;
+	cat_name = serial_manage;
+};
+
+
+para_indexes = {
+	count = 7;
+	cat_name = qt;
+};
+
+

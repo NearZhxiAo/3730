@@ -1,0 +1,10 @@
+gc_pred_init.o gc_pred_init.o: gc_pred_init.c gc_pred.h typedef.h mode.h \
+  gc_pred_reset.h
+
+gc_pred.h:
+
+typedef.h:
+
+mode.h:
+
+gc_pred_reset.h:

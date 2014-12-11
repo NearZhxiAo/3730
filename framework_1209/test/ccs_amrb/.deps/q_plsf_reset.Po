@@ -1,0 +1,16 @@
+q_plsf_reset.o q_plsf_reset.o: q_plsf_reset.c typedef.h basic_op.h \
+  table.h mode.h pred_lt_3or6.h q_plsf.h cnst.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+q_plsf.h:
+
+cnst.h:

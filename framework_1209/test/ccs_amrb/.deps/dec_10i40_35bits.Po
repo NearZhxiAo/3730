@@ -1,0 +1,14 @@
+dec_10i40_35bits.o dec_10i40_35bits.o: dec_10i40_35bits.c typedef.h \
+  basic_op.h table.h mode.h pred_lt_3or6.h cnst.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+cnst.h:

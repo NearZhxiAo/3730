@@ -1,0 +1,16 @@
+cl_ltp_reset.o cl_ltp_reset.o: cl_ltp_reset.c cl_ltp.h typedef.h mode.h \
+  pitch_fr.h ton_stab.h cnst.h pitch_fr_reset.h
+
+cl_ltp.h:
+
+typedef.h:
+
+mode.h:
+
+pitch_fr.h:
+
+ton_stab.h:
+
+cnst.h:
+
+pitch_fr_reset.h:

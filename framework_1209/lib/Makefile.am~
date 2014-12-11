@@ -1,0 +1,55 @@
+INCLUDES=-I$(top_srcdir)/include -I$(top_srcdir)../mv_pro_5.0/montavista/pro/devkit/lsp/ti-davinci/linux-2.6.18_pro500/include/
+
+AM_LDFLAGS = -L$(top_srcdir)/lib
+
+noinst_LIBRARIES = libunix.a libsk.a libresz.a libenc.a libi2c.a libcpuinfo.a libsignal.a libptz.a libcapture.a libdisplay.a libresize.a
+
+libunix_SOURCES = libunix.c
+
+libsk_SOURCES = libsk.c
+
+libcpuinfo_SOURCES = libcpuinfo.c
+
+libresz_SOURCES = libresz.c
+libresz_LIBADD = libdrv.a
+
+libi2c_SOURCES = libi2c.c
+libi2c_LIBADD = libdrv.a
+
+libenc_SOURCES = libenc.c
+libenc_LIBADD = libalg.a
+
+libptz_SOURCES = libptz.c
+libptz_LIBADD = -lgps
+
+libcapture_SOURCES = libcapture.c
+
+libdisplay_SOURCES = libdisplay.c
+
+libresize_SOURCES = libresize.c
+
+libsignal_SOURCES = libsignal.c
+
+NOR_BUILT_CON = libad.a libgbshm.a libaudio.a libgpio.a liblog.a libvsshm.a libvidctl.a libasshm.a libgps.a liblcd.a
+BUILT_SOURCES = $(NOR_BUILT_CON)
+CLEANFILES = $(NOR_BUILT_CON)
+libad.a:
+	./link.sh driver/ad $@
+libgbshm.a:
+	./link.sh driver/gbshm $@
+libaudio.a:
+	./link.sh driver/audio $@
+libgpio.a:
+	./link.sh driver/gpio $@
+liblog.a:
+	./link.sh driver/log   $@
+libvsshm.a:
+	./link.sh driver/vsshm $@
+libasshm.a:
+	./link.sh driver/asshm $@
+libvidctl.a:
+	./link.sh driver/vidctl $@
+libgps.a:
+	./link.sh driver/gps $@
+liblcd.a:
+	./link.sh driver/lcd $@

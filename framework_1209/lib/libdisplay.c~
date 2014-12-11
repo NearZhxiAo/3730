@@ -1,0 +1,335 @@
+#include "libdisplay.h"
+
+Display_Handle Display_init(DisplayAttr *attr)
+{
+	Display_Handle phandle = NULL;
+	DisplayBuffer *disBufs = NULL;
+	struct v4l2_format fmt;
+	struct v4l2_requestbuffers req;
+	struct v4l2_buffer *v4l2buf = NULL;
+	int bufindex = 0;
+	int BufNum;
+	int userAlloc;
+	int type;
+
+	if(attr == NULL)
+	{
+		SYS_WARNING("The DisplayAttr is null, use default attr.\r\n");
+		SYS_WARNING("BufNum is %d, userAlloc is %s.\r\n", NUM_DISPLAY_BUFS, "false");
+		BufNum = NUM_DISPLAY_BUFS;
+		userAlloc = 0;
+	}
+	else
+	{
+		if(attr->bufNum <=0 || attr->bufNum >=10)
+		{
+			SYS_ERROR("attr->bufNum %d is not legal, use default attr\r\n",attr->bufNum);
+			BufNum = NUM_DISPLAY_BUFS;
+			userAlloc = attr->userAlloc;
+		}
+		else
+		{
+			BufNum = attr->bufNum;
+			userAlloc = attr->userAlloc;
+		}
+	}
+
+	phandle = malloc(sizeof(Display_Object));
+	if(phandle == NULL)
+	{
+		SYS_ERROR("malloc Display_Object failed.\r\n");
+		goto error;
+	}
+
+	phandle->display_fd = open("/dev/video2", O_RDWR);
+
+	if(phandle->display_fd < 0) 
+	{
+		SYS_ERROR("open %s failed\r\n", "/dev/video2");
+		goto error;
+	}
+
+	memset(&fmt, 0x00, sizeof(struct v4l2_format));
+	fmt.type = V4L2_BUF_TYPE_VIDEO_OUTPUT;
+
+	if(ioctl(phandle->display_fd, VIDIOC_G_FMT, &fmt) == -1) 
+	{
+		SYS_ERROR("VIDIOC_G_FMT failed.\r\n");
+		goto error;
+	}
+
+	SYS_INFO("Video output set to size %dx%d pitch %d\n",
+			fmt.fmt.pix.width, fmt.fmt.pix.height, fmt.fmt.pix.bytesperline);
+
+	if(!userAlloc)
+	{
+		SYS_INFO("Driver alloc the display buffer.\r\n");
+		phandle->userAlloc = 0;
+		memset(&req, 0x00, sizeof(struct v4l2_requestbuffers));
+		req.count	= NUM_DISPLAY_BUFS;
+		req.type	= V4L2_BUF_TYPE_VIDEO_OUTPUT;
+		req.memory	= V4L2_MEMORY_MMAP;
+
+		if(ioctl(phandle->display_fd, VIDIOC_REQBUFS, &req) == -1) 
+		{
+			SYS_ERROR("VIDIOC_REQBUFS failed.\r\n");
+			goto error;
+		}
+
+		if(req.count < NUM_DISPLAY_BUFS || ! req.count)
+		{
+			if(!req.count)
+			{
+				SYS_ERROR("VIDIOC_REQBUFS request buffers error.\ninsufficient device driver buffer.\r\n");
+				goto error;
+			}
+			else
+			{
+				SYS_WARNING("VIDIOC_REQBUFS request %d buffers, less than request %d buffers.\r\n",req.count, NUM_DISPLAY_BUFS);
+			}
+		}
+
+		disBufs = calloc(req.count, sizeof(DisplayBuffer));
+		v4l2buf = calloc(req.count, sizeof(struct v4l2_buffer));
+
+		if (disBufs == NULL || v4l2buf == NULL)
+		{
+			SYS_ERROR("malloc DisplayBuffer or v4l2_buffer failed.\r\n");
+			goto error;
+		}
+
+		for(bufindex = 0; bufindex < req.count; bufindex++)
+		{
+			memset(&v4l2buf[bufindex], 0x00, sizeof(struct v4l2_buffer));
+			v4l2buf[bufindex].type = V4L2_BUF_TYPE_VIDEO_OUTPUT;
+			v4l2buf[bufindex].memory = V4L2_MEMORY_MMAP;
+			v4l2buf[bufindex].index = bufindex;
+
+			if (ioctl(phandle->display_fd, VIDIOC_QUERYBUF, &v4l2buf[bufindex]) < 0)
+			{
+				SYS_ERROR("VIDIOC_QUERYBUF failed. index = %d.\r\n", bufindex);
+				return phandle;
+			}
+
+			disBufs[bufindex].length = v4l2buf[bufindex].length;
+			disBufs[bufindex].physaddr = v4l2buf[bufindex].m.offset;
+			disBufs[bufindex].index = bufindex;
+			disBufs[bufindex].virtaddr = mmap(NULL, v4l2buf[bufindex].length, PROT_READ|PROT_WRITE, MAP_SHARED, phandle->display_fd, v4l2buf[bufindex].m.offset);
+
+			SYS_INFO("index %d length %d physaddr %x virtaddr %x.\r\n",
+					bufindex,v4l2buf[bufindex].length, v4l2buf[bufindex].m.offset, disBufs[bufindex].virtaddr);
+
+			if (disBufs[bufindex].virtaddr == MAP_FAILED)
+			{
+				SYS_ERROR("mmap failed. index = %d.\r\n", bufindex);
+				goto error;
+			}
+
+			if (ioctl(phandle->display_fd, VIDIOC_QBUF, &v4l2buf[bufindex]) < 0 )
+			{
+				SYS_ERROR("VIDIOC_QBUF failed.\r\n");
+				goto error;
+			}
+		}
+	}
+	else
+	{
+		SYS_INFO("User alloc the display buffer.\r\n");
+		phandle->userAlloc = 1;
+		if(CMEM_init() < 0)
+		{
+			SYS_ERROR("CMEM_init failed.\r\n");
+			goto error;
+		}
+
+		memset(&req, 0x00, sizeof(req));
+		req.count = BufNum;
+		req.type = V4L2_BUF_TYPE_VIDEO_OUTPUT;
+		req.memory = V4L2_MEMORY_USERPTR;
+		if (ioctl(phandle->display_fd, VIDIOC_REQBUFS, &req) < 0 )
+		{
+			SYS_ERROR("VIDIOC_REQDQBUFS failed.\r\n");
+			goto error;
+		}
+
+		if (req.count < BufNum)
+		{
+			if(!req.count)
+			{
+				SYS_ERROR("req.count is 0.\r\n", req.count);
+				goto error;
+			}
+			else
+			{
+				SYS_WARNING("req.count = %d < %d\r\n", req.count, BufNum);
+			}
+		}
+
+		disBufs = calloc(req.count, sizeof(DisplayBuffer));
+		v4l2buf = calloc(req.count, sizeof(struct v4l2_buffer));
+
+		if (disBufs == NULL || v4l2buf == NULL)
+		{
+			SYS_ERROR("malloc DisplayBuffer or v4l2_buffer failed.\r\n");
+			goto error;
+		}
+		
+		for(bufindex = 0; bufindex < req.count; bufindex++)
+		{
+			memset(&v4l2buf[bufindex], 0x00, sizeof(struct v4l2_buffer));
+			//char *data = CMEM_alloc((720*480*2 + 4*1024) & (~0xFFF), &cmem_param);
+			char *data = CMEM_alloc(884736, &dis_cmem_param);
+			if(data == NULL)
+			{
+				SYS_ERROR("CMEM_alloc failed.");
+				goto error;
+			}
+
+			v4l2buf[bufindex].index		= bufindex;
+			v4l2buf[bufindex].type		= V4L2_BUF_TYPE_VIDEO_OUTPUT;
+			v4l2buf[bufindex].memory	= V4L2_MEMORY_USERPTR;
+			v4l2buf[bufindex].m.userptr = (int)data;
+			//v4l2buf[bufindex].length	=  (720*480*2 + 4*1024) & (~0xFFF);
+			v4l2buf[bufindex].length	=  884736;
+
+			disBufs[bufindex].length	= v4l2buf[bufindex].length;
+			disBufs[bufindex].physaddr	= CMEM_getPhys(data);
+			disBufs[bufindex].index		= v4l2buf[bufindex].index;
+			disBufs[bufindex].virtaddr	= (void*)v4l2buf[bufindex].m.userptr;
+
+			SYS_INFO("index %d length %d physaddr %x virtaddr %x.\r\n",
+					bufindex,v4l2buf[bufindex].length, v4l2buf[bufindex].m.offset, disBufs[bufindex].virtaddr);
+			if (ioctl(phandle->display_fd, VIDIOC_QBUF, &v4l2buf[bufindex]) < 0 )
+			{
+				SYS_ERROR("VIDIOC_QBUF failed.\r\n");
+				goto error;
+			}
+		}
+	}
+
+	type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
+	if (ioctl(phandle->display_fd, VIDIOC_STREAMON, &type) < 0 )
+	{
+		SYS_ERROR("VIDIOC_STREAMON failed.\r\n");
+		goto error;
+	}
+	phandle->disBufsPtr = disBufs;
+	phandle->v4l2buf = v4l2buf;
+	phandle->disBufsNum = req.count;
+	return phandle;
+
+error:
+	if(phandle != NULL)
+	{
+		if(phandle->display_fd > 0)
+		{
+			close(phandle->display_fd);
+		}
+		free(phandle);
+	}
+
+	if(disBufs != NULL)
+	{
+		free(disBufs);
+	}
+
+	return NULL;
+}
+
+int Display_get(Display_Handle phandle, DisplayBuffer *buffer)
+{
+	DisplayBuffer *disBufs = NULL;
+	struct v4l2_buffer v4l2buf;
+
+	if(buffer == NULL)
+	{
+		SYS_ERROR("The parameter DisplayBuffer can not be null.\r\n");
+		return -1;
+	}
+
+	disBufs = phandle->disBufsPtr;
+
+
+	memset(&v4l2buf, 0x00, sizeof(struct v4l2_buffer));
+	v4l2buf.type   = V4L2_BUF_TYPE_VIDEO_OUTPUT;
+	v4l2buf.memory = V4L2_MEMORY_MMAP;
+
+	if(ioctl(phandle->display_fd, VIDIOC_DQBUF, &v4l2buf) < 0)
+	{
+		SYS_ERROR("VIDIOC_DQBUF failed.\r\n");
+		return -1;
+	}
+
+	buffer->virtaddr = disBufs[v4l2buf.index].virtaddr;
+	buffer->physaddr = disBufs[v4l2buf.index].physaddr;
+	buffer->length	 = disBufs[v4l2buf.index].length;
+	buffer->index	 = disBufs[v4l2buf.index].index;
+
+	return 0;
+}
+
+int Display_put(Display_Handle phandle, DisplayBuffer *buffer)
+{
+	struct v4l2_buffer *pbuf;
+
+	pbuf = &phandle->v4l2buf[buffer->index];
+
+	pbuf->type = V4L2_BUF_TYPE_VIDEO_OUTPUT;
+	pbuf->m.userptr = (unsigned long)buffer->virtaddr;
+
+	if(ioctl(phandle->display_fd, VIDIOC_QBUF, pbuf) < 0)
+	{
+		SYS_ERROR("display_put vidioc_qbuf failed.\r\n");
+		return -1;
+	}
+
+	return 0;
+}
+
+int Display_destroy(Display_Handle phandle)
+{
+	int index;
+
+	if(phandle != NULL)
+	{
+		if(phandle->display_fd > 0)
+		{
+			close(phandle->display_fd);
+		}
+		
+		if(!phandle->userAlloc)
+		{
+			if(phandle->v4l2buf != NULL)
+			{
+				free(phandle->v4l2buf);
+			}
+
+			if(phandle->disBufsPtr != NULL)
+			{
+				free(phandle->disBufsPtr);
+			}
+		}
+		else
+		{
+			for(index = 0; index < phandle->disBufsNum; index++)
+			{
+				if(phandle->disBufsPtr[index].virtaddr != NULL)
+				{
+					CMEM_free(phandle->disBufsPtr[index].virtaddr, &dis_cmem_param);
+				}
+			}
+
+			if(phandle->v4l2buf != NULL)
+			{
+				free(phandle->v4l2buf);
+			}
+
+			if(phandle->disBufsPtr != NULL)
+			{
+				free(phandle->disBufsPtr);
+			}
+		}
+		free(phandle);
+	}
+	return 0;
+}

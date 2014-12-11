@@ -1,0 +1,1 @@
+cmd_/opt/sdb/framework_1127/driver/bak/fpga_1/driver/gpmc_fpga.ko := arm-none-linux-gnueabi-ld -EL -r  -T /opt/sdb/linux-2.6.32-CNG205/scripts/module-common.lds --build-id -o /opt/sdb/framework_1127/driver/bak/fpga_1/driver/gpmc_fpga.ko /opt/sdb/framework_1127/driver/bak/fpga_1/driver/gpmc_fpga.o /opt/sdb/framework_1127/driver/bak/fpga_1/driver/gpmc_fpga.mod.o

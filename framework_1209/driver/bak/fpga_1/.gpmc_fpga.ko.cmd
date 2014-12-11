@@ -1,0 +1,1 @@
+cmd_/work/code/fpga/gpmc_fpga.ko := /opt/arm-2009q1/bin/arm-none-linux-gnueabi-ld -EL -r  -T /opt/dvsdk_dm3730_4_02_00_06/psp/linux-2.6.32-psp03.00.01.06/scripts/module-common.lds --build-id -o /work/code/fpga/gpmc_fpga.ko /work/code/fpga/gpmc_fpga.o /work/code/fpga/gpmc_fpga.mod.o

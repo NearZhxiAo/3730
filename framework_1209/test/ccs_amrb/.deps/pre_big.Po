@@ -1,0 +1,22 @@
+pre_big.o pre_big.o: pre_big.c typedef.h basic_op.h table.h mode.h \
+  pred_lt_3or6.h oper_32b.h syn_filt.h weight_ai.h residu.h cnst.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+oper_32b.h:
+
+syn_filt.h:
+
+weight_ai.h:
+
+residu.h:
+
+cnst.h:

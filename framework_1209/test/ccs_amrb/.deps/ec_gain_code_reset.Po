@@ -1,0 +1,10 @@
+ec_gain_code_reset.o ec_gain_code_reset.o: ec_gain_code_reset.c typedef.h \
+  ec_gain_code.h gc_pred.h mode.h
+
+typedef.h:
+
+ec_gain_code.h:
+
+gc_pred.h:
+
+mode.h:

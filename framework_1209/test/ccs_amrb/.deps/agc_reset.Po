@@ -1,0 +1,5 @@
+agc_reset.o agc_reset.o: agc_reset.c agc.h typedef.h
+
+agc.h:
+
+typedef.h:

@@ -1,0 +1,116 @@
+decoder_amr.o decoder_amr.o: decoder_amr.c typedef.h basic_op.h table.h \
+  mode.h pred_lt_3or6.h cnst.h copy.h set_zero.h syn_filt.h d_plsf.h \
+  agc.h dec_gain.h gc_pred.h dec_lag3.h dec_lag6.h d_gain_pitch.h \
+  d_gain_code.h ph_disp.h int_lsf.h lsp_lsf.h lsf_lsp.h lsp_avg.h \
+  ex_ctrl.h sqrt_l_exp.h frame.h decoder_amr.h dtx_dec.h dtx_def.h \
+  q_plsf.h cb_gain_average.h bgn_scd.h ec_gain_code.h ec_gain_pitch.h \
+  rx_dtx_handler.h decoder_amr_reset.h build_cn_param.h d_plsf_3.h \
+  d_plsf_5.h int_lpc_1to3.h int_lpc_1and3.h decode_2i40_9bits.h \
+  decode_2i40_11bits.h decode_3i40_14bits.h decode_4i40_17bits.h \
+  dec_8i40_31bits.h dec_10i40_35bits.h ec_gain_pitch_update.h \
+  ph_disp_release.h ph_disp_lock.h dtx_dec_activity_update.h \
+  ec_gain_code_update.h agc2.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+cnst.h:
+
+copy.h:
+
+set_zero.h:
+
+syn_filt.h:
+
+d_plsf.h:
+
+agc.h:
+
+dec_gain.h:
+
+gc_pred.h:
+
+dec_lag3.h:
+
+dec_lag6.h:
+
+d_gain_pitch.h:
+
+d_gain_code.h:
+
+ph_disp.h:
+
+int_lsf.h:
+
+lsp_lsf.h:
+
+lsf_lsp.h:
+
+lsp_avg.h:
+
+ex_ctrl.h:
+
+sqrt_l_exp.h:
+
+frame.h:
+
+decoder_amr.h:
+
+dtx_dec.h:
+
+dtx_def.h:
+
+q_plsf.h:
+
+cb_gain_average.h:
+
+bgn_scd.h:
+
+ec_gain_code.h:
+
+ec_gain_pitch.h:
+
+rx_dtx_handler.h:
+
+decoder_amr_reset.h:
+
+build_cn_param.h:
+
+d_plsf_3.h:
+
+d_plsf_5.h:
+
+int_lpc_1to3.h:
+
+int_lpc_1and3.h:
+
+decode_2i40_9bits.h:
+
+decode_2i40_11bits.h:
+
+decode_3i40_14bits.h:
+
+decode_4i40_17bits.h:
+
+dec_8i40_31bits.h:
+
+dec_10i40_35bits.h:
+
+ec_gain_pitch_update.h:
+
+ph_disp_release.h:
+
+ph_disp_lock.h:
+
+dtx_dec_activity_update.h:
+
+ec_gain_code_update.h:
+
+agc2.h:

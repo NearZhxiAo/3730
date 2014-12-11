@@ -1,0 +1,25 @@
+dtx_dec_init.o dtx_dec_init.o: dtx_dec_init.c dtx_dec.h typedef.h \
+  dtx_def.h cnst.h q_plsf.h gc_pred.h mode.h d_plsf.h frame.h \
+  cb_gain_average.h dtx_dec_reset.h
+
+dtx_dec.h:
+
+typedef.h:
+
+dtx_def.h:
+
+cnst.h:
+
+q_plsf.h:
+
+gc_pred.h:
+
+mode.h:
+
+d_plsf.h:
+
+frame.h:
+
+cb_gain_average.h:
+
+dtx_dec_reset.h:

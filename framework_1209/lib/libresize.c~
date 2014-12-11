@@ -1,0 +1,123 @@
+#include "libresize.h"
+
+Resize_Handle Resize_init(ResizeAttr *attr)
+{
+	Resize_Handle phandle;
+
+    phandle = (Resize_Handle)calloc(1, sizeof(Resize_Object));
+
+    if (phandle == NULL) {
+        SYS_ERROR("Failed to allocate space for Resize_Object\n");
+        return NULL;
+    }
+
+    phandle->resize_fd = open(RESIZER_DEVICE, O_RDWR);
+
+    if (phandle->resize_fd == -1) {
+        SYS_ERROR("Failed to open %s\n", RESIZER_DEVICE);
+        return NULL;
+    }
+
+	rsz_params_t  params = {
+        0,                              /* in_hsize (set at run time) */
+        0,                              /* in_vsize (set at run time) */
+        0,                              /* in_pitch (set at run time) */
+        RSZ_INTYPE_YCBCR422_16BIT,      /* inptyp */
+        0,                              /* vert_starting_pixel */
+        0,                              /* horz_starting_pixel */
+        0,                              /* cbilin */
+        RSZ_PIX_FMT_YUYV,               /* pix_fmt */
+        0,                              /* out_hsize (set at run time) */
+        0,                              /* out_vsize (set at run time) */
+        0,                              /* out_pitch (set at run time) */
+        0,                              /* hstph */
+        0,                              /* vstph */
+        {                               /* hfilt_coeffs */
+            256, 0, 0, 0, 256, 0, 0, 0, 256, 0, 0, 0, 256, 0, 0, 0,
+            256, 0, 0, 0, 256, 0, 0, 0, 256, 0, 0, 0, 256, 0, 0, 0
+        },
+        {                               /* vfilt_coeffs */
+            256, 0, 0, 0, 256, 0, 0, 0, 256, 0, 0, 0, 256, 0, 0, 0,
+            256, 0, 0, 0, 256, 0, 0, 0, 256, 0, 0, 0, 256, 0, 0, 0
+        },
+        {                               /* yenh_params */
+            RSZ_YENH_DISABLE,               /* type */
+            0,                              /* gain */
+            0,                              /* slop */
+            0                               /* core */
+        }
+    };
+
+#if 0
+    params.in_hsize   = 720;
+    params.in_vsize   = 480;
+    params.in_pitch   = 720*2;
+    params.out_hsize  = 720;
+    params.out_vsize  = 480;
+    params.out_pitch  = 720*2;
+#endif
+
+params.in_hsize   = 720;
+    params.in_vsize   = 480;
+    params.in_pitch   = 720*2;
+    params.out_hsize  = 360;
+    params.out_vsize  = 240;
+    params.out_pitch  = 360*2;
+
+    if (ioctl(phandle->resize_fd, RSZ_S_PARAM, &params) == -1) {
+        SYS_ERROR("Framecopy setting parameters failed.\n");
+        goto error;
+    }
+
+	return phandle;
+
+error:
+	if(phandle->resize_fd > 0)
+	{
+		close(phandle->resize_fd);
+	}
+
+	return NULL;
+}
+
+int Resize_exec(Resize_Handle phandle, unsigned long physInbuf, unsigned long physOutbuf)
+{
+	rsz_resize_t rsz;
+    int          rszError;
+
+    rsz.in_buf.index     = -1;
+    rsz.in_buf.buf_type  = RSZ_BUF_IN;
+    rsz.in_buf.offset    = physInbuf;
+    rsz.in_buf.size      = 720*480*2;
+
+    rsz.out_buf.index    = -1;
+    rsz.out_buf.buf_type = RSZ_BUF_OUT;
+    rsz.out_buf.offset   = physOutbuf;
+    rsz.out_buf.size     = 360*240*2;
+
+    do {
+        rszError = ioctl(phandle->resize_fd, RSZ_RESIZE, &rsz);
+    } while (rszError == -1 && errno == EAGAIN);
+
+    if (rszError == -1) {
+        SYS_ERROR("Failed to execute resize job\n");
+        return -1;
+    }
+
+	return 0;
+}
+
+int Resize_destroy(Resize_Handle phandle)
+{
+	if(phandle != NULL)
+	{
+		if(phandle->resize_fd > 0)
+		{
+			close(phandle->resize_fd);
+		}
+
+		free(phandle);
+	}
+
+	return 0;
+}
