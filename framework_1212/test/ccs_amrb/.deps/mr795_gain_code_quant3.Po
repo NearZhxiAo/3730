@@ -1,0 +1,32 @@
+mr795_gain_code_quant3.o mr795_gain_code_quant3.o:  \
+ mr795_gain_code_quant3.c typedef.h basic_op.h table.h mode.h \
+  pred_lt_3or6.h oper_32b.h cnst.h log2.h pow2.h sqrt_l_exp.h mac_32.h \
+  gain_adapt.h q_gain_pitch.h calc_unfilt_energies.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+oper_32b.h:
+
+cnst.h:
+
+log2.h:
+
+pow2.h:
+
+sqrt_l_exp.h:
+
+mac_32.h:
+
+gain_adapt.h:
+
+q_gain_pitch.h:
+
+calc_unfilt_energies.h:

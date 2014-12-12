@@ -1,0 +1,452 @@
+#ifndef AREACONF_H_INCLUDED
+#define AREACONF_H_INCLUDED
+
+#ifdef _cplusplus
+extern "C" {
+#endif
+
+#define USHORT unsigned short
+#define SHORT  short
+#define UINT   unsigned int
+
+/*防区配置参数*/
+typedef struct _SCHEDULE_UNIT
+{
+    USHORT  timestart;		//起始时间，按照分钟进行存储，比如：1:31分存储为1*60+31 = 91
+    USHORT  timeend; 		//结束时间，内部以分为单位，24小时就是1440分钟
+}SCHEDULE_UNIT; 
+
+typedef enum _LOOP_TYPE
+{
+    LOOPTYPE_START,					//回字形防区的点数，三点构成
+    LOOPTYPE_THREE,					//四点构成
+    LOOPTYPE_FOUR,					//...
+	LOOPTYPE_FIVE,
+	LOOPTYPE_SIX,
+	LOOPTYPE_SEVEN,
+    LOOPTYPE_EIGHT,					//最大为8个点构成一个回字形
+    LOOPTYPE_END
+}LOOP_TYPE;
+
+typedef enum _COLOR_CHOOSE
+{
+    COLOR_START,					//区域颜色
+    COLOR_GREEN,					//绿
+    COLOR_BLUE,						//蓝
+	COLOR_YELLOW,					//黄
+	COLOR_BLACK,					//黑
+	COLOR_ORANGE,					//橙
+	COLOR_PURPLE,					//紫
+	COLOR_PINK,                     //青
+    COLOR_END
+}COLOR_CHOOSE;
+
+typedef struct _UNIT_AREA
+{
+	SHORT x;				 //点的坐标	
+	SHORT y;
+	UINT   valid;            //该点是否有效标志？有可能为8个点中只有小于8个点有效
+}UNIT_AREA;    //大小为2 UINT
+
+typedef  enum _LINE_DIR
+{
+	LINE_START,
+	LINE_RIGHT2LEFT,    	//由右向左
+	LINE_LEFT2RIGHT,     	//由左向右
+	LINE_BOTH,		//双向
+	LINE_END
+}LINE_DIR;
+
+#define MAX_SEGMENT_ONEDAY	8
+//防区配置(回字形)
+typedef struct _UNIT_REC
+{
+    USHORT valid;   	//该回字形区域是否有效
+	USHORT width;  		//该回字形区域的宽度
+	
+	//坐标定义：奇数点为内圈，顺序依次为x1,x3,x5,x7,x9,x11,x13,x15，偶数点为依次对应的外圈，x2和x1对应
+	SHORT x1_start;	//
+	SHORT y1_start;
+	SHORT x2_start;
+	SHORT y2_start;
+	SHORT x3_start;
+	SHORT y3_start;
+	SHORT x4_start;
+	SHORT y4_start;
+	SHORT x5_start;
+	SHORT y5_start;
+	SHORT x6_start;
+	SHORT y6_start;
+	SHORT x7_start;
+	SHORT y7_start;
+	SHORT x8_start;
+	SHORT y8_start;
+	SHORT x9_start;
+	SHORT y9_start;
+	SHORT x10_start;
+	SHORT y10_start;
+	SHORT x11_start;
+	SHORT y11_start;
+	SHORT x12_start;
+	SHORT y12_start;
+	SHORT x13_start;
+	SHORT y13_start;
+	SHORT x14_start;
+	SHORT y14_start;
+	SHORT x15_start;
+	SHORT y15_start;
+	SHORT x16_start;
+	SHORT y16_start;   	//最多8边回字形的区域
+	COLOR_CHOOSE  color;	//回字形区域的颜色配置
+	LOOP_TYPE     looptype;	//回字形类型（三边形、四边形...八边形）
+   	SCHEDULE_UNIT scheduleunit[7][MAX_SEGMENT_ONEDAY];//最多允许每天8个时间段，大小为224字节
+	UINT   preset;
+	UINT   pretime;
+}UNIT_REC;   //大小为32UINT，修改后的为72+224=296字节
+
+#define MAX_UNIT_RECNUM	128
+typedef struct _CONFIG_REC
+{
+	UNIT_REC REC[MAX_UNIT_RECNUM];   //最大配置128个回形区域，每个MTU最多只能传送4个区域参数，因此要传送128个，需要传送的数目为32次
+}CONFIG_REC; //整体大小为64*33 = 1152UINT
+
+
+//防区配置(禁区)
+#define MAX_UNIT_AREANUM	8
+typedef struct _CONFIG_UNIT
+{
+    UNIT_AREA       config_unit[MAX_UNIT_AREANUM];  //每个防区最大由8个点构成，大小为16 UINT
+    COLOR_CHOOSE    color;   //禁入区域的颜色配置（线）
+	SCHEDULE_UNIT   scheduleunit[7][MAX_SEGMENT_ONEDAY]; //最多允许每天8个时间段，大小为224字节
+    UINT            validflag;  //此禁区有效性标志   
+	UINT            preset;// 预置点
+	UINT			pretime;
+}CONFIG_UNIT; //39个UNIT单元 18*4 + 224 = 296 bytes
+
+#define MAX_CONFIG_AREANUM	32
+typedef struct _CONFIG_AREA
+{
+    CONFIG_UNIT config_area[MAX_CONFIG_AREANUM];  //最大包含32个防区，大小为32*39 UINT，需要传送8次
+}CONFIG_AREA;
+
+
+//防区配置(拌线)
+typedef struct _UNIT_LINE
+{
+	SHORT        x_start;		
+	SHORT        y_start;
+	SHORT        x_end;
+	SHORT        y_end;
+	LINE_DIR      direction; 	//枚举类型
+	COLOR_CHOOSE  color; 	//拌线的颜色配置
+	SCHEDULE_UNIT scheduleunit[7][MAX_SEGMENT_ONEDAY]; //最多允许每天8个时间段，大小为224字节
+	UINT          validflag;  //此拌线有效性标志
+	UINT          preset;// 预置点
+	UINT		  pretime;
+}UNIT_LINE;  //大小为20UINT，4*5+224 = 244 bytes
+
+#define CONFIG_LINENUM	16
+typedef struct _CONFIG_LINE
+{
+    UNIT_LINE config_line[CONFIG_LINENUM];     //最大包含16个拌线配置，大小为320 UINT，分为4次进行传输
+}CONFIG_LINE;
+
+
+//计数功能(拌线)
+typedef struct _UNIT_LINE_COUNT
+{
+	SHORT        x_start;
+	SHORT        y_start;
+	SHORT        x_end;
+	SHORT        y_end;
+	LINE_DIR      direction; //枚举类型
+	UINT          count;
+	COLOR_CHOOSE  color;//拌线的颜色配置
+	SCHEDULE_UNIT scheduleunit[7][MAX_SEGMENT_ONEDAY]; //最多允许每天8个时间段，大小为224字节
+	UINT          validflag;          //此计数器功能有效性标志
+	UINT          preset;// 预置点
+	UINT		  pretime;
+}UNIT_COUNT;  //大小为21 UINT 6*4+224 = 248Bytes
+
+#define UNIX_COUNTNUM	16
+typedef struct _COUNT_LINE
+{
+    UNIT_COUNT count_line[UNIX_COUNTNUM];    //最大包含16个计数拌线,21*16*4，分为4次进行传输
+}COUNT_LINE;
+
+
+//目标进入(拌线)
+typedef struct _UNIT_LINE_ENTER
+{
+	SHORT        x_start;
+	SHORT        y_start;
+	SHORT        x_end;
+	SHORT        y_end;
+	LINE_DIR      direction; //枚举类型
+	COLOR_CHOOSE  color;//拌线的颜色配置
+	SCHEDULE_UNIT scheduleunit[7][MAX_SEGMENT_ONEDAY];//最多允许每天8个时间段，大小为224字节
+	UINT          validflag;  //此拌线有效性标志
+	UINT          preset;// 预置点
+	UINT		  pretime;
+}UNIT_ENTER;  //大小为20 UINT，大小为5*4+224 = 244Bytes
+#define UNIT_ENTERNUM	16
+typedef struct _TARGET_ENTER
+{
+   UNIT_ENTER  UNITENTER[UNIT_ENTERNUM];    //最大包含16个计数拌线，分为4次进行传输
+}TARGET_ENTER;
+
+
+//目标离开(拌线)
+typedef struct _UNIT_OUT
+{
+	SHORT        x_start;
+	SHORT        y_start;
+	SHORT        x_end;
+	SHORT        y_end;
+	LINE_DIR      direction; //枚举类型
+	COLOR_CHOOSE  color;     //拌线的颜色配置
+	SCHEDULE_UNIT scheduleunit[7][MAX_SEGMENT_ONEDAY];//最多允许每天8个时间段，大小为224字节
+    UINT          validflag;  //此拌线有效性标志
+	UINT          preset;// 预置点
+	UINT		  pretime;
+}UNIT_OUT;  //大小为5 UINT，大小为5*4+224 = 244bytes
+#define TARGET_OUTNUM	16
+typedef struct _TARGET_OUT
+{
+    UNIT_OUT UNITOUT[TARGET_OUTNUM];    //最大包含16个计数拌线，分为4次进行传输
+}TARGET_OUT;
+
+
+//物体遗留(禁区)
+#define MAX_UNIT_STOP	10
+typedef struct _CONFIG_STOP
+{
+	UNIT_AREA     config_unit[MAX_UNIT_STOP];  //每个防区最大由10个点构成，大小为20 UINT
+	COLOR_CHOOSE  color;//拌线的颜色配置
+	SCHEDULE_UNIT scheduleunit[7][MAX_SEGMENT_ONEDAY];//最多允许每天8个时间段，大小为224字节
+	UINT          validflag;  //此拌线有效性标志
+	UINT          preset;// 预置点
+	UINT		  pretime;
+}CONFIG_STOP;  //大小为45个UNIT 22*4+224 = 312Bytes
+
+#define CONFIG_STOPNUM	6
+typedef struct _OBJECT_STOP
+{
+	CONFIG_STOP configstop[CONFIG_STOPNUM]; //最大包含6个防区，大小为270 UINT，分为2次进行传输
+}OBJECT_STOP;
+
+//物体消失(禁区)
+typedef struct _CONFIG_LOST
+{
+	UNIT_AREA     config_unit[10];  //每个防区最大由10个点构成，大小为20 UINT
+	COLOR_CHOOSE  color;//拌线的颜色配置
+	SCHEDULE_UNIT scheduleunit[7][MAX_SEGMENT_ONEDAY];//最多允许每天8个时间段，大小为224字节
+	UINT          validflag;  //此拌线有效性标志
+	UINT          preset;// 预置点
+	UINT		  pretime;
+}CONFIG_LOST;
+
+#define CONFIG_LOSTNUM	6
+typedef struct _OBJECT_LOST
+{
+    CONFIG_LOST configlost[CONFIG_LOSTNUM]; //最大包含6个防区，大小为270 UINT，分为2次进行传输
+}OBJECT_LOST;
+
+//方向报警(拌线)
+typedef struct _UNIT_DIRECTION
+{
+	SHORT        x_start;
+	SHORT		  y_start;
+	SHORT		  x_end;
+	SHORT        y_end;
+	LINE_DIR      direction; //枚举类型
+	COLOR_CHOOSE  color;//拌线的颜色配置
+	SCHEDULE_UNIT scheduleunit[7][MAX_SEGMENT_ONEDAY];//最多允许每天8个时间段，大小为224字节
+    UINT          validflag;  //此拌线有效性标志
+	UINT          preset;// 预置点
+	UINT		  pretime;
+}UNIT_DIRECTION;  //大小为20UINT，大小为5*4+224 = 244bytes
+
+#define UNIX_DIRECTIONNUM	16
+typedef struct _DIRECTION_ALARM
+{
+    UNIT_DIRECTION  UNITDIRECTION[UNIX_DIRECTIONNUM]; //最大包含16个计数拌线，分为4次进行传输
+}DIRECTION_ALARM;
+
+
+//入侵侦测(拌线)
+typedef struct _UNIT_DETECTION
+{
+	SHORT        x_start;
+	SHORT        y_start;
+	SHORT        x_end;
+	SHORT        y_end;
+	LINE_DIR      direction; //枚举类型
+	COLOR_CHOOSE  color;//拌线的颜色配置
+	SCHEDULE_UNIT scheduleunit[7][MAX_SEGMENT_ONEDAY];//最多允许每天8个时间段，大小为224字节
+	UINT          validflag;  //此拌线有效性标志
+	UINT          preset;// 预置点
+	UINT		  pretime;
+}UNIT_DETECTION;   //大小为5 UINT，5*4+224 = 244bytes
+
+#define UNIT_DETECTIONNUM	16
+typedef struct _INVADE_DETECTION
+{
+	UNIT_DETECTION  UNITDETECTION[UNIT_DETECTIONNUM]; //最大包含16个计数拌线，分为4次进行传输
+}INVADE_DETECTION;
+
+
+//回字形状某4个区域(0~127)配置
+#define UNIT_REC_EVERY_PACKET	4
+typedef  struct  _ALG_QUAD_PARA
+{
+    UNIT_REC REC[UNIT_REC_EVERY_PACKET];
+}ALG_QUAD_PARA;
+
+
+//禁区形状某4个区域(0~31)配置
+#define CONFIG_UNIT_EVERY_PACKET	4
+typedef  struct _ALG_AREA_PARA
+{
+    CONFIG_UNIT configunit [CONFIG_UNIT_EVERY_PACKET];
+}ALG_AREA_PARA;
+
+//拌线配置(0~15)
+#define UNIT_LINE_EVERY_PACKET	4
+typedef  struct _ALG_LINE_PARA
+{
+    UNIT_LINE  lineunit[UNIT_LINE_EVERY_PACKET];
+}ALG_LINE_PARA;
+
+//计数配置(0~15)
+#define UNIT_COUNT_EVERY_PACKET	4
+typedef  struct _ALG_COUNT_PARA
+{
+    UNIT_COUNT  countunit[UNIT_COUNT_EVERY_PACKET];
+}ALG_COUNT_PARA;
+
+//目标进入配置(0~15)
+#define UNIT_ENTER_EVERY_PACKET 4
+typedef  struct _ALG_ENTER_PARA
+{
+    UNIT_ENTER  enterunit[UNIT_ENTER_EVERY_PACKET];
+}ALG_ENTER_PARA;
+
+//目标离开配置(0~15)
+#define UNIT_OUT_EVERY_PACKET 4
+typedef  struct _ALG_OUT_PARA
+{
+    UNIT_OUT outunit[UNIT_OUT_EVERY_PACKET];
+}ALG_OUT_PARA;
+
+//物体遗留配置(0~5)
+#define CONFIG_STOP_EVERY_PACKET 3
+typedef  struct _ALG_STOP_PARA
+{
+    CONFIG_STOP stopunit[CONFIG_STOP_EVERY_PACKET];
+}ALG_STOP_PARA;
+
+//物体消失配置(0~5)
+#define CONFIG_LOST_EVERY_PACKET 3
+typedef  struct _ALG_LOST_PARA
+{
+    CONFIG_LOST lostunit[CONFIG_LOST_EVERY_PACKET];
+}ALG_LOST_PARA;
+
+//方向报警配置(0~15)
+#define UNIT_DIRECTION_EVERY_PACKET 4
+typedef  struct _ALG_DIRECT_PARA
+{
+    UNIT_DIRECTION directunit[UNIT_DIRECTION_EVERY_PACKET];
+}ALG_DIRECT_PARA;
+
+//入侵侦测配置(0~15)
+#define UNIT_DETECTION_EVERY_PACKET 4
+typedef  struct _ALG_DETECT_PARA
+{
+    UNIT_DETECTION dectunit[UNIT_DETECTION_EVERY_PACKET];
+}ALG_DETECT_PARA;
+
+
+//新增算法报警区域  
+//配置(禁区)
+/*
+#define MAX_UNIT_PEOPEL_DENSE_NUM	4
+typedef struct _PEOPLEDENSE_UNIT
+{
+UNIT_AREA       config_unit[MAX_UNIT_PEOPEL_DENSE_NUM];  //每个防区最大由8个点构成，大小为16 UINT
+COLOR_CHOOSE    color;   //禁入区域的颜色配置（线）
+SCHEDULE_UNIT   scheduleunit[7][MAX_SEGMENT_ONEDAY]; //最多允许每天8个时间段，大小为224字节
+UINT            validflag;  //此禁区有效性标志   
+}CONFIG_UNIT; //39个UNIT单元 18*4 + 224 = 296 bytes
+*/
+//人群密度
+#define UNIT_PEOPLE_DENSE_PACKET 4
+typedef struct _ALG_PEOPLEDENSE_PARA{
+	CONFIG_UNIT peopledenseunit[UNIT_PEOPLE_DENSE_PACKET];
+}ALG_PEOPLEDENSE_PARA;
+//聚集算法报警区域
+#define UNIT_CLUSTER_DETE_PACKET 4
+typedef struct _ALG_CLUSTERDETE_PARA{
+	CONFIG_UNIT clusterdeteunit[UNIT_CLUSTER_DETE_PACKET];
+}ALG_CLUSTERDETE_PARA;
+//警戒区检测（夜间起床）
+#define UNIT_MOTION_HISTORY_PACKET 4
+typedef struct _ALG_MOTIONHISTORY_PARA{
+	CONFIG_UNIT motionhistoryunit[UNIT_MOTION_HISTORY_PACKET];
+}ALG_MOTIONHISTORY_PARA;
+//徘徊算法报警区域
+#define UNIT_HOVERDETE_PACKET 4
+typedef struct _ALG_HOVERDETE_PARA{
+	CONFIG_UNIT hoverdeteUnit[UNIT_HOVERDETE_PACKET];
+}ALG_HOVERDETE_PARA;
+
+
+
+//modify (add) by hzc 2012-05-20
+
+//警戒线（摸高）
+typedef struct _UNIT_ALARMLINENOTDIR_ENTER
+{
+	SHORT        x_start;
+	SHORT        y_start;
+	SHORT        x_end;
+	SHORT        y_end;
+//	LINE_DIR      direction; //枚举类型
+	COLOR_CHOOSE  color;//警戒线的颜色配置
+	SCHEDULE_UNIT scheduleunit[7][MAX_SEGMENT_ONEDAY];//最多允许每天8个时间段，大小为224字节
+	UINT          validflag;  //此警戒线有效性标志
+	UINT          preset;// 预置点
+	UINT		  pretime;
+}UNIT_ALARMLINENOTDIR_ENTER;  //大小为20 UINT，大小为5*4+224 = 244Bytes
+
+#define UNIT_ALARMLINENUM	16
+typedef struct _ALARMAREA_ENTER
+{
+	UNIT_ALARMLINENOTDIR_ENTER  UNIT_ALARMLINE_ENTER[UNIT_ALARMLINENUM];    //最大包含16个计数拌线，分为4次进行传输
+}ALARMAREA_ENTER;
+
+#define UNIT_ALARMLINE_PACKET 4
+typedef struct _ALG_ALARMLINE_PARA{
+	UNIT_ALARMLINENOTDIR_ENTER alarmLine[UNIT_ALARMLINE_PACKET];
+}ALG_ALARMLINE_PARA;
+
+//遗留物检测
+#define UNIT_FINDBAG_PACKET 4 
+typedef struct _ALG_FINDBAG_PARA{
+//	CONFIG_UINT findBagUnit[UNIT_FINDBAG_PACKET];
+	CONFIG_STOP findBagUnit[UNIT_FINDBAG_PACKET];
+}ALG_FINDBAG_PARA;
+
+//奔跑物体检测
+#define UNIT_RUNNINGOBJ_PACKET 4 
+typedef struct _ALG_RUNNINGOBJ_PARA{
+	CONFIG_UNIT runningObjUnit[UNIT_RUNNINGOBJ_PACKET];
+}ALG_RUNNINGOBJ_PARA;
+
+
+#ifdef _cplusplus
+}
+#endif
+
+#endif // AREACONF_H_INCLUDED

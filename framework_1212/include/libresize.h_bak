@@ -1,0 +1,36 @@
+#ifndef	_LIB_RESIZE_H_ 
+#define	_LIB_RESIZE_H_
+
+#include "system_debug.h"
+#include "system_includes.h"
+
+#include <asm/types.h>
+#include <asm/arch/davinci_resizer.h>
+
+#ifdef __cplusplus
+extern "C"{
+#endif
+
+#define RESIZER_DEVICE  "/dev/davinci_resizer"
+
+typedef struct __ResizeAttr
+{
+	int bufNum;
+	int userAlloc;
+}ResizeAttr;
+
+typedef struct __Resize_Object
+{
+	int resize_fd;
+}Resize_Object;
+
+typedef Resize_Object* Resize_Handle;
+
+Resize_Handle Resize_init(ResizeAttr *attr);
+int Resize_exec(Resize_Handle phandle, unsigned long physInbuf, unsigned long physOutbuf);
+int Resize_destroy(Resize_Handle phandle);
+
+#ifdef __cplusplus
+}
+#endif
+#endif  

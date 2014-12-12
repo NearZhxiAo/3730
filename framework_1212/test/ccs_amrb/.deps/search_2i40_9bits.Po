@@ -1,0 +1,21 @@
+search_2i40_9bits.o search_2i40_9bits.o: search_2i40_9bits.c typedef.h \
+  basic_op.h table.h mode.h pred_lt_3or6.h inv_sqrt.h cnst.h cor_h.h \
+  set_sign.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+inv_sqrt.h:
+
+cnst.h:
+
+cor_h.h:
+
+set_sign.h:

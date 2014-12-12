@@ -1,0 +1,16 @@
+d_gain_pitch.o d_gain_pitch.o: d_gain_pitch.c typedef.h mode.h basic_op.h \
+  table.h pred_lt_3or6.h oper_32b.h cnst.h
+
+typedef.h:
+
+mode.h:
+
+basic_op.h:
+
+table.h:
+
+pred_lt_3or6.h:
+
+oper_32b.h:
+
+cnst.h:

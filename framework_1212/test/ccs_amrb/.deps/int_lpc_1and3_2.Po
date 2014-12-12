@@ -1,0 +1,16 @@
+int_lpc_1and3_2.o int_lpc_1and3_2.o: int_lpc_1and3_2.c typedef.h \
+  basic_op.h table.h mode.h pred_lt_3or6.h cnst.h lsp_az.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+cnst.h:
+
+lsp_az.h:

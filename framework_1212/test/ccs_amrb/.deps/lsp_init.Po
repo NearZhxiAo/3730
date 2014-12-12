@@ -1,0 +1,16 @@
+lsp_init.o lsp_init.o: lsp_init.c lsp.h typedef.h q_plsf.h cnst.h mode.h \
+  lsp_reset.h q_plsf_init.h
+
+lsp.h:
+
+typedef.h:
+
+q_plsf.h:
+
+cnst.h:
+
+mode.h:
+
+lsp_reset.h:
+
+q_plsf_init.h:

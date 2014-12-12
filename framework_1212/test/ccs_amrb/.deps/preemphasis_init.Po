@@ -1,0 +1,8 @@
+preemphasis_init.o preemphasis_init.o: preemphasis_init.c preemphasis.h \
+  typedef.h preemphasis_reset.h
+
+preemphasis.h:
+
+typedef.h:
+
+preemphasis_reset.h:

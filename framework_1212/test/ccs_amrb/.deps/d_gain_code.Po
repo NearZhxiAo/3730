@@ -1,0 +1,25 @@
+d_gain_code.o d_gain_code.o: d_gain_code.c typedef.h mode.h basic_op.h \
+  table.h pred_lt_3or6.h oper_32b.h cnst.h log2.h pow2.h gc_pred.h \
+  gc_pred_update.h
+
+typedef.h:
+
+mode.h:
+
+basic_op.h:
+
+table.h:
+
+pred_lt_3or6.h:
+
+oper_32b.h:
+
+cnst.h:
+
+log2.h:
+
+pow2.h:
+
+gc_pred.h:
+
+gc_pred_update.h:

@@ -1,0 +1,1 @@
+cmd_/opt/DAVINCI_DM6446_lab/framework/driver/asshm/module/asshm.ko := arm_v5t_le-ld -EL  -r -o /opt/DAVINCI_DM6446_lab/framework/driver/asshm/module/asshm.ko /opt/DAVINCI_DM6446_lab/framework/driver/asshm/module/asshm.o /opt/DAVINCI_DM6446_lab/framework/driver/asshm/module/asshm.mod.o

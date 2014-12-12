@@ -1,0 +1,75 @@
+rtpinit.o rtpinit.o: rtpinit.c \
+  /opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/stdlib.h \
+  /opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/features.h \
+  /opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/predefs.h \
+  /opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/sys/cdefs.h \
+  /opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/wordsize.h \
+  /opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/gnu/stubs.h \
+  /opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../lib/gcc/armv5tl-montavista-linux-gnueabi/4.2.0/include/stddef.h \
+  /opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/sys/types.h \
+  /opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/types.h \
+  /opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/typesizes.h \
+  /opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/time.h \
+  /opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/endian.h \
+  /opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/endian.h \
+  /opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/sys/select.h \
+  /opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/select.h \
+  /opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/sigset.h \
+  /opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/time.h \
+  /opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/sys/sysmacros.h \
+  /opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/pthreadtypes.h \
+  /opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/alloca.h \
+  RTP_HEAD.h rtp_ctrl_type.h \
+  /opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/string.h \
+  /opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/string.h \
+  /opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/string2.h
+
+/opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/stdlib.h:
+
+/opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/features.h:
+
+/opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/predefs.h:
+
+/opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/sys/cdefs.h:
+
+/opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/wordsize.h:
+
+/opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/gnu/stubs.h:
+
+/opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../lib/gcc/armv5tl-montavista-linux-gnueabi/4.2.0/include/stddef.h:
+
+/opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/sys/types.h:
+
+/opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/types.h:
+
+/opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/typesizes.h:
+
+/opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/time.h:
+
+/opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/endian.h:
+
+/opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/endian.h:
+
+/opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/sys/select.h:
+
+/opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/select.h:
+
+/opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/sigset.h:
+
+/opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/time.h:
+
+/opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/sys/sysmacros.h:
+
+/opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/pthreadtypes.h:
+
+/opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/alloca.h:
+
+RTP_HEAD.h:
+
+rtp_ctrl_type.h:
+
+/opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/string.h:
+
+/opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/string.h:
+
+/opt/DAVINCI_DM6446_lab/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/string2.h:

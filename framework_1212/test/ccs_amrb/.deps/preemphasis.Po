@@ -1,0 +1,14 @@
+preemphasis.o preemphasis.o: preemphasis.c typedef.h basic_op.h table.h \
+  mode.h pred_lt_3or6.h preemphasis.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+preemphasis.h:

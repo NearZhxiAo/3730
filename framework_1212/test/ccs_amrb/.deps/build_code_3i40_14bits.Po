@@ -1,0 +1,15 @@
+build_code_3i40_14bits.o build_code_3i40_14bits.o:  \
+ build_code_3i40_14bits.c typedef.h basic_op.h table.h mode.h \
+  pred_lt_3or6.h cnst.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+cnst.h:

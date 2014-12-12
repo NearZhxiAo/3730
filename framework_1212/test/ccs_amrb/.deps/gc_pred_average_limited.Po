@@ -1,0 +1,23 @@
+gc_pred_average_limited.o gc_pred_average_limited.o:  \
+ gc_pred_average_limited.c typedef.h basic_op.h table.h mode.h \
+  pred_lt_3or6.h oper_32b.h cnst.h log2.h copy.h gc_pred.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+oper_32b.h:
+
+cnst.h:
+
+log2.h:
+
+copy.h:
+
+gc_pred.h:

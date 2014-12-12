@@ -1,0 +1,8 @@
+ph_disp_release.o ph_disp_release.o: ph_disp_release.c ph_disp.h \
+  typedef.h mode.h
+
+ph_disp.h:
+
+typedef.h:
+
+mode.h:

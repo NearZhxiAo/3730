@@ -1,0 +1,75 @@
+gainquant_reset.o gainquant_reset.o: gainquant_reset.c \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/stdio.h \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/features.h \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/predefs.h \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/sys/cdefs.h \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/wordsize.h \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/gnu/stubs.h \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../lib/gcc/armv5tl-montavista-linux-gnueabi/4.2.0/include/stddef.h \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/types.h \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/typesizes.h \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/libio.h \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/_G_config.h \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/wchar.h \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/wchar.h \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/gconv.h \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../lib/gcc/armv5tl-montavista-linux-gnueabi/4.2.0/include/stdarg.h \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/stdio_lim.h \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/sys_errlist.h \
+  /opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/stdio.h \
+  gc_pred.h typedef.h mode.h copy.h set_zero.h gc_pred_reset.h \
+  gain_adapt_reset.h gain_adapt.h gainquant.h
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/stdio.h:
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/features.h:
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/predefs.h:
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/sys/cdefs.h:
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/wordsize.h:
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/gnu/stubs.h:
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../lib/gcc/armv5tl-montavista-linux-gnueabi/4.2.0/include/stddef.h:
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/types.h:
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/typesizes.h:
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/libio.h:
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/_G_config.h:
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/wchar.h:
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/wchar.h:
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/gconv.h:
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../lib/gcc/armv5tl-montavista-linux-gnueabi/4.2.0/include/stdarg.h:
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/stdio_lim.h:
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/sys_errlist.h:
+
+/opt/mv_install/montavista/pro/devkit/arm/v5t_le/bin/../target/usr/include/bits/stdio.h:
+
+gc_pred.h:
+
+typedef.h:
+
+mode.h:
+
+copy.h:
+
+set_zero.h:
+
+gc_pred_reset.h:
+
+gain_adapt_reset.h:
+
+gain_adapt.h:
+
+gainquant.h:

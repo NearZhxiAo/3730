@@ -1,0 +1,86 @@
+cod_amr.o cod_amr.o: cod_amr.c typedef.h basic_op.h table.h mode.h \
+  pred_lt_3or6.h cnst.h copy.h set_zero.h dtx_def.h q_plsf.h gc_pred.h \
+  qua_gain.h lpc.h levinson.h lsp.h pre_big.h ol_ltp.h pitch_ol_wgh.h \
+  vad1.h cnst_vad.h Pitch_ol_wgh.h cl_ltp.h pitch_fr.h ton_stab.h \
+  cbsearch.h gainquant.h gain_adapt.h convolve.h dtx_enc.h cod_amr.h \
+  tx_dtx_handler.h dtx_enc_buffer.h lsp_reset.h check_lsp.h \
+  vad_pitch_detection.h subframepreproc.h update_gp_clipping.h \
+  subframepostproc.h cl_ltp_reset.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+cnst.h:
+
+copy.h:
+
+set_zero.h:
+
+dtx_def.h:
+
+q_plsf.h:
+
+gc_pred.h:
+
+qua_gain.h:
+
+lpc.h:
+
+levinson.h:
+
+lsp.h:
+
+pre_big.h:
+
+ol_ltp.h:
+
+pitch_ol_wgh.h:
+
+vad1.h:
+
+cnst_vad.h:
+
+Pitch_ol_wgh.h:
+
+cl_ltp.h:
+
+pitch_fr.h:
+
+ton_stab.h:
+
+cbsearch.h:
+
+gainquant.h:
+
+gain_adapt.h:
+
+convolve.h:
+
+dtx_enc.h:
+
+cod_amr.h:
+
+tx_dtx_handler.h:
+
+dtx_enc_buffer.h:
+
+lsp_reset.h:
+
+check_lsp.h:
+
+vad_pitch_detection.h:
+
+subframepreproc.h:
+
+update_gp_clipping.h:
+
+subframepostproc.h:
+
+cl_ltp_reset.h:

@@ -1,0 +1,20 @@
+lsp_reset.o lsp_reset.o: lsp_reset.c copy.h typedef.h cnst.h table.h \
+  mode.h pred_lt_3or6.h lsp.h q_plsf.h q_plsf_reset.h
+
+copy.h:
+
+typedef.h:
+
+cnst.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+lsp.h:
+
+q_plsf.h:
+
+q_plsf_reset.h:

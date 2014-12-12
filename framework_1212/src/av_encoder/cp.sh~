@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cp src/av_encoder/av_encoder ../nfs/opt/install/work/sbin/

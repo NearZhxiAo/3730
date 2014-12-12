@@ -1,0 +1,28 @@
+cbsearch.o cbsearch.o: cbsearch.c typedef.h mode.h basic_op.h table.h \
+  pred_lt_3or6.h cnst.h code_2i40_11bits.h code_2i40_9bits.h \
+  code_3i40_14bits.h code_4i40_17bits.h code_8i40_31bits.h \
+  code_10i40_35bits.h
+
+typedef.h:
+
+mode.h:
+
+basic_op.h:
+
+table.h:
+
+pred_lt_3or6.h:
+
+cnst.h:
+
+code_2i40_11bits.h:
+
+code_2i40_9bits.h:
+
+code_3i40_14bits.h:
+
+code_4i40_17bits.h:
+
+code_8i40_31bits.h:
+
+code_10i40_35bits.h:

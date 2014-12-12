@@ -1,0 +1,1 @@
+cmd_/opt/sdb/framework_1209/driver/gpmc/module/gpmc.ko := arm-none-linux-gnueabi-ld -EL -r  -T /opt/sdb/linux-2.6.32-CNG205/scripts/module-common.lds --build-id -o /opt/sdb/framework_1209/driver/gpmc/module/gpmc.ko /opt/sdb/framework_1209/driver/gpmc/module/gpmc.o /opt/sdb/framework_1209/driver/gpmc/module/gpmc.mod.o

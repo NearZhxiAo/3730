@@ -1,0 +1,217 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+ACLOCAL	Makefile	/^ACLOCAL = ${SHELL} \/home\/mru\/MRU_work\/missing --run aclocal-1.9$/;"	m
+ACLOCAL_M4	Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+AMDEP_FALSE	Makefile	/^AMDEP_FALSE = #$/;"	m
+AMDEP_TRUE	Makefile	/^AMDEP_TRUE = $/;"	m
+AMTAR	Makefile	/^AMTAR = ${SHELL} \/home\/mru\/MRU_work\/missing --run tar$/;"	m
+AM_LDFLAGS	Makefile	/^AM_LDFLAGS = -L$(top_srcdir)\/lib$/;"	m
+AUTOCONF	Makefile	/^AUTOCONF = ${SHELL} \/home\/mru\/MRU_work\/missing --run autoconf$/;"	m
+AUTOHEADER	Makefile	/^AUTOHEADER = ${SHELL} \/home\/mru\/MRU_work\/missing --run autoheader$/;"	m
+AUTOMAKE	Makefile	/^AUTOMAKE = ${SHELL} \/home\/mru\/MRU_work\/missing --run automake-1.9$/;"	m
+AWK	Makefile	/^AWK = gawk$/;"	m
+CC	Makefile	/^CC = arm_v5t_le-gcc$/;"	m
+CCDEPMODE	Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CCLD	Makefile	/^CCLD = $(CC)$/;"	m
+CDPATH	Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -O2$/;"	m
+CLIENT_PC_POLL_COUNT_MAX	client_pc_private.h	21;"	d
+CLIENT_PC_PRIVATE_HANDLE	client_pc_private.h	/^}CLIENT_PC_PRIVATE_HANDLE;$/;"	t
+COMPILE	Makefile	/^COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \\$/;"	m
+CONFIG_CLEAN_FILES	Makefile	/^CONFIG_CLEAN_FILES =$/;"	m
+CONFIG_HEADER	Makefile	/^CONFIG_HEADER = $(top_builddir)\/config.h$/;"	m
+CPP	Makefile	/^CPP = arm_v5t_le-gcc -E$/;"	m
+CPPFLAGS	Makefile	/^CPPFLAGS = $/;"	m
+CTAGS	Makefile	/^CTAGS = ctags$/;"	m
+CXX	Makefile	/^CXX = arm_v5t_le-g++$/;"	m
+CXXDEPMODE	Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS = -g -O2$/;"	m
+CYGPATH_W	Makefile	/^CYGPATH_W = echo$/;"	m
+Call_Start_GetParam	client_pc_socket.c	/^void Call_Start_GetParam( CLIENT_PC_PRIVATE_HANDLE *phandle )$/;"	f
+Call_Stop_GetParam	client_pc_socket.c	/^void Call_Stop_GetParam( CLIENT_PC_PRIVATE_HANDLE *phandle )$/;"	f
+Control_Ptz_GetParam	client_pc_socket.c	/^void Control_Ptz_GetParam( CLIENT_PC_PRIVATE_HANDLE *phandle )$/;"	f
+DEFAULT_INCLUDES	Makefile	/^DEFAULT_INCLUDES = -I. -I$(srcdir) -I$(top_builddir)$/;"	m
+DEFS	Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEPDIR	Makefile	/^DEPDIR = .deps$/;"	m
+DISTFILES	Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DIST_COMMON	Makefile	/^DIST_COMMON = $(srcdir)\/Makefile.am $(srcdir)\/Makefile.in$/;"	m
+DIST_SOURCES	Makefile	/^DIST_SOURCES = $(client_pc_SOURCES)$/;"	m
+ECHO_C	Makefile	/^ECHO_C = $/;"	m
+ECHO_N	Makefile	/^ECHO_N = -n$/;"	m
+ECHO_T	Makefile	/^ECHO_T = $/;"	m
+EGREP	Makefile	/^EGREP = grep -E$/;"	m
+ETAGS	Makefile	/^ETAGS = etags$/;"	m
+EXEEXT	Makefile	/^EXEEXT = $/;"	m
+GetPEcontext	client_pc_socket.c	/^unsigned char* GetPEcontext(CLIENT_PC_PRIVATE_HANDLE *phandle,int PE_TYPE)$/;"	f
+GetPEcontext	client_pc_socket_temp.c	/^unsigned char* GetPEcontext(int PE_TYPE,int len){$/;"	f
+GetParam	client_pc_socket.c	/^void GetParam(CLIENT_PC_PRIVATE_HANDLE *phandle,ushort type)$/;"	f
+GetParam	client_pc_socket_temp.c	/^void GetParam(ushort type ){$/;"	f
+INCLUDES	Makefile	/^INCLUDES = -I$(top_srcdir)\/include$/;"	m
+INSTALL	Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL_DATA	Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_HEADER	Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_PROGRAM	Makefile	/^	$(MAKE) $(AM_MAKEFLAGS) INSTALL_PROGRAM="$(INSTALL_STRIP_PROGRAM)" \\$/;"	m
+INSTALL_PROGRAM	Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_PROGRAM_ENV	Makefile	/^	    echo "INSTALL_PROGRAM_ENV=STRIPPROG='$(STRIP)'"` install$/;"	m
+INSTALL_SCRIPT	Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_STRIP_FLAG	Makefile	/^	  install_sh_PROGRAM="$(INSTALL_STRIP_PROGRAM)" INSTALL_STRIP_FLAG=-s \\$/;"	m
+INSTALL_STRIP_PROGRAM	Makefile	/^INSTALL_STRIP_PROGRAM = ${SHELL} $(install_sh) -c -s$/;"	m
+IsClientpcSysQuit	client_pc_main.c	/^int IsClientpcSysQuit = 0;$/;"	v
+LDFLAGS	Makefile	/^LDFLAGS = $/;"	m
+LIBOBJS	Makefile	/^LIBOBJS = $/;"	m
+LIBS	Makefile	/^LIBS = -lpthread $/;"	m
+LINK	Makefile	/^LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@$/;"	m
+LOCAL_IP	client_pc_private.h	19;"	d
+LOCAL_PORT	client_pc_private.h	20;"	d
+LOGINID	client_pc_private.h	16;"	d
+LTLIBOBJS	Makefile	/^LTLIBOBJS = $/;"	m
+MAKEINFO	Makefile	/^MAKEINFO = ${SHELL} \/home\/mru\/MRU_work\/missing --run makeinfo$/;"	m
+Message_response	client_pc_socket.c	/^int Message_response(CLIENT_PC_PRIVATE_HANDLE *phandle, int messege_no, int channel_type )$/;"	f
+NORMAL_INSTALL	Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_UNINSTALL	Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+OBJEXT	Makefile	/^OBJEXT = o$/;"	m
+PACKAGE	Makefile	/^PACKAGE = MRU_work$/;"	m
+PACKAGE_BUGREPORT	Makefile	/^PACKAGE_BUGREPORT = liangzhang@xidian.edu.cn$/;"	m
+PACKAGE_NAME	Makefile	/^PACKAGE_NAME = MRU_work$/;"	m
+PACKAGE_STRING	Makefile	/^PACKAGE_STRING = MRU_work 1.0$/;"	m
+PACKAGE_TARNAME	Makefile	/^PACKAGE_TARNAME = mru_work$/;"	m
+PACKAGE_VERSION	Makefile	/^PACKAGE_VERSION = 1.0$/;"	m
+PATH_SEPARATOR	Makefile	/^PATH_SEPARATOR = :$/;"	m
+PORT	client_pc_private.h	17;"	d
+POST_INSTALL	Makefile	/^POST_INSTALL = :$/;"	m
+POST_UNINSTALL	Makefile	/^POST_UNINSTALL = :$/;"	m
+PRE_INSTALL	Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_UNINSTALL	Makefile	/^PRE_UNINSTALL = :$/;"	m
+PROGRAMS	Makefile	/^PROGRAMS = $(bin_PROGRAMS)$/;"	m
+Preview_Start_GetParam	client_pc_socket.c	/^void Preview_Start_GetParam(CLIENT_PC_PRIVATE_HANDLE *phandle)$/;"	f
+Preview_Stop_GetParam	client_pc_socket.c	/^void Preview_Stop_GetParam(CLIENT_PC_PRIVATE_HANDLE *phandle)$/;"	f
+RANLIB	Makefile	/^RANLIB = arm_v5t_le-ranlib$/;"	m
+SERVER_IP	client_pc_private.h	18;"	d
+SET_MAKE	Makefile	/^SET_MAKE = $/;"	m
+SHELL	Makefile	/^SHELL = \/bin\/sh$/;"	m
+SOURCES	Makefile	/^SOURCES = $(client_pc_SOURCES)$/;"	m
+STRIP	Makefile	/^STRIP = arm_v5t_le-strip$/;"	m
+STRIPPROG	Makefile	/^	    echo "INSTALL_PROGRAM_ENV=STRIPPROG='$(STRIP)'"` install$/;"	m
+SendtoRTSP	client_pc_unix.c	/^void SendtoRTSP(CLIENT_PC_PRIVATE_HANDLE *phandle,ushort type){                                                   $/;"	f
+SignalHandle	client_pc_main.c	/^void SignalHandle(int sig)$/;"	f
+VERSION	Makefile	/^VERSION = 1.0$/;"	m
+_CLIENT_PC_PRIVATE_HANDLE	client_pc_private.h	/^typedef struct _CLIENT_PC_PRIVATE_HANDLE$/;"	s
+_CLIENT_PC_PRIVATE_H__	client_pc_private.h	2;"	d
+ac_ct_CC	Makefile	/^ac_ct_CC = $/;"	m
+ac_ct_CXX	Makefile	/^ac_ct_CXX = $/;"	m
+ac_ct_RANLIB	Makefile	/^ac_ct_RANLIB = $/;"	m
+ac_ct_STRIP	Makefile	/^ac_ct_STRIP = $/;"	m
+active_fdcount	client_pc_private.h	/^		int active_fdcount;$/;"	m	struct:_CLIENT_PC_PRIVATE_HANDLE
+am__aclocal_m4_deps	Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/configure.ac$/;"	m
+am__cd	Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__configure_deps	Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__depfiles_maybe	Makefile	/^am__depfiles_maybe = depfiles$/;"	m
+am__fastdepCC_FALSE	Makefile	/^am__fastdepCC_FALSE = #$/;"	m
+am__fastdepCC_TRUE	Makefile	/^am__fastdepCC_TRUE = $/;"	m
+am__fastdepCXX_FALSE	Makefile	/^am__fastdepCXX_FALSE = #$/;"	m
+am__fastdepCXX_TRUE	Makefile	/^am__fastdepCXX_TRUE = $/;"	m
+am__include	Makefile	/^am__include = include$/;"	m
+am__installdirs	Makefile	/^am__installdirs = "$(DESTDIR)$(bindir)"$/;"	m
+am__leading_dot	Makefile	/^am__leading_dot = .$/;"	m
+am__quote	Makefile	/^am__quote = $/;"	m
+am__tar	Makefile	/^am__tar = ${AMTAR} chof - "$$tardir"$/;"	m
+am__untar	Makefile	/^am__untar = ${AMTAR} xf -$/;"	m
+am_client_pc_OBJECTS	Makefile	/^am_client_pc_OBJECTS = client_pc_main.$(OBJEXT) \\$/;"	m
+binPROGRAMS_INSTALL	Makefile	/^binPROGRAMS_INSTALL = $(INSTALL_PROGRAM)$/;"	m
+bin_PROGRAMS	Makefile	/^bin_PROGRAMS = client_pc$(EXEEXT)$/;"	m
+bindir	Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+bufhandle	client_pc_deal.c	/^void bufhandle(CLIENT_PC_PRIVATE_HANDLE *phandle)$/;"	f
+build_alias	Makefile	/^build_alias = $/;"	m
+client_pc_DEPENDENCIES	Makefile	/^client_pc_DEPENDENCIES =$/;"	m
+client_pc_LDADD	Makefile	/^client_pc_LDADD = -lunix -lgbshm -lssl -lsk -lsignal$/;"	m
+client_pc_OBJECTS	Makefile	/^client_pc_OBJECTS = $(am_client_pc_OBJECTS)$/;"	m
+client_pc_SOURCES	Makefile	/^client_pc_SOURCES = client_pc_main.c client_pc_poll.c client_pc_deal.c client_pc_socket.c client_pc_unix.c$/;"	m
+client_pc_connect	client_pc_deal.c	/^succeed_type client_pc_connect(CLIENT_PC_PRIVATE_HANDLE *phandle)$/;"	f
+client_pc_exit	client_pc_main.c	/^succeed_type client_pc_exit( CLIENT_PC_PRIVATE_HANDLE *phandle)$/;"	f
+client_pc_init	client_pc_main.c	/^succeed_type client_pc_init( CLIENT_PC_PRIVATE_HANDLE *phandle)$/;"	f
+client_pc_login_request	client_pc_deal.c	/^succeed_type client_pc_login_request(CLIENT_PC_PRIVATE_HANDLE* phandle)$/;"	f
+client_pc_poll_init	client_pc_main.c	/^static void client_pc_poll_init(CLIENT_PC_PRIVATE_HANDLE *phandle)$/;"	f	file:
+client_pc_socket_deal	client_pc_deal.c	/^succeed_type client_pc_socket_deal(CLIENT_PC_PRIVATE_HANDLE *phandle)$/;"	f
+client_pc_unix_deal	client_pc_unix.c	/^succeed_type client_pc_unix_deal(CLIENT_PC_PRIVATE_HANDLE *phandle)$/;"	f
+datadir	Makefile	/^datadir = ${prefix}\/share$/;"	m
+depcomp	Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/depcomp$/;"	m
+depmode	Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+depmode	Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
+dir	Makefile	/^	    dir="\/$$dir"; \\$/;"	m
+dir	Makefile	/^	    dir=''; \\$/;"	m
+dir	Makefile	/^	  dir=`echo "$$file" | sed -e 's,\/[^\/]*$$,,'`; \\$/;"	m
+exec_prefix	Makefile	/^exec_prefix = ${prefix}$/;"	m
+f	Makefile	/^	    f=`echo "$$p1" | sed 's,^.*\/,,;$(transform);s\/$$\/$(EXEEXT)\/'`; \\$/;"	m
+f	Makefile	/^	  f=`echo "$$p" | sed 's,^.*\/,,;s\/$(EXEEXT)$$\/\/;$(transform);s\/$$\/$(EXEEXT)\/'`; \\$/;"	m
+file	Makefile	/^	    $(srcdir)\/*) file=`echo "$$file" | sed "s|^$$srcdirstrip\/||"`;; \\$/;"	m
+file	Makefile	/^	    $(top_srcdir)\/*) file=`echo "$$file" | sed "s|^$$topsrcdirstrip\/|$(top_builddir)\/|"`;; \\$/;"	m
+global_client_pc_private_handle	client_pc_main.c	/^CLIENT_PC_PRIVATE_HANDLE global_client_pc_private_handle;$/;"	v
+heart_time	client_pc_private.h	/^		int heart_time;$/;"	m	struct:_CLIENT_PC_PRIVATE_HANDLE
+heartbeat	client_pc_socket.c	/^void heartbeat(CLIENT_PC_PRIVATE_HANDLE *phandle){                                            $/;"	f
+heartbeat	client_pc_socket_temp.c	/^void heartbeat(CLIENT_PC_PRIVATE_HANDLE *phandle){                                            $/;"	f
+heartbeatbuf	client_pc_private.h	/^		unsigned char heartbeatbuf[150];$/;"	m	struct:_CLIENT_PC_PRIVATE_HANDLE
+here	Makefile	/^	here=`$(am__cd) $(top_builddir) && pwd` \\$/;"	m
+here	Makefile	/^	here=`pwd`; \\$/;"	m
+host_alias	Makefile	/^host_alias = arm_v5t_le$/;"	m
+includedir	Makefile	/^includedir = ${prefix}\/include$/;"	m
+infodir	Makefile	/^infodir = ${prefix}\/info$/;"	m
+init_request_buf	client_pc_deal.c	/^int init_request_buf(CLIENT_PC_PRIVATE_HANDLE *phandle,int flag)$/;"	f
+init_socket	client_pc_deal.c	/^succeed_type init_socket(CLIENT_PC_PRIVATE_HANDLE *phandle)$/;"	f
+install_sh	Makefile	/^install_sh = \/home\/mru\/MRU_work\/install-sh$/;"	m
+install_sh_DATA	Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_PROGRAM	Makefile	/^	  install_sh_PROGRAM="$(INSTALL_STRIP_PROGRAM)" INSTALL_STRIP_FLAG=-s \\$/;"	m
+install_sh_PROGRAM	Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+lenr	client_pc_private.h	/^		int lenr;$/;"	m	struct:_CLIENT_PC_PRIVATE_HANDLE
+lens	client_pc_private.h	/^		int lens;	$/;"	m	struct:_CLIENT_PC_PRIVATE_HANDLE
+libdir	Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libexecdir	Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+list	Makefile	/^	list='$(DISTFILES)'; for file in $$list; do \\$/;"	m
+list	Makefile	/^	list='$(SOURCES) $(HEADERS)  $(LISP) $(TAGS_FILES)'; \\$/;"	m
+list	Makefile	/^	list='$(SOURCES) $(HEADERS) $(LISP) $(TAGS_FILES)'; \\$/;"	m
+localstatedir	Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+main	client_pc_main.c	/^int main(int argc, char **argv)$/;"	f
+mandir	Makefile	/^mandir = ${prefix}\/man$/;"	m
+md5encode	client_pc_deal.c	/^char* md5encode(char *md,const char *passwd,const char *seed)$/;"	f
+mkdir_p	Makefile	/^mkdir_p = mkdir -p --$/;"	m
+mkinstalldirs	Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+net_param	client_pc_private.h	/^		net_param net_param;$/;"	m	struct:_CLIENT_PC_PRIVATE_HANDLE
+oldincludedir	Makefile	/^oldincludedir = \/usr\/include$/;"	m
+p1	Makefile	/^	  p1=`echo $$p|sed 's\/$(EXEEXT)$$\/\/'`; \\$/;"	m
+pebuf	client_pc_private.h	/^		unsigned char pebuf[30];$/;"	m	struct:_CLIENT_PC_PRIVATE_HANDLE
+pgbshm_obj	client_pc_private.h	/^		LIBGBSHM_OBJ *pgbshm_obj;$/;"	m	struct:_CLIENT_PC_PRIVATE_HANDLE
+pkgdatadir	Makefile	/^pkgdatadir = $(datadir)\/MRU_work$/;"	m
+pkgincludedir	Makefile	/^pkgincludedir = $(includedir)\/MRU_work$/;"	m
+pkglibdir	Makefile	/^pkglibdir = $(libdir)\/MRU_work$/;"	m
+polltimeout	client_pc_private.h	/^		struct pollfd polltimeout[CLIENT_PC_POLL_COUNT_MAX];$/;"	m	struct:_CLIENT_PC_PRIVATE_HANDLE
+prefix	Makefile	/^prefix = \/home\/mru\/ramfs_new\/ramfs_img\/opt\/install\/$/;"	m
+preview_start_response	client_pc_socket_temp.c	/^void preview_start_response(){$/;"	f
+program_transform_name	Makefile	/^program_transform_name = s,x,x,$/;"	m
+request_step_one	client_pc_socket_temp.c	/^void request_step_one(CLIENT_PC_PRIVATE_HANDLE *phandle){                                             $/;"	f
+request_step_two	client_pc_socket_temp.c	/^int  request_step_two(CLIENT_PC_PRIVATE_HANDLE *phandle,int lenr){$/;"	f
+requestbuf_step_one	client_pc_socket.c	/^int requestbuf_step_one(CLIENT_PC_PRIVATE_HANDLE *phandle)$/;"	f
+requestbuf_step_two	client_pc_socket.c	/^int requestbuf_step_two(CLIENT_PC_PRIVATE_HANDLE *phandle)$/;"	f
+sbindir	Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+seq	client_pc_private.h	/^		int seq;$/;"	m	struct:_CLIENT_PC_PRIVATE_HANDLE
+sharedstatedir	Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+sig_sigalrm_proc	client_pc_main.c	/^void sig_sigalrm_proc(int sig)$/;"	f
+sig_sigint_proc	client_pc_main.c	/^void sig_sigint_proc(int sig)$/;"	f
+socket_fd	client_pc_private.h	/^		int socket_fd;$/;"	m	struct:_CLIENT_PC_PRIVATE_HANDLE
+socketbuf	client_pc_private.h	/^		unsigned char socketbuf[1024];	\/\/$/;"	m	struct:_CLIENT_PC_PRIVATE_HANDLE
+socketbuf2	client_pc_private.h	/^		unsigned char socketbuf2[1024];	\/\/$/;"	m	struct:_CLIENT_PC_PRIVATE_HANDLE
+srcdir	Makefile	/^srcdir = .$/;"	m
+subdir	Makefile	/^subdir = src\/client_pc$/;"	m
+sysconfdir	Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+tags	Makefile	/^	tags=; \\$/;"	m
+target_alias	Makefile	/^target_alias = $/;"	m
+top_builddir	Makefile	/^top_builddir = ..\/..$/;"	m
+top_srcdir	Makefile	/^top_srcdir = ..\/..$/;"	m
+topsrcdirstrip	Makefile	/^	topsrcdirstrip=`echo "$(top_srcdir)" | sed 's|.|.|g'`; \\$/;"	m
+transform	Makefile	/^transform = $(program_transform_name)$/;"	m
+unique	Makefile	/^	  test -n "$$unique" || unique=$$empty_fix; \\$/;"	m
+unique	Makefile	/^	unique=`for i in $$list; do \\$/;"	m
+unix_fd	client_pc_private.h	/^		int unix_fd;$/;"	m	struct:_CLIENT_PC_PRIVATE_HANDLE

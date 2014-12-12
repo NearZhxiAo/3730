@@ -1,0 +1,178 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ACLOCAL	Makefile	/^ACLOCAL = ${SHELL} \/opt\/sdb\/framework_1209\/missing --run aclocal-1.11$/;"	m
+ACLOCAL_M4	Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+AMTAR	Makefile	/^AMTAR = ${SHELL} \/opt\/sdb\/framework_1209\/missing --run tar$/;"	m
+AM_LDFLAGS	Makefile	/^AM_LDFLAGS = -L$(top_srcdir)\/lib$/;"	m
+AUTOCONF	Makefile	/^AUTOCONF = ${SHELL} \/opt\/sdb\/framework_1209\/missing --run autoconf$/;"	m
+AUTOHEADER	Makefile	/^AUTOHEADER = ${SHELL} \/opt\/sdb\/framework_1209\/missing --run autoheader$/;"	m
+AUTOMAKE	Makefile	/^AUTOMAKE = ${SHELL} \/opt\/sdb\/framework_1209\/missing --run automake-1.11$/;"	m
+AWK	Makefile	/^AWK = gawk$/;"	m
+BUFFER_SIZE	serial_manage_data_deal.c	2;"	d	file:
+CC	Makefile	/^CC = arm-none-linux-gnueabi-gcc$/;"	m
+CCDEPMODE	Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CCLD	Makefile	/^CCLD = $(CC)$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -O2$/;"	m
+COMPILE	Makefile	/^COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \\$/;"	m
+CONFIG_CLEAN_FILES	Makefile	/^CONFIG_CLEAN_FILES =$/;"	m
+CONFIG_CLEAN_VPATH_FILES	Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m
+CONFIG_HEADER	Makefile	/^CONFIG_HEADER = $(top_builddir)\/config.h$/;"	m
+CPP	Makefile	/^CPP = arm-none-linux-gnueabi-gcc -E$/;"	m
+CPPFLAGS	Makefile	/^CPPFLAGS = $/;"	m
+CTAGS	Makefile	/^CTAGS = ctags$/;"	m
+CXX	Makefile	/^CXX = arm-none-linux-gnueabi-g++$/;"	m
+CXXDEPMODE	Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS = -g -O2$/;"	m
+CYGPATH_W	Makefile	/^CYGPATH_W = echo$/;"	m
+DATA_END	serial_manage_private.h	/^	DATA_END,$/;"	e	enum:_SERIAL_MANAGE_DATA_TYPE
+DATA_GPS	serial_manage_private.h	/^	DATA_GPS,$/;"	e	enum:_SERIAL_MANAGE_DATA_TYPE
+DATA_INFRARED	serial_manage_private.h	/^	DATA_INFRARED,$/;"	e	enum:_SERIAL_MANAGE_DATA_TYPE
+DATA_MAGNET	serial_manage_private.h	/^	DATA_MAGNET,$/;"	e	enum:_SERIAL_MANAGE_DATA_TYPE
+DATA_MEASURE	serial_manage_private.h	/^	DATA_MEASURE,$/;"	e	enum:_SERIAL_MANAGE_DATA_TYPE
+DATA_OLED1_CTRL	serial_manage_private.h	/^	DATA_OLED1_CTRL,$/;"	e	enum:_SERIAL_MANAGE_DATA_TYPE
+DATA_OLED2_CTRL	serial_manage_private.h	/^	DATA_OLED2_CTRL,$/;"	e	enum:_SERIAL_MANAGE_DATA_TYPE
+DATA_POWER_MANAGE	serial_manage_private.h	/^	DATA_POWER_MANAGE,$/;"	e	enum:_SERIAL_MANAGE_DATA_TYPE
+DATA_START	serial_manage_private.h	/^	DATA_START,$/;"	e	enum:_SERIAL_MANAGE_DATA_TYPE
+DEFAULT_INCLUDES	Makefile	/^DEFAULT_INCLUDES = -I. -I$(top_builddir)$/;"	m
+DEFS	Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEPDIR	Makefile	/^DEPDIR = .deps$/;"	m
+DISTFILES	Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DIST_COMMON	Makefile	/^DIST_COMMON = $(srcdir)\/Makefile.am $(srcdir)\/Makefile.in$/;"	m
+DIST_SOURCES	Makefile	/^DIST_SOURCES = $(serial_manage_SOURCES)$/;"	m
+ECHO_C	Makefile	/^ECHO_C = $/;"	m
+ECHO_N	Makefile	/^ECHO_N = -n$/;"	m
+ECHO_T	Makefile	/^ECHO_T = $/;"	m
+EGREP	Makefile	/^EGREP = \/bin\/grep -E$/;"	m
+ETAGS	Makefile	/^ETAGS = etags$/;"	m
+EXEEXT	Makefile	/^EXEEXT = $/;"	m
+GREP	Makefile	/^GREP = \/bin\/grep$/;"	m
+INCLUDES	Makefile	/^INCLUDES = -I$(top_srcdir)\/include$/;"	m
+INSTALL	Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL_DATA	Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_HEADER	Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_PROGRAM	Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_STRIP_PROGRAM	Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS = $/;"	m
+LIBOBJS	Makefile	/^LIBOBJS = $/;"	m
+LIBS	Makefile	/^LIBS = -lpthread $/;"	m
+LINK	Makefile	/^LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@$/;"	m
+LTLIBOBJS	Makefile	/^LTLIBOBJS = $/;"	m
+MAKEINFO	Makefile	/^MAKEINFO = ${SHELL} \/opt\/sdb\/framework_1209\/missing --run makeinfo$/;"	m
+MKDIR_P	Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m
+NORMAL_INSTALL	Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_UNINSTALL	Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+OBJEXT	Makefile	/^OBJEXT = o$/;"	m
+PACKAGE	Makefile	/^PACKAGE = POLICE_work$/;"	m
+PACKAGE_BUGREPORT	Makefile	/^PACKAGE_BUGREPORT = liangzhang@xidian.edu.cn$/;"	m
+PACKAGE_NAME	Makefile	/^PACKAGE_NAME = POLICE_work$/;"	m
+PACKAGE_STRING	Makefile	/^PACKAGE_STRING = POLICE_work 1.0$/;"	m
+PACKAGE_TARNAME	Makefile	/^PACKAGE_TARNAME = police_work$/;"	m
+PACKAGE_URL	Makefile	/^PACKAGE_URL = $/;"	m
+PACKAGE_VERSION	Makefile	/^PACKAGE_VERSION = 1.0$/;"	m
+PATH_SEPARATOR	Makefile	/^PATH_SEPARATOR = :$/;"	m
+POST_INSTALL	Makefile	/^POST_INSTALL = :$/;"	m
+POST_UNINSTALL	Makefile	/^POST_UNINSTALL = :$/;"	m
+PRE_INSTALL	Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_UNINSTALL	Makefile	/^PRE_UNINSTALL = :$/;"	m
+PROGRAMS	Makefile	/^PROGRAMS = $(bin_PROGRAMS)$/;"	m
+RANLIB	Makefile	/^RANLIB = arm-none-linux-gnueabi-ranlib$/;"	m
+SERIAL_DEVICE_FILE	serial_manage_private.h	13;"	d
+SERIAL_MANAGE_DATA_TYPE	serial_manage_private.h	/^}SERIAL_MANAGE_DATA_TYPE;$/;"	t	typeref:enum:_SERIAL_MANAGE_DATA_TYPE
+SERIAL_MANAGE_POLL_COUNT_MAX	serial_manage_private.h	12;"	d
+SERIAL_MANAGE_PRIVATE_HANDLE	serial_manage_private.h	/^}SERIAL_MANAGE_PRIVATE_HANDLE;$/;"	t	typeref:struct:_SERIAL_MANAGE_PRIVATE_HANDLE
+SET_MAKE	Makefile	/^SET_MAKE = $/;"	m
+SHELL	Makefile	/^SHELL = \/bin\/sh$/;"	m
+SOURCES	Makefile	/^SOURCES = $(serial_manage_SOURCES)$/;"	m
+STRIP	Makefile	/^STRIP = arm-none-linux-gnueabi-strip$/;"	m
+VERSION	Makefile	/^VERSION = 1.0$/;"	m
+_SERIAL_MANAGE_DATA_TYPE	serial_manage_private.h	/^typedef enum _SERIAL_MANAGE_DATA_TYPE$/;"	g
+_SERIAL_MANAGE_PRIVATE_HANDLE	serial_manage_private.h	/^typedef struct _SERIAL_MANAGE_PRIVATE_HANDLE$/;"	s
+_SERIAL_MANAGE_PRIVATE_H__	serial_manage_private.h	2;"	d
+abs_builddir	Makefile	/^abs_builddir = \/opt\/sdb\/framework_1209\/src\/serial_manage$/;"	m
+abs_srcdir	Makefile	/^abs_srcdir = \/opt\/sdb\/framework_1209\/src\/serial_manage$/;"	m
+abs_top_builddir	Makefile	/^abs_top_builddir = \/opt\/sdb\/framework_1209$/;"	m
+abs_top_srcdir	Makefile	/^abs_top_srcdir = \/opt\/sdb\/framework_1209$/;"	m
+ac_ct_CC	Makefile	/^ac_ct_CC = $/;"	m
+ac_ct_CXX	Makefile	/^ac_ct_CXX = $/;"	m
+active_fdcount	serial_manage_private.h	/^    int active_fdcount;$/;"	m	struct:_SERIAL_MANAGE_PRIVATE_HANDLE
+am__aclocal_m4_deps	Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/configure.ac$/;"	m
+am__cd	Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__configure_deps	Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__depfiles_maybe	Makefile	/^am__depfiles_maybe = depfiles$/;"	m
+am__include	Makefile	/^am__include = include$/;"	m
+am__installdirs	Makefile	/^am__installdirs = "$(DESTDIR)$(bindir)"$/;"	m
+am__leading_dot	Makefile	/^am__leading_dot = .$/;"	m
+am__mv	Makefile	/^am__mv = mv -f$/;"	m
+am__quote	Makefile	/^am__quote = $/;"	m
+am__tar	Makefile	/^am__tar = ${AMTAR} chof - "$$tardir"$/;"	m
+am__untar	Makefile	/^am__untar = ${AMTAR} xf -$/;"	m
+am_serial_manage_OBJECTS	Makefile	/^am_serial_manage_OBJECTS = serial_manage_main.$(OBJEXT) \\$/;"	m
+bin_PROGRAMS	Makefile	/^bin_PROGRAMS = serial_manage$(EXEEXT)$/;"	m
+bindir	Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+build_alias	Makefile	/^build_alias = $/;"	m
+builddir	Makefile	/^builddir = .$/;"	m
+data_infrared_deal	serial_manage_data_deal.c	/^succeed_type data_infrared_deal(char *buff)$/;"	f
+data_parse	serial_manage_data_deal.c	/^void data_parse(SERIAL_MANAGE_DATA_TYPE *data_type, char *buff)$/;"	f
+datadir	Makefile	/^datadir = ${datarootdir}$/;"	m
+datarootdir	Makefile	/^datarootdir = ${prefix}\/share$/;"	m
+depcomp	Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/depcomp$/;"	m
+docdir	Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m
+dvidir	Makefile	/^dvidir = ${docdir}$/;"	m
+exec_prefix	Makefile	/^exec_prefix = ${prefix}$/;"	m
+gbshm_handle	serial_manage_private.h	/^    Gbshm_Handle gbshm_handle;		$/;"	m	struct:_SERIAL_MANAGE_PRIVATE_HANDLE
+global_serial_manage_private_handle	serial_manage_main.c	/^SERIAL_MANAGE_PRIVATE_HANDLE global_serial_manage_private_handle;$/;"	v
+host_alias	Makefile	/^host_alias = arm-none-linux-gnueabi$/;"	m
+htmldir	Makefile	/^htmldir = ${docdir}$/;"	m
+includedir	Makefile	/^includedir = ${prefix}\/include$/;"	m
+infodir	Makefile	/^infodir = ${datarootdir}\/info$/;"	m
+install_sh	Makefile	/^install_sh = ${SHELL} \/opt\/sdb\/framework_1209\/install-sh$/;"	m
+install_sh_DATA	Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_PROGRAM	Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+libdir	Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libexecdir	Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+localedir	Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
+localstatedir	Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+main	serial_manage_main.c	/^int main(int argc, char **argv)$/;"	f
+mandir	Makefile	/^mandir = ${datarootdir}\/man$/;"	m
+mkdir_p	Makefile	/^mkdir_p = \/bin\/mkdir -p$/;"	m
+mkinstalldirs	Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+oldincludedir	Makefile	/^oldincludedir = \/usr\/include$/;"	m
+pdfdir	Makefile	/^pdfdir = ${docdir}$/;"	m
+pkgdatadir	Makefile	/^pkgdatadir = $(datadir)\/POLICE_work$/;"	m
+pkgincludedir	Makefile	/^pkgincludedir = $(includedir)\/POLICE_work$/;"	m
+pkglibdir	Makefile	/^pkglibdir = $(libdir)\/POLICE_work$/;"	m
+pkglibexecdir	Makefile	/^pkglibexecdir = $(libexecdir)\/POLICE_work$/;"	m
+polltimeout	serial_manage_private.h	/^    struct pollfd polltimeout[SERIAL_MANAGE_POLL_COUNT_MAX];$/;"	m	struct:_SERIAL_MANAGE_PRIVATE_HANDLE	typeref:struct:_SERIAL_MANAGE_PRIVATE_HANDLE::pollfd
+prefix	Makefile	/^prefix = \/opt\/sdb\/rootfs\/opt\/install$/;"	m
+program_transform_name	Makefile	/^program_transform_name = s,x,x,$/;"	m
+psdir	Makefile	/^psdir = ${docdir}$/;"	m
+sbindir	Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+serial_fd	serial_manage_private.h	/^	int serial_fd;$/;"	m	struct:_SERIAL_MANAGE_PRIVATE_HANDLE
+serial_init	serial_manage_data_deal.c	/^int serial_init()$/;"	f
+serial_main_func	serial_manage_data_deal.c	/^void serial_main_func(SERIAL_MANAGE_PRIVATE_HANDLE *phandle)$/;"	f
+serial_manage_DEPENDENCIES	Makefile	/^serial_manage_DEPENDENCIES =$/;"	m
+serial_manage_LDADD	Makefile	/^serial_manage_LDADD = -lunix -lgbshm  -lsk -lsignal$/;"	m
+serial_manage_OBJECTS	Makefile	/^serial_manage_OBJECTS = $(am_serial_manage_OBJECTS)$/;"	m
+serial_manage_SOURCES	Makefile	/^serial_manage_SOURCES = serial_manage_main.c serial_manage_unix.c$/;"	m
+serial_manage_init	serial_manage_main.c	/^static succeed_type serial_manage_init(SERIAL_MANAGE_PRIVATE_HANDLE *phandle)$/;"	f	file:
+serial_manage_poll_init	serial_manage_main.c	/^static void serial_manage_poll_init(SERIAL_MANAGE_PRIVATE_HANDLE *phandle)$/;"	f	file:
+serial_manage_unix	serial_manage_unix.c	/^succeed_type serial_manage_unix(SERIAL_MANAGE_PRIVATE_HANDLE *phandle)$/;"	f
+serial_manage_unix_deal	serial_manage_unix.c	/^static succeed_type serial_manage_unix_deal( SERIAL_MANAGE_PRIVATE_HANDLE *phandle, UNIX_CMD_STRUCT *pcmd)$/;"	f	file:
+serial_read	serial_manage_data_deal.c	/^succeed_type serial_read(char *buf)$/;"	f
+serial_write	serial_manage_data_deal.c	/^succeed_type serial_write()$/;"	f
+sharedstatedir	Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+srcdir	Makefile	/^srcdir = .$/;"	m
+subdir	Makefile	/^subdir = src\/serial_manage$/;"	m
+sysconfdir	Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+target_alias	Makefile	/^target_alias = $/;"	m
+top_build_prefix	Makefile	/^top_build_prefix = ..\/..\/$/;"	m
+top_builddir	Makefile	/^top_builddir = ..\/..$/;"	m
+top_srcdir	Makefile	/^top_srcdir = ..\/..$/;"	m
+transform	Makefile	/^transform = $(program_transform_name)$/;"	m
+unix_fd	serial_manage_private.h	/^    int unix_fd;	$/;"	m	struct:_SERIAL_MANAGE_PRIVATE_HANDLE

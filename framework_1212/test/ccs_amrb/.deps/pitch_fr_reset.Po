@@ -1,0 +1,8 @@
+pitch_fr_reset.o pitch_fr_reset.o: pitch_fr_reset.c pitch_fr.h typedef.h \
+  mode.h
+
+pitch_fr.h:
+
+typedef.h:
+
+mode.h:

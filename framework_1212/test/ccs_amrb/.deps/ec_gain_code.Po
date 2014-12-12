@@ -1,0 +1,27 @@
+ec_gain_code.o ec_gain_code.o: ec_gain_code.c typedef.h basic_op.h \
+  table.h mode.h pred_lt_3or6.h oper_32b.h cnst.h gmed_n.h gc_pred.h \
+  gc_pred_average_limited.h gc_pred_update.h ec_gain_code.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+oper_32b.h:
+
+cnst.h:
+
+gmed_n.h:
+
+gc_pred.h:
+
+gc_pred_average_limited.h:
+
+gc_pred_update.h:
+
+ec_gain_code.h:

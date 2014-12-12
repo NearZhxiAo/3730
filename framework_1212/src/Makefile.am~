@@ -1,0 +1,2 @@
+#SUBDIRS = av_encoder  boa_server flash_manager misc_manager storage client_pc rtsp_transfer ptz
+SUBDIRS = boa_server flash_manager core_process

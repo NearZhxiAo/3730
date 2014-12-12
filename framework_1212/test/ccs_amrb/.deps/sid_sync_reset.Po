@@ -1,0 +1,10 @@
+sid_sync_reset.o sid_sync_reset.o: sid_sync_reset.c mode.h sid_sync.h \
+  typedef.h frame.h
+
+mode.h:
+
+sid_sync.h:
+
+typedef.h:
+
+frame.h:

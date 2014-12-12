@@ -1,0 +1,14 @@
+decode_4i40_17bits.o decode_4i40_17bits.o: decode_4i40_17bits.c typedef.h \
+  basic_op.h table.h mode.h pred_lt_3or6.h cnst.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+cnst.h:

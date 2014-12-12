@@ -1,0 +1,16 @@
+build_cn_param.o build_cn_param.o: build_cn_param.c typedef.h basic_op.h \
+  table.h mode.h pred_lt_3or6.h oper_32b.h cnst.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+oper_32b.h:
+
+cnst.h:

@@ -1,0 +1,378 @@
+autogen definitions intercmd.tpl;
+
+category = { cat_name = alert;
+	cat_descript = "alert process";
+};
+
+category = { cat_name = boa;
+	cat_descript = "boa process";
+};
+
+category = { cat_name = flash;
+	cat_descript = "flash process";
+};
+
+category = { cat_name = misc;
+	cat_descript = "misc process";
+};
+
+category = { cat_name = rtsp;
+	cat_descript = "rtsp process";
+};
+
+category = { cat_name = clientpc;
+	cat_descript = "client pc process";
+};
+
+category = { cat_name = storage;
+	cat_descript = "storage process";
+};
+
+category = { cat_name = ptz;
+	cat_descript = "ptz process";
+};
+
+category = { cat_name = core;
+	cat_descript = "core process";
+};
+
+category = { cat_name = test;
+	cat_descript = "test process";
+};
+boa = { cmd_name = boatoflash_para_setdefault;
+	var_type = boatoflash_para_setdefault;
+	sendto_dest = "\" (1 << UNIX_FLASH) \"";
+	sendto_block = "0";
+	cmd_descript = "boa send to flash process setdefault cmd";};
+boa = { cmd_name = boatoflash_para_save;
+	var_type = boatoflash_para_save;
+	sendto_dest = "\" (1 << UNIX_FLASH) \"";
+	sendto_block = "0";
+	cmd_descript = "boa send to flash process save cmd";};
+boa = { cmd_name = boatocore_para_setframerate;
+	uint_type = frameratetype;
+	sendto_dest = "\" (1 << UNIX_CORE) \"";
+	sendto_block = "0";
+	cmd_descript = "boa send to core process set framerate";};
+boa = { cmd_name = boatocore_para_setbitrate;
+	uint_type = bitratetype;
+	sendto_dest = "\" (1 << UNIX_CORE) \"";
+	sendto_block = "0";
+	cmd_descript = "boa send to core process set bitrate";};
+boa = { cmd_name = boatocore_para_setkeyframeinterval;
+	uint_type = keyframeintervaltype;
+	sendto_dest = "\" (1 << UNIX_CORE) \"";
+	sendto_block = "0";
+	cmd_descript = "boa send to core process set keyFrameInterval";};
+boa = { cmd_name = boatocore_para_setvideoinputmode;
+	uint_type = videoinputmodetype;
+	sendto_dest = "\" (1 << UNIX_CORE) \"";
+	sendto_block = "0";
+	cmd_descript = "boa send to core process set videoinputmode";};
+boa = { cmd_name = boatocore_para_setvideoencresolution;
+	uint_type = videoencresolutiontype;
+	sendto_dest = "\" (1 << UNIX_CORE) \"";
+	sendto_block = "0";
+	cmd_descript = "boa send to core process set videoencresolution";};
+boa = { cmd_name = boatocore_para_setvideoencmode;
+	uint_type = videoencmodetype;
+	sendto_dest = "\" (1 << UNIX_CORE) \"";
+	sendto_block = "0";
+	cmd_descript = "boa send to core process set videoencmode";};
+boa = { cmd_name = boatocore_para_setbrightness;
+	uint_type = brightnesstype;
+	sendto_dest = "\" (1 << UNIX_CORE) \"";
+	sendto_block = "0";
+	cmd_descript = "boa send to core process set video brightness";};
+boa = { cmd_name = boatocore_para_setsaturation;
+	uint_type = saturationtype;
+	sendto_dest = "\" (1 << UNIX_CORE) \"";
+	sendto_block = "0";
+	cmd_descript = "boa send to core process set video saturation";};
+boa = { cmd_name = boatocore_para_sethue;
+	uint_type = huetype;
+	sendto_dest = "\" (1 << UNIX_CORE) \"";
+	sendto_block = "0";
+	cmd_descript = "boa send to core process set video hue";};
+boa = { cmd_name = boatocore_para_setcontrast;
+	uint_type = contrasttype;
+	sendto_dest = "\" (1 << UNIX_CORE) \"";
+	sendto_block = "0";
+	cmd_descript = "boa send to core process set video contrast";};
+
+boa = { cmd_name = boatocore_para_alg;
+	uint_type ;
+	sendto_dest = "\" (1 << UNIX_CORE) \"";
+	sendto_block = "0";
+	cmd_descript = "boa send to core process alg para change cmd";};
+
+
+boa = { cmd_name = boatocore_debug;
+	uint_type;
+	sendto_dest = "\" (1 << UNIX_CORE) \"";
+	sendto_block = "0";
+	cmd_descript = "boa to core to debug state";};
+
+boa = { cmd_name = boatocore_working;
+	uint_type;
+	sendto_dest = "\" (1 << UNIX_CORE) \"";
+	sendto_block = "0";
+	cmd_descript = "boa to core to working state";};
+
+boa = { cmd_name = boatoptz_ptz_action;
+	var_type = ptz_action;
+	sendto_dest = "\" (1 << UNIX_PTZ) \"";
+	sendto_block = "0";
+	cmd_descript = "boa to ptz action ";};
+
+alert = { cmd_name = alert_event;
+	var_type = alert_event;
+	sendto_dest = "\" (1 << UNIX_STORAGE)\"";
+	sendto_block = "0";
+	cmd_descript = "alert send to other process cmd event one";};
+alert = { cmd_name = event_two;
+	uint_type;
+	sendto_dest = "\" (1 << UNIX_RTSP ) \"";
+	sendto_block = "0";
+	cmd_descript = "alert send to other process cmd event one";};
+
+alert = { cmd_name = di_event;
+	var_type = di_event;
+	sendto_dest = "\" (1 << UNIX_CLIENTPC) \"";
+	sendto_block = "0";
+	cmd_descript = "alert di event send to clientPC";};
+
+core = { cmd_name = event_one;
+	uint_type;
+	sendto_dest = "\" (1 << UNIX_FLASH ) | ( 1 << UNIX_MISC) \"";
+	sendto_block = "0";
+	cmd_descript = "core send to other process cmd event one";};
+
+core = { cmd_name = event_two;
+	var_type = core_event;
+	sendto_dest = "\" (1 << UNIX_CLIENTPC)|(1 << UNIX_FLASH) \"";
+	sendto_block = "0";
+	cmd_descript = "core send to other process cmd event one";};
+
+core = { cmd_name = buffer_new_msg;
+	var_type = buffer_new_msg;
+	sendto_dest = "\" (1 << UNIX_STORAGE ) | ( 1 << UNIX_RTSP )  \"";
+	sendto_block = "0";
+	cmd_descript = "core send to other process cmd buffer new message";};
+
+core = { cmd_name = ptz_start_preset;
+	var_type = ptz_start_preset;
+	sendto_dest = "\" (1 << UNIX_PTZ )  \"";
+	sendto_block = "0";
+	cmd_descript = "core send to ptz start preset to ptz process";};
+
+core = { cmd_name = ptz_start_setpreset;
+	var_type = ptz_start_setpreset;
+	sendto_dest = "\" (1 << UNIX_PTZ )  \"";
+	sendto_block = "0";
+	cmd_descript = "core send to ptz set start preset to ptz process";};
+
+core = { cmd_name = audio_buffer_new_msg;
+	var_type = audio_buffer_new_msg;
+	sendto_dest = "\" (1 << UNIX_STORAGE ) | ( 1 << UNIX_RTSP) \"";
+	sendto_block = "0";
+	cmd_descript = "core send to other process cmd buffer new message";};
+
+
+clientpc = { cmd_name = clientpctoflash_para_setdefault;
+        var_type = clientpctoflash_para_setdefault;
+        sendto_dest = "\" (1 << UNIX_FLASH) \"";
+        sendto_block = "0";
+        cmd_descript = "clientpc send to flash process setdefault cmd";};
+
+clientpc = { cmd_name = clientpctoflash_para_save;
+        var_type = clientpctoflash_para_save;
+        sendto_dest = "\" (1 << UNIX_FLASH) \"";
+        sendto_block = "0";
+        cmd_descript = "clientpc send to flash process save cmd";};
+
+clientpc = { cmd_name = preview_start;
+	var_type = preview_start;
+	sendto_dest = "\" (1 << UNIX_RTSP) \"";
+	sendto_block = "0";
+	cmd_descript = "clientPC send preview start signal to rtsp";};
+
+clientpc = { cmd_name = preview_stop;
+	var_type = preview_stop;
+	sendto_dest = "\" (1 << UNIX_RTSP) \"";
+	sendto_block = "0";
+	cmd_descript = "clientPC send preview stop signal to rtsp";};
+
+clientpc = { cmd_name = call_start;
+	var_type = call_start;
+	sendto_dest = "\" (1 << UNIX_RTSP) \"";
+	sendto_block = "0";
+	cmd_descript = "clientPC send call_start signal to rtsp";};
+
+clientpc = { cmd_name = call_stop;
+	var_type = call_stop;
+	sendto_dest = "\" (1 << UNIX_RTSP) \"";
+	sendto_block = "0";
+	cmd_descript = "clientPC send audio_stop signal to rtsp";};
+
+clientpc = { cmd_name = record_start_req;
+	var_type = record_start_req;
+	sendto_dest = "\" (1 << UNIX_STORAGE) \"";
+	sendto_block = "0";
+	cmd_descript = "clientPC send record start req signal to storage";};
+
+clientpc = { cmd_name = record_stop_req;
+	var_type = record_stop_req;
+	sendto_dest = "\" (1 << UNIX_STORAGE) \"";
+	sendto_block = "0";
+	cmd_descript = "clientPC send record stop request signal to storage";};
+
+clientpc = { cmd_name = record_start_replay_req;
+	var_type = record_start_replay_req;
+	sendto_dest = "\" (1 << UNIX_RTSP) \"";
+	sendto_block = "0";
+	cmd_descript = "clientPC send record start replay request to rtsp";};
+
+clientpc = { cmd_name = record_stop_replay_req;
+	var_type = record_stop_replay_req;
+	sendto_dest = "\" (1 << UNIX_RTSP) \"";
+	sendto_block = "0";
+	cmd_descript = "clientPC send record stop replay request to rtsp";};
+
+clientpc = { cmd_name = record_start_download_req;
+	var_type = record_start_download_req;
+	sendto_dest = "\" (1 << UNIX_RTSP) \"";
+	sendto_block = "0";
+	cmd_descript = "clientPC send record start download request to rtsp";};
+
+clientpc = { cmd_name = record_stop_download_req;
+	var_type = record_stop_download_req;
+	sendto_dest = "\" (1 << UNIX_RTSP) \"";
+	sendto_block = "0";
+	cmd_descript = "clientPC send record stop download request to rtsp";};
+
+clientpc = { cmd_name = record_delete_file_req;
+	var_type = record_delete_file_req;
+	sendto_dest = "\" (1 << UNIX_STORAGE) \"";
+	sendto_block = "0";
+	cmd_descript = "clientPC send record delete file request to storage";};
+
+clientpc = { cmd_name = control_record_replay_req;
+	var_type = control_record_replay_req;
+	sendto_dest = "\" (1 << UNIX_RTSP) \"";
+	sendto_block = "0";
+	cmd_descript = "clientPC send control record replay request to rtsp";};
+
+clientpc = { cmd_name = control_record_download_req;
+	var_type = control_record_download_req;
+	sendto_dest = "\" (1 << UNIX_RTSP) \"";
+	sendto_block = "0";
+	cmd_descript = "clientPC send control record download request to rtsp";};
+
+clientpc = { cmd_name = control_net_stop;
+	var_type = control_net_stop;
+	sendto_dest = "\" (1 << UNIX_RTSP) \"";
+	sendto_block = "0";
+	cmd_descript = "clientPC net stop";};
+
+clientpc = { cmd_name = record_lock_file_req;
+	var_type = record_lock_file_req;
+	sendto_dest = "\" (1 << UNIX_STORAGE) \"";
+	sendto_block = "0";
+	cmd_descript = "clientPC send record lock file request to storage";};
+
+clientpc = { cmd_name = query_recordinfo_req;
+	var_type = query_recordinfo_req;
+	sendto_dest = "\" (1 << UNIX_STORAGE) \"";
+	sendto_block = "0";
+	cmd_descript = "clientPC send query record info request to storage";};
+
+clientpc = { cmd_name = config_vparam_req;
+	var_type = config_vparam_req;
+	sendto_dest = "\" (1 << UNIX_CORE) \"";
+	sendto_block = "0";
+	cmd_descript = "clientPC send config video param request to encoder";};
+
+clientpc = { cmd_name = ctl_ptz_req;
+	var_type = ctl_ptz_req;
+	sendto_dest = "\" (1 << UNIX_CORE) \"";
+	sendto_block = "0";
+	cmd_descript = "clientPC send ctl ptz req signal to core";};
+
+clientpc = { cmd_name = alg_para;
+	uint_type;
+	sendto_dest = "\" (1 << UNIX_CORE) \"";
+	sendto_block = "0";
+	cmd_descript = "clientpc to core algorithm parameter change cmd";};
+
+clientpc = { cmd_name = clientpctocore_para_alg;
+	uint_type ;
+	sendto_dest = "\" (1 << UNIX_CORE) \"";
+	sendto_block = "0";
+	cmd_descript = "clientpc send to core process alg para change cmd";};
+
+clientpc = { cmd_name = clientpctocore_debug;
+	uint_type;
+	sendto_dest = "\" (1 << UNIX_CORE) \"";
+	sendto_block = "0";
+	cmd_descript = "clientpc to core to debug state";};
+
+clientpc = { cmd_name = clientpctocore_working;
+	uint_type;
+	sendto_dest = "\" (1 << UNIX_CORE) \"";
+	sendto_block = "0";
+	cmd_descript = "clientpc to core to working state";};
+
+clientpc = { cmd_name = clientpctoptz_ptz_action;
+	var_type = ptz_action;
+	sendto_dest = "\" (1 << UNIX_PTZ) \"";
+	sendto_block = "0";
+	cmd_descript = "clientpc to ptz action ";};
+
+clientpc = { cmd_name = clientpctortsp_video_start;
+	var_type = video_start;
+	sendto_dest = "\" (1 << UNIX_RTSP) \"";
+	sendto_block = "0";
+	cmd_descript = "clientpc to rtsp video start action ";};
+
+clientpc = { cmd_name = clientpctortsp_video_stop;
+	uint_type;
+	sendto_dest = "\" (1 << UNIX_RTSP) \"";
+	sendto_block = "0";
+	cmd_descript = "clientpc to rtsp video stop action ";};
+
+clientpc = { cmd_name = clientpctortsp_audio_start;
+	var_type = audio_start;
+	sendto_dest = "\" (1 << UNIX_RTSP) \"";
+	sendto_block = "0";
+	cmd_descript = "clientpc to rtsp audio start action ";};
+
+clientpc = { cmd_name = clientpctortsp_audio_stop;
+	uint_type;
+	sendto_dest = "\" (1 << UNIX_RTSP) \"";
+	sendto_block = "0";
+	cmd_descript = "clientpc to rtsp audio stop action ";};
+
+clientpc = { cmd_name = clientpctoflash_update;
+	var_type=update;
+	sendto_dest = "\" (1 << UNIX_FLASH) \"";
+	sendto_block = "0";
+	cmd_descript = "clientpc to flash manager update code action ";};
+
+ptz = { cmd_name = ptz_start_preset_ack;
+	uint_type ;
+	sendto_dest = "\" (1 << UNIX_CORE )  \"";
+	sendto_block = "0";
+	cmd_descript = "ptz process send start preset ack to core";};
+
+ptz = { cmd_name = ptz_start_setpreset_ack;
+	uint_type ;
+	sendto_dest = "\" (1 << UNIX_CORE )  \"";
+	sendto_block = "0";
+	cmd_descript = "ptz process send start setpreset ack to core";};
+
+core = { cmd_name = core_send_save_to_flash;
+	uint_type ;
+	sendto_dest = "\" (1 << UNIX_CORE )  \"";
+	sendto_block = "0";
+	cmd_descript = "core process send savecmd to flash";};

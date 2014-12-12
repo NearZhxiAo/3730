@@ -1,0 +1,18 @@
+update_gp_clipping.o update_gp_clipping.o: update_gp_clipping.c typedef.h \
+  copy.h basic_op.h table.h mode.h pred_lt_3or6.h ton_stab.h cnst.h
+
+typedef.h:
+
+copy.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+ton_stab.h:
+
+cnst.h:

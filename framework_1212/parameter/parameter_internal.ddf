@@ -1,0 +1,943 @@
+autogen definitions parameter.tpl;
+
+category = {
+	cat_name = system;
+	cat_descript = "test one process";
+	};
+
+category = {
+	cat_name = test_two_process;
+	cat_descript = "test two process";
+	};
+
+
+
+parameter = {
+
+	cat_name = system;
+
+	para_name = gbshm_mutex;
+
+	para_index = 1;
+	
+	sendto_dest = "";
+	
+	sendto_flag = 0;
+	
+	argument_class = class_name_none;
+
+	cat_descript = "test one process";
+
+	para_descript = "mutex for gbshm";
+
+
+
+
+
+
+
+
+	var_type = gbshm_mutex;
+
+
+
+
+
+
+
+defaultval = '{}';
+
+
+
+
+
+	argument_count = "1";
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = system;
+
+	para_name = test_var;
+
+	para_index = 2;
+	
+	sendto_dest = "";
+	
+	sendto_flag = 0;
+	
+	argument_class = class_name_none;
+
+	cat_descript = "test one process";
+
+	para_descript = "mutex for gbshm";
+
+
+
+
+
+
+
+
+	uint_type;
+
+
+
+
+
+
+
+defaultval = '0';
+
+
+
+
+
+	argument_count = "1";
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = system;
+
+	para_name = video_enc_param;
+
+	para_index = 3;
+	
+	sendto_dest = "";
+	
+	sendto_flag = 0;
+	
+	argument_class = class_name_none;
+
+	cat_descript = "test one process";
+
+	para_descript = "video encoder parameters";
+
+
+
+
+
+
+
+
+	var_type = video_enc_param;
+
+
+
+
+
+
+
+defaultval = '{VIDEO_ENC_H264, VIDEO_INPUT_PAL, VIDEO_ENC_D1, VIDEO_ENC_25FPS,1536000,10
+}';
+
+
+
+
+
+	argument_count = "1";
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = system;
+
+	para_name = storage_size_param;
+
+	para_index = 4;
+	
+	sendto_dest = "";
+	
+	sendto_flag = 0;
+	
+	argument_class = class_name_none;
+
+	cat_descript = "test one process";
+
+	para_descript = "sd card storage parameters";
+
+
+
+
+
+
+
+
+	var_type = storage_size_param;
+
+
+
+
+
+
+
+defaultval = '{0
+}';
+
+
+
+
+
+	argument_count = "1";
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = system;
+
+	para_name = net_param;
+
+	para_index = 5;
+	
+	sendto_dest = "";
+	
+	sendto_flag = 0;
+	
+	argument_class = class_name_none;
+
+	cat_descript = "test one process";
+
+	para_descript = "net parameters";
+
+
+
+
+
+
+
+
+	var_type = net_param;
+
+
+
+
+
+
+
+defaultval = '{IP_MODE_STATIC, "0", "192.168.0.177","255.255.255.0","192.168.0.1","192.168.0.111","192.168.0.38","010000000100011801",5000,1038,80
+}';
+
+
+
+
+
+	argument_count = "1";
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = system;
+
+	para_name = alert_di_param;
+
+	para_index = 6;
+	
+	sendto_dest = "";
+	
+	sendto_flag = 0;
+	
+	argument_class = class_name_none;
+
+	cat_descript = "test one process";
+
+	para_descript = "di parameters";
+
+
+
+
+
+
+
+
+	var_type = alert_di_param;
+
+
+
+
+
+
+
+defaultval = '{DI_SWITCH_ON, 5, 1<<DI_ACTION_STORAGE
+}';
+
+
+
+
+
+	argument_count = "1";
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = system;
+
+	para_name = alert_vloss_param;
+
+	para_index = 7;
+	
+	sendto_dest = "";
+	
+	sendto_flag = 0;
+	
+	argument_class = class_name_none;
+
+	cat_descript = "test one process";
+
+	para_descript = "vloss parameters";
+
+
+
+
+
+
+
+
+	var_type = alert_vloss_param;
+
+
+
+
+
+
+
+defaultval = '{VLOSS_SWITCH_OFF, 5, 1<<VLOSS_ACTION_STORAGE
+}';
+
+
+
+
+
+	argument_count = "1";
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = system;
+
+	para_name = alert_motion_param;
+
+	para_index = 8;
+	
+	sendto_dest = "";
+	
+	sendto_flag = 0;
+	
+	argument_class = class_name_none;
+
+	cat_descript = "test one process";
+
+	para_descript = "motion parameters";
+
+
+
+
+
+
+
+
+	var_type = alert_motion_param;
+
+
+
+
+
+
+
+defaultval = '{MOTION_SWITCH_OFF, 5, 1<<MOTION_ACTION_STORAGE
+}';
+
+
+
+
+
+	argument_count = "1";
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = system;
+
+	para_name = storage_setting_param;
+
+	para_index = 9;
+	
+	sendto_dest = "";
+	
+	sendto_flag = 0;
+	
+	argument_class = class_name_none;
+
+	cat_descript = "test one process";
+
+	para_descript = "storage setting parameters";
+
+
+
+
+
+
+
+
+	var_type = storage_setting_param;
+
+
+
+
+
+
+
+defaultval = '{5*60, STORAGE_SWITCH_ON, STORAGE_METHOD_ALWAYS, { 0}
+}';
+
+
+
+
+
+	argument_count = "1";
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = system;
+
+	para_name = ad_setting_param;
+
+	para_index = 10;
+	
+	sendto_dest = "";
+	
+	sendto_flag = 0;
+	
+	argument_class = class_name_none;
+
+	cat_descript = "test one process";
+
+	para_descript = "ad setting parameters";
+
+
+
+
+
+
+
+
+	var_type = ad_setting_param;
+
+
+
+
+
+
+
+defaultval = '{0x80,0x80,0x00,0x80,0x80
+}';
+
+
+
+
+
+	argument_count = "1";
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = system;
+
+	para_name = time_setting_param;
+
+	para_index = 11;
+	
+	sendto_dest = "";
+	
+	sendto_flag = 0;
+	
+	argument_class = class_name_none;
+
+	cat_descript = "test one process";
+
+	para_descript = "time setting parameters";
+
+
+
+
+
+
+
+
+	var_type = time_setting_param;
+
+
+
+
+
+
+
+defaultval = '{TIME_SETTING_MODE_NORMAL,2000,1,1,0,0,0
+}';
+
+
+
+
+
+	argument_count = "1";
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = system;
+
+	para_name = rs485_setting_param;
+
+	para_index = 12;
+	
+	sendto_dest = "";
+	
+	sendto_flag = 0;
+	
+	argument_class = class_name_none;
+
+	cat_descript = "test one process";
+
+	para_descript = "time setting parameters";
+
+
+
+
+
+
+
+
+	var_type = rs485_setting_param;
+
+
+
+
+
+
+
+defaultval = '{0
+}';
+
+
+
+
+
+	argument_count = "1";
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = system;
+
+	para_name = ptz_area_setting_param;
+
+	para_index = 13;
+	
+	sendto_dest = "";
+	
+	sendto_flag = 0;
+	
+	argument_class = class_name_none;
+
+	cat_descript = "test one process";
+
+	para_descript = "ptz area setting parameters";
+
+
+
+
+
+
+
+
+	var_type = ptz_area_setting_param;
+
+
+
+
+
+
+
+defaultval = '{0
+}';
+
+
+
+
+
+	argument_count = "1";
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = system;
+
+	para_name = alg_setting_param;
+
+	para_index = 14;
+	
+	sendto_dest = "";
+	
+	sendto_flag = 0;
+	
+	argument_class = class_name_none;
+
+	cat_descript = "test one process";
+
+	para_descript = "ptz area setting parameters";
+
+
+
+
+
+
+
+
+	var_type = alg_setting_param;
+
+
+
+
+
+
+
+defaultval = '{0
+}';
+
+
+
+
+
+	argument_count = "1";
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = system;
+
+	para_name = working_state_param;
+
+	para_index = 15;
+	
+	sendto_dest = "";
+	
+	sendto_flag = 0;
+	
+	argument_class = class_name_none;
+
+	cat_descript = "test one process";
+
+	para_descript = "system working state parameters";
+
+
+
+
+
+
+
+
+	var_type = working_state_param;
+
+
+
+
+
+
+
+defaultval = '{0
+}';
+
+
+
+
+
+	argument_count = "1";
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = system;
+
+	para_name = end_param;
+
+	para_index = 16;
+	
+	sendto_dest = "";
+	
+	sendto_flag = 0;
+	
+	argument_class = class_name_none;
+
+	cat_descript = "test one process";
+
+	para_descript = "time setting parameters";
+
+
+
+
+
+
+
+
+	uint_type = end_param;
+
+
+
+
+
+
+
+defaultval = '0';
+
+
+
+
+
+	argument_count = "1";
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = system;
+
+	para_name = runtime_device_status;
+
+	para_index = 17;
+	
+	sendto_dest = "";
+	
+	sendto_flag = 0;
+	
+	argument_class = class_name_none;
+
+	cat_descript = "test one process";
+
+	para_descript = "runtime device status";
+
+
+
+
+
+
+
+
+	var_type = runtime_device_status;
+
+
+
+
+
+
+
+defaultval = '{DEVICE_STATUS_OFF,DEVICE_STATUS_OFF,DEVICE_STATUS_OFF,DEVICE_STATUS_OFF
+}';
+
+
+
+
+
+	argument_count = "1";
+
+
+
+
+
+
+
+
+};
+
+parameter = {
+
+	cat_name = system;
+
+	para_name = runtime_device_version;
+
+	para_index = 18;
+	
+	sendto_dest = "";
+	
+	sendto_flag = 0;
+	
+	argument_class = class_name_none;
+
+	cat_descript = "test one process";
+
+	para_descript = "runtime device version information";
+
+
+
+
+
+
+
+
+	var_type = runtime_device_version;
+
+
+
+
+
+
+
+defaultval = '{"0","0"
+}';
+
+
+
+
+
+	argument_count = "1";
+
+
+
+
+
+
+
+
+};
+
+
+
+para_indexes = {
+	count = 18;
+	cat_name = system;
+};
+
+
+para_indexes = {
+	count = 0;
+	cat_name = test_two_process;
+};
+
+

@@ -1,0 +1,14 @@
+vq_subvec4.o vq_subvec4.o: vq_subvec4.c typedef.h basic_op.h table.h \
+  mode.h pred_lt_3or6.h cnst.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+cnst.h:

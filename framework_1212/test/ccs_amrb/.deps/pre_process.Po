@@ -1,0 +1,16 @@
+pre_process.o pre_process.o: pre_process.c typedef.h basic_op.h table.h \
+  mode.h pred_lt_3or6.h oper_32b.h pre_process.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+oper_32b.h:
+
+pre_process.h:

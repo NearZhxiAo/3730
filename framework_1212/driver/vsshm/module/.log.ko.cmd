@@ -1,0 +1,1 @@
+cmd_/home/mru/repos/project/driver/vsshm/module/vsshm.ko := arm_v5t_le-ld -EL  -r -o /home/mru/repos/project/driver/vsshm/module/vsshm.ko /home/mru/repos/project/driver/vsshm/module/vsshm.o /home/mru/repos/project/driver/vsshm/module/vsshm.mod.o

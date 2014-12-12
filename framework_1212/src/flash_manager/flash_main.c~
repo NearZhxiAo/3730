@@ -1,0 +1,156 @@
+#include "flash_private.h"
+#include "flash_unix.h"
+
+FLASH_PRIVATE_HANDLE global_flash_private_handle;
+
+pthread_t           UpdateThread;
+void sig_handle_proc(int sig);
+static int IsFlashSysQuit = 0;
+
+static void flash_poll_init(FLASH_PRIVATE_HANDLE *phandle)
+{
+	memset(&(phandle->polltimeout), 0x00, sizeof(struct pollfd) * FLASH_POLL_COUNT_MAX );
+	phandle->polltimeout[0].fd = phandle->unix_fd;
+	phandle->polltimeout[0].events = POLLIN;
+
+	phandle->active_fdcount = 1;
+
+}
+
+static succeed_type flash_init(FLASH_PRIVATE_HANDLE *phandle)
+{
+	SIGNAL_STRUCT_T signal;
+	if ( NULL == phandle )
+	{
+		SYS_ERROR("in flash_init phandle is NULL.\r\n");
+		return succeed_type_failed;
+	}
+
+	phandle->pgbshm_obj = GBSHM_INIT();
+	if ( NULL == phandle->pgbshm_obj )
+	{
+		SYS_ERROR("GBSHM_INIT failed.\r\n");
+		return succeed_type_failed;
+	}
+
+	if ( UNIX_CREATE(UNIXFILE_SOCKET_FLASH, &(phandle->unix_fd), 0 ) == succeed_type_failed )
+	{
+		SYS_ERROR("UNIX_CREATE %s failed.\r\n", UNIXFILE_SOCKET_FLASH);
+		return succeed_type_failed;
+	}
+
+	flash_poll_init(phandle);
+	//以下添加各自的处理
+	//对操作互斥量的初始化
+	pthread_mutex_init(&phandle->mutex,NULL);
+	//将para的最大偏移记录，方便信息的读取
+	phandle->savesize = PARA_CMD_SYSTEM_END_PARAM_OFFSET;
+
+	memset(&signal, 0x00, sizeof(signal));
+	signal.signo[0] = SIGINT;
+	signal.sig_phandle[0] = sig_handle_proc;
+	SIGNAL_INIT(&signal, 1);
+
+	return succeed_type_succeed;
+}
+
+static succeed_type flash_exit(FLASH_PRIVATE_HANDLE *phandle)
+{
+	if ( NULL == phandle )
+	{
+		SYS_ERROR("in storage_exit phandle is NULL.\r\n");
+		return succeed_type_failed;
+	}
+	GBSHM_DESTROY(phandle->pgbshm_obj);
+	if ( UNIX_DESTROY(UNIXFILE_SOCKET_FLASH, phandle->unix_fd ) == succeed_type_failed )
+	{
+		SYS_ERROR("UNIX_DESTROY %s failed.\r\n", UNIXFILE_SOCKET_FLASH);
+		return succeed_type_failed;
+	}
+	//free(phandle);
+	pthread_join(UpdateThread, NULL);
+	return succeed_type_succeed;
+}
+
+void sig_handle_proc(int sig)
+{
+	SYS_WARNING("Flash Rcv Signo=%d\r\n",sig);
+	IsFlashSysQuit = 1;
+	flash_exit(&global_flash_private_handle);
+	exit(0);
+}
+
+void flash_updatethread_func(void * arg)
+{
+	FLASH_PRIVATE_HANDLE * phandle = (FLASH_PRIVATE_HANDLE *)arg;
+	FLASH_OPT_FLAG opt_flag = FLASH_OPT_START;
+	while(0 == IsFlashSysQuit)
+	{
+		sleep(2);
+		opt_flag = FLASH_OPT_START;
+		get_saveparam_flag(phandle,&opt_flag);
+		switch(opt_flag)
+		{
+			case FLASH_OPT_START:
+			case FLASH_OPT_END:
+				break;
+			case FLASH_OPT_SAVE:
+				SYS_WARNING("get_saveparam_flag rcv FLASH_OPT_SAVE opt!");
+				flash_para_save(phandle);
+				break;
+			case FLASH_OPT_CLEAR:
+				//flash_set_default();
+				break;
+			default:
+				SYS_INFO("get_saveparam_flag rcv Nodefine opt!");
+				break;
+		}
+	}
+	pthread_exit(NULL);
+}
+
+int main(int argc, char **argv)
+{
+	memset(&global_flash_private_handle, 0x00, sizeof(global_flash_private_handle));
+
+	if ( flash_init(&global_flash_private_handle) != succeed_type_succeed)
+	{
+		SYS_ERROR("flash_init failed.\r\n");
+		return 0;
+	}
+
+	
+	//将flash数据拷贝到共享缓冲里
+	if ( flash_para_load(&global_flash_private_handle) !=  succeed_type_succeed)
+	{
+		SYS_ERROR("flash_para_load failed.\r\n");
+		return 0;
+	}
+	//创建flash管理线程 定时检测flash操作的更新状态
+	if (pthread_create(&UpdateThread, NULL, flash_updatethread_func, (void *)&global_flash_private_handle))
+	{
+		SYS_ERROR("Failed to create flash_updatethread_func thread\n");
+		return -1;
+	}
+
+	SYS_INFO("Enter flash_manager func.\r\n");
+	while( 0 ==  IsFlashSysQuit)
+	{
+		if ( poll( &(global_flash_private_handle.polltimeout), global_flash_private_handle.active_fdcount , -1 ) > 0 )
+		{
+			SYS_WARNING("POLL event found.\r\n");
+			if ( global_flash_private_handle.polltimeout[0].revents )
+			{
+				//do UNIX recv event.
+				flash_unix(&global_flash_private_handle);
+			}
+			if ( global_flash_private_handle.polltimeout[1].revents )
+			{
+			}
+			flash_poll_init(&global_flash_private_handle);
+		}
+	}
+	flash_exit(&global_flash_private_handle);
+	return 0;
+}
+

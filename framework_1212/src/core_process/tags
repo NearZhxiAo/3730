@@ -1,0 +1,181 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ACLOCAL	Makefile	/^ACLOCAL = ${SHELL} \/opt\/sdb\/framework_1127\/missing --run aclocal-1.11$/;"	m
+ACLOCAL_M4	Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+ALERT_STATE	core_private.h	/^    ALERT_STATE,$/;"	e	enum:core_state
+AMTAR	Makefile	/^AMTAR = ${SHELL} \/opt\/sdb\/framework_1127\/missing --run tar$/;"	m
+AM_LDFLAGS	Makefile	/^AM_LDFLAGS = -L$(top_srcdir)\/lib $/;"	m
+AUTOCONF	Makefile	/^AUTOCONF = ${SHELL} \/opt\/sdb\/framework_1127\/missing --run autoconf$/;"	m
+AUTOHEADER	Makefile	/^AUTOHEADER = ${SHELL} \/opt\/sdb\/framework_1127\/missing --run autoheader$/;"	m
+AUTOMAKE	Makefile	/^AUTOMAKE = ${SHELL} \/opt\/sdb\/framework_1127\/missing --run automake-1.11$/;"	m
+AWK	Makefile	/^AWK = gawk$/;"	m
+CC	Makefile	/^CC = arm-none-linux-gnueabi-gcc$/;"	m
+CCDEPMODE	Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CCLD	Makefile	/^CCLD = $(CC)$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -O2$/;"	m
+COMPILE	Makefile	/^COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \\$/;"	m
+CONFIG_CLEAN_FILES	Makefile	/^CONFIG_CLEAN_FILES =$/;"	m
+CONFIG_CLEAN_VPATH_FILES	Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m
+CONFIG_HEADER	Makefile	/^CONFIG_HEADER = $(top_builddir)\/config.h$/;"	m
+CORE_PROCESS_POLL_COUNT_MAX	core_private.h	18;"	d
+CORE_PROCESS_PRIVATE_HANDLE	core_private.h	/^}CORE_PROCESS_PRIVATE_HANDLE;$/;"	t	typeref:struct:__CORE_PROCESS_PRIVATE_HANDLE
+CPP	Makefile	/^CPP = arm-none-linux-gnueabi-gcc -E$/;"	m
+CPPFLAGS	Makefile	/^CPPFLAGS = $/;"	m
+CTAGS	Makefile	/^CTAGS = ctags$/;"	m
+CXX	Makefile	/^CXX = arm-none-linux-gnueabi-g++$/;"	m
+CXXDEPMODE	Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS = -g -O2$/;"	m
+CYGPATH_W	Makefile	/^CYGPATH_W = echo$/;"	m
+DEFAULT_INCLUDES	Makefile	/^DEFAULT_INCLUDES = -I. -I$(top_builddir)$/;"	m
+DEFS	Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEPDIR	Makefile	/^DEPDIR = .deps$/;"	m
+DISTFILES	Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DIST_COMMON	Makefile	/^DIST_COMMON = $(srcdir)\/Makefile.am $(srcdir)\/Makefile.in$/;"	m
+DIST_SOURCES	Makefile	/^DIST_SOURCES = $(core_process_SOURCES)$/;"	m
+ECHO_C	Makefile	/^ECHO_C = $/;"	m
+ECHO_N	Makefile	/^ECHO_N = -n$/;"	m
+ECHO_T	Makefile	/^ECHO_T = $/;"	m
+EGREP	Makefile	/^EGREP = \/bin\/grep -E$/;"	m
+ETAGS	Makefile	/^ETAGS = etags$/;"	m
+EXEEXT	Makefile	/^EXEEXT = $/;"	m
+GRASP_STATE	core_private.h	/^    GRASP_STATE,$/;"	e	enum:core_state
+GREP	Makefile	/^GREP = \/bin\/grep$/;"	m
+IDLE_STATE	core_private.h	/^    IDLE_STATE,$/;"	e	enum:core_state
+INCLUDES	Makefile	/^INCLUDES = -I$(top_srcdir)\/include -I.\/$/;"	m
+INSTALL	Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL_DATA	Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_HEADER	Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_PROGRAM	Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_STRIP_PROGRAM	Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+JPEG_BUFFER_SIZE	core_private.h	16;"	d
+LDFLAGS	Makefile	/^LDFLAGS = $/;"	m
+LIBOBJS	Makefile	/^LIBOBJS = $/;"	m
+LIBS	Makefile	/^LIBS = -lpthread $/;"	m
+LINK	Makefile	/^LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@$/;"	m
+LTLIBOBJS	Makefile	/^LTLIBOBJS = $/;"	m
+MAKEINFO	Makefile	/^MAKEINFO = ${SHELL} \/opt\/sdb\/framework_1127\/missing --run makeinfo$/;"	m
+MKDIR_P	Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m
+NORMAL_INSTALL	Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_UNINSTALL	Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+OBJEXT	Makefile	/^OBJEXT = o$/;"	m
+PACKAGE	Makefile	/^PACKAGE = POLICE_work$/;"	m
+PACKAGE_BUGREPORT	Makefile	/^PACKAGE_BUGREPORT = liangzhang@xidian.edu.cn$/;"	m
+PACKAGE_NAME	Makefile	/^PACKAGE_NAME = POLICE_work$/;"	m
+PACKAGE_STRING	Makefile	/^PACKAGE_STRING = POLICE_work 1.0$/;"	m
+PACKAGE_TARNAME	Makefile	/^PACKAGE_TARNAME = police_work$/;"	m
+PACKAGE_URL	Makefile	/^PACKAGE_URL = $/;"	m
+PACKAGE_VERSION	Makefile	/^PACKAGE_VERSION = 1.0$/;"	m
+PATH_SEPARATOR	Makefile	/^PATH_SEPARATOR = :$/;"	m
+POST_INSTALL	Makefile	/^POST_INSTALL = :$/;"	m
+POST_UNINSTALL	Makefile	/^POST_UNINSTALL = :$/;"	m
+PRE_INSTALL	Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_UNINSTALL	Makefile	/^PRE_UNINSTALL = :$/;"	m
+PROGRAMS	Makefile	/^PROGRAMS = $(bin_PROGRAMS)$/;"	m
+RANLIB	Makefile	/^RANLIB = arm-none-linux-gnueabi-ranlib$/;"	m
+SET_MAKE	Makefile	/^SET_MAKE = $/;"	m
+SHELL	Makefile	/^SHELL = \/bin\/sh$/;"	m
+SOURCES	Makefile	/^SOURCES = $(core_process_SOURCES)$/;"	m
+STRIP	Makefile	/^STRIP = arm-none-linux-gnueabi-strip$/;"	m
+VERSION	Makefile	/^VERSION = 1.0$/;"	m
+WAIT_STATE	core_private.h	/^    WAIT_STATE,$/;"	e	enum:core_state
+YUV_BUFFER_SIZE	core_private.h	17;"	d
+_CORE_PRIVATE_H__	core_private.h	2;"	d
+__CORE_PROCESS_PRIVATE_HANDLE	core_private.h	/^typedef struct __CORE_PROCESS_PRIVATE_HANDLE$/;"	s
+abs_builddir	Makefile	/^abs_builddir = \/opt\/sdb\/framework_1127\/src\/core_process$/;"	m
+abs_srcdir	Makefile	/^abs_srcdir = \/opt\/sdb\/framework_1127\/src\/core_process$/;"	m
+abs_top_builddir	Makefile	/^abs_top_builddir = \/opt\/sdb\/framework_1127$/;"	m
+abs_top_srcdir	Makefile	/^abs_top_srcdir = \/opt\/sdb\/framework_1127$/;"	m
+ac_ct_CC	Makefile	/^ac_ct_CC = $/;"	m
+ac_ct_CXX	Makefile	/^ac_ct_CXX = $/;"	m
+active_fdcount	core_private.h	/^    int                 active_fdcount;$/;"	m	struct:__CORE_PROCESS_PRIVATE_HANDLE
+am__aclocal_m4_deps	Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/configure.ac$/;"	m
+am__cd	Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__configure_deps	Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__depfiles_maybe	Makefile	/^am__depfiles_maybe = depfiles$/;"	m
+am__include	Makefile	/^am__include = include$/;"	m
+am__installdirs	Makefile	/^am__installdirs = "$(DESTDIR)$(bindir)"$/;"	m
+am__leading_dot	Makefile	/^am__leading_dot = .$/;"	m
+am__mv	Makefile	/^am__mv = mv -f$/;"	m
+am__quote	Makefile	/^am__quote = $/;"	m
+am__tar	Makefile	/^am__tar = ${AMTAR} chof - "$$tardir"$/;"	m
+am__untar	Makefile	/^am__untar = ${AMTAR} xf -$/;"	m
+am_core_process_OBJECTS	Makefile	/^am_core_process_OBJECTS = core_main.$(OBJEXT) core_init.$(OBJEXT) \\$/;"	m
+bin_PROGRAMS	Makefile	/^bin_PROGRAMS = core_process$(EXEEXT)$/;"	m
+bindir	Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+build_alias	Makefile	/^build_alias = $/;"	m
+builddir	Makefile	/^builddir = .$/;"	m
+capture_fd	core_private.h	/^    int                 capture_fd;$/;"	m	struct:__CORE_PROCESS_PRIVATE_HANDLE
+capture_handle	core_private.h	/^    Capture_Handle      capture_handle;$/;"	m	struct:__CORE_PROCESS_PRIVATE_HANDLE
+cmem_params	core_init.c	/^CMEM_AllocParams cmem_params;$/;"	v
+core_exit	core_main.c	/^succeed_type core_exit(CORE_PROCESS_PRIVATE_HANDLE *phandle)$/;"	f
+core_init	core_init.c	/^succeed_type core_init(CORE_PROCESS_PRIVATE_HANDLE *phandle)$/;"	f
+core_poll_init	core_init.c	/^void core_poll_init(CORE_PROCESS_PRIVATE_HANDLE *phandle)$/;"	f
+core_process_DEPENDENCIES	Makefile	/^core_process_DEPENDENCIES =$/;"	m
+core_process_LDADD	Makefile	/^core_process_LDADD = -lunix -lgbshm -lcmem -ljpeg_encode $/;"	m
+core_process_OBJECTS	Makefile	/^core_process_OBJECTS = $(am_core_process_OBJECTS)$/;"	m
+core_process_SOURCES	Makefile	/^core_process_SOURCES = core_main.c  core_init.c process_capture.c process_unix.c  $/;"	m
+core_state	core_private.h	/^typedef enum core_state $/;"	g
+core_state	core_private.h	/^}core_state;$/;"	t	typeref:enum:core_state
+core_state_end	core_private.h	/^    core_state_end,$/;"	e	enum:core_state
+core_state_invalid	core_private.h	/^    core_state_invalid = -1,$/;"	e	enum:core_state
+current_state	core_private.h	/^    int                 current_state;$/;"	m	struct:__CORE_PROCESS_PRIVATE_HANDLE
+datadir	Makefile	/^datadir = ${datarootdir}$/;"	m
+datarootdir	Makefile	/^datarootdir = ${prefix}\/share$/;"	m
+depcomp	Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/depcomp$/;"	m
+display_fd	core_private.h	/^    int                 display_fd;$/;"	m	struct:__CORE_PROCESS_PRIVATE_HANDLE
+display_handle	core_private.h	/^    Display_Handle      display_handle;$/;"	m	struct:__CORE_PROCESS_PRIVATE_HANDLE
+docdir	Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m
+dvidir	Makefile	/^dvidir = ${docdir}$/;"	m
+exec_prefix	Makefile	/^exec_prefix = ${prefix}$/;"	m
+gbshm_handle	core_private.h	/^    Gbshm_Handle        gbshm_handle;$/;"	m	struct:__CORE_PROCESS_PRIVATE_HANDLE
+get_core_state	core_private.h	/^static int get_core_state(CORE_PROCESS_PRIVATE_HANDLE *phandle)$/;"	f
+global_private_handle	core_main.c	/^CORE_PROCESS_PRIVATE_HANDLE global_private_handle;$/;"	v
+host_alias	Makefile	/^host_alias = arm-none-linux-gnueabi$/;"	m
+htmldir	Makefile	/^htmldir = ${docdir}$/;"	m
+includedir	Makefile	/^includedir = ${prefix}\/include$/;"	m
+infodir	Makefile	/^infodir = ${datarootdir}\/info$/;"	m
+install_sh	Makefile	/^install_sh = ${SHELL} \/opt\/sdb\/framework_1127\/install-sh$/;"	m
+install_sh_DATA	Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_PROGRAM	Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+jpeg_inbuffer	core_private.h	/^    char                *jpeg_inbuffer;     \/\/yuv original data$/;"	m	struct:__CORE_PROCESS_PRIVATE_HANDLE
+jpeg_outbuffer	core_private.h	/^    char                *jpeg_outbuffer;    \/\/jpeg picture data$/;"	m	struct:__CORE_PROCESS_PRIVATE_HANDLE
+libdir	Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libexecdir	Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+localedir	Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
+localstatedir	Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+main	core_main.c	/^int main(int argc, char **argv)$/;"	f
+mandir	Makefile	/^mandir = ${datarootdir}\/man$/;"	m
+mkdir_p	Makefile	/^mkdir_p = \/bin\/mkdir -p$/;"	m
+mkinstalldirs	Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+oldincludedir	Makefile	/^oldincludedir = \/usr\/include$/;"	m
+pdfdir	Makefile	/^pdfdir = ${docdir}$/;"	m
+pkgdatadir	Makefile	/^pkgdatadir = $(datadir)\/POLICE_work$/;"	m
+pkgincludedir	Makefile	/^pkgincludedir = $(includedir)\/POLICE_work$/;"	m
+pkglibdir	Makefile	/^pkglibdir = $(libdir)\/POLICE_work$/;"	m
+pkglibexecdir	Makefile	/^pkglibexecdir = $(libexecdir)\/POLICE_work$/;"	m
+polltimeout	core_private.h	/^	struct pollfd       polltimeout[CORE_PROCESS_POLL_COUNT_MAX];$/;"	m	struct:__CORE_PROCESS_PRIVATE_HANDLE	typeref:struct:__CORE_PROCESS_PRIVATE_HANDLE::pollfd
+prefix	Makefile	/^prefix = \/opt\/sdb\/install$/;"	m
+process_capture	process_capture.c	/^void process_capture(CORE_PROCESS_PRIVATE_HANDLE *phandle)$/;"	f
+process_unix	process_unix.c	/^succeed_type process_unix(CORE_PROCESS_PRIVATE_HANDLE *phandle)$/;"	f
+process_unix_deal	process_unix.c	/^static succeed_type process_unix_deal(CORE_PROCESS_PRIVATE_HANDLE *phandle, UNIX_CMD_STRUCT *pcmd)$/;"	f	file:
+program_transform_name	Makefile	/^program_transform_name = s,x,x,$/;"	m
+psdir	Makefile	/^psdir = ${docdir}$/;"	m
+sbindir	Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+set_core_state	core_private.h	/^static void set_core_state(CORE_PROCESS_PRIVATE_HANDLE *phandle, int new_state)$/;"	f
+sharedstatedir	Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+srcdir	Makefile	/^srcdir = .$/;"	m
+state_lock	core_private.h	/^    pthread_mutex_t     state_lock;$/;"	m	struct:__CORE_PROCESS_PRIVATE_HANDLE
+subdir	Makefile	/^subdir = src\/core_process$/;"	m
+sysconfdir	Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+target_alias	Makefile	/^target_alias = $/;"	m
+top_build_prefix	Makefile	/^top_build_prefix = ..\/..\/$/;"	m
+top_builddir	Makefile	/^top_builddir = ..\/..$/;"	m
+top_srcdir	Makefile	/^top_srcdir = ..\/..$/;"	m
+transform	Makefile	/^transform = $(program_transform_name)$/;"	m
+unix_fd	core_private.h	/^    int                 unix_fd;$/;"	m	struct:__CORE_PROCESS_PRIVATE_HANDLE

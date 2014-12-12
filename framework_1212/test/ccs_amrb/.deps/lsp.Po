@@ -1,0 +1,37 @@
+lsp.o lsp.o: lsp.c typedef.h basic_op.h table.h mode.h pred_lt_3or6.h \
+  oper_32b.h q_plsf.h cnst.h copy.h int_lpc_1and3.h int_lpc_1to3.h \
+  az_lsp.h lsp.h q_plsf_5.h q_plsf_3.h int_lpc_1and3_2.h int_lpc_1to3_2.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+oper_32b.h:
+
+q_plsf.h:
+
+cnst.h:
+
+copy.h:
+
+int_lpc_1and3.h:
+
+int_lpc_1to3.h:
+
+az_lsp.h:
+
+lsp.h:
+
+q_plsf_5.h:
+
+q_plsf_3.h:
+
+int_lpc_1and3_2.h:
+
+int_lpc_1to3_2.h:

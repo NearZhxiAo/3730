@@ -1,0 +1,22 @@
+norm_corr.o norm_corr.o: norm_corr.c typedef.h basic_op.h table.h mode.h \
+  pred_lt_3or6.h oper_32b.h cnst.h inv_sqrt.h interpol_3or6.h convolve.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+oper_32b.h:
+
+cnst.h:
+
+inv_sqrt.h:
+
+interpol_3or6.h:
+
+convolve.h:

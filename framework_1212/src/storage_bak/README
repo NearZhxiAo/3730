@@ -1,0 +1,7 @@
+1 ./replace.sh :用于将该目录下所有文件（或是指定文件）中的某个字符替换为新字符
+
+eg: ./replace.sh -name storage_main.c alert storage 
+     将该目录下storage_main.c文件中的“alert” 替换为 “storage”
+    ./replace.sh alert storage 
+     将该目录下所有文件中的“alert” 替换为 “storage”
+注意：替换名称最好用双引号括起来

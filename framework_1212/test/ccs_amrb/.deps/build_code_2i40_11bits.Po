@@ -1,0 +1,17 @@
+build_code_2i40_11bits.o build_code_2i40_11bits.o:  \
+ build_code_2i40_11bits.c typedef.h basic_op.h table.h mode.h \
+  pred_lt_3or6.h inv_sqrt.h cnst.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+inv_sqrt.h:
+
+cnst.h:

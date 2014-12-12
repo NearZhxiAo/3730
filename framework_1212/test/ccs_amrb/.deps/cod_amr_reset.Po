@@ -1,0 +1,71 @@
+cod_amr_reset.o cod_amr_reset.o: cod_amr_reset.c typedef.h basic_op.h \
+  table.h mode.h pred_lt_3or6.h cnst.h copy.h set_zero.h dtx_def.h \
+  q_plsf.h gc_pred.h cl_ltp_init.h cl_ltp.h pitch_fr.h ton_stab.h \
+  cl_ltp_reset.h cod_amr.h lpc.h levinson.h lsp.h gainquant.h \
+  gain_adapt.h Pitch_ol_wgh.h vad1.h cnst_vad.h lpc_reset.h lsp_reset.h \
+  gainquant_reset.h p_ol_wgh_reset.h dtx_enc_reset.h ton_stab_reset.h \
+  vad1_reset.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+cnst.h:
+
+copy.h:
+
+set_zero.h:
+
+dtx_def.h:
+
+q_plsf.h:
+
+gc_pred.h:
+
+cl_ltp_init.h:
+
+cl_ltp.h:
+
+pitch_fr.h:
+
+ton_stab.h:
+
+cl_ltp_reset.h:
+
+cod_amr.h:
+
+lpc.h:
+
+levinson.h:
+
+lsp.h:
+
+gainquant.h:
+
+gain_adapt.h:
+
+Pitch_ol_wgh.h:
+
+vad1.h:
+
+cnst_vad.h:
+
+lpc_reset.h:
+
+lsp_reset.h:
+
+gainquant_reset.h:
+
+p_ol_wgh_reset.h:
+
+dtx_enc_reset.h:
+
+ton_stab_reset.h:
+
+vad1_reset.h:

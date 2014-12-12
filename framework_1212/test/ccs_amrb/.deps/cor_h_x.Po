@@ -1,0 +1,7 @@
+cor_h_x.o cor_h_x.o: cor_h_x.c typedef.h cnst.h cor_h_x2.h
+
+typedef.h:
+
+cnst.h:
+
+cor_h_x2.h:

@@ -1,0 +1,55 @@
+speech_encode_frame.o speech_encode_frame.o: speech_encode_frame.c \
+  typedef.h basic_op.h table.h mode.h pred_lt_3or6.h cnst.h set_zero.h \
+  pre_process.h prm2bits.h cod_amr.h lpc.h levinson.h lsp.h q_plsf.h \
+  cl_ltp.h pitch_fr.h ton_stab.h gainquant.h gc_pred.h gain_adapt.h \
+  Pitch_ol_wgh.h vad1.h cnst_vad.h dtx_def.h speech_encode_frame.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+cnst.h:
+
+set_zero.h:
+
+pre_process.h:
+
+prm2bits.h:
+
+cod_amr.h:
+
+lpc.h:
+
+levinson.h:
+
+lsp.h:
+
+q_plsf.h:
+
+cl_ltp.h:
+
+pitch_fr.h:
+
+ton_stab.h:
+
+gainquant.h:
+
+gc_pred.h:
+
+gain_adapt.h:
+
+Pitch_ol_wgh.h:
+
+vad1.h:
+
+cnst_vad.h:
+
+dtx_def.h:
+
+speech_encode_frame.h:

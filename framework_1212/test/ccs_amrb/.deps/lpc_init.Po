@@ -1,0 +1,16 @@
+lpc_init.o lpc_init.o: lpc_init.c lpc.h typedef.h levinson.h cnst.h \
+  mode.h levinson_init.h lpc_reset.h
+
+lpc.h:
+
+typedef.h:
+
+levinson.h:
+
+cnst.h:
+
+mode.h:
+
+levinson_init.h:
+
+lpc_reset.h:

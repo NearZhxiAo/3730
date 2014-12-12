@@ -1,0 +1,12 @@
+lsp_lsf.o lsp_lsf.o: lsp_lsf.c typedef.h basic_op.h table.h mode.h \
+  pred_lt_3or6.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:

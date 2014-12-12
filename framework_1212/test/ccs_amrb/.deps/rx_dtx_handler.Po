@@ -1,0 +1,53 @@
+rx_dtx_handler.o rx_dtx_handler.o: rx_dtx_handler.c typedef.h basic_op.h \
+  table.h mode.h pred_lt_3or6.h oper_32b.h copy.h set_zero.h log2.h \
+  lsp_az.h pow2.h a_refl.h syn_filt.h lsp_lsf.h reorder_lsf.h lsf_lsp.h \
+  dtx_dec.h dtx_def.h cnst.h q_plsf.h gc_pred.h d_plsf.h frame.h \
+  cb_gain_average.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+oper_32b.h:
+
+copy.h:
+
+set_zero.h:
+
+log2.h:
+
+lsp_az.h:
+
+pow2.h:
+
+a_refl.h:
+
+syn_filt.h:
+
+lsp_lsf.h:
+
+reorder_lsf.h:
+
+lsf_lsp.h:
+
+dtx_dec.h:
+
+dtx_def.h:
+
+cnst.h:
+
+q_plsf.h:
+
+gc_pred.h:
+
+d_plsf.h:
+
+frame.h:
+
+cb_gain_average.h:

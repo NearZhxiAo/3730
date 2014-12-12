@@ -1,0 +1,26 @@
+#include "system_includes.h"
+#include "system_debug.h"
+#include "parameter_offset.h"
+#include "libgbshm.h"
+
+int main(int argc, char **argv)
+{
+//    Gbshm_Handle gbshm_handle = Gbshm_init();
+	GBSHM_HANDLE gbshm_handle=GBSHM_INIT();
+    struct gbshm_mutex pmutex;
+
+    if (gbshm_handle == NULL) {
+        SYS_ERROR("libgbshm_init failed.\r\n");
+        return -1;
+    }
+    SYS_INFO("libgbshm_init ok.\r\n");
+
+    memset(gbshm_handle->gbshm_mmap, 0xab, SHAREMEM_PHYS_SIZE);
+
+    printf("all gbshm mem write value 0xab, total size is 0x%x.\r\n", SHAREMEM_PHYS_SIZE);
+
+    while(1);
+   // Gbshm_destroy(gbshm_handle);
+	GBSHM_DESTROY(gbshm_handle);
+    return 0;
+}

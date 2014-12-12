@@ -1,0 +1,182 @@
+﻿#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <sys/time.h>
+#include <time.h>
+#include "libosd.h"
+#include "fonts.h"
+#include "libv4l2_cap.h"
+
+#define START_X 530
+#define START_Y 450
+
+int start_x, start_y;
+
+void draw(char *word, char *data) {
+	FILE *fp	= NULL;
+	int width 	= IMAGEWIDTH;
+	int height 	= IMAGEHEIGHT;
+	char *data_index;
+
+	char *temp;
+	int i, j, k, loc;
+	int word_x, word_y, word_index;
+	unsigned char curr_ch;
+
+
+	word_y = 0;
+	word_index = 0;
+
+	if(start_y + 15 > height  || start_x + 15 > width)
+	{
+		printf("text location out range.\r\n");
+		printf("start_x:%d.\r\nstart_y:%d", start_x, start_y);
+		return;
+	}
+
+	for(i = start_y; i < height;)
+	{
+		data_index = data + (width*2*i);
+	
+		curr_ch = word[word_index++];
+
+		j = 1;	
+		for(k = 0; k < 8; k++)
+		{
+			loc = j + start_x*2;
+			if((curr_ch >>(7-k)) & 0x1==1) 
+			{
+				data_index[loc] = 255;
+			}
+			j = j + 2;
+		}
+
+		curr_ch = word[word_index++];
+		for(k = 0; k < 8; k++)
+		{
+			loc = j + start_x*2;
+			if((curr_ch >>(7-k)) & 0x1==1) 
+			{
+				data_index[loc] = 255;
+			}
+
+			j = j + 2;
+		}
+
+		i++;
+		temp = data + (width*2*i);
+
+		if(word_index >= 32)
+		{
+			break;
+		}
+	}
+
+	start_x += 8;
+	//printf("draw over\r\n");
+}
+
+
+int findIndex(char data)
+{
+	int i = 0;
+	
+	for(i = 0; i < MAX_FONTS; i++)
+	{
+		if(font_index[i] == data)
+		{
+			return i;
+		}
+	}
+
+	return -1;
+}
+
+char *get_datetime()
+{
+	static char datatime[128];
+	struct tm  *ptm;
+	long   ts;
+	int    y, m, d, h, n, s;
+
+	memset(datatime, 0x00, 128);
+
+	ts = time(NULL);
+	ptm = localtime(&ts);
+
+	y = ptm->tm_year+1900; 
+	m = ptm->tm_mon+1;     
+	d = ptm->tm_mday;      
+	h = ptm->tm_hour;      
+	n = ptm->tm_min;       
+	s = ptm->tm_sec;       
+
+	sprintf(datatime, "%d-%d-%d %d:%d:%d", y, m, d, h, n, s);
+
+	return datatime;
+}
+int set_osd(char *data)
+{
+//	unsigned char *datetime =  NULL;
+	int i, index;
+	char word[32];
+	char filename[] = "16px_zpix.hzk";
+	FILE *fp_font = NULL;
+	unsigned char loc_q, loc_w, a1, a2;
+	int location;
+
+
+	start_x	= START_X;
+	start_y	= START_Y;
+
+//	datetime = get_datetime();
+
+	
+	unsigned char text[]="";
+	fp_font = fopen(filename, "rb+");
+	if (fp_font == NULL)
+	{
+		printf("open font file failed.\r\n");
+		return -1;
+	}
+	for (i = 0; i < strlen(text);)
+	{
+		loc_q = text[i++] - 0xA0;
+		loc_w = text[i++] - 0xA0;
+
+		location = ((loc_q - 1)*94 + (loc_w - 1))*32;
+		fseek(fp_font, location, SEEK_SET);
+		fread(word, 32, 1, fp_font);
+
+	//	showWord(word);
+		draw(word, data);
+
+	}
+
+	fclose(fp_font);
+#if 0
+	draw(fonts[12], data);
+	draw(fonts[13], data);
+	draw(fonts[14], data);
+#endif
+#if 0
+	for(i = 0;  i < strlen(datetime); i++) 
+	{
+		index = findIndex(datetime[i]);
+		if(index == -1)
+		{
+			printf("can not find %c value:%x fonts.\r\n", datetime[i], datetime[i]);	
+			index = findIndex('?');
+			draw(fonts[index], data);
+		}
+		else
+		{
+			draw(fonts[index], data);
+		}
+
+	}
+#endif
+	return 0;
+}
+

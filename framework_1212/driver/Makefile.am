@@ -1,0 +1,1 @@
+SUBDIRS = gbshm vsshm gpmc

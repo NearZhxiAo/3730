@@ -1,0 +1,1 @@
+g711_sun_internal.o g711_sun_internal.o: g711_sun_internal.c

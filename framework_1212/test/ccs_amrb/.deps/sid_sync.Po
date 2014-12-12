@@ -1,0 +1,16 @@
+sid_sync.o sid_sync.o: sid_sync.c typedef.h basic_op.h table.h mode.h \
+  pred_lt_3or6.h sid_sync.h frame.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+sid_sync.h:
+
+frame.h:
