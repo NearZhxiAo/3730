@@ -1,0 +1,30 @@
+vad_decision.o vad_decision.o: vad_decision.c typedef.h basic_op.h \
+  table.h mode.h pred_lt_3or6.h oper_32b.h cnst_vad.h cnst.h vad1.h \
+  complex_estimate_adapt.h complex_vad.h noise_estimate_update.h \
+  hangover_addition.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+oper_32b.h:
+
+cnst_vad.h:
+
+cnst.h:
+
+vad1.h:
+
+complex_estimate_adapt.h:
+
+complex_vad.h:
+
+noise_estimate_update.h:
+
+hangover_addition.h:

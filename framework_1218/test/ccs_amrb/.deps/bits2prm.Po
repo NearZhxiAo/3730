@@ -1,0 +1,14 @@
+bits2prm.o bits2prm.o: bits2prm.c typedef.h basic_op.h table.h mode.h \
+  pred_lt_3or6.h bin2int.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+bin2int.h:

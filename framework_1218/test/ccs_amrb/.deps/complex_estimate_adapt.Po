@@ -1,0 +1,21 @@
+complex_estimate_adapt.o complex_estimate_adapt.o:  \
+ complex_estimate_adapt.c typedef.h basic_op.h table.h mode.h \
+  pred_lt_3or6.h oper_32b.h cnst_vad.h cnst.h vad1.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+oper_32b.h:
+
+cnst_vad.h:
+
+cnst.h:
+
+vad1.h:

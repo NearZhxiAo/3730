@@ -1,0 +1,1 @@
+cmd_/home/mru/0725/MRU_work/driver/vidctl/module/vidctl.ko := arm_v5t_le-ld -EL  -r -o /home/mru/0725/MRU_work/driver/vidctl/module/vidctl.ko /home/mru/0725/MRU_work/driver/vidctl/module/vidctl.o /home/mru/0725/MRU_work/driver/vidctl/module/vidctl.mod.o

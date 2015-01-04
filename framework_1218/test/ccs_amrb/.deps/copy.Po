@@ -1,0 +1,11 @@
+copy.o copy.o: copy.c typedef.h basic_op.h table.h mode.h pred_lt_3or6.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:

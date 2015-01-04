@@ -1,0 +1,20 @@
+lsp_avg.o lsp_avg.o: lsp_avg.c basic_op.h typedef.h table.h mode.h \
+  pred_lt_3or6.h oper_32b.h copy.h lsp_avg.h cnst.h
+
+basic_op.h:
+
+typedef.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+oper_32b.h:
+
+copy.h:
+
+lsp_avg.h:
+
+cnst.h:

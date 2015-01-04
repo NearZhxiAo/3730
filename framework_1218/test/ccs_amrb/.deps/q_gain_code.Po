@@ -1,0 +1,18 @@
+q_gain_code.o q_gain_code.o: q_gain_code.c typedef.h mode.h basic_op.h \
+  table.h pred_lt_3or6.h oper_32b.h log2.h pow2.h
+
+typedef.h:
+
+mode.h:
+
+basic_op.h:
+
+table.h:
+
+pred_lt_3or6.h:
+
+oper_32b.h:
+
+log2.h:
+
+pow2.h:

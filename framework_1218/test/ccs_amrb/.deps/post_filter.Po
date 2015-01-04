@@ -1,0 +1,31 @@
+post_filter.o post_filter.o: post_filter.c typedef.h mode.h basic_op.h \
+  table.h pred_lt_3or6.h set_zero.h weight_ai.h residu.h copy.h \
+  syn_filt.h preemphasis.h cnst.h post_filter.h agc.h
+
+typedef.h:
+
+mode.h:
+
+basic_op.h:
+
+table.h:
+
+pred_lt_3or6.h:
+
+set_zero.h:
+
+weight_ai.h:
+
+residu.h:
+
+copy.h:
+
+syn_filt.h:
+
+preemphasis.h:
+
+cnst.h:
+
+post_filter.h:
+
+agc.h:

@@ -1,0 +1,58 @@
+speech_decode_frame.o speech_decode_frame.o: speech_decode_frame.c \
+  typedef.h basic_op.h table.h mode.h pred_lt_3or6.h cnst.h set_zero.h \
+  decoder_amr.h dtx_dec.h dtx_def.h q_plsf.h gc_pred.h d_plsf.h frame.h \
+  cb_gain_average.h bgn_scd.h ph_disp.h lsp_avg.h ec_gain_code.h \
+  ec_gain_pitch.h bits2prm.h post_process.h speech_decode_frame.h \
+  post_filter.h preemphasis.h agc.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+cnst.h:
+
+set_zero.h:
+
+decoder_amr.h:
+
+dtx_dec.h:
+
+dtx_def.h:
+
+q_plsf.h:
+
+gc_pred.h:
+
+d_plsf.h:
+
+frame.h:
+
+cb_gain_average.h:
+
+bgn_scd.h:
+
+ph_disp.h:
+
+lsp_avg.h:
+
+ec_gain_code.h:
+
+ec_gain_pitch.h:
+
+bits2prm.h:
+
+post_process.h:
+
+speech_decode_frame.h:
+
+post_filter.h:
+
+preemphasis.h:
+
+agc.h:

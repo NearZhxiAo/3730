@@ -1,0 +1,19 @@
+vad_pitch_detection.o vad_pitch_detection.o: vad_pitch_detection.c \
+  typedef.h basic_op.h table.h mode.h pred_lt_3or6.h vad1.h cnst_vad.h \
+  cnst.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+vad1.h:
+
+cnst_vad.h:
+
+cnst.h:

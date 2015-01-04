@@ -1,0 +1,335 @@
+/*******************************************************
+ *Arthur:	Zhang,Li,Feng
+ *Date:		2014/11/19
+ *Version:	V1.2.2
+ *Note:		Defining Register of GPMC	
+ *		Defining DataStructure of CharDev_Driver 
+ *		Defining file_operation Structure
+ *		
+ *		TO print CS0-7 offset & size 
+ *              Write value to 0x34x
+ *******************************************************/
+#include <linux/device.h>
+#include <linux/fs.h>
+#include <linux/module.h>
+#include <linux/kernel.h>
+#include <linux/init.h>
+#include <linux/moduleparam.h>
+#include <linux/list.h>
+#include <linux/cdev.h>
+#include <linux/proc_fs.h>
+#include <linux/mm.h>
+#include <linux/seq_file.h>
+#include <linux/vmalloc.h>
+#include <linux/sched.h>
+#include <asm/cacheflush.h>
+#include <asm/uaccess.h>
+#include <asm/pgtable.h>
+#include <asm/io.h>
+#include <linux/version.h>
+
+#if LINUX_VERSION_CODE >=KERNEL_VERSION(2,6,26)
+#warning *** not a warning *** Note: LINUX_VERSION_CODE >=2.6.26
+
+#define USE_CACHE_VOID_ARG
+#define USE_CLASS_DEVICE
+#define USE_CLASS_SIMPLE
+
+#elif LINUX_VERSION_CODE >= KERNEL_VERSION(2,6,18)
+
+#warning *** not a warning *** Note: 2.6.26 > LINUX_VERSION_CODE>=2.6.18
+
+#define USE_CACHE_VOID_ARG
+#define USE_CLASS_DEVICE
+#define USE_CLASS_SIMPLE
+
+#else /* LINUX_VERSION_CODE >= KERNEL_VERSION(2,6,18) */
+
+#warning *** not a warning *** Note: LINUX_VERSION_CODE <2.6.18
+
+#define USE_CLASS_SIMPLE
+#define USE_CLASS_DEVICE
+#define USE_CACHE_VOID_ARG
+
+#endif /* LINUX_VERSION_CODE >= KERNEL_VERSION(2,6,18) */
+
+/*
+ *  Poor man's config params
+ */
+
+/*
+ * NOCACHE means physical memory block is ioremap()'ed as noncached
+ */
+#define NOCACHE
+
+/*
+ * CHECK_FOR_ALLOCATED_BUFFER means ensure that the passed addr/size block
+ * is actually an alocated, CMEM-defined buffer.
+ */
+//#define CHECK_FOR_ALLOCATED_BUFFER
+
+#define HEAD_ALIGN PAGE_SIZE
+
+#ifdef __DEBUG
+#define __D(fmt, args...) printk(KERN_DEBUG "GPIO Debug: " fmt, ## args)
+#else
+#define __D(fmt, args...)
+#endif
+
+#define __E(fmt, args...) printk(KERN_ERR "GPIO Error: " fmt, ##args)
+
+#define MAXTYPE(T) ((T) (((T)1 << ((sizeof(T) * 8) - 1) ^ ((T) -1 ))))
+
+/*
+ * Change here for supporting more than 2 blocks. Also change all
+ * NBLOCKS-based arrays to have NBLOCKS-worth of initialization values.
+ */
+#define NBLOCKS 2
+
+/*GPMC register offsets*/
+#define GPMC_BASE		0x6E000000 //GPMC Register Base Address
+
+#define GPMC_REVISION 		(0x00+GPMC_BASE)
+#define GPMC_SYSCONFIG 		(0x10+GPMC_BASE)
+#define GPMC_SYSSTATUS 	        (0x14+GPMC_BASE)
+#define GPMC_IRQSTATUS 		(0x18+GPMC_BASE)
+#define GPMC_IRQENABLE 		(0x1c+GPMC_BASE)
+#define GPMC_TIMEOUT_CONTROL 	(0x40+GPMC_BASE)
+#define GPMC_ERR_ADDRESS 	(0x44+GPMC_BASE)
+#define GPMC_ERR_TYPE 		(0x48+GPMC_BASE)
+#define GPMC_CONFIG 		(0x50+GPMC_BASE)
+#define GPMC_STATUS 		(0x54+GPMC_BASE) 
+//0x6E00 0078 + (0x0000 0030 * i)
+/*GPMC_CONFIG_PHYSICAL_ADDRESS*/
+#define GPMC_CONFIG_OFFSET	0x00000030
+#define GPMC_CONFIG1(i) 	(GPMC_BASE+((GPMC_CONFIG_OFFSET*i)+0x00000060))
+#define GPMC_CONFIG2(i)		(GPMC_BASE+((GPMC_CONFIG_OFFSET*i)+0x00000064)) 
+#define GPMC_CONFIG3(i)		(GPMC_BASE+((GPMC_CONFIG_OFFSET*i)+0x00000068)) 
+#define GPMC_CONFIG4(i)		(GPMC_BASE+((GPMC_CONFIG_OFFSET*i)+0x0000006C))
+#define GPMC_CONFIG5(i)		(GPMC_BASE+((GPMC_CONFIG_OFFSET*i)+0x00000070))
+#define GPMC_CONFIG6(i)		(GPMC_BASE+((GPMC_CONFIG_OFFSET*i)+0x00000074))
+#define GPMC_CONFIG7(i)		(GPMC_BASE+((GPMC_CONFIG_OFFSET*i)+0x00000078))
+
+
+#define GPMC_CONFIG7_0            0x00000030*0+0x00000078+GPMC_BASE
+#define GPMC_CONFIG7_1            0x00000030*1+0x00000078+GPMC_BASE
+#define GPMC_CONFIG7_2            0x00000030*2+0x00000078+GPMC_BASE
+#define GPMC_CONFIG7_3            0x00000030*3+0x00000078+GPMC_BASE
+#define GPMC_CONFIG7_4            0x00000030*4+0x00000078+GPMC_BASE
+#define GPMC_CONFIG7_5            0x00000030*5+0x00000078+GPMC_BASE
+#define GPMC_CONFIG7_6            0x00000030*6+0x00000078+GPMC_BASE
+
+
+
+#define GPMC_PREFETCH_CONFIG1 	(0x1E0+GPMC_BASE)
+#define GPMC_PREFETCH_CONFIG2 	(0x1E4+GPMC_BASE)
+#define GPMC_PREFETCH_CONTROL 	(0x1EC+GPMC_BASE)
+#define GPMC_PREFETCH_STATUS 	(0x1F0+GPMC_BASE)
+
+#define GPMC_ECC_CONFIG 	0x1F4+GPMC_BASE
+#define GPMC_ECC_CONTROL 	0x1F8+GPMC_BASE
+#define GPMC_ECC_SIZE_CONFIG 	0x1FC+GPMC_BASE
+#define GPMC_ECC1_RESULT 	0x200+GPMC_BASE
+#define GPMC_ECC_BCH_RESULT_0 	0x240+GPMC_BASE
+
+#define GPMC_SIZE 0x4
+ 
+
+/*Device Name*/
+#define DEVICE_NAME	"gpmcCtl"
+
+static void __iomem * io_base3_test;
+static void __iomem * io_base[7];
+static void __iomem * io_base0;
+static void __iomem * io_cs3;
+static unsigned long io_cntl;
+
+unsigned long mem_base;
+/**********************************/
+static void __iomem *fpga_base;/***/
+static void __iomem *gpmc_base;/***/
+/**********************************/
+
+/*Structure of GPMC Device*/
+struct _gpmc_dev {
+	dev_t devt;
+	struct cdev cdev;
+	struct semaphore sem;
+	struct class *class;
+	char *user_buff;
+};
+static struct _gpmc_dev* gpmc_dev;
+
+/*Structure of GPMC Device Number*/
+struct _gpmc_dev_num{
+	dev_t devNum;
+	unsigned int major;
+	unsigned int minor;
+	unsigned int minor_first;
+	unsigned int count;
+};
+static struct _gpmc_dev_num gpmc_dev_num;
+
+/*GPMC_Read Operation*/
+static ssize_t gpmc_read(struct file *filp, char __user *buff, size_t count, loff_t *offp)
+{
+	return 0;
+}
+
+/*GPMC_Write Operation*/
+static ssize_t gpmc_write(struct file *filp, const char __user *buff,size_t count, loff_t *f_pos)
+{
+	return 0;
+}
+
+/*GPMC_Open Operation*/
+static ssize_t gpmc_open(struct inode *inode, struct file *filp)
+{
+	return 0;
+}
+
+/*File Operation Structure*/
+static const struct file_operations gpmc_fops = {
+	.owner=THIS_MODULE,
+	.open=gpmc_open,
+	.read=gpmc_read,
+	.write=gpmc_write,
+};
+
+/*cdev_register Func*/
+static void gpmc_setup_cdev(struct _gpmc_dev *dev, int index)
+{
+	int ret;
+	int devno = gpmc_dev_num.devNum + index;
+	cdev_init(&dev->cdev, &gpmc_fops);
+	dev->cdev.owner = THIS_MODULE;
+	dev->cdev.ops = &gpmc_fops;
+
+	ret = cdev_add(&dev->cdev, devno, 1);
+
+	if(ret)
+		printk(KERN_ERR "error %d : adding gpmcCtl%d",ret,index);
+}
+
+
+/*gpmc device init*/
+static int __init gpmc_init(void)
+{
+	int ret;
+	gpmc_dev_num.count = 1;
+	gpmc_dev_num.minor_first = 0;
+	ret = alloc_chrdev_region(&gpmc_dev_num.devNum, gpmc_dev_num.minor_first, gpmc_dev_num.count, DEVICE_NAME);
+	if(ret < 0)
+		return ret;
+
+	gpmc_dev_num.major = MAJOR(gpmc_dev_num.devNum);
+	gpmc_dev_num.minor = MINOR(gpmc_dev_num.devNum);
+	gpmc_dev = kzalloc(sizeof(struct _gpmc_dev),GFP_KERNEL); 
+	gpmc_setup_cdev(gpmc_dev, 0); 
+	printk(KERN_ERR "gpmc alloc_chrdev_region success, major = %d\n", gpmc_dev_num.major); 
+/*
+	int i;
+	for(i=0;i<7;i++)
+	{
+		io_base[i]=ioremap(GPMC_CONFIG7(i),GPMC_SIZE);
+	}
+	unsigned long config7[7];
+	for(i=0;i<7;i++)
+	{
+		config7[i]=readl(io_base[i]);
+		printk("config%d=%x\n",i,config7[i]);
+		iounmap(io_base[i]);
+	}
+*/
+
+
+          io_base[0]=ioremap(GPMC_CONFIG7_0,GPMC_SIZE);
+          io_base[1]=ioremap(GPMC_CONFIG7_1,GPMC_SIZE);
+          io_base[2]=ioremap(GPMC_CONFIG7_2,GPMC_SIZE);
+          io_base[3]=ioremap(GPMC_CONFIG7_3,GPMC_SIZE);
+          io_base[4]=ioremap(GPMC_CONFIG7_4,GPMC_SIZE);
+          io_base[5]=ioremap(GPMC_CONFIG7_5,GPMC_SIZE);
+          io_base[6]=ioremap(GPMC_CONFIG7_6,GPMC_SIZE);
+		//  io_cs3=ioremap(0,0x350);
+	    //   unsigned short* stat=unsigned short*(io_cs3+0x340);
+           unsigned long config7[7];
+           
+           int i;
+          for(i=0;i<7;i++)
+         {
+                config7[i]=readl(io_base[i]);
+                printk("config%d=%x\n",i,config7[i]);
+                iounmap(io_base[i]);
+         }
+		 writel(0x00000C40 ,io_base[3]);
+         io_cs3=ioremap(0,0x350);
+         unsigned char* stat=(unsigned char*)(io_cs3+0x340);
+         unsigned char data;
+         writeb(0x88,stat);
+	   	data=readb(stat);
+        //   unsigned long config7[7];
+	//	test=readb(io_base3_test);
+		printk("data_0x340=%x\n",data);
+          
+
+
+        //   unsigned long config7[7];
+	    //   unsigned short* stat=unsigned short*(io_cs3+0x340);
+	/*
+		io_base3_test=0x340+io_cs3 ;
+		printk("baseaddr=%x\n",io_base3_test);
+		writeb(0x88,io_base3_test);
+		unsigned short test;
+		test=readb(io_base3_test);
+		printk("test_0x340=%x\n",test);
+		unsigned short test;
+		test=readb(io_base3_test);
+    */
+/*
+		io_base3_test=io_base[3]+0x00000300;
+		writel(0x66,io_base3_test);
+		test=readl(io_base3_test);
+		printk("test_0x300=%x\n",test);
+*/	
+	return 0;
+}
+
+/*gpmc device cleanup*/
+static void __exit gpmc_exit(void)
+{
+	cdev_del(&gpmc_dev->cdev);
+	kfree(gpmc_dev);
+	unregister_chrdev_region(gpmc_dev_num.devNum,1);
+	printk(KERN_ERR "gpmc unregister_chrdev_region success,major=%d\n",gpmc_dev_num.major);
+}
+
+MODULE_LICENSE("Dual BSD/GPL");
+MODULE_DESCRIPTION("This Module is used to Control GPMC");
+MODULE_AUTHOR("ZhangFengLi@520");
+module_init(gpmc_init);
+module_exit(gpmc_exit);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

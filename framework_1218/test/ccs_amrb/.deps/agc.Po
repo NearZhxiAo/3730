@@ -1,0 +1,20 @@
+agc.o agc.o: agc.c typedef.h basic_op.h table.h mode.h pred_lt_3or6.h \
+  cnst.h inv_sqrt.h agc.h energy_new.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+cnst.h:
+
+inv_sqrt.h:
+
+agc.h:
+
+energy_new.h:

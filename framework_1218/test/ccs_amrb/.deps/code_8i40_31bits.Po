@@ -1,0 +1,32 @@
+code_8i40_31bits.o code_8i40_31bits.o: code_8i40_31bits.c typedef.h \
+  basic_op.h table.h mode.h pred_lt_3or6.h cnst.h inv_sqrt.h cor_h_x2.h \
+  cor_h.h set_sign.h search_10and8i40.h compress_code.h \
+  build_code_8i40_31bits.h set_sign12k2.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+cnst.h:
+
+inv_sqrt.h:
+
+cor_h_x2.h:
+
+cor_h.h:
+
+set_sign.h:
+
+search_10and8i40.h:
+
+compress_code.h:
+
+build_code_8i40_31bits.h:
+
+set_sign12k2.h:

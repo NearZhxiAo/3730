@@ -1,0 +1,16 @@
+init_d_plsf_3.o init_d_plsf_3.o: init_d_plsf_3.c typedef.h cnst.h copy.h \
+  table.h mode.h pred_lt_3or6.h d_plsf.h
+
+typedef.h:
+
+cnst.h:
+
+copy.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+d_plsf.h:

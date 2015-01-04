@@ -1,0 +1,14 @@
+log2.o log2.o: log2.c typedef.h basic_op.h table.h mode.h pred_lt_3or6.h \
+  log2_norm.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+log2_norm.h:

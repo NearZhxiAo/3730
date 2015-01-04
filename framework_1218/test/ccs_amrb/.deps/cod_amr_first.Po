@@ -1,0 +1,42 @@
+cod_amr_first.o cod_amr_first.o: cod_amr_first.c typedef.h copy.h \
+  cod_amr.h cnst.h mode.h lpc.h levinson.h lsp.h q_plsf.h cl_ltp.h \
+  pitch_fr.h ton_stab.h gainquant.h gc_pred.h gain_adapt.h Pitch_ol_wgh.h \
+  vad1.h cnst_vad.h dtx_def.h
+
+typedef.h:
+
+copy.h:
+
+cod_amr.h:
+
+cnst.h:
+
+mode.h:
+
+lpc.h:
+
+levinson.h:
+
+lsp.h:
+
+q_plsf.h:
+
+cl_ltp.h:
+
+pitch_fr.h:
+
+ton_stab.h:
+
+gainquant.h:
+
+gc_pred.h:
+
+gain_adapt.h:
+
+Pitch_ol_wgh.h:
+
+vad1.h:
+
+cnst_vad.h:
+
+dtx_def.h:

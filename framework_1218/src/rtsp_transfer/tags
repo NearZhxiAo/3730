@@ -1,0 +1,332 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+ACLOCAL	Makefile	/^ACLOCAL = ${SHELL} \/home\/mru\/MRU_work\/missing --run aclocal-1.9$/;"	m
+ACLOCAL_M4	Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+AMDEP_FALSE	Makefile	/^AMDEP_FALSE = #$/;"	m
+AMDEP_TRUE	Makefile	/^AMDEP_TRUE = $/;"	m
+AMTAR	Makefile	/^AMTAR = ${SHELL} \/home\/mru\/MRU_work\/missing --run tar$/;"	m
+AM_LDFLAGS	Makefile	/^AM_LDFLAGS = -L$(top_srcdir)\/lib -DSOCKET_SEND$/;"	m
+AUDIO_INFO_FROM_AVENC	rtsp_transfer_private.h	/^}AUDIO_INFO_FROM_AVENC;$/;"	t
+AUDIO_PORT	rtsp_transfer_unix.c	4;"	d	file:
+AUDIO_SSRC	RTP_HEAD.h	/^    unsigned char  AUDIO_SSRC[4];$/;"	m	struct:RTP_HEAD_INFO
+AUTOCONF	Makefile	/^AUTOCONF = ${SHELL} \/home\/mru\/MRU_work\/missing --run autoconf$/;"	m
+AUTOHEADER	Makefile	/^AUTOHEADER = ${SHELL} \/home\/mru\/MRU_work\/missing --run autoheader$/;"	m
+AUTOMAKE	Makefile	/^AUTOMAKE = ${SHELL} \/home\/mru\/MRU_work\/missing --run automake-1.9$/;"	m
+AWK	Makefile	/^AWK = gawk$/;"	m
+CC	Makefile	/^CC = arm_v5t_le-gcc$/;"	m
+CCDEPMODE	Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CCLD	Makefile	/^CCLD = $(CC)$/;"	m
+CDPATH	Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -O2$/;"	m
+CHANNEL_ID_AUDIO	rtsp_transfer_unix.c	6;"	d	file:
+CHANNEL_ID_VIDEO	rtsp_transfer_unix.c	5;"	d	file:
+COMPILE	Makefile	/^COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \\$/;"	m
+CONFIG_CLEAN_FILES	Makefile	/^CONFIG_CLEAN_FILES =$/;"	m
+CONFIG_HEADER	Makefile	/^CONFIG_HEADER = $(top_builddir)\/config.h$/;"	m
+CPP	Makefile	/^CPP = arm_v5t_le-gcc -E$/;"	m
+CPPFLAGS	Makefile	/^CPPFLAGS = $/;"	m
+CTAGS	Makefile	/^CTAGS = ctags$/;"	m
+CXX	Makefile	/^CXX = arm_v5t_le-g++$/;"	m
+CXXDEPMODE	Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS = -g -O2$/;"	m
+CYGPATH_W	Makefile	/^CYGPATH_W = echo$/;"	m
+CmdPara	RTP_HEAD.h	/^    unsigned char   CmdPara[16]; \/*√¸¡Ó≤Œ ˝*\/$/;"	m	struct:_RTP_CTRL_HEAD
+CmdParaLen	RTP_HEAD.h	/^    unsigned short   CmdParaLen; \/*√¸¡Ó≤Œ ˝≥§∂»*\/$/;"	m	struct:_RTP_CTRL_HEAD
+CodeType	RTP_HEAD.h	/^    unsigned int            CodeType; \/\/32bits,±‡¬Î¿‡–Õ,Ω” ’∂À∏˘æ›¥À¿‡–Õ¿¥µ˜”√∂‘”¶µƒΩ‚¬Î∆˜$/;"	m	struct:_RTP_Exten_HEAD
+CtrlCmdType	RTP_HEAD.h	/^    unsigned short  CtrlCmdType; \/*√¸¡Ó¿‡–Õ*\/$/;"	m	struct:_RTP_CTRL_HEAD
+DATA_MAX_LEN	RTP_HEAD.h	10;"	d
+DEFAULT_INCLUDES	Makefile	/^DEFAULT_INCLUDES = -I. -I$(srcdir) -I$(top_builddir)$/;"	m
+DEFS	Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEPDIR	Makefile	/^DEPDIR = .deps$/;"	m
+DISTFILES	Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DIST_COMMON	Makefile	/^DIST_COMMON = $(srcdir)\/Makefile.am $(srcdir)\/Makefile.in$/;"	m
+DIST_SOURCES	Makefile	/^DIST_SOURCES = $(rtsp_transfer_SOURCES)$/;"	m
+Def_by_profile	RTP_HEAD.h	/^    unsigned short    Def_by_profile;    \/\/16bit,»°÷µ0x7376$/;"	m	struct:_RTP_Exten_HEAD
+ECHO_C	Makefile	/^ECHO_C = $/;"	m
+ECHO_N	Makefile	/^ECHO_N = -n$/;"	m
+ECHO_T	Makefile	/^ECHO_T = $/;"	m
+EGREP	Makefile	/^EGREP = grep -E$/;"	m
+ETAGS	Makefile	/^ETAGS = etags$/;"	m
+EXEEXT	Makefile	/^EXEEXT = $/;"	m
+Ext_time_stamp	RTP_HEAD.h	/^    unsigned short    Ext_time_stamp; \/\/16bits$/;"	m	struct:_RTP_Exten_HEAD
+Extension	RTP_HEAD.h	/^    unsigned char  Extension;$/;"	m	struct:RTP_HEAD_INFO
+FALSE	rtsp_transfer_private.h	23;"	d
+FTY_code	RTP_HEAD.h	/^    unsigned short          FTY_code; \/\/16bits,≥ß…Ã¥˙¬Î,»± °0x7376$/;"	m	struct:_RTP_Exten_HEAD
+INCLUDES	Makefile	/^INCLUDES = -I$(top_srcdir)\/include -I.\/$/;"	m
+INFO_FROM_AVENC	rtsp_transfer_private.h	/^}INFO_FROM_AVENC;$/;"	t
+INFO_FROM_CLIENTPC	rtsp_transfer_private.h	/^}INFO_FROM_CLIENTPC;$/;"	t
+INSTALL	Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL_DATA	Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_HEADER	Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_PROGRAM	Makefile	/^	$(MAKE) $(AM_MAKEFLAGS) INSTALL_PROGRAM="$(INSTALL_STRIP_PROGRAM)" \\$/;"	m
+INSTALL_PROGRAM	Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_PROGRAM_ENV	Makefile	/^	    echo "INSTALL_PROGRAM_ENV=STRIPPROG='$(STRIP)'"` install$/;"	m
+INSTALL_SCRIPT	Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_STRIP_FLAG	Makefile	/^	  install_sh_PROGRAM="$(INSTALL_STRIP_PROGRAM)" INSTALL_STRIP_FLAG=-s \\$/;"	m
+INSTALL_STRIP_PROGRAM	Makefile	/^INSTALL_STRIP_PROGRAM = ${SHELL} $(install_sh) -c -s$/;"	m
+IPProtocol	rtsp_transfer_private.h	/^	unsigned char IPProtocol;$/;"	m	struct:_INFO_FROM_CLIENTPC
+IPStr	rtsp_transfer_private.h	/^	char IPStr[15];  \/*record for IPÔºöxxx.xxx.xxx.xxx*\/$/;"	m	struct:_INFO_FROM_CLIENTPC
+I_frame_sended_flag	rtsp_transfer_private.h	/^	int I_frame_sended_flag;  \/\/IÂ∏ßÂèëÈÄÅÊ†áÂøó$/;"	m	struct:_RTSP_TRANFER_PRIVATE_HANDLE
+InitRtpExtenHead	rtpinit.c	/^void InitRtpExtenHead(RTP_Exten_HEAD *prtpExtenHdr, RTP_HEAD_INFO* prtp_head_info)$/;"	f
+InitRtpHead	rtpinit.c	/^void InitRtpHead(RTP_DATA_HEAD *prtpDataHdr, RTP_HEAD_INFO* prtp_head_info)$/;"	f
+IsRtspSysQuit	rtsp_transfer_main.c	/^static int IsRtspSysQuit = 0;$/;"	v	file:
+JudgeRecvData	rtsp_transfer_unix.c	/^unsigned char JudgeRecvData(char *RecvBuf,unsigned char *PayLoad)$/;"	f
+LDFLAGS	Makefile	/^LDFLAGS = $/;"	m
+LIBOBJS	Makefile	/^LIBOBJS = $/;"	m
+LIBS	Makefile	/^LIBS = -lpthread $/;"	m
+LINK	Makefile	/^LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@$/;"	m
+LTLIBOBJS	Makefile	/^LTLIBOBJS = $/;"	m
+Length	RTP_HEAD.h	/^    unsigned short            Length;    \/\/16bit,»°÷µ3$/;"	m	struct:_RTP_Exten_HEAD
+MAKEINFO	Makefile	/^MAKEINFO = ${SHELL} \/home\/mru\/MRU_work\/missing --run makeinfo$/;"	m
+MTU	RTP_HEAD.h	8;"	d
+Marker	RTP_HEAD.h	/^    unsigned char  Marker;$/;"	m	struct:RTP_HEAD_INFO
+Mrk_type	RTP_HEAD.h	/^    unsigned char      Mrk_type;$/;"	m	struct:_RTP_DATA_HEAD
+Mrk_type	RTP_HEAD.h	/^    unsigned char      Mrk_type;$/;"	m	struct:_RTP_Exten_HEAD
+NORMAL_INSTALL	Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_UNINSTALL	Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+OBJEXT	Makefile	/^OBJEXT = o$/;"	m
+PACKAGE	Makefile	/^PACKAGE = MRU_work$/;"	m
+PACKAGE_BUGREPORT	Makefile	/^PACKAGE_BUGREPORT = liangzhang@xidian.edu.cn$/;"	m
+PACKAGE_NAME	Makefile	/^PACKAGE_NAME = MRU_work$/;"	m
+PACKAGE_STRING	Makefile	/^PACKAGE_STRING = MRU_work 1.0$/;"	m
+PACKAGE_TARNAME	Makefile	/^PACKAGE_TARNAME = mru_work$/;"	m
+PACKAGE_VERSION	Makefile	/^PACKAGE_VERSION = 1.0$/;"	m
+PATH_SEPARATOR	Makefile	/^PATH_SEPARATOR = :$/;"	m
+PAYLOAD_CONTROL	RTP_HEAD.h	18;"	d
+PAYLOAD_G7221	RTP_HEAD.h	17;"	d
+PAYLOAD_H264	RTP_HEAD.h	15;"	d
+PAYLOAD_MPEG4	RTP_HEAD.h	16;"	d
+PAYLOAD_PCMA	RTP_HEAD.h	14;"	d
+PORT	rtsp_transfer_unix.c	3;"	d	file:
+POST_INSTALL	Makefile	/^POST_INSTALL = :$/;"	m
+POST_UNINSTALL	Makefile	/^POST_UNINSTALL = :$/;"	m
+PRE_INSTALL	Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_UNINSTALL	Makefile	/^PRE_UNINSTALL = :$/;"	m
+PROGRAMS	Makefile	/^PROGRAMS = $(bin_PROGRAMS)$/;"	m
+Payload	RTP_HEAD.h	/^    unsigned char  Payload;$/;"	m	struct:RTP_HEAD_INFO
+Port	rtsp_transfer_private.h	/^	unsigned short Port;$/;"	m	struct:_INFO_FROM_CLIENTPC
+RANLIB	Makefile	/^RANLIB = arm_v5t_le-ranlib$/;"	m
+RTP_CTRL_CHANNEL_ACTIVE	rtp_ctrl_type.h	9;"	d
+RTP_CTRL_CHANNEL_CLOSE	rtp_ctrl_type.h	10;"	d
+RTP_CTRL_DATA_CONTINUE	rtp_ctrl_type.h	14;"	d
+RTP_CTRL_DATA_PAUSE	rtp_ctrl_type.h	13;"	d
+RTP_CTRL_DECREASE_RATE	rtp_ctrl_type.h	12;"	d
+RTP_CTRL_HEAD	RTP_HEAD.h	/^}RTP_CTRL_HEAD, *pRTP_CTRL_HEAD;$/;"	t
+RTP_CTRL_INCREASE_RATE	rtp_ctrl_type.h	11;"	d
+RTP_CTRL_NET_TEST	rtp_ctrl_type.h	15;"	d
+RTP_CTRL_NET_TEST_ACK	rtp_ctrl_type.h	16;"	d
+RTP_CTRL_PLAYBACK	rtp_ctrl_type.h	17;"	d
+RTP_CTRL_RECV_REPORT	rtp_ctrl_type.h	19;"	d
+RTP_CTRL_REQ_KEYFRAME	rtp_ctrl_type.h	21;"	d
+RTP_CTRL_REQ_RESEND	rtp_ctrl_type.h	20;"	d
+RTP_CTRL_UNKNOWN	rtp_ctrl_type.h	8;"	d
+RTP_DATA_HEAD	RTP_HEAD.h	/^}RTP_DATA_HEAD, *pRTP_DATA_HEAD;$/;"	t
+RTP_Exten_HEAD	RTP_HEAD.h	/^}RTP_Exten_HEAD, *pRTP_Exten_HEAD;$/;"	t
+RTP_HEAD_INFO	RTP_HEAD.h	/^typedef struct  RTP_HEAD_INFO$/;"	s
+RTP_HEAD_INFO	RTP_HEAD.h	/^}RTP_HEAD_INFO;$/;"	t
+RTP_Msg_Len	RTP_HEAD.h	9;"	d
+RTP_PAYLOAD_CTRL	rtsp_transfer_private.h	25;"	d
+RTSP_AUDIO_SEND	rtsp_transfer_unix.c	8;"	d	file:
+RTSP_STATE	rtsp_transfer_private.h	/^}RTSP_STATE;$/;"	t
+RTSP_STATE_CALL	rtsp_transfer_private.h	/^	RTSP_STATE_CALL,$/;"	e	enum:_RTSP_STATE
+RTSP_STATE_CALL_PAUSE	rtsp_transfer_private.h	/^	RTSP_STATE_CALL_PAUSE,$/;"	e	enum:_RTSP_STATE
+RTSP_STATE_END	rtsp_transfer_private.h	/^	RTSP_STATE_END$/;"	e	enum:_RTSP_STATE
+RTSP_STATE_IDLE	rtsp_transfer_private.h	/^	RTSP_STATE_IDLE,$/;"	e	enum:_RTSP_STATE
+RTSP_STATE_PREVIEW	rtsp_transfer_private.h	/^	RTSP_STATE_PREVIEW,$/;"	e	enum:_RTSP_STATE
+RTSP_STATE_PREVIEW_CALL	rtsp_transfer_private.h	/^	RTSP_STATE_PREVIEW_CALL,$/;"	e	enum:_RTSP_STATE
+RTSP_STATE_PREVIEW_CALL_PAUSE	rtsp_transfer_private.h	/^	RTSP_STATE_PREVIEW_CALL_PAUSE,$/;"	e	enum:_RTSP_STATE
+RTSP_STATE_PREVIEW_PAUSE	rtsp_transfer_private.h	/^	RTSP_STATE_PREVIEW_PAUSE,$/;"	e	enum:_RTSP_STATE
+RTSP_STATE_PREVIEW_PAUSE_CALL	rtsp_transfer_private.h	/^	RTSP_STATE_PREVIEW_PAUSE_CALL,$/;"	e	enum:_RTSP_STATE
+RTSP_STATE_PREVIEW_PAUSE_CALL_PAUSE	rtsp_transfer_private.h	/^	RTSP_STATE_PREVIEW_PAUSE_CALL_PAUSE,$/;"	e	enum:_RTSP_STATE
+RTSP_STATE_START	rtsp_transfer_private.h	/^	RTSP_STATE_START,$/;"	e	enum:_RTSP_STATE
+RTSP_TRANFER_POLL_COUNT_MAX	rtsp_transfer_private.h	54;"	d
+RTSP_TRANFER_PRIVATE_HANDLE	rtsp_transfer_private.h	/^}RTSP_TRANFER_PRIVATE_HANDLE;$/;"	t
+Recv_Buf_Parse	rtsp_transfer_unix.c	/^unsigned short Recv_Buf_Parse(char *RecvBuf,unsigned short *CmdType)$/;"	f
+ResHgt	RTP_HEAD.h	/^    unsigned short            ResHgt;$/;"	m	struct:_RTP_Exten_HEAD
+S	RTP_HEAD.h	/^    unsigned char  S;$/;"	m	struct:RTP_HEAD_INFO
+SAVE_DATA	rtsp_transfer_private.h	27;"	d
+SET_MAKE	Makefile	/^SET_MAKE = $/;"	m
+SHELL	Makefile	/^SHELL = \/bin\/sh$/;"	m
+SOURCES	Makefile	/^SOURCES = $(rtsp_transfer_SOURCES)$/;"	m
+SSRC	RTP_HEAD.h	/^    unsigned char  SSRC[4];$/;"	m	struct:RTP_HEAD_INFO
+STRIP	Makefile	/^STRIP = arm_v5t_le-strip$/;"	m
+STRIPPROG	Makefile	/^	    echo "INSTALL_PROGRAM_ENV=STRIPPROG='$(STRIP)'"` install$/;"	m
+Snumber	RTP_HEAD.h	/^    unsigned short      Snumber;         \/\/16bit,RTP ˝æ›∞¸–Ú¡–∫≈$/;"	m	struct:_RTP_DATA_HEAD
+Snumber	RTP_HEAD.h	/^    unsigned short      Snumber;         \/\/16bit,RTP ˝æ›∞¸–Ú¡–∫≈$/;"	m	struct:_RTP_Exten_HEAD
+Ssrc	RTP_HEAD.h	/^    unsigned char         Ssrc[4];         \/\/32bit,Õ¨≤Ω‘¥±Í ∂$/;"	m	struct:_RTP_Exten_HEAD
+Ssrc	RTP_HEAD.h	/^    unsigned char       Ssrc[4];         \/\/32bit,Õ¨≤Ω‘¥±Í ∂$/;"	m	struct:_RTP_DATA_HEAD
+T	RTP_HEAD.h	/^    unsigned char  T;$/;"	m	struct:RTP_HEAD_INFO
+TCP	RTP_HEAD.h	23;"	d
+TRUE	rtsp_transfer_private.h	24;"	d
+TSWid	RTP_HEAD.h	/^    unsigned short             TSWid;$/;"	m	struct:_RTP_Exten_HEAD
+Timestamp	RTP_HEAD.h	/^    unsigned int      Timestamp;         \/\/32bit, ±º‰¥¡$/;"	m	struct:_RTP_DATA_HEAD
+Timestamp	RTP_HEAD.h	/^    unsigned int      Timestamp;         \/\/32bit, ±º‰¥¡$/;"	m	struct:_RTP_Exten_HEAD
+UDP	RTP_HEAD.h	22;"	d
+VERSION	Makefile	/^VERSION = 1.0$/;"	m
+VPEC	RTP_HEAD.h	/^    unsigned char          VPEC;$/;"	m	struct:_RTP_DATA_HEAD
+VPEC	RTP_HEAD.h	/^    unsigned char          VPEC;$/;"	m	struct:_RTP_Exten_HEAD
+_AUDIO_INFO_FROM_AVENC	rtsp_transfer_private.h	/^typedef  struct _AUDIO_INFO_FROM_AVENC$/;"	s
+_INFO_FROM_AVENC	rtsp_transfer_private.h	/^typedef struct _INFO_FROM_AVENC$/;"	s
+_INFO_FROM_CLIENTPC	rtsp_transfer_private.h	/^typedef struct _INFO_FROM_CLIENTPC$/;"	s
+_RTP_CTRL_HEAD	RTP_HEAD.h	/^typedef  struct  _RTP_CTRL_HEAD$/;"	s
+_RTP_CTRL_TYPE	rtp_ctrl_type.h	2;"	d
+_RTP_DATA_HEAD	RTP_HEAD.h	/^typedef  struct  _RTP_DATA_HEAD$/;"	s
+_RTP_Exten_HEAD	RTP_HEAD.h	/^typedef  struct  _RTP_Exten_HEAD$/;"	s
+_RTP_HEAD	RTP_HEAD.h	2;"	d
+_RTSP_STATE	rtsp_transfer_private.h	/^typedef enum _RTSP_STATE$/;"	g
+_RTSP_TRANFER_PRIVATE_HANDLE	rtsp_transfer_private.h	/^typedef struct _RTSP_TRANFER_PRIVATE_HANDLE$/;"	s
+_RTSP_TRANFER_PRIVATE_H__	rtsp_transfer_private.h	2;"	d
+a_sequence_number	rtsp_transfer_private.h	/^	unsigned short a_sequence_number; \/\/Èü≥È¢ëÂ∫èÂàóÂè∑$/;"	m	struct:_RTSP_TRANFER_PRIVATE_HANDLE
+ac_ct_CC	Makefile	/^ac_ct_CC = $/;"	m
+ac_ct_CXX	Makefile	/^ac_ct_CXX = $/;"	m
+ac_ct_RANLIB	Makefile	/^ac_ct_RANLIB = $/;"	m
+ac_ct_STRIP	Makefile	/^ac_ct_STRIP = $/;"	m
+active_fdcount	rtsp_transfer_private.h	/^	int active_fdcount;	\/\/ÂøÖÈ°ªÁöÑ$/;"	m	struct:_RTSP_TRANFER_PRIVATE_HANDLE
+am__aclocal_m4_deps	Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/configure.ac$/;"	m
+am__cd	Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__configure_deps	Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__depfiles_maybe	Makefile	/^am__depfiles_maybe = depfiles$/;"	m
+am__fastdepCC_FALSE	Makefile	/^am__fastdepCC_FALSE = #$/;"	m
+am__fastdepCC_TRUE	Makefile	/^am__fastdepCC_TRUE = $/;"	m
+am__fastdepCXX_FALSE	Makefile	/^am__fastdepCXX_FALSE = #$/;"	m
+am__fastdepCXX_TRUE	Makefile	/^am__fastdepCXX_TRUE = $/;"	m
+am__include	Makefile	/^am__include = include$/;"	m
+am__installdirs	Makefile	/^am__installdirs = "$(DESTDIR)$(bindir)"$/;"	m
+am__leading_dot	Makefile	/^am__leading_dot = .$/;"	m
+am__quote	Makefile	/^am__quote = $/;"	m
+am__tar	Makefile	/^am__tar = ${AMTAR} chof - "$$tardir"$/;"	m
+am__untar	Makefile	/^am__untar = ${AMTAR} xf -$/;"	m
+am_rtsp_transfer_OBJECTS	Makefile	/^am_rtsp_transfer_OBJECTS = rtsp_transfer_main.$(OBJEXT) \\$/;"	m
+audatainfo	rtsp_transfer_private.h	/^	AUDIO_INFO_FROM_AVENC  audatainfo;$/;"	m	struct:_RTSP_TRANFER_PRIVATE_HANDLE
+audio_sockaddr	rtsp_transfer_private.h	/^	struct sockaddr_in audio_sockaddr; \/\/Âú∞ÂùÄÁªìÊûÑ‰Ωì$/;"	m	struct:_RTSP_TRANFER_PRIVATE_HANDLE
+audio_socket_fd	rtsp_transfer_private.h	/^	int audio_socket_fd;	\/\/TCP or UDP socket$/;"	m	struct:_RTSP_TRANFER_PRIVATE_HANDLE
+binPROGRAMS_INSTALL	Makefile	/^binPROGRAMS_INSTALL = $(INSTALL_PROGRAM)$/;"	m
+bin_PROGRAMS	Makefile	/^bin_PROGRAMS = rtsp_transfer$(EXEEXT)$/;"	m
+bindir	Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+buf	rtpinit.c	/^char buf[MTU];$/;"	v
+buf_len	rtsp_transfer_private.h	/^	  long  buf_len ;$/;"	m	struct:_AUDIO_INFO_FROM_AVENC
+buf_len	rtsp_transfer_private.h	/^	long buf_len;  \/\/Êï∞ÊçÆÈïøÂ∫¶$/;"	m	struct:_INFO_FROM_AVENC
+build_alias	Makefile	/^build_alias = $/;"	m
+cmdinfo	rtsp_transfer_private.h	/^    INFO_FROM_CLIENTPC   cmdinfo; \/\/ÂëΩ‰ª§‰ø°ÊÅØ$/;"	m	struct:_RTSP_TRANFER_PRIVATE_HANDLE
+count	rtsp_transfer_unix.c	/^static count = 0;$/;"	v	file:
+current_state	rtsp_transfer_private.h	/^	RTSP_STATE current_state; \/\/Áä∂ÊÄÅ$/;"	m	struct:_RTSP_TRANFER_PRIVATE_HANDLE
+data_len	RTP_HEAD.h	/^    unsigned short   data_len;$/;"	m	struct:RTP_HEAD_INFO
+datadir	Makefile	/^datadir = ${prefix}\/share$/;"	m
+datainfo	rtsp_transfer_private.h	/^	INFO_FROM_AVENC  datainfo; \/\/Êï∞ÊçÆ‰ø°ÊÅØ$/;"	m	struct:_RTSP_TRANFER_PRIVATE_HANDLE
+depcomp	Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/depcomp$/;"	m
+depmode	Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+depmode	Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
+dir	Makefile	/^	    dir="\/$$dir"; \\$/;"	m
+dir	Makefile	/^	    dir=''; \\$/;"	m
+dir	Makefile	/^	  dir=`echo "$$file" | sed -e 's,\/[^\/]*$$,,'`; \\$/;"	m
+exec_prefix	Makefile	/^exec_prefix = ${prefix}$/;"	m
+f	Makefile	/^	    f=`echo "$$p1" | sed 's,^.*\/,,;$(transform);s\/$$\/$(EXEEXT)\/'`; \\$/;"	m
+f	Makefile	/^	  f=`echo "$$p" | sed 's,^.*\/,,;s\/$(EXEEXT)$$\/\/;$(transform);s\/$$\/$(EXEEXT)\/'`; \\$/;"	m
+file	Makefile	/^	    $(srcdir)\/*) file=`echo "$$file" | sed "s|^$$srcdirstrip\/||"`;; \\$/;"	m
+file	Makefile	/^	    $(top_srcdir)\/*) file=`echo "$$file" | sed "s|^$$topsrcdirstrip\/|$(top_builddir)\/|"`;; \\$/;"	m
+fillRtpCtrlHead	rtpinit.c	/^char* fillRtpCtrlHead(RTP_HEAD_INFO* prtp_head_info, unsigned short rtpCtrltype)$/;"	f
+fillRtpExtenHead	rtpinit.c	/^char* fillRtpExtenHead(char*databuf, RTP_HEAD_INFO* prtp_head_info, unsigned int* psend_len, unsigned int *offset)$/;"	f
+fillRtpHead	rtpinit.c	/^char* fillRtpHead(char*databuf, RTP_HEAD_INFO* prtp_head_info, unsigned int* psend_len, unsigned int *offset)$/;"	f
+fp_out	rtsp_transfer_private.h	/^	FILE *fp_out;$/;"	m	struct:_RTSP_TRANFER_PRIVATE_HANDLE
+fp_out1	rtsp_transfer_private.h	/^	FILE *fp_out1;$/;"	m	struct:_RTSP_TRANFER_PRIVATE_HANDLE
+frame_type	rtsp_transfer_private.h	/^	 LIBASSHM_FRAME_TYPE  frame_type;$/;"	m	struct:_AUDIO_INFO_FROM_AVENC
+frame_type	rtsp_transfer_private.h	/^	LIBVSSHM_FRAME_TYPE  frame_type; \/\/Á†ÅÊµÅÁ±ªÂûã$/;"	m	struct:_INFO_FROM_AVENC
+get_audiodata_info	rtsp_transfer_unix.c	/^void get_audiodata_info(RTSP_TRANFER_PRIVATE_HANDLE *phandle,LIBASSHM_UINT_DATA *prtsp_transfer_asshm_unit_buffer)$/;"	f
+get_data_info	rtsp_transfer_unix.c	/^void get_data_info(RTSP_TRANFER_PRIVATE_HANDLE *phandle,LIBVSSHM_UINT_DATA_I *prtsp_transfer_vsshm_unit_buffer)$/;"	f
+global_rtsp_transfer_private_handle	rtsp_transfer_main.c	/^RTSP_TRANFER_PRIVATE_HANDLE global_rtsp_transfer_private_handle;$/;"	v
+here	Makefile	/^	here=`$(am__cd) $(top_builddir) && pwd` \\$/;"	m
+here	Makefile	/^	here=`pwd`; \\$/;"	m
+host_alias	Makefile	/^host_alias = arm_v5t_le$/;"	m
+i_p_flag	rtsp_transfer_private.h	/^	LIBVSSHM_I_P_FLAG    i_p_flag;  \/\/IÂ∏ßÔºåPÂ∏ß$/;"	m	struct:_INFO_FROM_AVENC
+includedir	Makefile	/^includedir = ${prefix}\/include$/;"	m
+infodir	Makefile	/^infodir = ${prefix}\/info$/;"	m
+install_sh	Makefile	/^install_sh = \/home\/mru\/MRU_work\/install-sh$/;"	m
+install_sh_DATA	Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_PROGRAM	Makefile	/^	  install_sh_PROGRAM="$(INSTALL_STRIP_PROGRAM)" INSTALL_STRIP_FLAG=-s \\$/;"	m
+install_sh_PROGRAM	Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+libdir	Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libexecdir	Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+list	Makefile	/^	list='$(DISTFILES)'; for file in $$list; do \\$/;"	m
+list	Makefile	/^	list='$(SOURCES) $(HEADERS)  $(LISP) $(TAGS_FILES)'; \\$/;"	m
+list	Makefile	/^	list='$(SOURCES) $(HEADERS) $(LISP) $(TAGS_FILES)'; \\$/;"	m
+localstatedir	Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+main	rtsp_transfer_main.c	/^int main(int argc, char **argv)$/;"	f
+mandir	Makefile	/^mandir = ${prefix}\/man$/;"	m
+mkdir_p	Makefile	/^mkdir_p = mkdir -p --$/;"	m
+mkinstalldirs	Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+oldincludedir	Makefile	/^oldincludedir = \/usr\/include$/;"	m
+p1	Makefile	/^	  p1=`echo $$p|sed 's\/$(EXEEXT)$$\/\/'`; \\$/;"	m
+pRTP_CTRL_HEAD	RTP_HEAD.h	/^}RTP_CTRL_HEAD, *pRTP_CTRL_HEAD;$/;"	t
+pRTP_DATA_HEAD	RTP_HEAD.h	/^}RTP_DATA_HEAD, *pRTP_DATA_HEAD;$/;"	t
+pRTP_Exten_HEAD	RTP_HEAD.h	/^}RTP_Exten_HEAD, *pRTP_Exten_HEAD;$/;"	t
+passhm_obj	rtsp_transfer_private.h	/^	LIBASSHM_OBJ *passhm_obj;   \/\/ÂøÖÈ°ªÁöÑ$/;"	m	struct:_RTSP_TRANFER_PRIVATE_HANDLE
+paudio_obj	rtsp_transfer_private.h	/^	LIBAUDIO_OBJ *paudio_obj;   \/\/ÂøÖÈ°ªÁöÑ$/;"	m	struct:_RTSP_TRANFER_PRIVATE_HANDLE
+pbuf	rtsp_transfer_private.h	/^	  unsigned  char *pbuf ;$/;"	m	struct:_AUDIO_INFO_FROM_AVENC
+pbuf	rtsp_transfer_private.h	/^	unsigned char *pbuf;  \/\/ÊåáÂêëÊï∞ÊçÆÁöÑbuffer$/;"	m	struct:_INFO_FROM_AVENC
+pgbshm_obj	rtsp_transfer_private.h	/^	LIBGBSHM_OBJ *pgbshm_obj;		\/\/ÂøÖÈ°ªÁöÑ$/;"	m	struct:_RTSP_TRANFER_PRIVATE_HANDLE
+pkgdatadir	Makefile	/^pkgdatadir = $(datadir)\/MRU_work$/;"	m
+pkgincludedir	Makefile	/^pkgincludedir = $(includedir)\/MRU_work$/;"	m
+pkglibdir	Makefile	/^pkglibdir = $(libdir)\/MRU_work$/;"	m
+polltimeout	rtsp_transfer_private.h	/^	struct pollfd polltimeout[RTSP_TRANFER_POLL_COUNT_MAX];	\/\/ÂøÖÈ°ªÁöÑ$/;"	m	struct:_RTSP_TRANFER_PRIVATE_HANDLE
+prefix	Makefile	/^prefix = \/home\/mru\/ramfs_new\/ramfs_img\/opt\/install\/$/;"	m
+program_transform_name	Makefile	/^program_transform_name = s,x,x,$/;"	m
+pvsshm_obj	rtsp_transfer_private.h	/^	LIBVSSHM_OBJ *pvsshm_obj;		\/\/ÂøÖÈ°ªÁöÑ$/;"	m	struct:_RTSP_TRANFER_PRIVATE_HANDLE
+rtp_head_info	rtsp_transfer_private.h	/^    RTP_HEAD_INFO     rtp_head_info;\/\/rtpÂ§¥‰ø°ÊÅØ$/;"	m	struct:_RTSP_TRANFER_PRIVATE_HANDLE
+rtphead	RTP_HEAD.h	/^    RTP_DATA_HEAD       rtphead;$/;"	m	struct:_RTP_CTRL_HEAD
+rtsp_transfer_DEPENDENCIES	Makefile	/^rtsp_transfer_DEPENDENCIES =$/;"	m
+rtsp_transfer_LDADD	Makefile	/^rtsp_transfer_LDADD = -lunix -lgbshm -lsk -lvsshm -lasshm -laudio -lsignal$/;"	m
+rtsp_transfer_OBJECTS	Makefile	/^rtsp_transfer_OBJECTS = $(am_rtsp_transfer_OBJECTS)$/;"	m
+rtsp_transfer_SOURCES	Makefile	/^rtsp_transfer_SOURCES = rtsp_transfer_main.c rtsp_transfer_unix.c rtpinit.c$/;"	m
+rtsp_transfer_audio_socket	rtsp_transfer_unix.c	/^succeed_type rtsp_transfer_audio_socket(RTSP_TRANFER_PRIVATE_HANDLE *phandle)$/;"	f
+rtsp_transfer_exit	rtsp_transfer_main.c	/^static succeed_type rtsp_transfer_exit(RTSP_TRANFER_PRIVATE_HANDLE *phandle)$/;"	f	file:
+rtsp_transfer_init	rtsp_transfer_main.c	/^static succeed_type rtsp_transfer_init(RTSP_TRANFER_PRIVATE_HANDLE *phandle)$/;"	f	file:
+rtsp_transfer_poll_init	rtsp_transfer_main.c	/^static void rtsp_transfer_poll_init(RTSP_TRANFER_PRIVATE_HANDLE *phandle)$/;"	f	file:
+rtsp_transfer_preview_cmd_parse	rtsp_transfer_unix.c	/^void rtsp_transfer_preview_cmd_parse(RTSP_TRANFER_PRIVATE_HANDLE *phandle, preview_start *pstcmd_preview_start)$/;"	f
+rtsp_transfer_send_I_frame	rtsp_transfer_unix.c	/^succeed_type rtsp_transfer_send_I_frame(RTSP_TRANFER_PRIVATE_HANDLE *phandle)$/;"	f
+rtsp_transfer_send_P_frame	rtsp_transfer_unix.c	/^succeed_type rtsp_transfer_send_P_frame(RTSP_TRANFER_PRIVATE_HANDLE *phandle)$/;"	f
+rtsp_transfer_send_audio	rtsp_transfer_unix.c	/^succeed_type rtsp_transfer_send_audio(RTSP_TRANFER_PRIVATE_HANDLE *phandle)$/;"	f
+rtsp_transfer_send_video	rtsp_transfer_unix.c	/^succeed_type rtsp_transfer_send_video(RTSP_TRANFER_PRIVATE_HANDLE *phandle)$/;"	f
+rtsp_transfer_socket	rtsp_transfer_unix.c	/^succeed_type rtsp_transfer_socket(RTSP_TRANFER_PRIVATE_HANDLE *phandle)$/;"	f
+rtsp_transfer_socket_creat	rtsp_transfer_unix.c	/^succeed_type rtsp_transfer_socket_creat(RTSP_TRANFER_PRIVATE_HANDLE *phandle, unsigned short type)$/;"	f
+rtsp_transfer_unix	rtsp_transfer_unix.c	/^succeed_type rtsp_transfer_unix(RTSP_TRANFER_PRIVATE_HANDLE *phandle)$/;"	f
+rtsp_transfer_unix_audio_buffer_new_msg	rtsp_transfer_unix.c	/^static succeed_type rtsp_transfer_unix_audio_buffer_new_msg(RTSP_TRANFER_PRIVATE_HANDLE *phandle,UNIX_CMD_STRUCT *pcmd)$/;"	f	file:
+rtsp_transfer_unix_avenc_buffer_new_msg	rtsp_transfer_unix.c	/^static succeed_type rtsp_transfer_unix_avenc_buffer_new_msg(RTSP_TRANFER_PRIVATE_HANDLE *phandle,UNIX_CMD_STRUCT *pcmd)$/;"	f	file:
+rtsp_transfer_unix_call_start_deal	rtsp_transfer_unix.c	/^static succeed_type rtsp_transfer_unix_call_start_deal(RTSP_TRANFER_PRIVATE_HANDLE *phandle, UNIX_CMD_STRUCT *pcmd)$/;"	f	file:
+rtsp_transfer_unix_call_stop_deal	rtsp_transfer_unix.c	/^static succeed_type rtsp_transfer_unix_call_stop_deal(RTSP_TRANFER_PRIVATE_HANDLE *phandle)$/;"	f	file:
+rtsp_transfer_unix_control_net_stop	rtsp_transfer_unix.c	/^succeed_type rtsp_transfer_unix_control_net_stop(RTSP_TRANFER_PRIVATE_HANDLE *phandle)$/;"	f
+rtsp_transfer_unix_deal	rtsp_transfer_unix.c	/^static succeed_type rtsp_transfer_unix_deal( RTSP_TRANFER_PRIVATE_HANDLE *phandle, UNIX_CMD_STRUCT *pcmd)$/;"	f	file:
+rtsp_transfer_unix_preview_start_deal	rtsp_transfer_unix.c	/^static succeed_type rtsp_transfer_unix_preview_start_deal(RTSP_TRANFER_PRIVATE_HANDLE *phandle, UNIX_CMD_STRUCT *pcmd)$/;"	f	file:
+rtsp_transfer_unix_preview_stop_deal	rtsp_transfer_unix.c	/^static succeed_type rtsp_transfer_unix_preview_stop_deal(RTSP_TRANFER_PRIVATE_HANDLE *phandle)$/;"	f	file:
+sbindir	Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+seqnumber	RTP_HEAD.h	/^    unsigned short seqnumber;$/;"	m	struct:RTP_HEAD_INFO
+sharedstatedir	Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+sig_handle_proc	rtsp_transfer_main.c	/^void sig_handle_proc(int sig)$/;"	f
+sockaddr	rtsp_transfer_private.h	/^	struct sockaddr_in sockaddr; \/\/Âú∞ÂùÄÁªìÊûÑ‰Ωì$/;"	m	struct:_RTSP_TRANFER_PRIVATE_HANDLE
+sockaddr1	rtsp_transfer_private.h	/^	struct sockaddr_in sockaddr1; \/\/ÊµãËØïÁî®$/;"	m	struct:_RTSP_TRANFER_PRIVATE_HANDLE
+socket_fd	rtsp_transfer_private.h	/^	int socket_fd;	\/\/TCP or UDP socket$/;"	m	struct:_RTSP_TRANFER_PRIVATE_HANDLE
+socket_fd1	rtsp_transfer_private.h	/^    int socket_fd1; \/\/ÊµãËØïÁî®	$/;"	m	struct:_RTSP_TRANFER_PRIVATE_HANDLE
+srcdir	Makefile	/^srcdir = .$/;"	m
+subdir	Makefile	/^subdir = src\/rtsp_transfer$/;"	m
+sysconfdir	Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+tags	Makefile	/^	tags=; \\$/;"	m
+target_alias	Makefile	/^target_alias = $/;"	m
+timestamp	RTP_HEAD.h	/^    unsigned int   timestamp;$/;"	m	struct:RTP_HEAD_INFO
+timestamp	rtsp_transfer_private.h	/^	  long long timestamp;$/;"	m	struct:_AUDIO_INFO_FROM_AVENC
+timestamp	rtsp_transfer_private.h	/^	long long timestamp;    \/\/Â∏ßÁöÑÊó∂Èó¥Êà≥$/;"	m	struct:_INFO_FROM_AVENC
+top_builddir	Makefile	/^top_builddir = ..\/..$/;"	m
+top_srcdir	Makefile	/^top_srcdir = ..\/..$/;"	m
+topsrcdirstrip	Makefile	/^	topsrcdirstrip=`echo "$(top_srcdir)" | sed 's|.|.|g'`; \\$/;"	m
+trans_protocol	RTP_HEAD.h	/^    unsigned char  trans_protocol;$/;"	m	struct:RTP_HEAD_INFO
+transform	Makefile	/^transform = $(program_transform_name)$/;"	m
+unique	Makefile	/^	  test -n "$$unique" || unique=$$empty_fix; \\$/;"	m
+unique	Makefile	/^	unique=`for i in $$list; do \\$/;"	m
+unix_fd	rtsp_transfer_private.h	/^	int unix_fd;	\/\/ÂøÖÈ°ªÁöÑ$/;"	m	struct:_RTSP_TRANFER_PRIVATE_HANDLE
+v_height	RTP_HEAD.h	/^	unsigned short v_height;$/;"	m	struct:RTP_HEAD_INFO
+v_sequence_number	rtsp_transfer_private.h	/^	unsigned short v_sequence_number; \/\/ËßÜÈ¢ëÂ∫èÂàóÂè∑$/;"	m	struct:_RTSP_TRANFER_PRIVATE_HANDLE
+v_width	RTP_HEAD.h	/^	unsigned short v_width;$/;"	m	struct:RTP_HEAD_INFO
+videoencparam	rtsp_transfer_private.h	/^	video_enc_param videoencparam;\/\/ËßÜÈ¢ëÂèÇÊï∞$/;"	m	struct:_RTSP_TRANFER_PRIVATE_HANDLE

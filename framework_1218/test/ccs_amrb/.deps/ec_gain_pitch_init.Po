@@ -1,0 +1,8 @@
+ec_gain_pitch_init.o ec_gain_pitch_init.o: ec_gain_pitch_init.c \
+  ec_gain_pitch.h typedef.h ec_gain_pitch_reset.h
+
+ec_gain_pitch.h:
+
+typedef.h:
+
+ec_gain_pitch_reset.h:

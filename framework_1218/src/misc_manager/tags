@@ -1,0 +1,179 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+ACLOCAL	Makefile	/^ACLOCAL = ${SHELL} \/home\/mru\/MRU_work\/missing --run aclocal-1.9$/;"	m
+ACLOCAL_M4	Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+AMDEP_FALSE	Makefile	/^AMDEP_FALSE = #$/;"	m
+AMDEP_TRUE	Makefile	/^AMDEP_TRUE = $/;"	m
+AMTAR	Makefile	/^AMTAR = ${SHELL} \/home\/mru\/MRU_work\/missing --run tar$/;"	m
+AM_LDFLAGS	Makefile	/^AM_LDFLAGS = -L$(top_srcdir)\/lib$/;"	m
+AUTOCONF	Makefile	/^AUTOCONF = ${SHELL} \/home\/mru\/MRU_work\/missing --run autoconf$/;"	m
+AUTOHEADER	Makefile	/^AUTOHEADER = ${SHELL} \/home\/mru\/MRU_work\/missing --run autoheader$/;"	m
+AUTOMAKE	Makefile	/^AUTOMAKE = ${SHELL} \/home\/mru\/MRU_work\/missing --run automake-1.9$/;"	m
+AWK	Makefile	/^AWK = gawk$/;"	m
+CC	Makefile	/^CC = arm_v5t_le-gcc$/;"	m
+CCDEPMODE	Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CCLD	Makefile	/^CCLD = $(CC)$/;"	m
+CDPATH	Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -O2$/;"	m
+COMPILE	Makefile	/^COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \\$/;"	m
+CONFIG_CLEAN_FILES	Makefile	/^CONFIG_CLEAN_FILES =$/;"	m
+CONFIG_HEADER	Makefile	/^CONFIG_HEADER = $(top_builddir)\/config.h$/;"	m
+CPP	Makefile	/^CPP = arm_v5t_le-gcc -E$/;"	m
+CPPFLAGS	Makefile	/^CPPFLAGS = $/;"	m
+CTAGS	Makefile	/^CTAGS = ctags$/;"	m
+CXX	Makefile	/^CXX = arm_v5t_le-g++$/;"	m
+CXXDEPMODE	Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS = -g -O2$/;"	m
+CYGPATH_W	Makefile	/^CYGPATH_W = echo$/;"	m
+DEFAULT_INCLUDES	Makefile	/^DEFAULT_INCLUDES = -I. -I$(srcdir) -I$(top_builddir)$/;"	m
+DEFS	Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEPDIR	Makefile	/^DEPDIR = .deps$/;"	m
+DISTFILES	Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DIST_COMMON	Makefile	/^DIST_COMMON = $(srcdir)\/Makefile.am $(srcdir)\/Makefile.in$/;"	m
+DIST_SOURCES	Makefile	/^DIST_SOURCES = $(misc_manager_SOURCES)$/;"	m
+ECHO_C	Makefile	/^ECHO_C = $/;"	m
+ECHO_N	Makefile	/^ECHO_N = -n$/;"	m
+ECHO_T	Makefile	/^ECHO_T = $/;"	m
+EGREP	Makefile	/^EGREP = grep -E$/;"	m
+ETAGS	Makefile	/^ETAGS = etags$/;"	m
+EXEEXT	Makefile	/^EXEEXT = $/;"	m
+INCLUDES	Makefile	/^INCLUDES = -I$(top_srcdir)\/include$/;"	m
+INSTALL	Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL_DATA	Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_HEADER	Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_PROGRAM	Makefile	/^	$(MAKE) $(AM_MAKEFLAGS) INSTALL_PROGRAM="$(INSTALL_STRIP_PROGRAM)" \\$/;"	m
+INSTALL_PROGRAM	Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_PROGRAM_ENV	Makefile	/^	    echo "INSTALL_PROGRAM_ENV=STRIPPROG='$(STRIP)'"` install$/;"	m
+INSTALL_SCRIPT	Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_STRIP_FLAG	Makefile	/^	  install_sh_PROGRAM="$(INSTALL_STRIP_PROGRAM)" INSTALL_STRIP_FLAG=-s \\$/;"	m
+INSTALL_STRIP_PROGRAM	Makefile	/^INSTALL_STRIP_PROGRAM = ${SHELL} $(install_sh) -c -s$/;"	m
+IsMiscSysQuit	misc_main.c	/^int IsMiscSysQuit = 0;$/;"	v
+LDFLAGS	Makefile	/^LDFLAGS = $/;"	m
+LIBOBJS	Makefile	/^LIBOBJS = $/;"	m
+LIBS	Makefile	/^LIBS = -lpthread $/;"	m
+LINK	Makefile	/^LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@$/;"	m
+LTLIBOBJS	Makefile	/^LTLIBOBJS = $/;"	m
+MAKEINFO	Makefile	/^MAKEINFO = ${SHELL} \/home\/mru\/MRU_work\/missing --run makeinfo$/;"	m
+MISC_POLL_COUNT_MAX	misc_private.h	14;"	d
+MISC_PRIVATE_HANDLE	misc_private.h	/^}MISC_PRIVATE_HANDLE;$/;"	t
+NORMAL_INSTALL	Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_UNINSTALL	Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+OBJEXT	Makefile	/^OBJEXT = o$/;"	m
+PACKAGE	Makefile	/^PACKAGE = MRU_work$/;"	m
+PACKAGE_BUGREPORT	Makefile	/^PACKAGE_BUGREPORT = liangzhang@xidian.edu.cn$/;"	m
+PACKAGE_NAME	Makefile	/^PACKAGE_NAME = MRU_work$/;"	m
+PACKAGE_STRING	Makefile	/^PACKAGE_STRING = MRU_work 1.0$/;"	m
+PACKAGE_TARNAME	Makefile	/^PACKAGE_TARNAME = mru_work$/;"	m
+PACKAGE_VERSION	Makefile	/^PACKAGE_VERSION = 1.0$/;"	m
+PATH_SEPARATOR	Makefile	/^PATH_SEPARATOR = :$/;"	m
+POST_INSTALL	Makefile	/^POST_INSTALL = :$/;"	m
+POST_UNINSTALL	Makefile	/^POST_UNINSTALL = :$/;"	m
+PRE_INSTALL	Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_UNINSTALL	Makefile	/^PRE_UNINSTALL = :$/;"	m
+PROGRAMS	Makefile	/^PROGRAMS = $(bin_PROGRAMS)$/;"	m
+RANLIB	Makefile	/^RANLIB = arm_v5t_le-ranlib$/;"	m
+SET_MAKE	Makefile	/^SET_MAKE = $/;"	m
+SHELL	Makefile	/^SHELL = \/bin\/sh$/;"	m
+SOURCES	Makefile	/^SOURCES = $(misc_manager_SOURCES)$/;"	m
+STRIP	Makefile	/^STRIP = arm_v5t_le-strip$/;"	m
+STRIPPROG	Makefile	/^	    echo "INSTALL_PROGRAM_ENV=STRIPPROG='$(STRIP)'"` install$/;"	m
+VERSION	Makefile	/^VERSION = 1.0$/;"	m
+_MISC_PRIVATE_HANDLE	misc_private.h	/^typedef struct _MISC_PRIVATE_HANDLE$/;"	s
+_MISC_PRIVATE_H__	misc_private.h	2;"	d
+ac_ct_CC	Makefile	/^ac_ct_CC = $/;"	m
+ac_ct_CXX	Makefile	/^ac_ct_CXX = $/;"	m
+ac_ct_RANLIB	Makefile	/^ac_ct_RANLIB = $/;"	m
+ac_ct_STRIP	Makefile	/^ac_ct_STRIP = $/;"	m
+active_fdcount	misc_private.h	/^    int active_fdcount;	\/\/必须的$/;"	m	struct:_MISC_PRIVATE_HANDLE
+am__aclocal_m4_deps	Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/configure.ac$/;"	m
+am__cd	Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__configure_deps	Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__depfiles_maybe	Makefile	/^am__depfiles_maybe = depfiles$/;"	m
+am__fastdepCC_FALSE	Makefile	/^am__fastdepCC_FALSE = #$/;"	m
+am__fastdepCC_TRUE	Makefile	/^am__fastdepCC_TRUE = $/;"	m
+am__fastdepCXX_FALSE	Makefile	/^am__fastdepCXX_FALSE = #$/;"	m
+am__fastdepCXX_TRUE	Makefile	/^am__fastdepCXX_TRUE = $/;"	m
+am__include	Makefile	/^am__include = include$/;"	m
+am__installdirs	Makefile	/^am__installdirs = "$(DESTDIR)$(bindir)"$/;"	m
+am__leading_dot	Makefile	/^am__leading_dot = .$/;"	m
+am__quote	Makefile	/^am__quote = $/;"	m
+am__tar	Makefile	/^am__tar = ${AMTAR} chof - "$$tardir"$/;"	m
+am__untar	Makefile	/^am__untar = ${AMTAR} xf -$/;"	m
+am_misc_manager_OBJECTS	Makefile	/^am_misc_manager_OBJECTS = misc_main.$(OBJEXT) misc_unix.$(OBJEXT)$/;"	m
+binPROGRAMS_INSTALL	Makefile	/^binPROGRAMS_INSTALL = $(INSTALL_PROGRAM)$/;"	m
+bin_PROGRAMS	Makefile	/^bin_PROGRAMS = misc_manager$(EXEEXT)$/;"	m
+bindir	Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+build_alias	Makefile	/^build_alias = $/;"	m
+datadir	Makefile	/^datadir = ${prefix}\/share$/;"	m
+depcomp	Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/depcomp$/;"	m
+depmode	Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+depmode	Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
+dir	Makefile	/^	    dir="\/$$dir"; \\$/;"	m
+dir	Makefile	/^	    dir=''; \\$/;"	m
+dir	Makefile	/^	  dir=`echo "$$file" | sed -e 's,\/[^\/]*$$,,'`; \\$/;"	m
+exec_prefix	Makefile	/^exec_prefix = ${prefix}$/;"	m
+f	Makefile	/^	    f=`echo "$$p1" | sed 's,^.*\/,,;$(transform);s\/$$\/$(EXEEXT)\/'`; \\$/;"	m
+f	Makefile	/^	  f=`echo "$$p" | sed 's,^.*\/,,;s\/$(EXEEXT)$$\/\/;$(transform);s\/$$\/$(EXEEXT)\/'`; \\$/;"	m
+file	Makefile	/^	    $(srcdir)\/*) file=`echo "$$file" | sed "s|^$$srcdirstrip\/||"`;; \\$/;"	m
+file	Makefile	/^	    $(top_srcdir)\/*) file=`echo "$$file" | sed "s|^$$topsrcdirstrip\/|$(top_builddir)\/|"`;; \\$/;"	m
+global_misc_private_handle	misc_main.c	/^MISC_PRIVATE_HANDLE global_misc_private_handle;$/;"	v
+here	Makefile	/^	here=`$(am__cd) $(top_builddir) && pwd` \\$/;"	m
+here	Makefile	/^	here=`pwd`; \\$/;"	m
+host_alias	Makefile	/^host_alias = arm_v5t_le$/;"	m
+includedir	Makefile	/^includedir = ${prefix}\/include$/;"	m
+infodir	Makefile	/^infodir = ${prefix}\/info$/;"	m
+install_sh	Makefile	/^install_sh = \/home\/mru\/MRU_work\/install-sh$/;"	m
+install_sh_DATA	Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_PROGRAM	Makefile	/^	  install_sh_PROGRAM="$(INSTALL_STRIP_PROGRAM)" INSTALL_STRIP_FLAG=-s \\$/;"	m
+install_sh_PROGRAM	Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+libdir	Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libexecdir	Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+list	Makefile	/^	list='$(DISTFILES)'; for file in $$list; do \\$/;"	m
+list	Makefile	/^	list='$(SOURCES) $(HEADERS)  $(LISP) $(TAGS_FILES)'; \\$/;"	m
+list	Makefile	/^	list='$(SOURCES) $(HEADERS) $(LISP) $(TAGS_FILES)'; \\$/;"	m
+localnet	misc_private.h	/^	net_param localnet;$/;"	m	struct:_MISC_PRIVATE_HANDLE
+localstatedir	Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+main	misc_main.c	/^int main(int argc, char **argv)$/;"	f
+mandir	Makefile	/^mandir = ${prefix}\/man$/;"	m
+misc_exit	misc_main.c	/^static succeed_type misc_exit(MISC_PRIVATE_HANDLE *phandle)$/;"	f	file:
+misc_init	misc_main.c	/^static succeed_type misc_init(MISC_PRIVATE_HANDLE *phandle)$/;"	f	file:
+misc_manager_DEPENDENCIES	Makefile	/^misc_manager_DEPENDENCIES =$/;"	m
+misc_manager_LDADD	Makefile	/^misc_manager_LDADD = -lunix -lgbshm -lsignal$/;"	m
+misc_manager_OBJECTS	Makefile	/^misc_manager_OBJECTS = $(am_misc_manager_OBJECTS)$/;"	m
+misc_manager_SOURCES	Makefile	/^misc_manager_SOURCES = misc_main.c misc_unix.c$/;"	m
+misc_poll_init	misc_main.c	/^static void misc_poll_init(MISC_PRIVATE_HANDLE *phandle)$/;"	f	file:
+misc_unix	misc_unix.c	/^succeed_type misc_unix(MISC_PRIVATE_HANDLE *phandle)$/;"	f
+misc_unix_deal	misc_unix.c	/^static succeed_type misc_unix_deal( MISC_PRIVATE_HANDLE *phandle, UNIX_CMD_STRUCT *pcmd)$/;"	f	file:
+mkdir_p	Makefile	/^mkdir_p = mkdir -p --$/;"	m
+mkinstalldirs	Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+oldincludedir	Makefile	/^oldincludedir = \/usr\/include$/;"	m
+p1	Makefile	/^	  p1=`echo $$p|sed 's\/$(EXEEXT)$$\/\/'`; \\$/;"	m
+pgbshm_obj	misc_private.h	/^    LIBGBSHM_OBJ *pgbshm_obj;		\/\/必须的$/;"	m	struct:_MISC_PRIVATE_HANDLE
+pkgdatadir	Makefile	/^pkgdatadir = $(datadir)\/MRU_work$/;"	m
+pkgincludedir	Makefile	/^pkgincludedir = $(includedir)\/MRU_work$/;"	m
+pkglibdir	Makefile	/^pkglibdir = $(libdir)\/MRU_work$/;"	m
+polltimeout	misc_private.h	/^    struct pollfd polltimeout[MISC_POLL_COUNT_MAX];	\/\/必须的$/;"	m	struct:_MISC_PRIVATE_HANDLE
+prefix	Makefile	/^prefix = \/home\/mru\/ramfs_new\/ramfs_img\/opt\/install$/;"	m
+program_transform_name	Makefile	/^program_transform_name = s,x,x,$/;"	m
+pthread_func	misc_main.c	/^void pthread_func(void* phandle)$/;"	f
+readpppfile	misc_ppp.c	/^succeed_type readpppfile(char *strname,char *strpasswd)$/;"	f
+sbindir	Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+sharedstatedir	Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+sig_sigint_proc	misc_main.c	/^void sig_sigint_proc(int sig)$/;"	f
+srcdir	Makefile	/^srcdir = .$/;"	m
+subdir	Makefile	/^subdir = src\/misc_manager$/;"	m
+sysconfdir	Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+tags	Makefile	/^	tags=; \\$/;"	m
+target_alias	Makefile	/^target_alias = $/;"	m
+top_builddir	Makefile	/^top_builddir = ..\/..$/;"	m
+top_srcdir	Makefile	/^top_srcdir = ..\/..$/;"	m
+topsrcdirstrip	Makefile	/^	topsrcdirstrip=`echo "$(top_srcdir)" | sed 's|.|.|g'`; \\$/;"	m
+transform	Makefile	/^transform = $(program_transform_name)$/;"	m
+unique	Makefile	/^	  test -n "$$unique" || unique=$$empty_fix; \\$/;"	m
+unique	Makefile	/^	unique=`for i in $$list; do \\$/;"	m
+unix_fd	misc_private.h	/^    int unix_fd;	\/\/必须的$/;"	m	struct:_MISC_PRIVATE_HANDLE

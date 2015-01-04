@@ -1,0 +1,90 @@
+serial_order.o serial_order.o: serial_order.c mode.h frame.h \
+  amr_global_var.h typedef.h main_pd.h cnst.h speech_decode_frame.h \
+  decoder_amr.h dtx_dec.h dtx_def.h q_plsf.h gc_pred.h d_plsf.h \
+  cb_gain_average.h bgn_scd.h ph_disp.h lsp_avg.h ec_gain_code.h \
+  ec_gain_pitch.h post_filter.h preemphasis.h agc.h post_process.h \
+  main_pc.h cod_amr.h lpc.h levinson.h lsp.h cl_ltp.h pitch_fr.h \
+  ton_stab.h gainquant.h gain_adapt.h Pitch_ol_wgh.h vad1.h cnst_vad.h \
+  sid_sync.h speech_encode_frame.h pre_process.h table.h pred_lt_3or6.h
+
+mode.h:
+
+frame.h:
+
+amr_global_var.h:
+
+typedef.h:
+
+main_pd.h:
+
+cnst.h:
+
+speech_decode_frame.h:
+
+decoder_amr.h:
+
+dtx_dec.h:
+
+dtx_def.h:
+
+q_plsf.h:
+
+gc_pred.h:
+
+d_plsf.h:
+
+cb_gain_average.h:
+
+bgn_scd.h:
+
+ph_disp.h:
+
+lsp_avg.h:
+
+ec_gain_code.h:
+
+ec_gain_pitch.h:
+
+post_filter.h:
+
+preemphasis.h:
+
+agc.h:
+
+post_process.h:
+
+main_pc.h:
+
+cod_amr.h:
+
+lpc.h:
+
+levinson.h:
+
+lsp.h:
+
+cl_ltp.h:
+
+pitch_fr.h:
+
+ton_stab.h:
+
+gainquant.h:
+
+gain_adapt.h:
+
+Pitch_ol_wgh.h:
+
+vad1.h:
+
+cnst_vad.h:
+
+sid_sync.h:
+
+speech_encode_frame.h:
+
+pre_process.h:
+
+table.h:
+
+pred_lt_3or6.h:

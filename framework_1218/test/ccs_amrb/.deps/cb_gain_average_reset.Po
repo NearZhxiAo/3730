@@ -1,0 +1,12 @@
+cb_gain_average_reset.o cb_gain_average_reset.o: cb_gain_average_reset.c \
+  cb_gain_average.h typedef.h mode.h cnst.h set_zero.h
+
+cb_gain_average.h:
+
+typedef.h:
+
+mode.h:
+
+cnst.h:
+
+set_zero.h:

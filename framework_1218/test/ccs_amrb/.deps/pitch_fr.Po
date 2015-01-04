@@ -1,0 +1,36 @@
+pitch_fr.o pitch_fr.o: pitch_fr.c typedef.h basic_op.h table.h mode.h \
+  pred_lt_3or6.h oper_32b.h cnst.h inv_sqrt.h enc_lag3.h enc_lag6.h \
+  interpol_3or6.h convolve.h pitch_fr.h getrange.h norm_corr.h \
+  searchfrac.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+oper_32b.h:
+
+cnst.h:
+
+inv_sqrt.h:
+
+enc_lag3.h:
+
+enc_lag6.h:
+
+interpol_3or6.h:
+
+convolve.h:
+
+pitch_fr.h:
+
+getrange.h:
+
+norm_corr.h:
+
+searchfrac.h:

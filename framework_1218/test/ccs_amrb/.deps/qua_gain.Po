@@ -1,0 +1,20 @@
+qua_gain.o qua_gain.o: qua_gain.c typedef.h basic_op.h table.h mode.h \
+  pred_lt_3or6.h oper_32b.h cnst.h pow2.h gc_pred.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+oper_32b.h:
+
+cnst.h:
+
+pow2.h:
+
+gc_pred.h:

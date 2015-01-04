@@ -1,0 +1,6 @@
+encoder_homing_frame_test.o encoder_homing_frame_test.o:  \
+ encoder_homing_frame_test.c typedef.h cnst.h
+
+typedef.h:
+
+cnst.h:

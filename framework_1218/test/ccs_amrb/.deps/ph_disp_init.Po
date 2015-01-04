@@ -1,0 +1,10 @@
+ph_disp_init.o ph_disp_init.o: ph_disp_init.c ph_disp.h typedef.h mode.h \
+  ph_disp_reset.h
+
+ph_disp.h:
+
+typedef.h:
+
+mode.h:
+
+ph_disp_reset.h:

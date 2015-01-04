@@ -1,0 +1,8 @@
+gc_pred_update.o gc_pred_update.o: gc_pred_update.c typedef.h gc_pred.h \
+  mode.h
+
+typedef.h:
+
+gc_pred.h:
+
+mode.h:

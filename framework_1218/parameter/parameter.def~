@@ -1,0 +1,186 @@
+autogen definitions parameter.tpl;
+
+category = { cat_name = system;
+	cat_descript = "test one process";
+};
+category = { cat_name = test_two_process;
+	cat_descript = "test two process";
+};
+
+system = { para_name = gbshm_mutex;
+	var_type = gbshm_mutex ;
+	sendto_dest = "\"\"";
+	sendto_block = "0";
+	argument_count = 1;
+	argument_class = class_name_none;
+	defaultval = "{}";
+	para_descript = "mutex for gbshm";};
+
+system = { para_name = test_var;
+	uint_type ;
+	sendto_dest = "\"\"";
+	sendto_block = "0";
+	argument_count = 1;
+	argument_class = class_name_none;
+	defaultval = "0";
+	para_descript = "mutex for gbshm";};
+
+system = { para_name = video_enc_param;
+	var_type =  video_enc_param;
+	sendto_dest = "\"\"";
+	sendto_block = "0";
+	argument_count = 1;
+	argument_class = class_name_none;
+	defaultval = "{VIDEO_ENC_H264, VIDEO_INPUT_PAL, VIDEO_ENC_D1, VIDEO_ENC_25FPS,1536000,10
+}";
+	para_descript = "video encoder parameters";};
+
+system = { para_name = audio_param;
+	var_type =  audio_param;
+	sendto_dest = "\"\"";
+	sendto_block = "0";
+	argument_count = 1;
+	argument_class = class_name_none;
+	defaultval = "{AUDIO_MODE_A711
+}";
+	para_descript = "audio parameters";};
+
+system = { para_name = net_param;
+	var_type =  net_param;
+	sendto_dest = "\"\"";
+	sendto_block = "0";
+	argument_count = 1;
+	argument_class = class_name_none;
+	defaultval = "{IP_MODE_STATIC, \"0\", \"192.168.0.177\",\"255.255.255.0\",\"192.168.0.1\",\"192.168.0.111\",\"192.168.0.38\",\"010000000100011801\",5000,1038,80
+}";
+	para_descript = "net parameters";};
+
+system = { para_name = alert_di_param;
+	var_type =  alert_di_param;
+	sendto_dest = "\"\"";
+	sendto_block = "0";
+	argument_count = 1;
+	argument_class = class_name_none;
+	defaultval = "{DI_SWITCH_ON, 5, 1<<DI_ACTION_STORAGE
+}";
+	para_descript = "di parameters";};
+
+system = { para_name = alert_vloss_param;
+	var_type =  alert_vloss_param;
+	sendto_dest = "\"\"";
+	sendto_block = "0";
+	argument_count = 1;
+	argument_class = class_name_none;
+	defaultval = "{VLOSS_SWITCH_OFF, 5, 1<<VLOSS_ACTION_STORAGE
+}";
+	para_descript = "vloss parameters";};
+
+system = { para_name = alert_motion_param;
+	var_type =  alert_motion_param;
+	sendto_dest = "\"\"";
+	sendto_block = "0";
+	argument_count = 1;
+	argument_class = class_name_none;
+	defaultval = "{MOTION_SWITCH_OFF, 5, 1<<MOTION_ACTION_STORAGE
+}";
+	para_descript = "motion parameters";};
+
+system = { para_name = storage_setting_param;
+	var_type =  storage_setting_param;
+	sendto_dest = "\"\"";
+	sendto_block = "0";
+	argument_count = 1;
+	argument_class = class_name_none;
+	defaultval = "{5*60, STORAGE_SWITCH_ON, STORAGE_METHOD_ALWAYS, { 0}
+}";
+	para_descript = "storage setting parameters";};
+
+system = { para_name = ad_setting_param;
+	var_type =  ad_setting_param;
+	sendto_dest = "\"\"";
+	sendto_block = "0";
+	argument_count = 1;
+	argument_class = class_name_none;
+	defaultval = "{0x80,0x80,0x00,0x80,0x80
+}";
+	para_descript = "ad setting parameters";};
+
+system = { para_name = time_setting_param;
+	var_type =  time_setting_param;
+	sendto_dest = "\"\"";
+	sendto_block = "0";
+	argument_count = 1;
+	argument_class = class_name_none;
+	defaultval = "{TIME_SETTING_MODE_NORMAL,2000,1,1,0,0,0
+}";
+	para_descript = "time setting parameters";};
+
+system = { para_name = rs485_setting_param;
+	var_type =  rs485_setting_param;
+	sendto_dest = "\"\"";
+	sendto_block = "0";
+	argument_count = 1;
+	argument_class = class_name_none;
+	defaultval = "{0
+}";
+	para_descript = "time setting parameters";};
+
+system = { para_name = ptz_area_setting_param;
+	var_type =  ptz_area_setting_param;
+	sendto_dest = "\"\"";
+	sendto_block = "0";
+	argument_count = 1;
+	argument_class = class_name_none;
+	defaultval = "{0
+}";
+	para_descript = "ptz area setting parameters";};
+
+system = { para_name = alg_setting_param;
+	var_type =  alg_setting_param;
+	sendto_dest = "\"\"";
+	sendto_block = "0";
+	argument_count = 1;
+	argument_class = class_name_none;
+	defaultval = "{0
+}";
+	para_descript = "ptz area setting parameters";};
+
+system = { para_name = working_state_param;
+	var_type =  working_state_param;
+	sendto_dest = "\"\"";
+	sendto_block = "0";
+	argument_count = 1;
+	argument_class = class_name_none;
+	defaultval = "{0
+}";
+	para_descript = "system working state parameters";};
+
+system = { para_name = end_param;
+	uint_type =  end_param;
+	sendto_dest = "\"\"";
+	sendto_block = "0";
+	argument_count = 1;
+	argument_class = class_name_none;
+	defaultval = "0";
+	para_descript = "time setting parameters";};
+
+system = { para_name = runtime_device_status;
+	var_type =  runtime_device_status;
+	sendto_dest = "\"\"";
+	sendto_block = "0";
+	argument_count = 1;
+	argument_class = class_name_none;
+	defaultval = "{DEVICE_STATUS_OFF,DEVICE_STATUS_OFF,DEVICE_STATUS_OFF,DEVICE_STATUS_OFF
+}";
+	para_descript = "runtime device status";};
+
+system = { para_name = runtime_device_version;
+	var_type =  runtime_device_version;
+	sendto_dest = "\"\"";
+	sendto_block = "0";
+	argument_count = 1;
+	argument_class = class_name_none;
+	defaultval = "{\"0\",\"0\"
+}";
+	para_descript = "runtime device version information";};
+

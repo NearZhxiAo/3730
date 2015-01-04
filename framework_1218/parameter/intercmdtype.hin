@@ -1,0 +1,79 @@
+#ifndef _INTERCMDTYPE_AUTOGEN_
+#define _INTERCMDTYPE_AUTOGEN_
+/*	This file is a autogenerate file .
+ *	DONOT EDIT THIS FILE!!
+ *  Edit intercmd_inter.ddf and intercmdtype.tpl instead
+ */
+
+#include "intercmds/intercmd_storage_to_qt_file_list.h"
+#include "intercmds/intercmd_avenc_to_storage_jpeg_buffer_new_msg.h"
+#include "intercmds/intercmd_avenc_to_storage_video_buffer_new_msg.h"
+#include "intercmds/intercmd_serial_to_qt_display_distance.h"
+#include "intercmds/intercmd_serial_to_qt_display_gps.h"
+#include "intercmds/intercmd_serial_to_qt_display_magnet.h"
+#include "intercmd.h"
+
+#ifdef __cplusplus
+extern "C"{
+#endif
+
+
+#define clientpc_clientpc_to_storage_file_list_paratype	unsigned long 
+
+#define clientpc_clientpc_to_storage_clean_paratype	unsigned long 
+
+#define storage_storage_to_qt_file_list_paratype	struct storage_to_qt_file_list
+
+#define storage_storage_to_avenc_dec_frame_paratype	unsigned long 
+
+#define avenc_avenc_to_storage_jpeg_buffer_new_msg_paratype	struct avenc_to_storage_jpeg_buffer_new_msg
+
+#define avenc_avenc_to_storage_video_buffer_new_msg_paratype	struct avenc_to_storage_video_buffer_new_msg
+
+#define avenc_avenc_to_storage_viddec_frame_ack_paratype	unsigned long 
+
+#define avenc_avenc_to_storage_start_storage_paratype	unsigned long 
+
+#define avenc_avenc_to_storage_stop_storage_paratype	unsigned long 
+
+#define avenc_avenc_to_qt_msg_paratype	unsigned long 
+
+#define serial_manage_serial_to_avenc_input_infrared_paratype	unsigned long 
+
+#define serial_manage_serial_to_avenc_input_ccd_paratype	unsigned long 
+
+#define serial_manage_serial_to_qt_display_distance_paratype	struct serial_to_qt_display_distance
+
+#define serial_manage_serial_to_qt_display_gps_paratype	struct serial_to_qt_display_gps
+
+#define serial_manage_serial_to_qt_display_magnet_paratype	struct serial_to_qt_display_magnet
+
+#define qt_qt_to_avenc_input_infrared_paratype	unsigned long 
+
+#define qt_qt_to_avenc_input_ccd_paratype	unsigned long 
+
+#define qt_qt_to_avenc_jpeg_pic_paratype	unsigned long 
+
+#define qt_qt_to_avenc_start_enc_paratype	unsigned long 
+
+#define qt_qt_to_avenc_stop_enc_paratype	unsigned long 
+
+#define qt_qt_to_serial_measure_paratype	unsigned long 
+
+#define qt_qt_to_storage_start_loopback_paratype	unsigned long 
+
+#define qt_qt_to_storage_stop_loopback_paratype	unsigned long 
+
+#define qt_qt_to_storage_check_file_list_paratype	unsigned long 
+
+#define qt_qt_to_storage_pause_loopback_paratype	unsigned long 
+
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif
+
+
+

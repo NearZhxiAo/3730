@@ -1,0 +1,24 @@
+d_plsf_3.o d_plsf_3.o: d_plsf_3.c typedef.h basic_op.h table.h mode.h \
+  pred_lt_3or6.h lsp_lsf.h reorder_lsf.h copy.h lsf_lsp.h d_plsf.h cnst.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+lsp_lsf.h:
+
+reorder_lsf.h:
+
+copy.h:
+
+lsf_lsp.h:
+
+d_plsf.h:
+
+cnst.h:

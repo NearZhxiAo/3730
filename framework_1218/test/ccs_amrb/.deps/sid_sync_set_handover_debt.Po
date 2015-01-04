@@ -1,0 +1,10 @@
+sid_sync_set_handover_debt.o sid_sync_set_handover_debt.o:  \
+ sid_sync_set_handover_debt.c typedef.h sid_sync.h mode.h frame.h
+
+typedef.h:
+
+sid_sync.h:
+
+mode.h:
+
+frame.h:

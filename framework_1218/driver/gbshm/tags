@@ -1,0 +1,245 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ACLOCAL	Makefile	/^ACLOCAL = ${SHELL} \/opt\/sdb\/framework_1209\/missing --run aclocal-1.11$/;"	m
+ACLOCAL_M4	Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+AMTAR	Makefile	/^AMTAR = ${SHELL} \/opt\/sdb\/framework_1209\/missing --run tar$/;"	m
+AM_LDFLAGS	Makefile	/^AM_LDFLAGS = -L$(top_srcdir)\/lib -L.$/;"	m
+AM_RECURSIVE_TARGETS	Makefile	/^AM_RECURSIVE_TARGETS = $(RECURSIVE_TARGETS:-recursive=) \\$/;"	m
+AR	Makefile	/^AR = ar$/;"	m
+ARFLAGS	Makefile	/^ARFLAGS = cru$/;"	m
+AUTOCONF	Makefile	/^AUTOCONF = ${SHELL} \/opt\/sdb\/framework_1209\/missing --run autoconf$/;"	m
+AUTOHEADER	Makefile	/^AUTOHEADER = ${SHELL} \/opt\/sdb\/framework_1209\/missing --run autoheader$/;"	m
+AUTOMAKE	Makefile	/^AUTOMAKE = ${SHELL} \/opt\/sdb\/framework_1209\/missing --run automake-1.11$/;"	m
+AWK	Makefile	/^AWK = gawk$/;"	m
+CC	Makefile	/^CC = arm-none-linux-gnueabi-gcc$/;"	m
+CCDEPMODE	Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CCLD	Makefile	/^CCLD = $(CC)$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -O2$/;"	m
+COMPILE	Makefile	/^COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \\$/;"	m
+CONFIG_CLEAN_FILES	Makefile	/^CONFIG_CLEAN_FILES =$/;"	m
+CONFIG_CLEAN_VPATH_FILES	Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m
+CONFIG_HEADER	Makefile	/^CONFIG_HEADER = $(top_builddir)\/config.h$/;"	m
+CPP	Makefile	/^CPP = arm-none-linux-gnueabi-gcc -E$/;"	m
+CPPFLAGS	Makefile	/^CPPFLAGS = $/;"	m
+CTAGS	Makefile	/^CTAGS = ctags$/;"	m
+CXX	Makefile	/^CXX = arm-none-linux-gnueabi-g++$/;"	m
+CXXDEPMODE	Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS = -g -O2$/;"	m
+CYGPATH_W	Makefile	/^CYGPATH_W = echo$/;"	m
+DEFAULT_INCLUDES	Makefile	/^DEFAULT_INCLUDES = -I. -I$(top_builddir)$/;"	m
+DEFS	Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEPDIR	Makefile	/^DEPDIR = .deps$/;"	m
+DISTFILES	Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DIST_COMMON	Makefile	/^DIST_COMMON = $(srcdir)\/..\/Makefile.driver $(srcdir)\/Makefile.am \\$/;"	m
+DIST_SOURCES	Makefile	/^DIST_SOURCES = $(libgbshm_a_SOURCES) $(gbshm_consumer_SOURCES) \\$/;"	m
+DIST_SUBDIRS	Makefile	/^DIST_SUBDIRS = $(SUBDIRS)$/;"	m
+DRIVERNAME	Makefile	/^DRIVERNAME = gbshm$/;"	m
+ECHO_C	Makefile	/^ECHO_C = $/;"	m
+ECHO_N	Makefile	/^ECHO_N = -n$/;"	m
+ECHO_T	Makefile	/^ECHO_T = $/;"	m
+EGREP	Makefile	/^EGREP = \/bin\/grep -E$/;"	m
+ETAGS	Makefile	/^ETAGS = etags$/;"	m
+EXEEXT	Makefile	/^EXEEXT = $/;"	m
+EXTRA_CFLAGS	Makefile	/^EXTRA_CFLAGS = -I$(INCLUDE_DIR)$/;"	m
+EXTRA_DIST	Makefile	/^EXTRA_DIST = $/;"	m
+GBSHM_DESTROY	libgbshm.c	/^succeed_type GBSHM_DESTROY(LIBGBSHM_OBJ *phandle)$/;"	f
+GBSHM_INIT	libgbshm.c	/^LIBGBSHM_OBJ *GBSHM_INIT()$/;"	f
+GBSHM_PARA_FLASH_DODEFAULT_SET	libgbshm.c	/^succeed_type GBSHM_PARA_FLASH_DODEFAULT_SET(LIBGBSHM_OBJ *phandle_gbshm, int cmd, void * ptr, int length)$/;"	f
+GBSHM_PARA_GET	libgbshm.c	/^succeed_type GBSHM_PARA_GET(LIBGBSHM_OBJ *phandle_gbshm, int cmd, void * ptr, int length)$/;"	f
+GBSHM_PARA_SET	libgbshm.c	/^succeed_type GBSHM_PARA_SET(LIBGBSHM_OBJ *phandle_gbshm, int cmd, void * ptr, int length)$/;"	f
+GREP	Makefile	/^GREP = \/bin\/grep$/;"	m
+HEAP_ALIGN	module/gbshm.c	61;"	d	file:
+INCLUDES	Makefile	/^INCLUDES = -I$(top_srcdir)\/include $/;"	m
+INCLUDE_DIR	Makefile	/^INCLUDE_DIR = $(CURDIR)\/..\/..\/include -I$(CURDIR)\/..\/include -I$(CURDIR)$/;"	m
+INSTALL	Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL_DATA	Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_HEADER	Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_PROGRAM	Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_STRIP_PROGRAM	Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS = $/;"	m
+LIBOBJS	Makefile	/^LIBOBJS = $/;"	m
+LIBRARIES	Makefile	/^LIBRARIES = $(noinst_LIBRARIES)$/;"	m
+LIBS	Makefile	/^LIBS = -lpthread $/;"	m
+LINK	Makefile	/^LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@$/;"	m
+LTLIBOBJS	Makefile	/^LTLIBOBJS = $/;"	m
+MAKEINFO	Makefile	/^MAKEINFO = ${SHELL} \/opt\/sdb\/framework_1209\/missing --run makeinfo$/;"	m
+MAXTYPE	module/gbshm.c	72;"	d	file:
+MKDIR_P	Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m
+NBLOCKS	module/gbshm.c	78;"	d	file:
+NOCACHE	module/gbshm.c	53;"	d	file:
+NORMAL_INSTALL	Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_UNINSTALL	Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+OBJEXT	Makefile	/^OBJEXT = o$/;"	m
+OTHERLIBRARIES	Makefile	/^OTHERLIBRARIES = libgbshm.a$/;"	m
+PACKAGE	Makefile	/^PACKAGE = POLICE_work$/;"	m
+PACKAGE_BUGREPORT	Makefile	/^PACKAGE_BUGREPORT = liangzhang@xidian.edu.cn$/;"	m
+PACKAGE_NAME	Makefile	/^PACKAGE_NAME = POLICE_work$/;"	m
+PACKAGE_STRING	Makefile	/^PACKAGE_STRING = POLICE_work 1.0$/;"	m
+PACKAGE_TARNAME	Makefile	/^PACKAGE_TARNAME = police_work$/;"	m
+PACKAGE_URL	Makefile	/^PACKAGE_URL = $/;"	m
+PACKAGE_VERSION	Makefile	/^PACKAGE_VERSION = 1.0$/;"	m
+PATH_SEPARATOR	Makefile	/^PATH_SEPARATOR = :$/;"	m
+POST_INSTALL	Makefile	/^POST_INSTALL = :$/;"	m
+POST_UNINSTALL	Makefile	/^POST_UNINSTALL = :$/;"	m
+PRE_INSTALL	Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_UNINSTALL	Makefile	/^PRE_UNINSTALL = :$/;"	m
+PROGRAMS	Makefile	/^PROGRAMS = $(sbin_PROGRAMS)$/;"	m
+RANLIB	Makefile	/^RANLIB = arm-none-linux-gnueabi-ranlib$/;"	m
+RECURSIVE_CLEAN_TARGETS	Makefile	/^RECURSIVE_CLEAN_TARGETS = mostlyclean-recursive clean-recursive	\\$/;"	m
+RECURSIVE_TARGETS	Makefile	/^RECURSIVE_TARGETS = all-recursive check-recursive dvi-recursive \\$/;"	m
+SET_MAKE	Makefile	/^SET_MAKE = $/;"	m
+SHELL	Makefile	/^SHELL = \/bin\/sh$/;"	m
+SOURCES	Makefile	/^SOURCES = $(libgbshm_a_SOURCES) $(gbshm_consumer_SOURCES) \\$/;"	m
+STRIP	Makefile	/^STRIP = arm-none-linux-gnueabi-strip$/;"	m
+SUBDIRS	Makefile	/^SUBDIRS = $/;"	m
+TARGET	Makefile	/^TARGET = $(DRIVERNAME).ko$/;"	m
+TARGET	module/Makefile	/^TARGET = gbshm.ko$/;"	m
+USE_CACHE_VOID_ARG	module/gbshm.c	24;"	d	file:
+USE_CACHE_VOID_ARG	module/gbshm.c	32;"	d	file:
+USE_CACHE_VOID_ARG	module/gbshm.c	42;"	d	file:
+USE_CLASS_DEVICE	module/gbshm.c	25;"	d	file:
+USE_CLASS_DEVICE	module/gbshm.c	33;"	d	file:
+USE_CLASS_DEVICE	module/gbshm.c	41;"	d	file:
+USE_CLASS_SIMPLE	module/gbshm.c	26;"	d	file:
+USE_CLASS_SIMPLE	module/gbshm.c	34;"	d	file:
+USE_CLASS_SIMPLE	module/gbshm.c	40;"	d	file:
+USE_UDEV	module/gbshm.c	85;"	d	file:
+USE_UDEV	module/gbshm.c	86;"	d	file:
+VERSION	Makefile	/^VERSION = 1.0$/;"	m
+XTRA_CFLAGS	Makefile	/^	make -C module EXTRA_CFLAGS="$(EXTRA_CFLAGS)"$/;"	m
+__D	module/gbshm.c	65;"	d	file:
+__D	module/gbshm.c	67;"	d	file:
+__E	module/gbshm.c	70;"	d	file:
+__this_module	module/gbshm.mod.c	/^struct module __this_module$/;"	v	typeref:struct:module
+__used	module/gbshm.mod.c	/^__used$/;"	v	file:
+__used	module/gbshm.mod.c	/^__used$/;"	v	typeref:struct:____versions	file:
+abs_builddir	Makefile	/^abs_builddir = \/opt\/sdb\/framework_1209\/driver\/gbshm$/;"	m
+abs_srcdir	Makefile	/^abs_srcdir = \/opt\/sdb\/framework_1209\/driver\/gbshm$/;"	m
+abs_top_builddir	Makefile	/^abs_top_builddir = \/opt\/sdb\/framework_1209$/;"	m
+abs_top_srcdir	Makefile	/^abs_top_srcdir = \/opt\/sdb\/framework_1209$/;"	m
+ac_ct_CC	Makefile	/^ac_ct_CC = $/;"	m
+ac_ct_CXX	Makefile	/^ac_ct_CXX = $/;"	m
+am__aclocal_m4_deps	Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/configure.ac$/;"	m
+am__cd	Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__configure_deps	Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__depfiles_maybe	Makefile	/^am__depfiles_maybe = depfiles$/;"	m
+am__include	Makefile	/^am__include = include$/;"	m
+am__installdirs	Makefile	/^am__installdirs = "$(DESTDIR)$(sbindir)"$/;"	m
+am__leading_dot	Makefile	/^am__leading_dot = .$/;"	m
+am__mv	Makefile	/^am__mv = mv -f$/;"	m
+am__quote	Makefile	/^am__quote = $/;"	m
+am__relativize	Makefile	/^am__relativize = \\$/;"	m
+am__tar	Makefile	/^am__tar = ${AMTAR} chof - "$$tardir"$/;"	m
+am__untar	Makefile	/^am__untar = ${AMTAR} xf -$/;"	m
+am_gbshm_consumer_OBJECTS	Makefile	/^am_gbshm_consumer_OBJECTS = gbshm_consumer.$(OBJEXT)$/;"	m
+am_gbshm_producer_OBJECTS	Makefile	/^am_gbshm_producer_OBJECTS = gbshm_producer.$(OBJEXT)$/;"	m
+am_gbshm_read_OBJECTS	Makefile	/^am_gbshm_read_OBJECTS = gbshm_read.$(OBJEXT)$/;"	m
+am_gbshm_test_OBJECTS	Makefile	/^am_gbshm_test_OBJECTS = gbshm_test.$(OBJEXT)$/;"	m
+am_gbshm_test_read_OBJECTS	Makefile	/^am_gbshm_test_read_OBJECTS = gbshm_test_read.$(OBJEXT)$/;"	m
+am_gbshm_test_write_OBJECTS	Makefile	/^am_gbshm_test_write_OBJECTS = gbshm_test_write.$(OBJEXT)$/;"	m
+am_libgbshm_a_OBJECTS	Makefile	/^am_libgbshm_a_OBJECTS = libgbshm.$(OBJEXT)$/;"	m
+bindir	Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+build_alias	Makefile	/^build_alias = $/;"	m
+builddir	Makefile	/^builddir = .$/;"	m
+cmem_proc_open	module/gbshm.c	/^static int cmem_proc_open(struct inode *inode, struct file *file)$/;"	f	file:
+datadir	Makefile	/^datadir = ${datarootdir}$/;"	m
+datarootdir	Makefile	/^datarootdir = ${prefix}\/share$/;"	m
+depcomp	Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/depcomp$/;"	m
+docdir	Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m
+dvidir	Makefile	/^dvidir = ${docdir}$/;"	m
+exec_prefix	Makefile	/^exec_prefix = ${prefix}$/;"	m
+gbshm_class	module/gbshm.c	/^static struct class *gbshm_class;$/;"	v	typeref:struct:class	file:
+gbshm_class	module/gbshm.c	/^static struct class_simple *gbshm_class;$/;"	v	typeref:struct:class_simple	file:
+gbshm_consumer_DEPENDENCIES	Makefile	/^gbshm_consumer_DEPENDENCIES =$/;"	m
+gbshm_consumer_LDADD	Makefile	/^gbshm_consumer_LDADD = -lgbshm$/;"	m
+gbshm_consumer_OBJECTS	Makefile	/^gbshm_consumer_OBJECTS = $(am_gbshm_consumer_OBJECTS)$/;"	m
+gbshm_consumer_SOURCES	Makefile	/^gbshm_consumer_SOURCES = gbshm_consumer.c$/;"	m
+gbshm_exit	module/gbshm.c	/^module_exit(gbshm_exit);$/;"	v
+gbshm_exit	module/gbshm.c	/^void __exit gbshm_exit(void)$/;"	f
+gbshm_fxns	module/gbshm.c	/^static struct file_operations gbshm_fxns = {$/;"	v	typeref:struct:file_operations	file:
+gbshm_init	module/gbshm.c	/^int __init gbshm_init(void)$/;"	f
+gbshm_init	module/gbshm.c	/^module_init(gbshm_init);$/;"	v
+gbshm_major	module/gbshm.c	/^static int gbshm_major;$/;"	v	file:
+gbshm_proc_entry	module/gbshm.c	/^static struct proc_dir_entry *gbshm_proc_entry;$/;"	v	typeref:struct:proc_dir_entry	file:
+gbshm_proc_ops	module/gbshm.c	/^static struct file_operations gbshm_proc_ops = {$/;"	v	typeref:struct:file_operations	file:
+gbshm_producer_DEPENDENCIES	Makefile	/^gbshm_producer_DEPENDENCIES =$/;"	m
+gbshm_producer_LDADD	Makefile	/^gbshm_producer_LDADD = -lgbshm$/;"	m
+gbshm_producer_OBJECTS	Makefile	/^gbshm_producer_OBJECTS = $(am_gbshm_producer_OBJECTS)$/;"	m
+gbshm_producer_SOURCES	Makefile	/^gbshm_producer_SOURCES = gbshm_producer.c$/;"	m
+gbshm_read_DEPENDENCIES	Makefile	/^gbshm_read_DEPENDENCIES =$/;"	m
+gbshm_read_LDADD	Makefile	/^gbshm_read_LDADD = -lgbshm$/;"	m
+gbshm_read_OBJECTS	Makefile	/^gbshm_read_OBJECTS = $(am_gbshm_read_OBJECTS)$/;"	m
+gbshm_read_SOURCES	Makefile	/^gbshm_read_SOURCES = gbshm_read.c$/;"	m
+gbshm_test_DEPENDENCIES	Makefile	/^gbshm_test_DEPENDENCIES =$/;"	m
+gbshm_test_LDADD	Makefile	/^gbshm_test_LDADD = -lgbshm$/;"	m
+gbshm_test_OBJECTS	Makefile	/^gbshm_test_OBJECTS = $(am_gbshm_test_OBJECTS)$/;"	m
+gbshm_test_SOURCES	Makefile	/^gbshm_test_SOURCES = gbshm_test.c$/;"	m
+gbshm_test_read_DEPENDENCIES	Makefile	/^gbshm_test_read_DEPENDENCIES =$/;"	m
+gbshm_test_read_LDADD	Makefile	/^gbshm_test_read_LDADD = -lgbshm$/;"	m
+gbshm_test_read_OBJECTS	Makefile	/^gbshm_test_read_OBJECTS = $(am_gbshm_test_read_OBJECTS)$/;"	m
+gbshm_test_read_SOURCES	Makefile	/^gbshm_test_read_SOURCES = gbshm_test_read.c$/;"	m
+gbshm_test_write_DEPENDENCIES	Makefile	/^gbshm_test_write_DEPENDENCIES =$/;"	m
+gbshm_test_write_LDADD	Makefile	/^gbshm_test_write_LDADD = -lgbshm$/;"	m
+gbshm_test_write_OBJECTS	Makefile	/^gbshm_test_write_OBJECTS = $(am_gbshm_test_write_OBJECTS)$/;"	m
+gbshm_test_write_SOURCES	Makefile	/^gbshm_test_write_SOURCES = gbshm_test_write.c$/;"	m
+globalmutex	gbshm_test.c	/^pthread_mutex_t globalmutex ;$/;"	v
+host_alias	Makefile	/^host_alias = arm-none-linux-gnueabi$/;"	m
+htmldir	Makefile	/^htmldir = ${docdir}$/;"	m
+includedir	Makefile	/^includedir = ${prefix}\/include$/;"	m
+infodir	Makefile	/^infodir = ${datarootdir}\/info$/;"	m
+install_sh	Makefile	/^install_sh = ${SHELL} \/opt\/sdb\/framework_1209\/install-sh$/;"	m
+install_sh_DATA	Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_PROGRAM	Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+ioctl	module/gbshm.c	/^static int ioctl(struct inode *inode, struct file *filp,$/;"	f	file:
+libdir	Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libexecdir	Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+libgbshm_a_AR	Makefile	/^libgbshm_a_AR = $(AR) $(ARFLAGS)$/;"	m
+libgbshm_a_LIBADD	Makefile	/^libgbshm_a_LIBADD =$/;"	m
+libgbshm_a_OBJECTS	Makefile	/^libgbshm_a_OBJECTS = $(am_libgbshm_a_OBJECTS)$/;"	m
+libgbshm_a_SOURCES	Makefile	/^libgbshm_a_SOURCES = libgbshm.c$/;"	m
+libgbshm_destroy	libgbshm.c	/^static succeed_type libgbshm_destroy(LIBGBSHM_OBJ *phandle)$/;"	f	file:
+libgbshm_init	libgbshm.c	/^static LIBGBSHM_OBJ* libgbshm_init()$/;"	f	file:
+libgbshm_para_get	libgbshm.c	/^static succeed_type libgbshm_para_get(LIBGBSHM_OBJ *phandle_gbshm, int offset, void * ptr, int length)$/;"	f	file:
+libgbshm_para_set	libgbshm.c	/^static succeed_type libgbshm_para_set(LIBGBSHM_OBJ *phandle_gbshm, int offset, void * ptr, int length)$/;"	f	file:
+localedir	Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
+localstatedir	Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+main	gbshm_consumer.c	/^int main(int argc, char **argv)$/;"	f
+main	gbshm_producer.c	/^int main(int argc, char **argv)$/;"	f
+main	gbshm_read.c	/^int main(int argc, char **argv)$/;"	f
+main	gbshm_test.c	/^int main(int argc, char **argv)$/;"	f
+main	gbshm_test_read.c	/^int main(int argc, char **argv)$/;"	f
+main	gbshm_test_write.c	/^int main(int argc, char **argv)$/;"	f
+mandir	Makefile	/^mandir = ${datarootdir}\/man$/;"	m
+mkdir_p	Makefile	/^mkdir_p = \/bin\/mkdir -p$/;"	m
+mkinstalldirs	Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+mmap	module/gbshm.c	/^static int mmap(struct file *filp, struct vm_area_struct *vma)$/;"	f	file:
+noinst_LIBRARIES	Makefile	/^noinst_LIBRARIES = $(OTHERLIBRARIES) $/;"	m
+oldincludedir	Makefile	/^oldincludedir = \/usr\/include$/;"	m
+open	module/gbshm.c	/^static int open(struct inode *inode, struct file *filp)$/;"	f	file:
+pdfdir	Makefile	/^pdfdir = ${docdir}$/;"	m
+pkgdatadir	Makefile	/^pkgdatadir = $(datadir)\/POLICE_work$/;"	m
+pkgincludedir	Makefile	/^pkgincludedir = $(includedir)\/POLICE_work$/;"	m
+pkglibdir	Makefile	/^pkglibdir = $(libdir)\/POLICE_work$/;"	m
+pkglibexecdir	Makefile	/^pkglibexecdir = $(libexecdir)\/POLICE_work$/;"	m
+prefix	Makefile	/^prefix = \/opt\/sdb\/rootfs\/opt\/install$/;"	m
+program_transform_name	Makefile	/^program_transform_name = s,x,x,$/;"	m
+psdir	Makefile	/^psdir = ${docdir}$/;"	m
+reference_count	module/gbshm.c	/^static atomic_t reference_count = ATOMIC_INIT(0);$/;"	v	file:
+release	module/gbshm.c	/^static int release(struct inode *inode, struct file *filp)$/;"	f	file:
+sbin_PROGRAMS	Makefile	/^sbin_PROGRAMS = gbshm_test_write$(EXEEXT) gbshm_test_read$(EXEEXT) \\$/;"	m
+sbindir	Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+sharedstatedir	Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+srcdir	Makefile	/^srcdir = .$/;"	m
+subdir	Makefile	/^subdir = driver\/gbshm$/;"	m
+sysconfdir	Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+target_alias	Makefile	/^target_alias = $/;"	m
+top_build_prefix	Makefile	/^top_build_prefix = ..\/..\/$/;"	m
+top_builddir	Makefile	/^top_builddir = ..\/..$/;"	m
+top_srcdir	Makefile	/^top_srcdir = ..\/..$/;"	m
+transform	Makefile	/^transform = $(program_transform_name)$/;"	m

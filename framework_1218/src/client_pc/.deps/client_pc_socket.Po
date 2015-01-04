@@ -1,0 +1,470 @@
+client_pc_socket.o: client_pc_socket.c client_pc_private.h \
+  ../../include/system_includes.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/stdio.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/features.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/predefs.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/cdefs.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/wordsize.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/gnu/stubs.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/include/stddef.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/types.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/typesizes.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/libio.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/_G_config.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/wchar.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/include/stdarg.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/stdio_lim.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sys_errlist.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/stdio.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/stdlib.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/types.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/time.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/endian.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/endian.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/select.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/select.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigset.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/time.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/sysmacros.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/pthreadtypes.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/alloca.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/stat.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/stat.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/ioctl.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/ioctls.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/ioctls.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/ioctl.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/asm-generic/ioctl.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/ioctl-types.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/ttydefaults.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/poll.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/poll.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/fcntl.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/fcntl.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/pthread.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/sched.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sched.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/signal.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/setjmp.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/uio.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/uio.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/socket.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sockaddr.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/socket.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/sockios.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/unistd.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/posix_opt.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/confname.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/getopt.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/netinet/in.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/stdint.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/wchar.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/in.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/byteswap.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/arpa/inet.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/signum.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/siginfo.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigaction.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigcontext.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/sigcontext.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigstack.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigthread.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/un.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/string.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/string.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/string2.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/mman.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/mman.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/errno.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/errno.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/linux/errno.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/errno.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/asm-generic/errno.h \
+  /root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/asm-generic/errno-base.h \
+  ../../include/physaddr.h ../../include/system_debug.h \
+  ../../include/libgbshm.h ../../include/parameter.h \
+  ../../include/parametertype.hin \
+  ../../include/parameters/parameter_gbshm_mutex.h \
+  ../../include/parameters/parameter_video_enc_param.h \
+  ../../include/parameters/parameter_audio_param.h \
+  ../../include/parameters/parameter_net_param.h \
+  ../../include/parameters/parameter_alert_di_param.h \
+  ../../include/parameters/parameter_alert_vloss_param.h \
+  ../../include/parameters/parameter_alert_motion_param.h \
+  ../../include/parameters/parameter_storage_setting_param.h \
+  ../../include/parameters/parameter_ad_setting_param.h \
+  ../../include/parameters/parameter_time_setting_param.h \
+  ../../include/parameters/parameter_rs485_setting_param.h \
+  ../../include/parameters/parameter_ptz_area_setting_param.h \
+  ../../include/parameters/parameter_alg_setting_param.h \
+  ../../include/parameters/parameter_working_state_param.h \
+  ../../include/parameters/parameter_end_param.h \
+  ../../include/parameters/parameter_runtime_device_status.h \
+  ../../include/parameters/parameter_runtime_device_version.h \
+  ../../include/libunix.h ../../include/system_debug.h \
+  ../../include/intercmdtype.hin \
+  ../../include/intercmds/intercmd_alert_event.h \
+  ../../include/intercmds/intercmd_di_event.h \
+  ../../include/intercmds/intercmd_boatoflash_para_setdefault.h \
+  ../../include/intercmds/intercmd_boatoflash_para_save.h \
+  ../../include/intercmds/intercmd_frameratetype.h \
+  ../../include/intercmds/intercmd_bitratetype.h \
+  ../../include/intercmds/intercmd_keyframeintervaltype.h \
+  ../../include/intercmds/intercmd_videoinputmodetype.h \
+  ../../include/intercmds/intercmd_videoencresolutiontype.h \
+  ../../include/intercmds/intercmd_videoencmodetype.h \
+  ../../include/intercmds/intercmd_brightnesstype.h \
+  ../../include/intercmds/intercmd_saturationtype.h \
+  ../../include/intercmds/intercmd_huetype.h \
+  ../../include/intercmds/intercmd_contrasttype.h \
+  ../../include/intercmds/intercmd_ptz_action.h \
+  ../../include/intercmds/intercmd_clientpctoflash_para_setdefault.h \
+  ../../include/intercmds/intercmd_clientpctoflash_para_save.h \
+  ../../include/intercmds/intercmd_preview_start.h \
+  ../../include/client_inter_comm.h \
+  ../../include/intercmds/intercmd_preview_stop.h \
+  ../../include/intercmds/intercmd_call_start.h \
+  ../../include/intercmds/intercmd_call_stop.h \
+  ../../include/intercmds/intercmd_record_start_req.h \
+  ../../include/intercmds/intercmd_record_stop_req.h \
+  ../../include/intercmds/intercmd_record_start_replay_req.h \
+  ../../include/intercmds/intercmd_record_stop_replay_req.h \
+  ../../include/intercmds/intercmd_record_start_download_req.h \
+  ../../include/intercmds/intercmd_record_stop_download_req.h \
+  ../../include/intercmds/intercmd_record_delete_file_req.h \
+  ../../include/intercmds/intercmd_control_record_replay_req.h \
+  ../../include/intercmds/intercmd_control_record_download_req.h \
+  ../../include/intercmds/intercmd_control_net_stop.h \
+  ../../include/intercmds/intercmd_record_lock_file_req.h \
+  ../../include/intercmds/intercmd_query_recordinfo_req.h \
+  ../../include/intercmds/intercmd_config_vparam_req.h \
+  ../../include/intercmds/intercmd_ctl_ptz_req.h \
+  ../../include/intercmds/intercmd_video_start.h \
+  ../../include/intercmds/intercmd_audio_start.h \
+  ../../include/intercmds/intercmd_update.h \
+  ../../include/intercmds/intercmd_core_event.h \
+  ../../include/intercmds/intercmd_buffer_new_msg.h \
+  ../../include/intercmds/intercmd_ptz_start_preset.h \
+  ../../include/intercmds/intercmd_ptz_start_setpreset.h \
+  ../../include/intercmds/intercmd_audio_buffer_new_msg.h \
+  ../../include/intercmd.h ../../include/libsignal.h \
+  /opt/dvsdk/linux-devkit/arm-none-linux-gnueabi/usr/include/openssl/md5.h \
+  /opt/dvsdk/linux-devkit/arm-none-linux-gnueabi/usr/include/openssl/e_os2.h \
+  /opt/dvsdk/linux-devkit/arm-none-linux-gnueabi/usr/include/openssl/opensslconf.h
+
+client_pc_private.h:
+
+../../include/system_includes.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/stdio.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/features.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/predefs.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/cdefs.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/wordsize.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/gnu/stubs.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/include/stddef.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/types.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/typesizes.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/libio.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/_G_config.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/wchar.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/include/stdarg.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/stdio_lim.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sys_errlist.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/stdio.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/stdlib.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/types.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/time.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/endian.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/endian.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/select.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/select.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigset.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/time.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/sysmacros.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/pthreadtypes.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/alloca.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/stat.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/stat.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/ioctl.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/ioctls.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/ioctls.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/ioctl.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/asm-generic/ioctl.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/ioctl-types.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/ttydefaults.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/poll.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/poll.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/fcntl.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/fcntl.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/pthread.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/sched.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sched.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/signal.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/setjmp.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/uio.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/uio.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/socket.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sockaddr.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/socket.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/sockios.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/unistd.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/posix_opt.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/confname.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/getopt.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/netinet/in.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/stdint.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/wchar.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/in.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/byteswap.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/arpa/inet.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/signum.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/siginfo.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigaction.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigcontext.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/sigcontext.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigstack.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigthread.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/un.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/string.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/string.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/string2.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/mman.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/mman.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/errno.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/errno.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/linux/errno.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/errno.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/asm-generic/errno.h:
+
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/asm-generic/errno-base.h:
+
+../../include/physaddr.h:
+
+../../include/system_debug.h:
+
+../../include/libgbshm.h:
+
+../../include/parameter.h:
+
+../../include/parametertype.hin:
+
+../../include/parameters/parameter_gbshm_mutex.h:
+
+../../include/parameters/parameter_video_enc_param.h:
+
+../../include/parameters/parameter_audio_param.h:
+
+../../include/parameters/parameter_net_param.h:
+
+../../include/parameters/parameter_alert_di_param.h:
+
+../../include/parameters/parameter_alert_vloss_param.h:
+
+../../include/parameters/parameter_alert_motion_param.h:
+
+../../include/parameters/parameter_storage_setting_param.h:
+
+../../include/parameters/parameter_ad_setting_param.h:
+
+../../include/parameters/parameter_time_setting_param.h:
+
+../../include/parameters/parameter_rs485_setting_param.h:
+
+../../include/parameters/parameter_ptz_area_setting_param.h:
+
+../../include/parameters/parameter_alg_setting_param.h:
+
+../../include/parameters/parameter_working_state_param.h:
+
+../../include/parameters/parameter_end_param.h:
+
+../../include/parameters/parameter_runtime_device_status.h:
+
+../../include/parameters/parameter_runtime_device_version.h:
+
+../../include/libunix.h:
+
+../../include/system_debug.h:
+
+../../include/intercmdtype.hin:
+
+../../include/intercmds/intercmd_alert_event.h:
+
+../../include/intercmds/intercmd_di_event.h:
+
+../../include/intercmds/intercmd_boatoflash_para_setdefault.h:
+
+../../include/intercmds/intercmd_boatoflash_para_save.h:
+
+../../include/intercmds/intercmd_frameratetype.h:
+
+../../include/intercmds/intercmd_bitratetype.h:
+
+../../include/intercmds/intercmd_keyframeintervaltype.h:
+
+../../include/intercmds/intercmd_videoinputmodetype.h:
+
+../../include/intercmds/intercmd_videoencresolutiontype.h:
+
+../../include/intercmds/intercmd_videoencmodetype.h:
+
+../../include/intercmds/intercmd_brightnesstype.h:
+
+../../include/intercmds/intercmd_saturationtype.h:
+
+../../include/intercmds/intercmd_huetype.h:
+
+../../include/intercmds/intercmd_contrasttype.h:
+
+../../include/intercmds/intercmd_ptz_action.h:
+
+../../include/intercmds/intercmd_clientpctoflash_para_setdefault.h:
+
+../../include/intercmds/intercmd_clientpctoflash_para_save.h:
+
+../../include/intercmds/intercmd_preview_start.h:
+
+../../include/client_inter_comm.h:
+
+../../include/intercmds/intercmd_preview_stop.h:
+
+../../include/intercmds/intercmd_call_start.h:
+
+../../include/intercmds/intercmd_call_stop.h:
+
+../../include/intercmds/intercmd_record_start_req.h:
+
+../../include/intercmds/intercmd_record_stop_req.h:
+
+../../include/intercmds/intercmd_record_start_replay_req.h:
+
+../../include/intercmds/intercmd_record_stop_replay_req.h:
+
+../../include/intercmds/intercmd_record_start_download_req.h:
+
+../../include/intercmds/intercmd_record_stop_download_req.h:
+
+../../include/intercmds/intercmd_record_delete_file_req.h:
+
+../../include/intercmds/intercmd_control_record_replay_req.h:
+
+../../include/intercmds/intercmd_control_record_download_req.h:
+
+../../include/intercmds/intercmd_control_net_stop.h:
+
+../../include/intercmds/intercmd_record_lock_file_req.h:
+
+../../include/intercmds/intercmd_query_recordinfo_req.h:
+
+../../include/intercmds/intercmd_config_vparam_req.h:
+
+../../include/intercmds/intercmd_ctl_ptz_req.h:
+
+../../include/intercmds/intercmd_video_start.h:
+
+../../include/intercmds/intercmd_audio_start.h:
+
+../../include/intercmds/intercmd_update.h:
+
+../../include/intercmds/intercmd_core_event.h:
+
+../../include/intercmds/intercmd_buffer_new_msg.h:
+
+../../include/intercmds/intercmd_ptz_start_preset.h:
+
+../../include/intercmds/intercmd_ptz_start_setpreset.h:
+
+../../include/intercmds/intercmd_audio_buffer_new_msg.h:
+
+../../include/intercmd.h:
+
+../../include/libsignal.h:
+
+/opt/dvsdk/linux-devkit/arm-none-linux-gnueabi/usr/include/openssl/md5.h:
+
+/opt/dvsdk/linux-devkit/arm-none-linux-gnueabi/usr/include/openssl/e_os2.h:
+
+/opt/dvsdk/linux-devkit/arm-none-linux-gnueabi/usr/include/openssl/opensslconf.h:

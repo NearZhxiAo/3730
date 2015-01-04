@@ -1,0 +1,33 @@
+tx_dtx_handler.o tx_dtx_handler.o: tx_dtx_handler.c q_plsf.h typedef.h \
+  cnst.h basic_op.h table.h mode.h pred_lt_3or6.h oper_32b.h copy.h \
+  set_zero.h log2.h lsp_lsf.h reorder_lsf.h dtx_def.h gc_pred.h
+
+q_plsf.h:
+
+typedef.h:
+
+cnst.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+oper_32b.h:
+
+copy.h:
+
+set_zero.h:
+
+log2.h:
+
+lsp_lsf.h:
+
+reorder_lsf.h:
+
+dtx_def.h:
+
+gc_pred.h:

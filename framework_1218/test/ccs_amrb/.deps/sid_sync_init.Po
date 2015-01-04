@@ -1,0 +1,18 @@
+sid_sync_init.o sid_sync_init.o: sid_sync_init.c typedef.h basic_op.h \
+  table.h mode.h pred_lt_3or6.h sid_sync.h frame.h sid_sync_reset.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+sid_sync.h:
+
+frame.h:
+
+sid_sync_reset.h:

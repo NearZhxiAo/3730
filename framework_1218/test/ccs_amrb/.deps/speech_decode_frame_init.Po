@@ -1,0 +1,57 @@
+speech_decode_frame_init.o speech_decode_frame_init.o:  \
+ speech_decode_frame_init.c speech_decode_frame.h mode.h decoder_amr.h \
+  typedef.h cnst.h dtx_dec.h dtx_def.h q_plsf.h gc_pred.h d_plsf.h \
+  frame.h cb_gain_average.h bgn_scd.h ph_disp.h lsp_avg.h ec_gain_code.h \
+  ec_gain_pitch.h post_filter.h preemphasis.h agc.h post_process.h \
+  decoder_amr_init.h post_filter_init.h post_process_init.h \
+  speech_decode_frame_reset.h
+
+speech_decode_frame.h:
+
+mode.h:
+
+decoder_amr.h:
+
+typedef.h:
+
+cnst.h:
+
+dtx_dec.h:
+
+dtx_def.h:
+
+q_plsf.h:
+
+gc_pred.h:
+
+d_plsf.h:
+
+frame.h:
+
+cb_gain_average.h:
+
+bgn_scd.h:
+
+ph_disp.h:
+
+lsp_avg.h:
+
+ec_gain_code.h:
+
+ec_gain_pitch.h:
+
+post_filter.h:
+
+preemphasis.h:
+
+agc.h:
+
+post_process.h:
+
+decoder_amr_init.h:
+
+post_filter_init.h:
+
+post_process_init.h:
+
+speech_decode_frame_reset.h:

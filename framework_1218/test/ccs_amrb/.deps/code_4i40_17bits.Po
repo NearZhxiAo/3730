@@ -1,0 +1,27 @@
+code_4i40_17bits.o code_4i40_17bits.o: code_4i40_17bits.c typedef.h \
+  basic_op.h table.h mode.h pred_lt_3or6.h inv_sqrt.h cnst.h cor_h.h \
+  cor_h_x.h set_sign.h build_code_4i40_17bits.h search_4i40_17bits.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+inv_sqrt.h:
+
+cnst.h:
+
+cor_h.h:
+
+cor_h_x.h:
+
+set_sign.h:
+
+build_code_4i40_17bits.h:
+
+search_4i40_17bits.h:

@@ -1,0 +1,593 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ACLOCAL	Makefile	/^ACLOCAL = ${SHELL} \/opt\/sdb\/framework_1209\/missing --run aclocal-1.11$/;"	m
+ACLOCAL_M4	Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+AMTAR	Makefile	/^AMTAR = ${SHELL} \/opt\/sdb\/framework_1209\/missing --run tar$/;"	m
+AM_LDFLAGS	Makefile	/^AM_LDFLAGS = -L$(top_srcdir)\/lib -D_STORAGE$/;"	m
+AUTOCONF	Makefile	/^AUTOCONF = ${SHELL} \/opt\/sdb\/framework_1209\/missing --run autoconf$/;"	m
+AUTOHEADER	Makefile	/^AUTOHEADER = ${SHELL} \/opt\/sdb\/framework_1209\/missing --run autoheader$/;"	m
+AUTOMAKE	Makefile	/^AUTOMAKE = ${SHELL} \/opt\/sdb\/framework_1209\/missing --run automake-1.11$/;"	m
+AWK	Makefile	/^AWK = gawk$/;"	m
+AddRecIntoDataFile	storage_data_mng.c	/^succeed_type AddRecIntoDataFile(STORAGE_PRIVATE_HANDLE *phandle, LIBVSSHM_UINT_DATA_I *pvsshm_uint_data)$/;"	f
+AddRecIntoIdxFile	storage_index_mng.c	/^succeed_type AddRecIntoIdxFile(STORAGE_PRIVATE_HANDLE *phandle, LIBVSSHM_UINT_HEADER *pvsshm_uint_header)$/;"	f
+CC	Makefile	/^CC = arm-none-linux-gnueabi-gcc$/;"	m
+CCDEPMODE	Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CCLD	Makefile	/^CCLD = $(CC)$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -O2$/;"	m
+COMPILE	Makefile	/^COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \\$/;"	m
+CONFIG_CLEAN_FILES	Makefile	/^CONFIG_CLEAN_FILES =$/;"	m
+CONFIG_CLEAN_VPATH_FILES	Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m
+CONFIG_HEADER	Makefile	/^CONFIG_HEADER = $(top_builddir)\/config.h$/;"	m
+CPP	Makefile	/^CPP = arm-none-linux-gnueabi-gcc -E$/;"	m
+CPPFLAGS	Makefile	/^CPPFLAGS = $/;"	m
+CTAGS	Makefile	/^CTAGS = ctags$/;"	m
+CXX	Makefile	/^CXX = arm-none-linux-gnueabi-g++$/;"	m
+CXXDEPMODE	Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS = -g -O2$/;"	m
+CYGPATH_W	Makefile	/^CYGPATH_W = echo$/;"	m
+ChdirInIdxDirMulti	storage_file.c	/^void ChdirInIdxDirMulti(char* pcDirName)$/;"	f
+ChdirInIdxDirMulti	test/test_file.c	/^void ChdirInIdxDirMulti(char* pcDirName)$/;"	f
+ChdirInIdxDirSingle	storage_file.c	/^void ChdirInIdxDirSingle(char* pcDirName)$/;"	f
+ChdirInIdxDirSingle	test/test_file.c	/^void ChdirInIdxDirSingle(char* pcDirName)$/;"	f
+ChdirOutIdxDirMulti	storage_file.c	/^void ChdirOutIdxDirMulti(char* pcDirName)$/;"	f
+ChdirOutIdxDirMulti	test/test_file.c	/^void ChdirOutIdxDirMulti(char* pcDirName)$/;"	f
+ChdirOutIdxDirSingle	storage_file.c	/^void ChdirOutIdxDirSingle(void)$/;"	f
+ChdirOutIdxDirSingle	test/test_file.c	/^void ChdirOutIdxDirSingle(void)$/;"	f
+Count	storage_data_mng.c	/^static int Count = 0;$/;"	v	file:
+CreateIdxDirMulti	storage_file.c	/^void CreateIdxDirMulti(char* pcDirName)$/;"	f
+CreateIdxDirMulti	test/test_file.c	/^void CreateIdxDirMulti(char* pcDirName)$/;"	f
+CreateIdxDirSingle	storage_file.c	/^void CreateIdxDirSingle(char* pcDirName)$/;"	f
+CreateIdxDirSingle	test/test_file.c	/^void CreateIdxDirSingle(char* pcDirName)$/;"	f
+CreateIdxFileSingle	storage_file.c	/^void CreateIdxFileSingle(char* pcFileName)$/;"	f
+CreateIdxFileSingle	test/test_file.c	/^void CreateIdxFileSingle(char* pcFileName)$/;"	f
+DATA_DIR_JPEG_NAME_ROOT	storage_common.h	42;"	d
+DATA_DIR_JPEG_NAME_ROOT	test/storage_common.h	42;"	d
+DATA_DIR_NAME_DI	storage_common.h	45;"	d
+DATA_DIR_NAME_DI	test/storage_common.h	45;"	d
+DATA_DIR_NAME_H264	storage_common.h	51;"	d
+DATA_DIR_NAME_H264	test/storage_common.h	51;"	d
+DATA_DIR_NAME_INDEX	storage_common.h	43;"	d
+DATA_DIR_NAME_INDEX	test/storage_common.h	43;"	d
+DATA_DIR_NAME_MJPEG	storage_common.h	53;"	d
+DATA_DIR_NAME_MJPEG	test/storage_common.h	53;"	d
+DATA_DIR_NAME_MPEG4	storage_common.h	52;"	d
+DATA_DIR_NAME_MPEG4	test/storage_common.h	52;"	d
+DATA_DIR_NAME_RED	storage_common.h	46;"	d
+DATA_DIR_NAME_RED	test/storage_common.h	46;"	d
+DATA_DIR_NAME_SPEED	storage_common.h	48;"	d
+DATA_DIR_NAME_SPEED	test/storage_common.h	48;"	d
+DATA_DIR_NAME_TIME	storage_common.h	49;"	d
+DATA_DIR_NAME_TIME	test/storage_common.h	49;"	d
+DATA_DIR_NAME_YELLOW	storage_common.h	47;"	d
+DATA_DIR_NAME_YELLOW	test/storage_common.h	47;"	d
+DATA_DIR_VIDEO_NAME_ROOT	storage_common.h	41;"	d
+DATA_DIR_VIDEO_NAME_ROOT	test/storage_common.h	41;"	d
+DATA_EVENT_NUM_MAX	storage_common.h	44;"	d
+DATA_EVENT_NUM_MAX	test/storage_common.h	44;"	d
+DEFAULT_INCLUDES	Makefile	/^DEFAULT_INCLUDES = -I. -I$(top_builddir)$/;"	m
+DEFS	Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEPDIR	Makefile	/^DEPDIR = .deps$/;"	m
+DISTFILES	Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DIST_COMMON	Makefile	/^DIST_COMMON = README $(srcdir)\/Makefile.am $(srcdir)\/Makefile.in$/;"	m
+DIST_SOURCES	Makefile	/^DIST_SOURCES = $(storage_SOURCES)$/;"	m
+DeleteIdxDirMulti	storage_file.c	/^void DeleteIdxDirMulti(char* pcDirName)$/;"	f
+DeleteIdxDirMulti	test/test_file.c	/^void DeleteIdxDirMulti(char* pcDirName)$/;"	f
+DeleteIdxDirSingle	storage_file.c	/^void DeleteIdxDirSingle(char* pcDirName)$/;"	f
+DeleteIdxDirSingle	test/test_file.c	/^void DeleteIdxDirSingle(char* pcDirName)$/;"	f
+DeleteIdxFileSingle	storage_file.c	/^void DeleteIdxFileSingle(char* pcFileName)$/;"	f
+DeleteIdxFileSingle	test/test_file.c	/^void DeleteIdxFileSingle(char* pcFileName)$/;"	f
+DevideIdxLocDir_By	storage_file.c	/^void DevideIdxLocDir_By(char const acMergeLocDir[],char aacDevideLocDir[][STORAGE_IDX_NAME_LENGTH_MAX])$/;"	f
+DevideIdxLocDir_By	test/test_file.c	/^void DevideIdxLocDir_By(char const acMergeLocDir[],char aacDevideLocDir[][STORAGE_IDX_NAME_LENGTH_MAX])$/;"	f
+DevideIdxName_ByTime	storage_index_mng.c	/^void DevideIdxName_ByTime(char* pcMergeFileName, stStorageNameDevide_T* pstDevideFileName)$/;"	f
+DoStorageJpeg	storage_data_mng.c	/^succeed_type DoStorageJpeg(STORAGE_PRIVATE_HANDLE *phandle)$/;"	f
+ECHO_C	Makefile	/^ECHO_C = $/;"	m
+ECHO_N	Makefile	/^ECHO_N = -n$/;"	m
+ECHO_T	Makefile	/^ECHO_T = $/;"	m
+EGREP	Makefile	/^EGREP = \/bin\/grep -E$/;"	m
+ETAGS	Makefile	/^ETAGS = etags$/;"	m
+EXEEXT	Makefile	/^EXEEXT = $/;"	m
+ExistIdxDirSingle_if	storage_file.c	/^int ExistIdxDirSingle_if(char *pcDirName)$/;"	f
+ExistIdxDirSingle_if	test/test_file.c	/^int ExistIdxDirSingle_if(char *pcDirName)$/;"	f
+ExistIdxFileSingle_if	storage_file.c	/^int ExistIdxFileSingle_if(char* pcFileName)$/;"	f
+ExistIdxFileSingle_if	test/test_file.c	/^int ExistIdxFileSingle_if(char* pcFileName)$/;"	f
+ExitIdxFile	storage_index_mng.c	/^void ExitIdxFile(void)$/;"	f
+ExitIdxMemFree	storage_index_mng.c	/^void ExitIdxMemFree(void)$/;"	f
+False	storage_common.h	68;"	d
+False	test/storage_common.h	68;"	d
+GREP	Makefile	/^GREP = \/bin\/grep$/;"	m
+GenerateDataDirName_ByEventAndVideoType	storage_data_mng.c	/^succeed_type GenerateDataDirName_ByEventAndVideoType(enStorageEventType_T enStorageEvent, int enStorageCodeType, char* pcDataDirName)$/;"	f
+GenerateFileName_ByCurTime	storage_file.c	/^int GenerateFileName_ByCurTime(char *pstFileName,char *pstFileType)$/;"	f
+GenerateFileName_ByCurTime	test/test_file.c	/^int GenerateFileName_ByCurTime(char *pstFileName,char *pstFileType)$/;"	f
+GenerateLocName_ByCurTimeAndCurPwd	storage_file.c	/^int GenerateLocName_ByCurTimeAndCurPwd(char *pcLocName,char *pstFileType)$/;"	f
+GenerateLocName_ByCurTimeAndCurPwd	test/test_file.c	/^int GenerateLocName_ByCurTimeAndCurPwd(char *pcLocName,char *pstFileType)$/;"	f
+GenerateLocName_ByCurTimeAndThePwd	storage_file.c	/^int GenerateLocName_ByCurTimeAndThePwd(char *pcLocName,char *pstFileType,char *pstDirName)$/;"	f
+GenerateLocName_ByCurTimeAndThePwd	test/test_file.c	/^int GenerateLocName_ByCurTimeAndThePwd(char *pcLocName,char *pstFileType,char *pstDirName)$/;"	f
+GenerateLocName_ByTheTimeAndThePwd	storage_file.c	/^int GenerateLocName_ByTheTimeAndThePwd(char *pcLocName,char *pstFileName,char *pstDirName)$/;"	f
+GenerateLocName_ByTheTimeAndThePwd	test/test_file.c	/^int GenerateLocName_ByTheTimeAndThePwd(char *pcLocName,char *pstFileName,char *pstDirName)$/;"	f
+GenerateTarFileName_ByCurTime	storage_file.c	/^int GenerateTarFileName_ByCurTime(char *strFileName)$/;"	f
+GenerateTarFileName_ByCurTime	test/test_file.c	/^int GenerateTarFileName_ByCurTime(char *strFileName)$/;"	f
+GetCurPwdName	storage_file.c	/^void GetCurPwdName(char *pcDirName)$/;"	f
+GetCurPwdName	test/test_file.c	/^void GetCurPwdName(char *pcDirName)$/;"	f
+GetDirName_ByEvent	storage_index_mng.c	/^succeed_type GetDirName_ByEvent(enStorageEventType_T enStorageEvent, char* pcDirName)$/;"	f
+GetDiskfreeSpace	storage_data_mng.c	/^long long GetDiskfreeSpace(char* pDisk)$/;"	f
+GetFileSize_ByByte	storage_file.c	/^long GetFileSize_ByByte(char* pcFileName)$/;"	f
+GetFileSize_ByByte	test/test_file.c	/^long GetFileSize_ByByte(char* pcFileName)$/;"	f
+GetFileSize_ByStruct	storage_index_mng.c	/^long GetFileSize_ByStruct(char* pcFileName)$/;"	f
+GetIdxDirName_ByEvent	storage_index_mng.c	/^succeed_type GetIdxDirName_ByEvent(enStorageEventType_T enStorageEvent, char* pcIdxDirName)$/;"	f
+GetIdxHandl_ByEvent	storage_index_mng.c	39;"	d	file:
+GetIdxLocName_ByEvent	storage_index_mng.c	/^succeed_type GetIdxLocName_ByEvent(enStorageEventType_T enStorageEvent, char* pcIdxDirName)$/;"	f
+GetIdxNum_ByEvent	storage_index_mng.c	40;"	d	file:
+GetIdxNumfromTables	storage_index_mng.c	/^succeed_type  GetIdxNumfromTables(enStorageEventType_T stiSeq, unsigned short *pusIndexNum)$/;"	f
+GetInfoFromIdxLocDir	storage_index_mng.c	/^void GetInfoFromIdxLocDir(char const acLocName[], char acFileName[], char acDirName[], enStorageEventType_T* penEventType, \\$/;"	f
+INCLUDES	Makefile	/^INCLUDES = -I$(top_srcdir)\/include$/;"	m
+INDEX_CODE_END	storage_common.h	/^	INDEX_CODE_END,$/;"	e	enum:_storage_code_tpye_t
+INDEX_CODE_END	test/storage_common.h	/^	INDEX_CODE_END,$/;"	e	enum:_storage_code_tpye_t
+INDEX_CODE_H264	storage_common.h	/^	INDEX_CODE_H264 = 0,$/;"	e	enum:_storage_code_tpye_t
+INDEX_CODE_H264	test/storage_common.h	/^	INDEX_CODE_H264 = 0,$/;"	e	enum:_storage_code_tpye_t
+INDEX_CODE_MJPEG	storage_common.h	/^	INDEX_CODE_MJPEG,$/;"	e	enum:_storage_code_tpye_t
+INDEX_CODE_MJPEG	test/storage_common.h	/^	INDEX_CODE_MJPEG,$/;"	e	enum:_storage_code_tpye_t
+INDEX_CODE_MPEG4	storage_common.h	/^	INDEX_CODE_MPEG4,$/;"	e	enum:_storage_code_tpye_t
+INDEX_CODE_MPEG4	test/storage_common.h	/^	INDEX_CODE_MPEG4,$/;"	e	enum:_storage_code_tpye_t
+INDEX_CODE_START	storage_common.h	/^	INDEX_CODE_START = -1,$/;"	e	enum:_storage_code_tpye_t
+INDEX_CODE_START	test/storage_common.h	/^	INDEX_CODE_START = -1,$/;"	e	enum:_storage_code_tpye_t
+INDEX_DIR_NAME_DI	storage_common.h	59;"	d
+INDEX_DIR_NAME_DI	test/storage_common.h	59;"	d
+INDEX_DIR_NAME_H264	storage_common.h	65;"	d
+INDEX_DIR_NAME_H264	test/storage_common.h	65;"	d
+INDEX_DIR_NAME_INDEX	storage_common.h	57;"	d
+INDEX_DIR_NAME_INDEX	test/storage_common.h	57;"	d
+INDEX_DIR_NAME_MJPEG	storage_common.h	67;"	d
+INDEX_DIR_NAME_MJPEG	test/storage_common.h	67;"	d
+INDEX_DIR_NAME_MPEG4	storage_common.h	66;"	d
+INDEX_DIR_NAME_MPEG4	test/storage_common.h	66;"	d
+INDEX_DIR_NAME_RED	storage_common.h	60;"	d
+INDEX_DIR_NAME_RED	test/storage_common.h	60;"	d
+INDEX_DIR_NAME_ROOT	storage_common.h	56;"	d
+INDEX_DIR_NAME_ROOT	test/storage_common.h	56;"	d
+INDEX_DIR_NAME_SPEED	storage_common.h	62;"	d
+INDEX_DIR_NAME_SPEED	test/storage_common.h	62;"	d
+INDEX_DIR_NAME_TIME	storage_common.h	63;"	d
+INDEX_DIR_NAME_TIME	test/storage_common.h	63;"	d
+INDEX_DIR_NAME_YELLOW	storage_common.h	61;"	d
+INDEX_DIR_NAME_YELLOW	test/storage_common.h	61;"	d
+INDEX_EVENT_DI	storage_common.h	/^	INDEX_EVENT_DI =0,$/;"	e	enum:_storage_event_tpye_t
+INDEX_EVENT_DI	test/storage_common.h	/^	INDEX_EVENT_DI =0,$/;"	e	enum:_storage_event_tpye_t
+INDEX_EVENT_END	storage_common.h	/^	INDEX_EVENT_END,$/;"	e	enum:_storage_event_tpye_t
+INDEX_EVENT_END	test/storage_common.h	/^	INDEX_EVENT_END,$/;"	e	enum:_storage_event_tpye_t
+INDEX_EVENT_NUM_MAX	storage_common.h	58;"	d
+INDEX_EVENT_NUM_MAX	test/storage_common.h	58;"	d
+INDEX_EVENT_RED	storage_common.h	/^	INDEX_EVENT_RED,$/;"	e	enum:_storage_event_tpye_t
+INDEX_EVENT_RED	test/storage_common.h	/^	INDEX_EVENT_RED,$/;"	e	enum:_storage_event_tpye_t
+INDEX_EVENT_SPEED	storage_common.h	/^	INDEX_EVENT_SPEED,$/;"	e	enum:_storage_event_tpye_t
+INDEX_EVENT_SPEED	test/storage_common.h	/^	INDEX_EVENT_SPEED,$/;"	e	enum:_storage_event_tpye_t
+INDEX_EVENT_START	storage_common.h	/^	INDEX_EVENT_START = -1,$/;"	e	enum:_storage_event_tpye_t
+INDEX_EVENT_START	test/storage_common.h	/^	INDEX_EVENT_START = -1,$/;"	e	enum:_storage_event_tpye_t
+INDEX_EVENT_TIME	storage_common.h	/^	INDEX_EVENT_TIME,$/;"	e	enum:_storage_event_tpye_t
+INDEX_EVENT_TIME	test/storage_common.h	/^	INDEX_EVENT_TIME,$/;"	e	enum:_storage_event_tpye_t
+INDEX_EVENT_YELLOW	storage_common.h	/^	INDEX_EVENT_YELLOW,$/;"	e	enum:_storage_event_tpye_t
+INDEX_EVENT_YELLOW	test/storage_common.h	/^	INDEX_EVENT_YELLOW,$/;"	e	enum:_storage_event_tpye_t
+INSTALL	Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL_DATA	Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_HEADER	Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_PROGRAM	Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_STRIP_PROGRAM	Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+InitDataFile	storage_data_mng.c	/^succeed_type InitDataFile(void)$/;"	f
+InitIdxFile	storage_index_mng.c	/^succeed_type InitIdxFile(void)$/;"	f
+InitIdxMemAlloc	storage_index_mng.c	/^succeed_type InitIdxMemAlloc(void)$/;"	f
+IsJpegStore	storage_private.h	/^	int IsJpegStore;$/;"	m	struct:_STORAGE_PRIVATE_HANDLE
+IsStorageData_Available	storage_private.h	/^	int IsStorageData_Available;  \/\/存储数据是否可用标志$/;"	m	struct:_STORAGE_PRIVATE_HANDLE
+IsStorageSysQuit	storage_private.h	/^	int IsStorageSysQuit;         \/\/storage 程序推出标志符$/;"	m	struct:_STORAGE_PRIVATE_HANDLE
+LDFLAGS	Makefile	/^LDFLAGS = $/;"	m
+LIBOBJS	Makefile	/^LIBOBJS = $/;"	m
+LIBS	Makefile	/^LIBS = -lpthread $/;"	m
+LINK	Makefile	/^LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@$/;"	m
+LTLIBOBJS	Makefile	/^LTLIBOBJS = $/;"	m
+MAKEINFO	Makefile	/^MAKEINFO = ${SHELL} \/opt\/sdb\/framework_1209\/missing --run makeinfo$/;"	m
+MKDIR_P	Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m
+MergeIdxName_ByTime	storage_index_mng.c	/^void MergeIdxName_ByTime(char* pcMergeFileName, stStorageNameDevide_T* pstDevideFileName)$/;"	f
+NORMAL_INSTALL	Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_UNINSTALL	Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+OBJEXT	Makefile	/^OBJEXT = o$/;"	m
+PACKAGE	Makefile	/^PACKAGE = POLICE_work$/;"	m
+PACKAGE_BUGREPORT	Makefile	/^PACKAGE_BUGREPORT = liangzhang@xidian.edu.cn$/;"	m
+PACKAGE_NAME	Makefile	/^PACKAGE_NAME = POLICE_work$/;"	m
+PACKAGE_STRING	Makefile	/^PACKAGE_STRING = POLICE_work 1.0$/;"	m
+PACKAGE_TARNAME	Makefile	/^PACKAGE_TARNAME = police_work$/;"	m
+PACKAGE_URL	Makefile	/^PACKAGE_URL = $/;"	m
+PACKAGE_VERSION	Makefile	/^PACKAGE_VERSION = 1.0$/;"	m
+PATH_SEPARATOR	Makefile	/^PATH_SEPARATOR = :$/;"	m
+POST_INSTALL	Makefile	/^POST_INSTALL = :$/;"	m
+POST_UNINSTALL	Makefile	/^POST_UNINSTALL = :$/;"	m
+PRE_INSTALL	Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_UNINSTALL	Makefile	/^PRE_UNINSTALL = :$/;"	m
+PROGRAMS	Makefile	/^PROGRAMS = $(bin_PROGRAMS)$/;"	m
+RANLIB	Makefile	/^RANLIB = arm-none-linux-gnueabi-ranlib$/;"	m
+SET_MAKE	Makefile	/^SET_MAKE = $/;"	m
+SHELL	Makefile	/^SHELL = \/bin\/sh$/;"	m
+SOURCES	Makefile	/^SOURCES = $(storage_SOURCES)$/;"	m
+STORAGE_CMD_LENGTH_MAX	storage_file.h	35;"	d
+STORAGE_CMD_LENGTH_MAX	test/storage_file.h	35;"	d
+STORAGE_DIR_NAME_ROOT	storage_common.h	37;"	d
+STORAGE_DIR_NAME_ROOT	test/storage_common.h	37;"	d
+STORAGE_FAIL	storage_common.h	32;"	d
+STORAGE_FAIL	test/storage_common.h	32;"	d
+STORAGE_FALSE	storage_common.h	35;"	d
+STORAGE_FALSE	test/storage_common.h	35;"	d
+STORAGE_FUNCTION_NAME	storage_data_mng.c	112;"	d	file:
+STORAGE_FUNCTION_NAME	storage_data_mng.c	130;"	d	file:
+STORAGE_FUNCTION_NAME	storage_data_mng.c	236;"	d	file:
+STORAGE_FUNCTION_NAME	storage_data_mng.c	257;"	d	file:
+STORAGE_FUNCTION_NAME	storage_data_mng.c	397;"	d	file:
+STORAGE_FUNCTION_NAME	storage_data_mng.c	46;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	112;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	136;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	152;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	174;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	191;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	214;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	230;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	251;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	266;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	289;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	305;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	337;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	354;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	36;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	371;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	387;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	419;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	435;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	453;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	469;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	495;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	511;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	529;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	545;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	562;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	578;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	592;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	608;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	625;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	62;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	641;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	658;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	673;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	689;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	705;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	723;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	739;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	757;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	76;"	d	file:
+STORAGE_FUNCTION_NAME	storage_file.c	96;"	d	file:
+STORAGE_FUNCTION_NAME	storage_index_mng.c	106;"	d	file:
+STORAGE_FUNCTION_NAME	storage_index_mng.c	121;"	d	file:
+STORAGE_FUNCTION_NAME	storage_index_mng.c	136;"	d	file:
+STORAGE_FUNCTION_NAME	storage_index_mng.c	156;"	d	file:
+STORAGE_FUNCTION_NAME	storage_index_mng.c	171;"	d	file:
+STORAGE_FUNCTION_NAME	storage_index_mng.c	184;"	d	file:
+STORAGE_FUNCTION_NAME	storage_index_mng.c	200;"	d	file:
+STORAGE_FUNCTION_NAME	storage_index_mng.c	241;"	d	file:
+STORAGE_FUNCTION_NAME	storage_index_mng.c	248;"	d	file:
+STORAGE_FUNCTION_NAME	storage_index_mng.c	250;"	d	file:
+STORAGE_FUNCTION_NAME	storage_index_mng.c	266;"	d	file:
+STORAGE_FUNCTION_NAME	storage_index_mng.c	280;"	d	file:
+STORAGE_FUNCTION_NAME	storage_index_mng.c	296;"	d	file:
+STORAGE_FUNCTION_NAME	storage_index_mng.c	307;"	d	file:
+STORAGE_FUNCTION_NAME	storage_index_mng.c	323;"	d	file:
+STORAGE_FUNCTION_NAME	storage_index_mng.c	335;"	d	file:
+STORAGE_FUNCTION_NAME	storage_index_mng.c	352;"	d	file:
+STORAGE_FUNCTION_NAME	storage_index_mng.c	426;"	d	file:
+STORAGE_FUNCTION_NAME	storage_index_mng.c	442;"	d	file:
+STORAGE_FUNCTION_NAME	storage_index_mng.c	468;"	d	file:
+STORAGE_FUNCTION_NAME	storage_index_mng.c	483;"	d	file:
+STORAGE_FUNCTION_NAME	storage_index_mng.c	513;"	d	file:
+STORAGE_FUNCTION_NAME	storage_index_mng.c	529;"	d	file:
+STORAGE_FUNCTION_NAME	storage_index_mng.c	559;"	d	file:
+STORAGE_FUNCTION_NAME	storage_index_mng.c	575;"	d	file:
+STORAGE_FUNCTION_NAME	storage_index_mng.c	605;"	d	file:
+STORAGE_FUNCTION_NAME	storage_index_mng.c	621;"	d	file:
+STORAGE_FUNCTION_NAME	storage_index_mng.c	64;"	d	file:
+STORAGE_FUNCTION_NAME	storage_index_mng.c	655;"	d	file:
+STORAGE_FUNCTION_NAME	storage_index_mng.c	90;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	100;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	116;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	140;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	156;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	178;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	195;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	218;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	234;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	255;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	270;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	293;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	309;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	341;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	358;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	375;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	391;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	40;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	423;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	439;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	457;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	473;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	499;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	515;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	533;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	549;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	566;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	582;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	596;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	612;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	629;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	645;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	662;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	66;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	677;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	693;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	709;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	727;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	743;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	761;"	d	file:
+STORAGE_FUNCTION_NAME	test/test_file.c	80;"	d	file:
+STORAGE_IDX_CONTEXT_VOL_MAX	storage_file.h	43;"	d
+STORAGE_IDX_CONTEXT_VOL_MAX	test/storage_file.h	43;"	d
+STORAGE_IDX_DIR_LENGTH_MAX	storage_file.h	39;"	d
+STORAGE_IDX_DIR_LENGTH_MAX	test/storage_file.h	39;"	d
+STORAGE_IDX_DIR_LEVEL_MAX	storage_file.h	42;"	d
+STORAGE_IDX_DIR_LEVEL_MAX	test/storage_file.h	42;"	d
+STORAGE_IDX_FLAG_LENGTH_MAX	storage_file.h	41;"	d
+STORAGE_IDX_FLAG_LENGTH_MAX	test/storage_file.h	41;"	d
+STORAGE_IDX_LOC_LENGTH_MAX	storage_file.h	40;"	d
+STORAGE_IDX_LOC_LENGTH_MAX	test/storage_file.h	40;"	d
+STORAGE_IDX_NAME_CONTEXT_LENGTH_MAX	storage_file.h	36;"	d
+STORAGE_IDX_NAME_CONTEXT_LENGTH_MAX	test/storage_file.h	36;"	d
+STORAGE_IDX_NAME_FOMAT_LENGTH_MAX	storage_file.h	37;"	d
+STORAGE_IDX_NAME_FOMAT_LENGTH_MAX	test/storage_file.h	37;"	d
+STORAGE_IDX_NAME_LENGTH_MAX	storage_file.h	38;"	d
+STORAGE_IDX_NAME_LENGTH_MAX	test/storage_file.h	38;"	d
+STORAGE_INDEX_BUSY	storage_index.h	48;"	d
+STORAGE_INDEX_ERROR	storage_index.h	52;"	d
+STORAGE_INDEX_FAILURE	storage_index.h	55;"	d
+STORAGE_INDEX_IDLE	storage_index.h	47;"	d
+STORAGE_INDEX_INVALID_INPUT	storage_index.h	41;"	d
+STORAGE_INDEX_MEM_FAILED	storage_index.h	43;"	d
+STORAGE_INDEX_NOFREE	storage_index.h	44;"	d
+STORAGE_INDEX_NULL	storage_index.h	40;"	d
+STORAGE_INDEX_OK	storage_index.h	53;"	d
+STORAGE_INDEX_STATUS	storage_index.h	/^typedef short STORAGE_INDEX_STATUS;$/;"	t
+STORAGE_INDEX_SUCCESS	storage_index.h	54;"	d
+STORAGE_INDEX_TABLES_FULL	storage_index.h	42;"	d
+STORAGE_POLL_COUNT_MAX	storage_private.h	40;"	d
+STORAGE_PRIVATE_HANDLE	storage_private.h	/^}STORAGE_PRIVATE_HANDLE;  \/\/storage 全局句柄类型定义$/;"	t	typeref:struct:_STORAGE_PRIVATE_HANDLE
+STORAGE_SUCCESS	storage_common.h	33;"	d
+STORAGE_SUCCESS	test/storage_common.h	33;"	d
+STORAGE_TRUE	storage_common.h	34;"	d
+STORAGE_TRUE	test/storage_common.h	34;"	d
+STRIP	Makefile	/^STRIP = arm-none-linux-gnueabi-strip$/;"	m
+Str_Day	storage_index_mng.c	46;"	d	file:
+Str_Hour	storage_index_mng.c	47;"	d	file:
+Str_Min	storage_index_mng.c	48;"	d	file:
+Str_Month	storage_index_mng.c	45;"	d	file:
+Str_Sec	storage_index_mng.c	49;"	d	file:
+Str_Usec	storage_index_mng.c	50;"	d	file:
+Str_Year	storage_index_mng.c	44;"	d	file:
+Str_nCpy	storage_index_mng.c	42;"	d	file:
+True	storage_common.h	69;"	d
+True	test/storage_common.h	69;"	d
+UnGetIdxNumfromTables	storage_index_mng.c	/^succeed_type  UnGetIdxNumfromTables(enStorageEventType_T stiSeq, unsigned short *pusIndexNum)$/;"	f
+VERSION	Makefile	/^VERSION = 1.0$/;"	m
+VIDEO_TYPE_END	storage_common.h	/^	VIDEO_TYPE_END        ,$/;"	e	enum:_storage_video_type_t
+VIDEO_TYPE_END	test/storage_common.h	/^	VIDEO_TYPE_END        ,$/;"	e	enum:_storage_video_type_t
+VIDEO_TYPE_H264	storage_common.h	/^	VIDEO_TYPE_H264         ,$/;"	e	enum:_storage_video_type_t
+VIDEO_TYPE_H264	test/storage_common.h	/^	VIDEO_TYPE_H264         ,$/;"	e	enum:_storage_video_type_t
+VIDEO_TYPE_H264_CIF	storage_common.h	/^	VIDEO_TYPE_H264_CIF     ,$/;"	e	enum:_storage_video_type_t
+VIDEO_TYPE_H264_CIF	test/storage_common.h	/^	VIDEO_TYPE_H264_CIF     ,$/;"	e	enum:_storage_video_type_t
+VIDEO_TYPE_MJPEG	storage_common.h	/^	VIDEO_TYPE_MJPEG        ,$/;"	e	enum:_storage_video_type_t
+VIDEO_TYPE_MJPEG	test/storage_common.h	/^	VIDEO_TYPE_MJPEG        ,$/;"	e	enum:_storage_video_type_t
+VIDEO_TYPE_MPEG4	storage_common.h	/^	VIDEO_TYPE_MPEG4     = 0,$/;"	e	enum:_storage_video_type_t
+VIDEO_TYPE_MPEG4	test/storage_common.h	/^	VIDEO_TYPE_MPEG4     = 0,$/;"	e	enum:_storage_video_type_t
+VIDEO_TYPE_MPEG4_CIF	storage_common.h	/^	VIDEO_TYPE_MPEG4_CIF    ,$/;"	e	enum:_storage_video_type_t
+VIDEO_TYPE_MPEG4_CIF	test/storage_common.h	/^	VIDEO_TYPE_MPEG4_CIF    ,$/;"	e	enum:_storage_video_type_t
+VIDEO_TYPE_START	storage_common.h	/^	VIDEO_TYPE_START     = -1,$/;"	e	enum:_storage_video_type_t
+VIDEO_TYPE_START	test/storage_common.h	/^	VIDEO_TYPE_START     = -1,$/;"	e	enum:_storage_video_type_t
+WritenRecIntoIdxFile	storage_index_mng.c	/^succeed_type WritenRecIntoIdxFile(stStorageIdxNode_T* pstStorageIdxNode)$/;"	f
+_STORAGE_COMMON_H_	storage_data_mng.h	26;"	d
+_STORAGE_COMM_H_	storage_common.h	26;"	d
+_STORAGE_COMM_H_	test/storage_common.h	26;"	d
+_STORAGE_FILE_H_	storage_file.h	24;"	d
+_STORAGE_FILE_H_	test/storage_file.h	24;"	d
+_STORAGE_INDEX_H_	storage_index.h	24;"	d
+_STORAGE_INDEX_MNG_H_	storage_index_mng.h	24;"	d
+_STORAGE_PRIVATE_HANDLE	storage_private.h	/^typedef struct _STORAGE_PRIVATE_HANDLE$/;"	s
+_STORAGE_PRIVATE_H__	storage_private.h	23;"	d
+__D	storage_common.h	124;"	d
+__D	storage_common.h	126;"	d
+__D	test/storage_common.h	124;"	d
+__D	test/storage_common.h	126;"	d
+__E	storage_common.h	130;"	d
+__E	storage_common.h	132;"	d
+__E	test/storage_common.h	130;"	d
+__E	test/storage_common.h	132;"	d
+__STORE_DEBUG	storage_common.h	121;"	d
+__STORE_DEBUG	test/storage_common.h	121;"	d
+_storage_code_tpye_t	storage_common.h	/^typedef enum _storage_code_tpye_t$/;"	g
+_storage_code_tpye_t	test/storage_common.h	/^typedef enum _storage_code_tpye_t$/;"	g
+_storage_event_tpye_t	storage_common.h	/^typedef enum _storage_event_tpye_t$/;"	g
+_storage_event_tpye_t	test/storage_common.h	/^typedef enum _storage_event_tpye_t$/;"	g
+_storage_idx_node_t	storage_index_mng.h	/^typedef struct _storage_idx_node_t$/;"	s
+_storage_index_data_t	storage_common.h	/^typedef struct _storage_index_data_t$/;"	s
+_storage_index_data_t	test/storage_common.h	/^typedef struct _storage_index_data_t$/;"	s
+_storage_index_t	storage_index.h	/^typedef struct _storage_index_t$/;"	s
+_storage_name_devide_t	storage_index_mng.h	/^typedef struct _storage_name_devide_t$/;"	s
+_storage_video_type_t	storage_common.h	/^typedef enum _storage_video_type_t$/;"	g
+_storage_video_type_t	test/storage_common.h	/^typedef enum _storage_video_type_t$/;"	g
+abs_builddir	Makefile	/^abs_builddir = \/opt\/sdb\/framework_1209\/src\/storage$/;"	m
+abs_srcdir	Makefile	/^abs_srcdir = \/opt\/sdb\/framework_1209\/src\/storage$/;"	m
+abs_top_builddir	Makefile	/^abs_top_builddir = \/opt\/sdb\/framework_1209$/;"	m
+abs_top_srcdir	Makefile	/^abs_top_srcdir = \/opt\/sdb\/framework_1209$/;"	m
+acFlags	storage_index_mng.h	/^    unsigned char acFlags[STORAGE_IDX_FLAG_LENGTH_MAX];$/;"	m	struct:_storage_idx_node_t
+acLoc	storage_index_mng.h	/^    unsigned char acLoc[STORAGE_IDX_LOC_LENGTH_MAX];$/;"	m	struct:_storage_idx_node_t
+acName	storage_index_mng.h	/^    unsigned char acName[STORAGE_IDX_NAME_CONTEXT_LENGTH_MAX];$/;"	m	struct:_storage_idx_node_t
+ac_ct_CC	Makefile	/^ac_ct_CC = $/;"	m
+ac_ct_CXX	Makefile	/^ac_ct_CXX = $/;"	m
+active_fdcount	storage_private.h	/^    int active_fdcount;	\/\/poll 描述符集的活动数$/;"	m	struct:_STORAGE_PRIVATE_HANDLE
+afile_name	storage_private.h	/^    unsigned char afile_name[50]; \/\/存储的文件名$/;"	m	struct:_STORAGE_PRIVATE_HANDLE
+am__aclocal_m4_deps	Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/configure.ac$/;"	m
+am__cd	Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__configure_deps	Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__depfiles_maybe	Makefile	/^am__depfiles_maybe = depfiles$/;"	m
+am__include	Makefile	/^am__include = include$/;"	m
+am__installdirs	Makefile	/^am__installdirs = "$(DESTDIR)$(bindir)"$/;"	m
+am__leading_dot	Makefile	/^am__leading_dot = .$/;"	m
+am__mv	Makefile	/^am__mv = mv -f$/;"	m
+am__quote	Makefile	/^am__quote = $/;"	m
+am__tar	Makefile	/^am__tar = ${AMTAR} chof - "$$tardir"$/;"	m
+am__untar	Makefile	/^am__untar = ${AMTAR} xf -$/;"	m
+am_storage_OBJECTS	Makefile	/^am_storage_OBJECTS = storage_main.$(OBJEXT) storage_unix.$(OBJEXT) \\$/;"	m
+aucDay	storage_index_mng.h	/^    unsigned char aucDay[3];$/;"	m	struct:_storage_name_devide_t
+aucHour	storage_index_mng.h	/^    unsigned char aucHour[3];$/;"	m	struct:_storage_name_devide_t
+aucMin	storage_index_mng.h	/^    unsigned char aucMin[3];$/;"	m	struct:_storage_name_devide_t
+aucMonth	storage_index_mng.h	/^    unsigned char aucMonth[3];$/;"	m	struct:_storage_name_devide_t
+aucSec	storage_index_mng.h	/^    unsigned char aucSec[3];$/;"	m	struct:_storage_name_devide_t
+aucUsec	storage_index_mng.h	/^    unsigned char aucUsec[4];$/;"	m	struct:_storage_name_devide_t
+aucYear	storage_index_mng.h	/^    unsigned char aucYear[5];$/;"	m	struct:_storage_name_devide_t
+bin_PROGRAMS	Makefile	/^bin_PROGRAMS = storage$(EXEEXT)$/;"	m
+bindir	Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+build_alias	Makefile	/^build_alias = $/;"	m
+builddir	Makefile	/^builddir = .$/;"	m
+code_type	storage_common.h	/^	enStorageCodeType_T code_type;$/;"	m	struct:_storage_index_data_t
+code_type	test/storage_common.h	/^	enStorageCodeType_T code_type;$/;"	m	struct:_storage_index_data_t
+datadir	Makefile	/^datadir = ${datarootdir}$/;"	m
+datarootdir	Makefile	/^datarootdir = ${prefix}\/share$/;"	m
+depcomp	Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/depcomp$/;"	m
+docdir	Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m
+dvidir	Makefile	/^dvidir = ${docdir}$/;"	m
+enStorageCodeType_T	storage_common.h	/^}enStorageCodeType_T;$/;"	t	typeref:enum:_storage_code_tpye_t
+enStorageCodeType_T	test/storage_common.h	/^}enStorageCodeType_T;$/;"	t	typeref:enum:_storage_code_tpye_t
+enStorageEventType_T	storage_common.h	/^}enStorageEventType_T;$/;"	t	typeref:enum:_storage_event_tpye_t
+enStorageEventType_T	test/storage_common.h	/^}enStorageEventType_T;$/;"	t	typeref:enum:_storage_event_tpye_t
+enStorageVideoType_T	storage_common.h	/^}enStorageVideoType_T;$/;"	t	typeref:enum:_storage_video_type_t
+enStorageVideoType_T	test/storage_common.h	/^}enStorageVideoType_T;$/;"	t	typeref:enum:_storage_video_type_t
+enalert_event_type	storage_private.h	/^    alert_event_type enalert_event_type; \/\/告警事件类型$/;"	m	struct:_STORAGE_PRIVATE_HANDLE
+end_time	storage_index_mng.h	/^    long long end_time;$/;"	m	struct:_storage_idx_node_t
+event_type	storage_common.h	/^	enStorageEventType_T event_type;$/;"	m	struct:_storage_index_data_t
+event_type	test/storage_common.h	/^	enStorageEventType_T event_type;$/;"	m	struct:_storage_index_data_t
+exec_prefix	Makefile	/^exec_prefix = ${prefix}$/;"	m
+filename_changeflag	storage_data_mng.c	/^static int filename_changeflag = 0;$/;"	v	file:
+g_apstHandle	storage_index_mng.c	/^static pstIdxHandle g_apstHandle[INDEX_EVENT_NUM_MAX] = {NULL};$/;"	v	file:
+g_apstIndex	storage_index_mng.c	/^static stStorageIndex_T* g_apstIndex[INDEX_EVENT_NUM_MAX] = {NULL};$/;"	v	file:
+g_astIndex	storage_index_mng.c	/^static stStorageIndex_T  g_astIndex[INDEX_EVENT_NUM_MAX] = {{0}};$/;"	v	file:
+g_mutex_t	storage_private.h	/^	pthread_mutex_t g_mutex_t;    \/\/全局互斥信号量$/;"	m	struct:_STORAGE_PRIVATE_HANDLE
+g_pstRedHandle	storage_index_mng.c	34;"	d	file:
+g_pstSpeedHandle	storage_index_mng.c	36;"	d	file:
+g_pstTimeHandle	storage_index_mng.c	37;"	d	file:
+g_pstYellowHandle	storage_index_mng.c	35;"	d	file:
+global_storage_private_handle	storage_main.c	/^STORAGE_PRIVATE_HANDLE global_storage_private_handle; \/\/storage 全局句柄定义$/;"	v
+host_alias	Makefile	/^host_alias = arm-none-linux-gnueabi$/;"	m
+htmldir	Makefile	/^htmldir = ${docdir}$/;"	m
+includedir	Makefile	/^includedir = ${prefix}\/include$/;"	m
+infodir	Makefile	/^infodir = ${datarootdir}\/info$/;"	m
+install_sh	Makefile	/^install_sh = ${SHELL} \/opt\/sdb\/framework_1209\/install-sh$/;"	m
+install_sh_DATA	Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_PROGRAM	Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+jpg_data	storage_private.h	/^	avenc_to_storage_jpeg_buffer_new_msg jpg_data;$/;"	m	struct:_STORAGE_PRIVATE_HANDLE
+libdir	Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libexecdir	Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+localedir	Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
+localstatedir	Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+main	storage_main.c	/^int main(int argc, char **argv)$/;"	f
+main	test/test_file.c	/^int main()$/;"	f
+mandir	Makefile	/^mandir = ${datarootdir}\/man$/;"	m
+mkdir_p	Makefile	/^mkdir_p = \/bin\/mkdir -p$/;"	m
+mkinstalldirs	Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+offset	storage_index_mng.h	/^    unsigned int offset;$/;"	m	struct:_storage_idx_node_t
+oldincludedir	Makefile	/^oldincludedir = \/usr\/include$/;"	m
+pArr	storage_index.h	/^    unsigned short *pArr;        \/* To store the starting address of user create Index array *\/$/;"	m	struct:_storage_index_t
+pFlag	storage_index.h	/^    unsigned char  *pFlag;       \/* To save the busy or idle flag of the Position, 0:idle,1:busy *\/$/;"	m	struct:_storage_index_t
+passhm_obj	storage_private.h	/^    LIBASSHM_OBJ *passhm_obj;		\/\/vsshm 对象句柄$/;"	m	struct:_STORAGE_PRIVATE_HANDLE
+pdfdir	Makefile	/^pdfdir = ${docdir}$/;"	m
+pgbshm_obj	storage_private.h	/^    LIBGBSHM_OBJ *pgbshm_obj;		\/\/gbshm 对象句柄$/;"	m	struct:_STORAGE_PRIVATE_HANDLE
+pkgdatadir	Makefile	/^pkgdatadir = $(datadir)\/POLICE_work$/;"	m
+pkgincludedir	Makefile	/^pkgincludedir = $(includedir)\/POLICE_work$/;"	m
+pkglibdir	Makefile	/^pkglibdir = $(libdir)\/POLICE_work$/;"	m
+pkglibexecdir	Makefile	/^pkglibexecdir = $(libexecdir)\/POLICE_work$/;"	m
+polltimeout	storage_private.h	/^    struct pollfd polltimeout[STORAGE_POLL_COUNT_MAX];	\/\/poll 描述符集$/;"	m	struct:_STORAGE_PRIVATE_HANDLE	typeref:struct:_STORAGE_PRIVATE_HANDLE::pollfd
+prefix	Makefile	/^prefix = \/opt\/sdb\/rootfs\/opt\/install$/;"	m
+program_transform_name	Makefile	/^program_transform_name = s,x,x,$/;"	m
+psdir	Makefile	/^psdir = ${docdir}$/;"	m
+pstIdxHandle	storage_index_mng.h	/^typedef stStorageIdxNode_T* pstIdxHandle;$/;"	t
+pstorage_audio_data	storage_private.h	/^	LIBASSHM_UINT_DATA* pstorage_audio_data; \/\/实际音频数据存储首地址$/;"	m	struct:_STORAGE_PRIVATE_HANDLE
+pstorage_video_data	storage_private.h	/^	LIBVSSHM_UINT_DATA_I* pstorage_video_data; \/\/实际视频存储数据首地址$/;"	m	struct:_STORAGE_PRIVATE_HANDLE
+pthread_datasave_func	storage_data_mng.c	/^void pthread_datasave_func(void *arg)$/;"	f
+ptr_data	storage_common.h	/^	char* ptr_data;$/;"	m	struct:_storage_index_data_t
+ptr_data	test/storage_common.h	/^	char* ptr_data;$/;"	m	struct:_storage_index_data_t
+ptr_index	storage_common.h	/^	char* ptr_index;$/;"	m	struct:_storage_index_data_t
+ptr_index	test/storage_common.h	/^	char* ptr_index;$/;"	m	struct:_storage_index_data_t
+pvsshm_obj	storage_private.h	/^    LIBVSSHM_OBJ *pvsshm_obj;		\/\/vsshm 对象句柄$/;"	m	struct:_STORAGE_PRIVATE_HANDLE
+sbindir	Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+sdcard_checked_if	storage_private.h	/^	int sdcard_checked_if;        \/\/sd是否检测到的标志 1：有 0：无$/;"	m	struct:_STORAGE_PRIVATE_HANDLE
+sharedstatedir	Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+sig_handle_proc	storage_main.c	/^void sig_handle_proc(int sig)$/;"	f
+srcdir	Makefile	/^srcdir = .$/;"	m
+stStorageIdxNode_T	storage_index_mng.h	/^}stStorageIdxNode_T;$/;"	t	typeref:struct:_storage_idx_node_t
+stStorageIndexData_T	storage_common.h	/^}stStorageIndexData_T;$/;"	t	typeref:struct:_storage_index_data_t
+stStorageIndexData_T	test/storage_common.h	/^}stStorageIndexData_T;$/;"	t	typeref:struct:_storage_index_data_t
+stStorageIndex_T	storage_index.h	/^}stStorageIndex_T;$/;"	t	typeref:struct:_storage_index_t
+stStorageNameDevide_T	storage_index_mng.h	/^}stStorageNameDevide_T;$/;"	t	typeref:struct:_storage_name_devide_t
+start_time	storage_index_mng.h	/^    long long start_time;$/;"	m	struct:_storage_idx_node_t
+storage_DEPENDENCIES	Makefile	/^storage_DEPENDENCIES =$/;"	m
+storage_LDADD	Makefile	/^storage_LDADD = -lunix -lgbshm -lvsshm -lsk -lasshm -lsignal$/;"	m
+storage_OBJECTS	Makefile	/^storage_OBJECTS = $(am_storage_OBJECTS)$/;"	m
+storage_SOURCES	Makefile	/^storage_SOURCES = storage_main.c storage_unix.c storage_index.c storage_file.c storage_index_mng.c storage_data_mng.c$/;"	m
+storage_exit	storage_main.c	/^static succeed_type storage_exit(STORAGE_PRIVATE_HANDLE *phandle)$/;"	f	file:
+storage_index_alloc	storage_index.c	/^unsigned short storage_index_alloc(stStorageIndex_T *vpIndex)$/;"	f
+storage_index_create	storage_index.c	/^stStorageIndex_T* storage_index_create(stStorageIndex_T *vpstIndexArray,\\$/;"	f
+storage_index_deq	storage_index.c	/^STORAGE_INDEX_STATUS storage_index_deq(stStorageIndex_T *vpIndex)$/;"	f
+storage_index_destroy	storage_index.c	/^unsigned short storage_index_destroy(stStorageIndex_T* vpIndex)$/;"	f
+storage_index_enq	storage_index.c	/^STORAGE_INDEX_STATUS storage_index_enq(stStorageIndex_T *vpIndex,unsigned short vusIndex)$/;"	f
+storage_index_free	storage_index.c	/^short storage_index_free(stStorageIndex_T *vpIndex,unsigned short vuiIndex)$/;"	f
+storage_index_init	storage_index.c	/^void storage_index_init(stStorageIndex_T *vpstIndexArray,unsigned short vusIndexTablesMax)$/;"	f
+storage_init	storage_main.c	/^static succeed_type storage_init(STORAGE_PRIVATE_HANDLE *phandle)$/;"	f	file:
+storage_poll_init	storage_main.c	/^static void storage_poll_init(STORAGE_PRIVATE_HANDLE *phandle)$/;"	f	file:
+storage_sd_check_if	storage_main.c	/^static succeed_type	storage_sd_check_if(STORAGE_PRIVATE_HANDLE *phandle)$/;"	f	file:
+storage_store_duration	storage_private.h	/^	long long storage_store_duration;     \/\/存储周期长度$/;"	m	struct:_STORAGE_PRIVATE_HANDLE
+storage_uint_data	storage_unix.c	/^LIBVSSHM_UINT_DATA_I storage_uint_data;$/;"	v
+storage_unix	storage_unix.c	/^succeed_type storage_unix(STORAGE_PRIVATE_HANDLE *phandle)$/;"	f
+storage_unix_alert_deal	storage_unix.c	/^static succeed_type storage_unix_alert_deal(STORAGE_PRIVATE_HANDLE *phandle, UNIX_CMD_STRUCT *pcmd)$/;"	f	file:
+storage_unix_avenc_audio_buffer_new_msg	storage_unix.c	/^static succeed_type storage_unix_avenc_audio_buffer_new_msg(STORAGE_PRIVATE_HANDLE *phandle,\\$/;"	f	file:
+storage_unix_avenc_buffer_new_msg	storage_unix.c	/^static succeed_type storage_unix_avenc_buffer_new_msg(STORAGE_PRIVATE_HANDLE *phandle,\\$/;"	f	file:
+storage_unix_avenc_jpeg_buffer_new_msg_deal	storage_unix.c	/^static succeed_type storage_unix_avenc_jpeg_buffer_new_msg_deal(STORAGE_PRIVATE_HANDLE *phandle, UNIX_CMD_STRUCT *pcmd)$/;"	f	file:
+storage_unix_avenc_start_storage_deal	storage_unix.c	/^static succeed_type storage_unix_avenc_start_storage_deal(STORAGE_PRIVATE_HANDLE *phandle, UNIX_CMD_STRUCT *pcmd)$/;"	f	file:
+storage_unix_avenc_stop_storage_deal	storage_unix.c	/^static succeed_type storage_unix_avenc_stop_storage_deal(STORAGE_PRIVATE_HANDLE *phandle, UNIX_CMD_STRUCT *pcmd)$/;"	f	file:
+storage_unix_avenc_viddec_frame_ack_deal	storage_unix.c	/^static succeed_type storage_unix_avenc_viddec_frame_ack_deal(STORAGE_PRIVATE_HANDLE *phandle, UNIX_CMD_STRUCT *pcmd)$/;"	f	file:
+storage_unix_avenc_video_buffer_new_msg_deal	storage_unix.c	/^static succeed_type storage_unix_avenc_video_buffer_new_msg_deal(STORAGE_PRIVATE_HANDLE *phandle, UNIX_CMD_STRUCT *pcmd)$/;"	f	file:
+storage_unix_clientpc_file_list_deal	storage_unix.c	/^static succeed_type storage_unix_clientpc_file_list_deal(STORAGE_PRIVATE_HANDLE *phandle, UNIX_CMD_STRUCT *pcmd)$/;"	f	file:
+storage_unix_clientpc_record_delete_file_deal	storage_unix.c	/^static succeed_type storage_unix_clientpc_record_delete_file_deal(STORAGE_PRIVATE_HANDLE *phandle, UNIX_CMD_STRUCT *pcmd)$/;"	f	file:
+storage_unix_clientpc_record_lock_file_deal	storage_unix.c	/^static succeed_type storage_unix_clientpc_record_lock_file_deal(STORAGE_PRIVATE_HANDLE *phandle, UNIX_CMD_STRUCT *pcmd)$/;"	f	file:
+storage_unix_clientpc_record_start_req_deal	storage_unix.c	/^static succeed_type storage_unix_clientpc_record_start_req_deal(STORAGE_PRIVATE_HANDLE *phandle, UNIX_CMD_STRUCT *pcmd)$/;"	f	file:
+storage_unix_clientpc_record_stop_req_deal	storage_unix.c	/^static succeed_type storage_unix_clientpc_record_stop_req_deal(STORAGE_PRIVATE_HANDLE *phandle, UNIX_CMD_STRUCT *pcmd)$/;"	f	file:
+storage_unix_clientpc_to_clean_file_deal	storage_unix.c	/^static succeed_type storage_unix_clientpc_to_clean_file_deal(STORAGE_PRIVATE_HANDLE *phandle, UNIX_CMD_STRUCT *pcmd)$/;"	f	file:
+storage_unix_deal	storage_unix.c	/^static succeed_type storage_unix_deal( STORAGE_PRIVATE_HANDLE *phandle, UNIX_CMD_STRUCT *pcmd)$/;"	f	file:
+storage_unix_qt_check_file_list_deal	storage_unix.c	/^static succeed_type storage_unix_qt_check_file_list_deal(STORAGE_PRIVATE_HANDLE *phandle, UNIX_CMD_STRUCT *pcmd)$/;"	f	file:
+storage_unix_qt_pause_loopback_deal	storage_unix.c	/^static succeed_type storage_unix_qt_pause_loopback_deal(STORAGE_PRIVATE_HANDLE *phandle, UNIX_CMD_STRUCT *pcmd)$/;"	f	file:
+storage_unix_qt_start_loopback_deal	storage_unix.c	/^static succeed_type storage_unix_qt_start_loopback_deal(STORAGE_PRIVATE_HANDLE *phandle, UNIX_CMD_STRUCT *pcmd)$/;"	f	file:
+storage_unix_qt_stop_loopback_deal	storage_unix.c	/^static succeed_type storage_unix_qt_stop_loopback_deal(STORAGE_PRIVATE_HANDLE *phandle, UNIX_CMD_STRUCT *pcmd)$/;"	f	file:
+store_fd	storage_private.h	/^	FILE *store_fd;               \/\/存储文件fd$/;"	m	struct:_STORAGE_PRIVATE_HANDLE
+subdir	Makefile	/^subdir = src\/storage$/;"	m
+sysconfdir	Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+target_alias	Makefile	/^target_alias = $/;"	m
+top_build_prefix	Makefile	/^top_build_prefix = ..\/..\/$/;"	m
+top_builddir	Makefile	/^top_builddir = ..\/..$/;"	m
+top_srcdir	Makefile	/^top_srcdir = ..\/..$/;"	m
+transform	Makefile	/^transform = $(program_transform_name)$/;"	m
+unix_fd	storage_private.h	/^    int unix_fd;	\/\/unix域套接字描述符$/;"	m	struct:_STORAGE_PRIVATE_HANDLE
+usFront	storage_index.h	/^    unsigned short usFront;      \/* Available Front Position *\/$/;"	m	struct:_storage_index_t
+usRear	storage_index.h	/^    unsigned short usRear;       \/* Available Rear Position *\/$/;"	m	struct:_storage_index_t
+usSize	storage_index.h	/^    unsigned short usSize;       \/* Size of the index table *\/$/;"	m	struct:_storage_index_t
+usStart	storage_index.h	/^    unsigned short usStart;      \/* Starting value *\/$/;"	m	struct:_storage_index_t

@@ -1,0 +1,20 @@
+#ifndef _INTERCMD_UPDATE_H__
+#define _INTERCMD_UPDATE_H__
+
+#ifdef __cplusplus
+extern "C"{
+#endif
+
+typedef struct update
+{
+	unsigned char video_sendipaddr[32];
+	unsigned int video_port;
+}video_start;
+
+#ifdef __cplusplus
+}
+#endif
+
+
+
+#endif

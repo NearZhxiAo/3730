@@ -1,0 +1,1 @@
+cmd_/opt/sdb/framework_1209/driver/vsshm/module/vsshm.ko := arm-none-linux-gnueabi-ld -EL -r  -T /opt/sdb/linux-2.6.32-CNG205/scripts/module-common.lds --build-id -o /opt/sdb/framework_1209/driver/vsshm/module/vsshm.ko /opt/sdb/framework_1209/driver/vsshm/module/vsshm.o /opt/sdb/framework_1209/driver/vsshm/module/vsshm.mod.o

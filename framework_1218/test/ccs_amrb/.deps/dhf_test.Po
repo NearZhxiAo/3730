@@ -1,0 +1,14 @@
+dhf_test.o dhf_test.o: dhf_test.c typedef.h mode.h bits2prm.h cnst.h \
+  table.h pred_lt_3or6.h
+
+typedef.h:
+
+mode.h:
+
+bits2prm.h:
+
+cnst.h:
+
+table.h:
+
+pred_lt_3or6.h:

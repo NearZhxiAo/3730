@@ -1,0 +1,144 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ChdirInIdxDirMulti	test_file.c	/^void ChdirInIdxDirMulti(char* pcDirName)$/;"	f
+ChdirInIdxDirSingle	test_file.c	/^void ChdirInIdxDirSingle(char* pcDirName)$/;"	f
+ChdirOutIdxDirMulti	test_file.c	/^void ChdirOutIdxDirMulti(char* pcDirName)$/;"	f
+ChdirOutIdxDirSingle	test_file.c	/^void ChdirOutIdxDirSingle(void)$/;"	f
+CreateIdxDirMulti	test_file.c	/^void CreateIdxDirMulti(char* pcDirName)$/;"	f
+CreateIdxDirSingle	test_file.c	/^void CreateIdxDirSingle(char* pcDirName)$/;"	f
+CreateIdxFileSingle	test_file.c	/^void CreateIdxFileSingle(char* pcFileName)$/;"	f
+DATA_DIR_JPEG_NAME_ROOT	storage_common.h	42;"	d
+DATA_DIR_NAME_DI	storage_common.h	45;"	d
+DATA_DIR_NAME_H264	storage_common.h	51;"	d
+DATA_DIR_NAME_INDEX	storage_common.h	43;"	d
+DATA_DIR_NAME_MJPEG	storage_common.h	53;"	d
+DATA_DIR_NAME_MPEG4	storage_common.h	52;"	d
+DATA_DIR_NAME_RED	storage_common.h	46;"	d
+DATA_DIR_NAME_SPEED	storage_common.h	48;"	d
+DATA_DIR_NAME_TIME	storage_common.h	49;"	d
+DATA_DIR_NAME_YELLOW	storage_common.h	47;"	d
+DATA_DIR_VIDEO_NAME_ROOT	storage_common.h	41;"	d
+DATA_EVENT_NUM_MAX	storage_common.h	44;"	d
+DeleteIdxDirMulti	test_file.c	/^void DeleteIdxDirMulti(char* pcDirName)$/;"	f
+DeleteIdxDirSingle	test_file.c	/^void DeleteIdxDirSingle(char* pcDirName)$/;"	f
+DeleteIdxFileSingle	test_file.c	/^void DeleteIdxFileSingle(char* pcFileName)$/;"	f
+DevideIdxLocDir_By	test_file.c	/^void DevideIdxLocDir_By(char const acMergeLocDir[],char aacDevideLocDir[][STORAGE_IDX_NAME_LENGTH_MAX])$/;"	f
+ExistIdxDirSingle_if	test_file.c	/^int ExistIdxDirSingle_if(char *pcDirName)$/;"	f
+ExistIdxFileSingle_if	test_file.c	/^int ExistIdxFileSingle_if(char* pcFileName)$/;"	f
+False	storage_common.h	68;"	d
+GenerateFileName_ByCurTime	test_file.c	/^int GenerateFileName_ByCurTime(char *pstFileName,char *pstFileType)$/;"	f
+GenerateLocName_ByCurTimeAndCurPwd	test_file.c	/^int GenerateLocName_ByCurTimeAndCurPwd(char *pcLocName,char *pstFileType)$/;"	f
+GenerateLocName_ByCurTimeAndThePwd	test_file.c	/^int GenerateLocName_ByCurTimeAndThePwd(char *pcLocName,char *pstFileType,char *pstDirName)$/;"	f
+GenerateLocName_ByTheTimeAndThePwd	test_file.c	/^int GenerateLocName_ByTheTimeAndThePwd(char *pcLocName,char *pstFileName,char *pstDirName)$/;"	f
+GenerateTarFileName_ByCurTime	test_file.c	/^int GenerateTarFileName_ByCurTime(char *strFileName)$/;"	f
+GetCurPwdName	test_file.c	/^void GetCurPwdName(char *pcDirName)$/;"	f
+GetFileSize_ByByte	test_file.c	/^long GetFileSize_ByByte(char* pcFileName)$/;"	f
+INDEX_CODE_END	storage_common.h	/^	INDEX_CODE_END,$/;"	e	enum:_storage_code_tpye_t
+INDEX_CODE_H264	storage_common.h	/^	INDEX_CODE_H264 = 0,$/;"	e	enum:_storage_code_tpye_t
+INDEX_CODE_MJPEG	storage_common.h	/^	INDEX_CODE_MJPEG,$/;"	e	enum:_storage_code_tpye_t
+INDEX_CODE_MPEG4	storage_common.h	/^	INDEX_CODE_MPEG4,$/;"	e	enum:_storage_code_tpye_t
+INDEX_CODE_START	storage_common.h	/^	INDEX_CODE_START = -1,$/;"	e	enum:_storage_code_tpye_t
+INDEX_DIR_NAME_DI	storage_common.h	59;"	d
+INDEX_DIR_NAME_H264	storage_common.h	65;"	d
+INDEX_DIR_NAME_INDEX	storage_common.h	57;"	d
+INDEX_DIR_NAME_MJPEG	storage_common.h	67;"	d
+INDEX_DIR_NAME_MPEG4	storage_common.h	66;"	d
+INDEX_DIR_NAME_RED	storage_common.h	60;"	d
+INDEX_DIR_NAME_ROOT	storage_common.h	56;"	d
+INDEX_DIR_NAME_SPEED	storage_common.h	62;"	d
+INDEX_DIR_NAME_TIME	storage_common.h	63;"	d
+INDEX_DIR_NAME_YELLOW	storage_common.h	61;"	d
+INDEX_EVENT_DI	storage_common.h	/^	INDEX_EVENT_DI =0,$/;"	e	enum:_storage_event_tpye_t
+INDEX_EVENT_END	storage_common.h	/^	INDEX_EVENT_END,$/;"	e	enum:_storage_event_tpye_t
+INDEX_EVENT_NUM_MAX	storage_common.h	58;"	d
+INDEX_EVENT_RED	storage_common.h	/^	INDEX_EVENT_RED,$/;"	e	enum:_storage_event_tpye_t
+INDEX_EVENT_SPEED	storage_common.h	/^	INDEX_EVENT_SPEED,$/;"	e	enum:_storage_event_tpye_t
+INDEX_EVENT_START	storage_common.h	/^	INDEX_EVENT_START = -1,$/;"	e	enum:_storage_event_tpye_t
+INDEX_EVENT_TIME	storage_common.h	/^	INDEX_EVENT_TIME,$/;"	e	enum:_storage_event_tpye_t
+INDEX_EVENT_YELLOW	storage_common.h	/^	INDEX_EVENT_YELLOW,$/;"	e	enum:_storage_event_tpye_t
+STORAGE_CMD_LENGTH_MAX	storage_file.h	35;"	d
+STORAGE_DIR_NAME_ROOT	storage_common.h	37;"	d
+STORAGE_FAIL	storage_common.h	32;"	d
+STORAGE_FALSE	storage_common.h	35;"	d
+STORAGE_FUNCTION_NAME	test_file.c	100;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	116;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	140;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	156;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	178;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	195;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	218;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	234;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	255;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	270;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	293;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	309;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	341;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	358;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	375;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	391;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	40;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	423;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	439;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	457;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	473;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	499;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	515;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	533;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	549;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	566;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	582;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	596;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	612;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	629;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	645;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	662;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	66;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	677;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	693;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	709;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	727;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	743;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	761;"	d	file:
+STORAGE_FUNCTION_NAME	test_file.c	80;"	d	file:
+STORAGE_IDX_CONTEXT_VOL_MAX	storage_file.h	43;"	d
+STORAGE_IDX_DIR_LENGTH_MAX	storage_file.h	39;"	d
+STORAGE_IDX_DIR_LEVEL_MAX	storage_file.h	42;"	d
+STORAGE_IDX_FLAG_LENGTH_MAX	storage_file.h	41;"	d
+STORAGE_IDX_LOC_LENGTH_MAX	storage_file.h	40;"	d
+STORAGE_IDX_NAME_CONTEXT_LENGTH_MAX	storage_file.h	36;"	d
+STORAGE_IDX_NAME_FOMAT_LENGTH_MAX	storage_file.h	37;"	d
+STORAGE_IDX_NAME_LENGTH_MAX	storage_file.h	38;"	d
+STORAGE_SUCCESS	storage_common.h	33;"	d
+STORAGE_TRUE	storage_common.h	34;"	d
+True	storage_common.h	69;"	d
+VIDEO_TYPE_END	storage_common.h	/^	VIDEO_TYPE_END        ,$/;"	e	enum:_storage_video_type_t
+VIDEO_TYPE_H264	storage_common.h	/^	VIDEO_TYPE_H264         ,$/;"	e	enum:_storage_video_type_t
+VIDEO_TYPE_H264_CIF	storage_common.h	/^	VIDEO_TYPE_H264_CIF     ,$/;"	e	enum:_storage_video_type_t
+VIDEO_TYPE_MJPEG	storage_common.h	/^	VIDEO_TYPE_MJPEG        ,$/;"	e	enum:_storage_video_type_t
+VIDEO_TYPE_MPEG4	storage_common.h	/^	VIDEO_TYPE_MPEG4     = 0,$/;"	e	enum:_storage_video_type_t
+VIDEO_TYPE_MPEG4_CIF	storage_common.h	/^	VIDEO_TYPE_MPEG4_CIF    ,$/;"	e	enum:_storage_video_type_t
+VIDEO_TYPE_START	storage_common.h	/^	VIDEO_TYPE_START     = -1,$/;"	e	enum:_storage_video_type_t
+_STORAGE_COMM_H_	storage_common.h	26;"	d
+_STORAGE_FILE_H_	storage_file.h	24;"	d
+__D	storage_common.h	124;"	d
+__D	storage_common.h	126;"	d
+__E	storage_common.h	130;"	d
+__E	storage_common.h	132;"	d
+__STORE_DEBUG	storage_common.h	121;"	d
+_storage_code_tpye_t	storage_common.h	/^typedef enum _storage_code_tpye_t$/;"	g
+_storage_event_tpye_t	storage_common.h	/^typedef enum _storage_event_tpye_t$/;"	g
+_storage_index_data_t	storage_common.h	/^typedef struct _storage_index_data_t$/;"	s
+_storage_video_type_t	storage_common.h	/^typedef enum _storage_video_type_t$/;"	g
+code_type	storage_common.h	/^	enStorageCodeType_T code_type;$/;"	m	struct:_storage_index_data_t
+enStorageCodeType_T	storage_common.h	/^}enStorageCodeType_T;$/;"	t	typeref:enum:_storage_code_tpye_t
+enStorageEventType_T	storage_common.h	/^}enStorageEventType_T;$/;"	t	typeref:enum:_storage_event_tpye_t
+enStorageVideoType_T	storage_common.h	/^}enStorageVideoType_T;$/;"	t	typeref:enum:_storage_video_type_t
+event_type	storage_common.h	/^	enStorageEventType_T event_type;$/;"	m	struct:_storage_index_data_t
+main	test_file.c	/^int main()$/;"	f
+ptr_data	storage_common.h	/^	char* ptr_data;$/;"	m	struct:_storage_index_data_t
+ptr_index	storage_common.h	/^	char* ptr_index;$/;"	m	struct:_storage_index_data_t
+stStorageIndexData_T	storage_common.h	/^}stStorageIndexData_T;$/;"	t	typeref:struct:_storage_index_data_t

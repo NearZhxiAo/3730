@@ -1,0 +1,245 @@
+#ifndef _PARAMETER_OFFSET_DEFAULT_AUTOGEN_
+#define _PARAMETER_OFFSET_DEFAULT_AUTOGEN_ 
+/*  This file is a autogenerate file .
+ *  DONOT EDIT THIS FILE!!
+ *  Edit parameter_internal.ddf and parameter_offset.tpl instead
+ */
+#include "parametertype.hin"
+#include "parameter_offset.h"
+#include "parameter.h"
+#ifdef __cplusplus
+extern "C"{
+#endif 
+
+static system_gbshm_mutex_paratype  gbshm_mutex_default = {}
+;
+static system_test_var_paratype  test_var_default = 0
+;
+static system_video_enc_param_paratype  video_enc_param_default = {VIDEO_ENC_H264, VIDEO_INPUT_PAL, VIDEO_ENC_D1, VIDEO_ENC_25FPS,1536000,10
+}
+;
+static system_storage_size_param_paratype  storage_size_param_default = {0
+}
+;
+static system_net_param_paratype  net_param_default = {IP_MODE_STATIC, "0", "192.168.0.177","255.255.255.0","192.168.0.1","192.168.0.111","192.168.0.38","010000000100011801",5000,1038,80
+}
+;
+static system_alert_di_param_paratype  alert_di_param_default = {DI_SWITCH_ON, 5, 1<<DI_ACTION_STORAGE
+}
+;
+static system_alert_vloss_param_paratype  alert_vloss_param_default = {VLOSS_SWITCH_OFF, 5, 1<<VLOSS_ACTION_STORAGE
+}
+;
+static system_alert_motion_param_paratype  alert_motion_param_default = {MOTION_SWITCH_OFF, 5, 1<<MOTION_ACTION_STORAGE
+}
+;
+static system_storage_setting_param_paratype  storage_setting_param_default = {5*60, STORAGE_SWITCH_ON, STORAGE_METHOD_ALWAYS, { 0}
+}
+;
+static system_ad_setting_param_paratype  ad_setting_param_default = {0x80,0x80,0x00,0x80,0x80
+}
+;
+static system_time_setting_param_paratype  time_setting_param_default = {TIME_SETTING_MODE_NORMAL,2000,1,1,0,0,0
+}
+;
+static system_rs485_setting_param_paratype  rs485_setting_param_default = {0
+}
+;
+static system_ptz_area_setting_param_paratype  ptz_area_setting_param_default = {0
+}
+;
+static system_alg_setting_param_paratype  alg_setting_param_default = {0
+}
+;
+static system_working_state_param_paratype  working_state_param_default = {0
+}
+;
+static system_end_param_paratype  end_param_default = 0
+;
+static system_runtime_device_status_paratype  runtime_device_status_default = {DEVICE_STATUS_OFF,DEVICE_STATUS_OFF,DEVICE_STATUS_OFF,DEVICE_STATUS_OFF
+}
+;
+static system_runtime_device_version_paratype  runtime_device_version_default = {"0","0"
+}
+;
+
+typedef struct _paracmd_default_struct
+{
+	unsigned int para_cmd;
+	unsigned int para_default_addr;
+	unsigned int para_size;
+}paracmd_default_struct;
+
+
+static paracmd_default_struct paracmd_defaultaddr[] = 
+{
+
+{ PARA_CMD_SYSTEM_GBSHM_MUTEX,
+  (unsigned int)&gbshm_mutex_default,
+  sizeof(system_gbshm_mutex_paratype)
+}
+,
+{ PARA_CMD_SYSTEM_TEST_VAR,
+  (unsigned int)&test_var_default,
+  sizeof(system_test_var_paratype)
+}
+,
+{ PARA_CMD_SYSTEM_VIDEO_ENC_PARAM,
+  (unsigned int)&video_enc_param_default,
+  sizeof(system_video_enc_param_paratype)
+}
+,
+{ PARA_CMD_SYSTEM_STORAGE_SIZE_PARAM,
+  (unsigned int)&storage_size_param_default,
+  sizeof(system_storage_size_param_paratype)
+}
+,
+{ PARA_CMD_SYSTEM_NET_PARAM,
+  (unsigned int)&net_param_default,
+  sizeof(system_net_param_paratype)
+}
+,
+{ PARA_CMD_SYSTEM_ALERT_DI_PARAM,
+  (unsigned int)&alert_di_param_default,
+  sizeof(system_alert_di_param_paratype)
+}
+,
+{ PARA_CMD_SYSTEM_ALERT_VLOSS_PARAM,
+  (unsigned int)&alert_vloss_param_default,
+  sizeof(system_alert_vloss_param_paratype)
+}
+,
+{ PARA_CMD_SYSTEM_ALERT_MOTION_PARAM,
+  (unsigned int)&alert_motion_param_default,
+  sizeof(system_alert_motion_param_paratype)
+}
+,
+{ PARA_CMD_SYSTEM_STORAGE_SETTING_PARAM,
+  (unsigned int)&storage_setting_param_default,
+  sizeof(system_storage_setting_param_paratype)
+}
+,
+{ PARA_CMD_SYSTEM_AD_SETTING_PARAM,
+  (unsigned int)&ad_setting_param_default,
+  sizeof(system_ad_setting_param_paratype)
+}
+,
+{ PARA_CMD_SYSTEM_TIME_SETTING_PARAM,
+  (unsigned int)&time_setting_param_default,
+  sizeof(system_time_setting_param_paratype)
+}
+,
+{ PARA_CMD_SYSTEM_RS485_SETTING_PARAM,
+  (unsigned int)&rs485_setting_param_default,
+  sizeof(system_rs485_setting_param_paratype)
+}
+,
+{ PARA_CMD_SYSTEM_PTZ_AREA_SETTING_PARAM,
+  (unsigned int)&ptz_area_setting_param_default,
+  sizeof(system_ptz_area_setting_param_paratype)
+}
+,
+{ PARA_CMD_SYSTEM_ALG_SETTING_PARAM,
+  (unsigned int)&alg_setting_param_default,
+  sizeof(system_alg_setting_param_paratype)
+}
+,
+{ PARA_CMD_SYSTEM_WORKING_STATE_PARAM,
+  (unsigned int)&working_state_param_default,
+  sizeof(system_working_state_param_paratype)
+}
+,
+{ PARA_CMD_SYSTEM_END_PARAM,
+  (unsigned int)&end_param_default,
+  sizeof(system_end_param_paratype)
+}
+,
+{ PARA_CMD_SYSTEM_RUNTIME_DEVICE_STATUS,
+  (unsigned int)&runtime_device_status_default,
+  sizeof(system_runtime_device_status_paratype)
+}
+,
+{ PARA_CMD_SYSTEM_RUNTIME_DEVICE_VERSION,
+  (unsigned int)&runtime_device_version_default,
+  sizeof(system_runtime_device_version_paratype)
+}
+
+};
+
+static inline void *find_default_paracmd( unsigned int para_cmd, unsigned int *retsize)
+{
+	unsigned int index = 0;
+	for ( index = 0; index < PARA_CMD_INDEX_END; index++ )
+	{
+		if ( paracmd_defaultaddr[index].para_cmd == para_cmd )
+		{
+			*retsize = paracmd_defaultaddr[index].para_size;
+			return (void *)paracmd_defaultaddr[index].para_default_addr;
+		}
+	}
+	return NULL;
+}
+
+typedef struct _paracmd_to_paraindex
+{
+	unsigned int paraindex;
+	unsigned int paracmd;
+}paracmd_to_paraindex;
+
+static inline void do_flashpara_default( void *ptr_gbshm_handle )
+{
+	unsigned int retsize = 0;
+	unsigned int index = 0;
+	unsigned indexcmdindex = 0;
+	unsigned int channelcount = 0x00;
+	void *ptrcmddefault = NULL;
+
+	//According index to find para_cmd
+	for ( indexcmdindex = 0; indexcmdindex< PARA_CMD_INDEX_END; indexcmdindex++ )
+	{
+		void *pdest = NULL;
+		unsigned char *pchar = NULL;
+		unsigned int channelindex = 0x00;
+		
+		ptrcmddefault = find_default_paracmd( localparacmd_to_paraindex[indexcmdindex].para_cmd, &retsize);
+	
+		GBSHM_PARA_SET(ptr_gbshm_handle, localparacmd_to_paraindex[indexcmdindex].para_cmd, ptrcmddefault, retsize);
+#if 0		
+		pdest = malloc(retsize);
+		if( pdest <= 0 )
+		{
+			DVS_DEBUG( "pdest <= 0!!!" );
+			return;
+		}
+		channelcount = parameter_argument_count(localparacmd_to_paraindex[indexcmdindex].para_cmd);	
+		for ( channelindex = 0x00; channelindex < channelcount; channelindex++ )
+		{	
+			GBSHM_GET(ptr_gbshm_handle, localparacmd_to_paraindex[indexcmdindex].para_cmd, pdest, retsize, channelindex);
+			pchar = (unsigned char *)pdest;
+			if ( ptrcmddefault != NULL )
+			{
+				for ( index = 0; index < retsize; index++ )
+				{
+					if ( *(pchar + index) != 0xFF )
+					{
+						//DVS_DEBUG("parameter cmd 0x%x not default.\n", localparacmd_to_paraindex[indexcmdindex].para_cmd);
+						//continue;
+						goto OUT;
+					}
+				}
+				GBSHM_SET(ptr_gbshm_handle, localparacmd_to_paraindex[indexcmdindex].para_cmd, ptrcmddefault, retsize, channelindex);
+			}
+OUT:
+			channelindex = channelindex;
+		}
+		free(pdest);
+#endif
+	}
+}
+#ifdef __cplusplus
+}
+#endif
+#endif
+
+
+

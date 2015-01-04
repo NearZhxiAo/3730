@@ -1,0 +1,7 @@
+ph_disp_lock.o ph_disp_lock.o: ph_disp_lock.c ph_disp.h typedef.h mode.h
+
+ph_disp.h:
+
+typedef.h:
+
+mode.h:

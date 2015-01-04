@@ -1,0 +1,14 @@
+p_ol_wgh_reset.o p_ol_wgh_reset.o: p_ol_wgh_reset.c pitch_ol_wgh.h \
+  typedef.h mode.h vad1.h cnst_vad.h cnst.h
+
+pitch_ol_wgh.h:
+
+typedef.h:
+
+mode.h:
+
+vad1.h:
+
+cnst_vad.h:
+
+cnst.h:

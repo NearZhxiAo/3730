@@ -1,0 +1,28 @@
+mr475_quant_store_results.o mr475_quant_store_results.o:  \
+ mr475_quant_store_results.c typedef.h basic_op.h table.h mode.h \
+  pred_lt_3or6.h mac_32.h oper_32b.h cnst.h pow2.h log2.h \
+  gc_pred_update.h gc_pred.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+mac_32.h:
+
+oper_32b.h:
+
+cnst.h:
+
+pow2.h:
+
+log2.h:
+
+gc_pred_update.h:
+
+gc_pred.h:

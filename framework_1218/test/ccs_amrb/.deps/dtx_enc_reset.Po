@@ -1,0 +1,23 @@
+dtx_enc_reset.o dtx_enc_reset.o: dtx_enc_reset.c dtx_def.h typedef.h \
+  cnst.h q_plsf.h gc_pred.h mode.h copy.h set_zero.h table.h \
+  pred_lt_3or6.h
+
+dtx_def.h:
+
+typedef.h:
+
+cnst.h:
+
+q_plsf.h:
+
+gc_pred.h:
+
+mode.h:
+
+copy.h:
+
+set_zero.h:
+
+table.h:
+
+pred_lt_3or6.h:

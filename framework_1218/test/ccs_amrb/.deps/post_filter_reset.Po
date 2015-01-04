@@ -1,0 +1,21 @@
+post_filter_reset.o post_filter_reset.o: post_filter_reset.c cnst.h \
+  set_zero.h typedef.h agc_reset.h agc.h preemphasis_reset.h \
+  preemphasis.h post_filter.h mode.h
+
+cnst.h:
+
+set_zero.h:
+
+typedef.h:
+
+agc_reset.h:
+
+agc.h:
+
+preemphasis_reset.h:
+
+preemphasis.h:
+
+post_filter.h:
+
+mode.h:

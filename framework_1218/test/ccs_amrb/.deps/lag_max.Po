@@ -1,0 +1,29 @@
+lag_max.o lag_max.o: lag_max.c typedef.h basic_op.h table.h mode.h \
+  pred_lt_3or6.h oper_32b.h cnst.h inv_sqrt.h vad1.h cnst_vad.h \
+  comp_corr.h hp_max.h vad_tone_detection.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+oper_32b.h:
+
+cnst.h:
+
+inv_sqrt.h:
+
+vad1.h:
+
+cnst_vad.h:
+
+comp_corr.h:
+
+hp_max.h:
+
+vad_tone_detection.h:

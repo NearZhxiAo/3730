@@ -1,0 +1,10 @@
+levinson_init.o levinson_init.o: levinson_init.c levinson.h typedef.h \
+  cnst.h levinson_reset.h
+
+levinson.h:
+
+typedef.h:
+
+cnst.h:
+
+levinson_reset.h:

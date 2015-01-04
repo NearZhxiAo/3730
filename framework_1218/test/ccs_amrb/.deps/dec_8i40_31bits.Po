@@ -1,0 +1,16 @@
+dec_8i40_31bits.o dec_8i40_31bits.o: dec_8i40_31bits.c typedef.h \
+  basic_op.h table.h mode.h pred_lt_3or6.h cnst.h decompress_code.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+cnst.h:
+
+decompress_code.h:

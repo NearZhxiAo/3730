@@ -1,0 +1,22 @@
+ol_ltp.o ol_ltp.o: ol_ltp.c typedef.h cnst.h basic_op.h table.h mode.h \
+  pred_lt_3or6.h pitch_ol.h vad1.h cnst_vad.h pitch_ol_wgh.h
+
+typedef.h:
+
+cnst.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+pitch_ol.h:
+
+vad1.h:
+
+cnst_vad.h:
+
+pitch_ol_wgh.h:

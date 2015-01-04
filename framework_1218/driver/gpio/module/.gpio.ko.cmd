@@ -1,0 +1,1 @@
+cmd_/opt/dm6467t/framework/driver/gpio/module/gpio.ko := arm_v5t_le-ld -EL  -r -o /opt/dm6467t/framework/driver/gpio/module/gpio.ko /opt/dm6467t/framework/driver/gpio/module/gpio.o /opt/dm6467t/framework/driver/gpio/module/gpio.mod.o

@@ -1,0 +1,14 @@
+decode_2i40_11bits.o decode_2i40_11bits.o: decode_2i40_11bits.c typedef.h \
+  basic_op.h table.h mode.h pred_lt_3or6.h cnst.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+cnst.h:

@@ -1,0 +1,373 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ACLOCAL	Makefile	/^ACLOCAL = ${SHELL} \/opt\/sdb\/framework_1209\/missing --run aclocal-1.11$/;"	m
+ACLOCAL_M4	Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+AMTAR	Makefile	/^AMTAR = ${SHELL} \/opt\/sdb\/framework_1209\/missing --run tar$/;"	m
+AM_LDFLAGS	Makefile	/^AM_LDFLAGS = -L$(top_srcdir)\/lib $/;"	m
+ATTRIB_MODE	av_encoder_private.h	258;"	d
+ATTRIB_OUTPUT	av_encoder_private.h	259;"	d
+ATTR_BLEND_VAL	av_encoder_private.h	256;"	d
+ATTR_BLINK_INTERVAL	av_encoder_private.h	255;"	d
+AUTOCONF	Makefile	/^AUTOCONF = ${SHELL} \/opt\/sdb\/framework_1209\/missing --run autoconf$/;"	m
+AUTOHEADER	Makefile	/^AUTOHEADER = ${SHELL} \/opt\/sdb\/framework_1209\/missing --run autoheader$/;"	m
+AUTOMAKE	Makefile	/^AUTOMAKE = ${SHELL} \/opt\/sdb\/framework_1209\/missing --run automake-1.11$/;"	m
+AVENC_DEC	av_encoder_private.h	/^		AVENC_DEC,$/;"	e	enum:_AVENC_STATE
+AVENC_ENC	av_encoder_private.h	/^		AVENC_ENC,$/;"	e	enum:_AVENC_STATE
+AVENC_END	av_encoder_private.h	/^		AVENC_END$/;"	e	enum:_AVENC_STATE
+AVENC_IDLE	av_encoder_private.h	/^		AVENC_IDLE,    $/;"	e	enum:_AVENC_STATE
+AVENC_START	av_encoder_private.h	/^		AVENC_START,$/;"	e	enum:_AVENC_STATE
+AVENC_STATE	av_encoder_private.h	/^}AVENC_STATE;$/;"	t	typeref:enum:_AVENC_STATE
+AV_ENCODER_POLL_COUNT_MAX	av_encoder_private.h	29;"	d
+AV_ENCODER_PRIVATE_HANDLE	av_encoder_private.h	/^}AV_ENCODER_PRIVATE_HANDLE;$/;"	t	typeref:struct:_AV_ENCODER_PRIVATE_HANDLE
+AWK	Makefile	/^AWK = gawk$/;"	m
+BITMAP_COLOR	av_encoder_private.h	246;"	d
+BLUE_COLOR	av_encoder_private.h	244;"	d
+BRITNESSCTRLREGADDR	av_encoder_private.h	31;"	d
+CAMERA_INPUT_TYPE	av_encoder_private.h	/^}CAMERA_INPUT_TYPE;$/;"	t	typeref:enum:_CAMERA_INPUT_TYPE
+CC	Makefile	/^CC = arm-none-linux-gnueabi-gcc$/;"	m
+CCDEPMODE	Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CCLD	Makefile	/^CCLD = $(CC)$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -O2$/;"	m
+CMEM_SIZE	av_encoder_private.h	37;"	d
+COLORSATURATIONCTRLREGADDR	av_encoder_private.h	32;"	d
+COMPILE	Makefile	/^COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \\$/;"	m
+CONFIG_CLEAN_FILES	Makefile	/^CONFIG_CLEAN_FILES =$/;"	m
+CONFIG_CLEAN_VPATH_FILES	Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m
+CONFIG_HEADER	Makefile	/^CONFIG_HEADER = $(top_builddir)\/config.h$/;"	m
+CONTRASTCTRLREGADDR	av_encoder_private.h	34;"	d
+CPP	Makefile	/^CPP = arm-none-linux-gnueabi-gcc -E$/;"	m
+CPPFLAGS	Makefile	/^CPPFLAGS = $/;"	m
+CTAGS	Makefile	/^CTAGS = ctags$/;"	m
+CURSOR_COLOR	av_encoder_private.h	253;"	d
+CURSOR_THICKNESS	av_encoder_private.h	252;"	d
+CURSOR_XPOS	av_encoder_private.h	248;"	d
+CURSOR_XRES	av_encoder_private.h	250;"	d
+CURSOR_YPOS	av_encoder_private.h	249;"	d
+CURSOR_YRES	av_encoder_private.h	251;"	d
+CXX	Makefile	/^CXX = arm-none-linux-gnueabi-g++$/;"	m
+CXXDEPMODE	Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS = -g -O2$/;"	m
+CYGPATH_W	Makefile	/^CYGPATH_W = echo$/;"	m
+DEFAULT_INCLUDES	Makefile	/^DEFAULT_INCLUDES = -I. -I$(top_builddir)$/;"	m
+DEFS	Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEPDIR	Makefile	/^DEPDIR = .deps$/;"	m
+DISPLAY_INTERFACE	av_encoder_private.h	261;"	d
+DISPLAY_MODE	av_encoder_private.h	262;"	d
+DISPLAY_SIZE	av_encoder_video.c	6;"	d	file:
+DISTFILES	Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DIST_COMMON	Makefile	/^DIST_COMMON = $(srcdir)\/Makefile.am $(srcdir)\/Makefile.in$/;"	m
+DIST_SOURCES	Makefile	/^DIST_SOURCES = $(av_encoder_SOURCES)$/;"	m
+ECHO_C	Makefile	/^ECHO_C = $/;"	m
+ECHO_N	Makefile	/^ECHO_N = -n$/;"	m
+ECHO_T	Makefile	/^ECHO_T = $/;"	m
+EGREP	Makefile	/^EGREP = \/bin\/grep -E$/;"	m
+ETAGS	Makefile	/^ETAGS = etags$/;"	m
+EXEEXT	Makefile	/^EXEEXT = $/;"	m
+GREP	Makefile	/^GREP = \/bin\/grep$/;"	m
+HUECTRLREGADDR	av_encoder_private.h	33;"	d
+I2CADDR	av_encoder_private.h	30;"	d
+INCLUDES	Makefile	/^INCLUDES = -I$(top_srcdir)\/include -I\/opt\/sdb\/linux-2.6.32-CNG205\/include -I\/opt\/sdb\/linux-2.6.32-CNG205\/arch\/arm\/include$/;"	m
+INPUT_CCD	av_encoder_private.h	/^	INPUT_CCD,$/;"	e	enum:_CAMERA_INPUT_TYPE
+INPUT_END	av_encoder_private.h	/^	INPUT_END$/;"	e	enum:_CAMERA_INPUT_TYPE
+INPUT_INFRARED	av_encoder_private.h	/^	INPUT_INFRARED,$/;"	e	enum:_CAMERA_INPUT_TYPE
+INPUT_START	av_encoder_private.h	/^	INPUT_START = 0,$/;"	e	enum:_CAMERA_INPUT_TYPE
+INSTALL	Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL_DATA	Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_HEADER	Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_PROGRAM	Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_STRIP_PROGRAM	Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+IsAVencoderSysQuit	av_encoder_init.c	/^int IsAVencoderSysQuit = 0;$/;"	v
+Is_jpeg_pic	av_encoder_private.h	/^		unsigned int Is_jpeg_pic; \/\/is jpeg pic$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+LDFLAGS	Makefile	/^LDFLAGS = $/;"	m
+LIBOBJS	Makefile	/^LIBOBJS = $/;"	m
+LIBS	Makefile	/^LIBS = -lpthread $/;"	m
+LINK	Makefile	/^LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@$/;"	m
+LTLIBOBJS	Makefile	/^LTLIBOBJS = $/;"	m
+MAKEINFO	Makefile	/^MAKEINFO = ${SHELL} \/opt\/sdb\/framework_1209\/missing --run makeinfo$/;"	m
+MIN_BUFFERS	av_encoder_video.c	5;"	d	file:
+MKDIR_P	Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m
+NORMAL_INSTALL	Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_UNINSTALL	Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+OBJEXT	Makefile	/^OBJEXT = o$/;"	m
+OSD0_BPP	av_encoder_private.h	201;"	d
+OSD0_CK	av_encoder_private.h	239;"	d
+OSD0_FRAME_SIZE	av_encoder_private.h	204;"	d
+OSD0_HEIGHT	av_encoder_private.h	203;"	d
+OSD0_HZOOM	av_encoder_private.h	224;"	d
+OSD0_VMODE	av_encoder_private.h	205;"	d
+OSD0_VZOOM	av_encoder_private.h	225;"	d
+OSD0_WIDTH	av_encoder_private.h	202;"	d
+OSD0_WINDOW_BF	av_encoder_private.h	237;"	d
+OSD0_WINDOW_CK	av_encoder_private.h	238;"	d
+OSD0_XPOS	av_encoder_private.h	214;"	d
+OSD0_YPOS	av_encoder_private.h	215;"	d
+OSD1_BPP	av_encoder_private.h	207;"	d
+OSD1_CK	av_encoder_private.h	236;"	d
+OSD1_FRAME_SIZE	av_encoder_private.h	210;"	d
+OSD1_HEIGHT	av_encoder_private.h	209;"	d
+OSD1_HZOOM	av_encoder_private.h	226;"	d
+OSD1_VMODE	av_encoder_private.h	211;"	d
+OSD1_VZOOM	av_encoder_private.h	227;"	d
+OSD1_WIDTH	av_encoder_private.h	208;"	d
+OSD1_WINDOW_BF	av_encoder_private.h	234;"	d
+OSD1_WINDOW_CK	av_encoder_private.h	235;"	d
+OSD1_XPOS	av_encoder_private.h	216;"	d
+OSD1_YPOS	av_encoder_private.h	217;"	d
+OSD_NUM_BUFS	av_encoder_private.h	242;"	d
+PACKAGE	Makefile	/^PACKAGE = POLICE_work$/;"	m
+PACKAGE_BUGREPORT	Makefile	/^PACKAGE_BUGREPORT = liangzhang@xidian.edu.cn$/;"	m
+PACKAGE_NAME	Makefile	/^PACKAGE_NAME = POLICE_work$/;"	m
+PACKAGE_STRING	Makefile	/^PACKAGE_STRING = POLICE_work 1.0$/;"	m
+PACKAGE_TARNAME	Makefile	/^PACKAGE_TARNAME = police_work$/;"	m
+PACKAGE_URL	Makefile	/^PACKAGE_URL = $/;"	m
+PACKAGE_VERSION	Makefile	/^PACKAGE_VERSION = 1.0$/;"	m
+PATH_SEPARATOR	Makefile	/^PATH_SEPARATOR = :$/;"	m
+POST_INSTALL	Makefile	/^POST_INSTALL = :$/;"	m
+POST_UNINSTALL	Makefile	/^POST_UNINSTALL = :$/;"	m
+PRE_INSTALL	Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_UNINSTALL	Makefile	/^PRE_UNINSTALL = :$/;"	m
+PRINT_STATISTICS	av_encoder_vid_enc_run.c	6;"	d	file:
+PROGRAMS	Makefile	/^PROGRAMS = $(bin_PROGRAMS)$/;"	m
+RAM_CLUT_IDX	av_encoder_private.h	245;"	d
+RANLIB	Makefile	/^RANLIB = arm-none-linux-gnueabi-ranlib$/;"	m
+RED_COLOR	av_encoder_private.h	243;"	d
+SET_MAKE	Makefile	/^SET_MAKE = $/;"	m
+SHELL	Makefile	/^SHELL = \/bin\/sh$/;"	m
+SOURCES	Makefile	/^SOURCES = $(av_encoder_SOURCES)$/;"	m
+STRIP	Makefile	/^STRIP = arm-none-linux-gnueabi-strip$/;"	m
+Uint16	av_encoder_private.h	/^typedef unsigned short Uint16;$/;"	t
+VERSION	Makefile	/^VERSION = 1.0$/;"	m
+VID0_BPP	av_encoder_private.h	191;"	d
+VID0_FRAME_SIZE	av_encoder_private.h	192;"	d
+VID0_HEIGHT	av_encoder_private.h	190;"	d
+VID0_HZOOM	av_encoder_private.h	228;"	d
+VID0_VMODE	av_encoder_private.h	193;"	d
+VID0_VZOOM	av_encoder_private.h	229;"	d
+VID0_WIDTH	av_encoder_private.h	189;"	d
+VID0_XPOS	av_encoder_private.h	218;"	d
+VID0_YPOS	av_encoder_private.h	219;"	d
+VID1_BPP	av_encoder_private.h	197;"	d
+VID1_FRAME_SIZE	av_encoder_private.h	198;"	d
+VID1_HEIGHT	av_encoder_private.h	196;"	d
+VID1_HZOOM	av_encoder_private.h	230;"	d
+VID1_VMODE	av_encoder_private.h	199;"	d
+VID1_VZOOM	av_encoder_private.h	231;"	d
+VID1_WIDTH	av_encoder_private.h	195;"	d
+VID1_XPOS	av_encoder_private.h	220;"	d
+VID1_YPOS	av_encoder_private.h	221;"	d
+VIDEO_NUM_BUFS	av_encoder_private.h	241;"	d
+VideoStd_1080I_25	av_encoder_private.h	/^		VideoStd_1080I_25,      \/**< 1080I @ 25 frames per second *\/$/;"	e	enum:__anon1
+VideoStd_1080I_30	av_encoder_private.h	/^		VideoStd_1080I_30,      \/**< 1080I @ 30 frames per second *\/$/;"	e	enum:__anon1
+VideoStd_1080P_24	av_encoder_private.h	/^		VideoStd_1080P_24,      \/**< 1080P @ 24 frames per second *\/$/;"	e	enum:__anon1
+VideoStd_1080P_25	av_encoder_private.h	/^		VideoStd_1080P_25,      \/**< 1080P @ 25 frames per second *\/$/;"	e	enum:__anon1
+VideoStd_1080P_30	av_encoder_private.h	/^		VideoStd_1080P_30,      \/**< 1080P @ 30 frames per second *\/$/;"	e	enum:__anon1
+VideoStd_480P	av_encoder_private.h	/^		VideoStd_480P,          \/**< D1 Progressive NTSC @ 60 frames per second *\/$/;"	e	enum:__anon1
+VideoStd_576P	av_encoder_private.h	/^		VideoStd_576P,          \/**< D1 Progressive PAL @ 50 frames per second *\/$/;"	e	enum:__anon1
+VideoStd_720P_30	av_encoder_private.h	/^		VideoStd_720P_30,       \/**< 720P @ 30 frames per second *\/$/;"	e	enum:__anon1
+VideoStd_720P_50	av_encoder_private.h	/^		VideoStd_720P_50,       \/**< 720P @ 50 frames per second *\/$/;"	e	enum:__anon1
+VideoStd_720P_60	av_encoder_private.h	/^		VideoStd_720P_60,       \/**< 720P @ 60 frames per second *\/$/;"	e	enum:__anon1
+VideoStd_AUTO	av_encoder_private.h	/^		VideoStd_AUTO = 0,      \/**< Automatically select standard (if supported) *\/$/;"	e	enum:__anon1
+VideoStd_CIF	av_encoder_private.h	/^		VideoStd_CIF,           \/**< CIF @ 30 frames per second *\/$/;"	e	enum:__anon1
+VideoStd_COUNT	av_encoder_private.h	/^		VideoStd_COUNT$/;"	e	enum:__anon1
+VideoStd_D1_NTSC	av_encoder_private.h	/^		VideoStd_D1_NTSC,       \/**< D1 NTSC @ 30 frames per second *\/$/;"	e	enum:__anon1
+VideoStd_D1_PAL	av_encoder_private.h	/^		VideoStd_D1_PAL,        \/**< D1 PAL @ 25 frames per second *\/$/;"	e	enum:__anon1
+VideoStd_SIF_NTSC	av_encoder_private.h	/^		VideoStd_SIF_NTSC,      \/**< SIF @ 30 frames per second *\/$/;"	e	enum:__anon1
+VideoStd_SIF_PAL	av_encoder_private.h	/^		VideoStd_SIF_PAL,       \/**< SIF @ 25 frames per second *\/$/;"	e	enum:__anon1
+VideoStd_Type	av_encoder_private.h	/^} VideoStd_Type;$/;"	t	typeref:enum:__anon1
+VideoStd_VGA	av_encoder_private.h	/^		VideoStd_VGA,           \/**< VGA (640x480) @ 60 frames per second *\/$/;"	e	enum:__anon1
+WDQ_VERSION	av_encoder_private.h	186;"	d
+_AVENC_STATE	av_encoder_private.h	/^typedef enum _AVENC_STATE$/;"	g
+_AV_ENCODER_PRIVATE_HANDLE	av_encoder_private.h	/^typedef struct _AV_ENCODER_PRIVATE_HANDLE$/;"	s
+_AV_ENCODER_PRIVATE_H__	av_encoder_private.h	2;"	d
+_CAMERA_INPUT_TYPE	av_encoder_private.h	/^typedef enum _CAMERA_INPUT_TYPE$/;"	g
+__videoStatus	av_encoder_private.h	/^typedef struct __videoStatus$/;"	s
+abs_builddir	Makefile	/^abs_builddir = \/opt\/sdb\/framework_1209\/src\/av_encoder$/;"	m
+abs_srcdir	Makefile	/^abs_srcdir = \/opt\/sdb\/framework_1209\/src\/av_encoder$/;"	m
+abs_top_builddir	Makefile	/^abs_top_builddir = \/opt\/sdb\/framework_1209$/;"	m
+abs_top_srcdir	Makefile	/^abs_top_srcdir = \/opt\/sdb\/framework_1209$/;"	m
+ac_ct_CC	Makefile	/^ac_ct_CC = $/;"	m
+ac_ct_CXX	Makefile	/^ac_ct_CXX = $/;"	m
+active_fdcount	av_encoder_private.h	/^		int active_fdcount;$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+am__aclocal_m4_deps	Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/configure.ac$/;"	m
+am__cd	Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__configure_deps	Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__depfiles_maybe	Makefile	/^am__depfiles_maybe = depfiles$/;"	m
+am__include	Makefile	/^am__include = include$/;"	m
+am__installdirs	Makefile	/^am__installdirs = "$(DESTDIR)$(bindir)"$/;"	m
+am__leading_dot	Makefile	/^am__leading_dot = .$/;"	m
+am__mv	Makefile	/^am__mv = mv -f$/;"	m
+am__quote	Makefile	/^am__quote = $/;"	m
+am__tar	Makefile	/^am__tar = ${AMTAR} chof - "$$tardir"$/;"	m
+am__untar	Makefile	/^am__untar = ${AMTAR} xf -$/;"	m
+am_av_encoder_OBJECTS	Makefile	/^am_av_encoder_OBJECTS = av_encoder_init.$(OBJEXT) \\$/;"	m
+attr_blend_val	av_encoder_private.h	/^	int attr_blend_val;$/;"	m	struct:vpbe_test_info
+attr_blink_interval	av_encoder_private.h	/^	int attr_blink_interval;$/;"	m	struct:vpbe_test_info
+av_encoder_DEPENDENCIES	Makefile	/^av_encoder_DEPENDENCIES =$/;"	m
+av_encoder_LDADD	Makefile	/^av_encoder_LDADD = -lunix -lgbshm -lvsshm -lasshm  -lsignal  -lcapture -lcmem -ldisplay -lresize -lH264Encode -lJpegEncode$/;"	m
+av_encoder_OBJECTS	Makefile	/^av_encoder_OBJECTS = $(am_av_encoder_OBJECTS)$/;"	m
+av_encoder_SOURCES	Makefile	/^av_encoder_SOURCES = av_encoder_init.c av_encoder_unix.c av_encoder_vid_enc_run.c av_encoder_main.c av_encoder_video.c$/;"	m
+av_encoder_exit	av_encoder_main.c	/^succeed_type av_encoder_exit(AV_ENCODER_PRIVATE_HANDLE *phandle)$/;"	f
+av_encoder_init	av_encoder_init.c	/^succeed_type av_encoder_init(AV_ENCODER_PRIVATE_HANDLE *phandle)$/;"	f
+av_encoder_poll_init	av_encoder_init.c	/^void av_encoder_poll_init(AV_ENCODER_PRIVATE_HANDLE *phandle)$/;"	f
+av_encoder_privatehandle_init	av_encoder_init.c	/^succeed_type av_encoder_privatehandle_init(AV_ENCODER_PRIVATE_HANDLE *phandle)$/;"	f
+av_encoder_unix	av_encoder_unix.c	/^succeed_type av_encoder_unix(AV_ENCODER_PRIVATE_HANDLE *phandle)$/;"	f
+av_encoder_unix_deal	av_encoder_unix.c	/^static succeed_type av_encoder_unix_deal( AV_ENCODER_PRIVATE_HANDLE *phandle, UNIX_CMD_STRUCT *pcmd)$/;"	f	file:
+av_encoder_vidEncRunMain	av_encoder_vid_enc_run.c	/^succeed_type av_encoder_vidEncRunMain(AV_ENCODER_PRIVATE_HANDLE  *phandle,FILE *fp)$/;"	f
+bin_PROGRAMS	Makefile	/^bin_PROGRAMS = av_encoder$(EXEEXT)$/;"	m
+bindir	Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+bitmap_color	av_encoder_private.h	/^	int bitmap_color;$/;"	m	struct:vpbe_test_info
+bitrate	av_encoder_private.h	/^		unsigned int bitrate;$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+bufCurNum	av_encoder_vid_enc_run.c	/^static int bufCurNum = 0;$/;"	v	file:
+buffer_private	av_encoder_private.h	/^struct buffer_private {$/;"	s
+buffers	av_encoder_video.c	/^struct buffer_private *buffers = NULL;$/;"	v	typeref:struct:buffer_private
+build_alias	Makefile	/^build_alias = $/;"	m
+builddir	Makefile	/^builddir = .$/;"	m
+bytesGenerated	av_encoder_private.h	/^	unsigned int bytesGenerated;$/;"	m	struct:__videoStatus
+cam_input_switch	av_encoder_private.h	/^		unsigned int cam_input_switch;$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+cam_input_type	av_encoder_private.h	/^		CAMERA_INPUT_TYPE cam_input_type;$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+capAttr	av_encoder_private.h	/^		CaptureAttr 		capAttr;$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+capBuf	av_encoder_private.h	/^		CaptureBuffer 		capBuf;$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+capHandle	av_encoder_private.h	/^		Capture_Handle 		capHandle;      $/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+capture_fd	av_encoder_private.h	/^		int capture_fd;$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+cmem_params	av_encoder_private.h	/^		CMEM_AllocParams    cmem_params;$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+current_state	av_encoder_private.h	/^		AVENC_STATE current_state;$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+cursor_color	av_encoder_private.h	/^	int cursor_color;$/;"	m	struct:vpbe_test_info
+cursor_thickness	av_encoder_private.h	/^	int cursor_thickness;$/;"	m	struct:vpbe_test_info
+cursor_xpos	av_encoder_private.h	/^	int cursor_xpos;$/;"	m	struct:vpbe_test_info
+cursor_xres	av_encoder_private.h	/^	int cursor_xres;$/;"	m	struct:vpbe_test_info
+cursor_ypos	av_encoder_private.h	/^	int cursor_ypos;$/;"	m	struct:vpbe_test_info
+cursor_yres	av_encoder_private.h	/^	int cursor_yres;$/;"	m	struct:vpbe_test_info
+datadir	Makefile	/^datadir = ${datarootdir}$/;"	m
+datarootdir	Makefile	/^datarootdir = ${prefix}\/share$/;"	m
+depcomp	Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/depcomp$/;"	m
+disAttr	av_encoder_private.h	/^		DisplayAttr			disAttr;$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+disBuf	av_encoder_private.h	/^		DisplayBuffer 		disBuf;$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+dispHandle	av_encoder_private.h	/^		Display_Handle 		dispHandle;$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+display_fd	av_encoder_private.h	/^		int display_fd;$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+display_interface	av_encoder_private.h	/^	char display_interface[32];$/;"	m	struct:vpbe_test_info
+display_mode	av_encoder_private.h	/^	char display_mode[32];$/;"	m	struct:vpbe_test_info
+docdir	Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m
+dvidir	Makefile	/^dvidir = ${docdir}$/;"	m
+exec_prefix	Makefile	/^exec_prefix = ${prefix}$/;"	m
+flip_mutex	av_encoder_private.h	/^		pthread_mutex_t flip_mutex;$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+frame_count	av_encoder_private.h	/^		unsigned int frame_count; \/\/采集总数$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+framerate	av_encoder_private.h	/^		unsigned int framerate;$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+get_buffer_index	av_encoder_video.c	/^int get_buffer_index(void *ptr)$/;"	f
+global_av_encoder_private_handle	av_encoder_main.c	/^AV_ENCODER_PRIVATE_HANDLE global_av_encoder_private_handle;$/;"	v
+height	av_encoder_private.h	/^		unsigned int height;\/\/picture height$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+host_alias	Makefile	/^host_alias = arm-none-linux-gnueabi$/;"	m
+htmldir	Makefile	/^htmldir = ${docdir}$/;"	m
+includedir	Makefile	/^includedir = ${prefix}\/include$/;"	m
+index	av_encoder_private.h	/^	int index;$/;"	m	struct:buffer_private
+infodir	Makefile	/^infodir = ${datarootdir}\/info$/;"	m
+install_sh	Makefile	/^install_sh = ${SHELL} \/opt\/sdb\/framework_1209\/install-sh$/;"	m
+install_sh_DATA	Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_PROGRAM	Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+intra	av_encoder_private.h	/^		unsigned int intra;  \/\/key frame$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+isKeyFrame	av_encoder_private.h	/^	unsigned int isKeyFrame;$/;"	m	struct:__videoStatus
+jpeginbuffer	av_encoder_private.h	/^		char                *jpeginbuffer;$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+jpegoutbuffer	av_encoder_private.h	/^		char 				*jpegoutbuffer;$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+length	av_encoder_private.h	/^	size_t length;$/;"	m	struct:buffer_private
+libdir	Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libexecdir	Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+localedir	Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
+localstatedir	Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+main	av_encoder_main.c	/^int main(int argc, char **argv)$/;"	f
+mandir	Makefile	/^mandir = ${datarootdir}\/man$/;"	m
+mkdir_p	Makefile	/^mkdir_p = \/bin\/mkdir -p$/;"	m
+mkinstalldirs	Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+offset	av_encoder_private.h	/^	int offset;$/;"	m	struct:buffer_private
+oldincludedir	Makefile	/^oldincludedir = \/usr\/include$/;"	m
+osd0_bpp	av_encoder_private.h	/^	int osd0_bpp;$/;"	m	struct:vpbe_test_info
+osd0_ck	av_encoder_private.h	/^	int osd0_ck;$/;"	m	struct:vpbe_test_info
+osd0_coloridx	av_encoder_private.h	/^	int osd0_coloridx;$/;"	m	struct:vpbe_test_info
+osd0_frame_size	av_encoder_private.h	/^	int osd0_frame_size;$/;"	m	struct:vpbe_test_info
+osd0_height	av_encoder_private.h	/^	int osd0_height;$/;"	m	struct:vpbe_test_info
+osd0_hzoom	av_encoder_private.h	/^	int osd0_hzoom;$/;"	m	struct:vpbe_test_info
+osd0_vmode	av_encoder_private.h	/^	int osd0_vmode;$/;"	m	struct:vpbe_test_info
+osd0_vzoom	av_encoder_private.h	/^	int osd0_vzoom;$/;"	m	struct:vpbe_test_info
+osd0_width	av_encoder_private.h	/^	int osd0_width;$/;"	m	struct:vpbe_test_info
+osd0_window_bf	av_encoder_private.h	/^	int osd0_window_bf;$/;"	m	struct:vpbe_test_info
+osd0_window_ck	av_encoder_private.h	/^	int osd0_window_ck;$/;"	m	struct:vpbe_test_info
+osd0_xpos	av_encoder_private.h	/^	int osd0_xpos;$/;"	m	struct:vpbe_test_info
+osd0_ypos	av_encoder_private.h	/^	int osd0_ypos;$/;"	m	struct:vpbe_test_info
+osd1_bpp	av_encoder_private.h	/^	int osd1_bpp;$/;"	m	struct:vpbe_test_info
+osd1_ck	av_encoder_private.h	/^	int osd1_ck;$/;"	m	struct:vpbe_test_info
+osd1_coloridx	av_encoder_private.h	/^	int osd1_coloridx;$/;"	m	struct:vpbe_test_info
+osd1_frame_size	av_encoder_private.h	/^	int osd1_frame_size;$/;"	m	struct:vpbe_test_info
+osd1_height	av_encoder_private.h	/^	int osd1_height;$/;"	m	struct:vpbe_test_info
+osd1_hzoom	av_encoder_private.h	/^	int osd1_hzoom;$/;"	m	struct:vpbe_test_info
+osd1_vmode	av_encoder_private.h	/^	int osd1_vmode;$/;"	m	struct:vpbe_test_info
+osd1_vzoom	av_encoder_private.h	/^	int osd1_vzoom;$/;"	m	struct:vpbe_test_info
+osd1_width	av_encoder_private.h	/^	int osd1_width;$/;"	m	struct:vpbe_test_info
+osd1_window_bf	av_encoder_private.h	/^	int osd1_window_bf;$/;"	m	struct:vpbe_test_info
+osd1_window_ck	av_encoder_private.h	/^	int osd1_window_ck;$/;"	m	struct:vpbe_test_info
+osd1_xpos	av_encoder_private.h	/^	int osd1_xpos;$/;"	m	struct:vpbe_test_info
+osd1_ypos	av_encoder_private.h	/^	int osd1_ypos;$/;"	m	struct:vpbe_test_info
+passhm_obj	av_encoder_private.h	/^		LIBASSHM_OBJ *passhm_obj;$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+pdfdir	Makefile	/^pdfdir = ${docdir}$/;"	m
+pgbshm_obj	av_encoder_private.h	/^		LIBGBSHM_OBJ *pgbshm_obj;$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+pi2c_obj	av_encoder_private.h	/^		LIBI2C_OBJ *pi2c_obj;$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+pkgdatadir	Makefile	/^pkgdatadir = $(datadir)\/POLICE_work$/;"	m
+pkgincludedir	Makefile	/^pkgincludedir = $(includedir)\/POLICE_work$/;"	m
+pkglibdir	Makefile	/^pkglibdir = $(libdir)\/POLICE_work$/;"	m
+pkglibexecdir	Makefile	/^pkglibexecdir = $(libexecdir)\/POLICE_work$/;"	m
+polltimeout	av_encoder_private.h	/^		struct pollfd polltimeout[AV_ENCODER_POLL_COUNT_MAX];$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE	typeref:struct:_AV_ENCODER_PRIVATE_HANDLE::pollfd
+prefix	Makefile	/^prefix = \/opt\/sdb\/rootfs\/opt\/install$/;"	m
+program_transform_name	Makefile	/^program_transform_name = s,x,x,$/;"	m
+psdir	Makefile	/^psdir = ${docdir}$/;"	m
+pvidctl_obj	av_encoder_private.h	/^		LIBVIDCTL_OBJ *pvidctl_obj;$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+pvsshm_obj	av_encoder_private.h	/^		LIBVSSHM_OBJ *pvsshm_obj;$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+qvalue	av_encoder_private.h	/^		unsigned int qvalue; \/\/ 80~100 $/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+ram_clut_idx	av_encoder_private.h	/^	int ram_clut_idx;$/;"	m	struct:vpbe_test_info
+resize_enable	av_encoder_private.h	/^		unsigned int resize_enable;   \/\/0--disable, 1---enable$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+resize_fd	av_encoder_private.h	/^		int resize_fd;$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+round_32	av_encoder_private.h	187;"	d
+rszAttr	av_encoder_private.h	/^		ResizeAttr			rszAttr;$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+rszHandle	av_encoder_private.h	/^		Resize_Handle 		rszHandle;$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+sbindir	Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+sharedstatedir	Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+sig_handle_proc	av_encoder_init.c	/^void sig_handle_proc(int sig)$/;"	f
+srcdir	Makefile	/^srcdir = .$/;"	m
+start	av_encoder_private.h	/^	void *start;$/;"	m	struct:buffer_private
+start_timestamp	av_encoder_private.h	/^		unsigned int start_timestamp; \/\/第一采集时间$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+subdir	Makefile	/^subdir = src\/av_encoder$/;"	m
+sysconfdir	Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+target_alias	Makefile	/^target_alias = $/;"	m
+top_build_prefix	Makefile	/^top_build_prefix = ..\/..\/$/;"	m
+top_builddir	Makefile	/^top_builddir = ..\/..$/;"	m
+top_srcdir	Makefile	/^top_srcdir = ..\/..$/;"	m
+totalcount	av_encoder_vid_enc_run.c	/^static unsigned int totalcount = 0;$/;"	v	file:
+transform	Makefile	/^transform = $(program_transform_name)$/;"	m
+unix_fd	av_encoder_private.h	/^		int unix_fd;$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+vid0_bpp	av_encoder_private.h	/^	int vid0_bpp;$/;"	m	struct:vpbe_test_info
+vid0_frame_size	av_encoder_private.h	/^	int vid0_frame_size;$/;"	m	struct:vpbe_test_info
+vid0_height	av_encoder_private.h	/^	int vid0_height;$/;"	m	struct:vpbe_test_info
+vid0_hzoom	av_encoder_private.h	/^	int vid0_hzoom;$/;"	m	struct:vpbe_test_info
+vid0_vmode	av_encoder_private.h	/^	int vid0_vmode;$/;"	m	struct:vpbe_test_info
+vid0_vzoom	av_encoder_private.h	/^	int vid0_vzoom;$/;"	m	struct:vpbe_test_info
+vid0_width	av_encoder_private.h	/^	int vid0_width;$/;"	m	struct:vpbe_test_info
+vid0_xpos	av_encoder_private.h	/^	int vid0_xpos;$/;"	m	struct:vpbe_test_info
+vid0_ypos	av_encoder_private.h	/^	int vid0_ypos;$/;"	m	struct:vpbe_test_info
+vid1_bpp	av_encoder_private.h	/^	int vid1_bpp;$/;"	m	struct:vpbe_test_info
+vid1_frame_size	av_encoder_private.h	/^	int vid1_frame_size;$/;"	m	struct:vpbe_test_info
+vid1_height	av_encoder_private.h	/^	int vid1_height;$/;"	m	struct:vpbe_test_info
+vid1_hzoom	av_encoder_private.h	/^	int vid1_hzoom;$/;"	m	struct:vpbe_test_info
+vid1_vmode	av_encoder_private.h	/^	int vid1_vmode;$/;"	m	struct:vpbe_test_info
+vid1_vzoom	av_encoder_private.h	/^	int vid1_vzoom;$/;"	m	struct:vpbe_test_info
+vid1_width	av_encoder_private.h	/^	int vid1_width;$/;"	m	struct:vpbe_test_info
+vid1_xpos	av_encoder_private.h	/^	int vid1_xpos;$/;"	m	struct:vpbe_test_info
+vid1_ypos	av_encoder_private.h	/^	int vid1_ypos;$/;"	m	struct:vpbe_test_info
+videoStatus	av_encoder_private.h	/^}videoStatus;$/;"	t	typeref:struct:__videoStatus
+video_buf_deal	av_encoder_video.c	/^succeed_type video_buf_deal(AV_ENCODER_PRIVATE_HANDLE *phandle)$/;"	f
+videoencparam	av_encoder_private.h	/^		video_enc_param videoencparam;$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+videoinbuffer	av_encoder_private.h	/^		char                *videoinbuffer;$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+videooutbuffer	av_encoder_private.h	/^		char 				*videooutbuffer;$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE
+vpbe_test_info	av_encoder_private.h	/^struct vpbe_test_info {$/;"	s
+width	av_encoder_private.h	/^		unsigned int width; \/\/picture width$/;"	m	struct:_AV_ENCODER_PRIVATE_HANDLE

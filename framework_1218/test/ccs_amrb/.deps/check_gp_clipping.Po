@@ -1,0 +1,16 @@
+check_gp_clipping.o check_gp_clipping.o: check_gp_clipping.c typedef.h \
+  basic_op.h table.h mode.h pred_lt_3or6.h ton_stab.h cnst.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+ton_stab.h:
+
+cnst.h:

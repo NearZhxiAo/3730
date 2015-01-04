@@ -1,0 +1,65 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+DRIVER	driver/Makefile	/^DRIVER = gpmc_fpga$/;"	m
+FPGA_ARCH	driver/Makefile	/^FPGA_ARCH=arm$/;"	m
+FPGA_CROSS_COMPILE	driver/Makefile	/^FPGA_CROSS_COMPILE=arm-none-linux-gnueabi-$/;"	m
+FPGA_DEV	usr/test.c	6;"	d	file:
+GPMC_CONFIG	driver/gpmc_fpga.c	45;"	d	file:
+GPMC_CS	driver/gpmc_fpga.c	57;"	d	file:
+GPMC_ECC1_RESULT	driver/gpmc_fpga.c	54;"	d	file:
+GPMC_ECC_BCH_RESULT_0	driver/gpmc_fpga.c	55;"	d	file:
+GPMC_ECC_CONFIG	driver/gpmc_fpga.c	51;"	d	file:
+GPMC_ECC_CONTROL	driver/gpmc_fpga.c	52;"	d	file:
+GPMC_ECC_SIZE_CONFIG	driver/gpmc_fpga.c	53;"	d	file:
+GPMC_ERR_ADDRESS	driver/gpmc_fpga.c	43;"	d	file:
+GPMC_ERR_TYPE	driver/gpmc_fpga.c	44;"	d	file:
+GPMC_IRQENABLE	driver/gpmc_fpga.c	41;"	d	file:
+GPMC_IRQSTATUS	driver/gpmc_fpga.c	40;"	d	file:
+GPMC_PREFETCH_CONFIG1	driver/gpmc_fpga.c	47;"	d	file:
+GPMC_PREFETCH_CONFIG2	driver/gpmc_fpga.c	48;"	d	file:
+GPMC_PREFETCH_CONTROL	driver/gpmc_fpga.c	49;"	d	file:
+GPMC_PREFETCH_STATUS	driver/gpmc_fpga.c	50;"	d	file:
+GPMC_REVISION	driver/gpmc_fpga.c	37;"	d	file:
+GPMC_STATUS	driver/gpmc_fpga.c	46;"	d	file:
+GPMC_SYSCONFIG	driver/gpmc_fpga.c	38;"	d	file:
+GPMC_SYSSTATUS	driver/gpmc_fpga.c	39;"	d	file:
+GPMC_TIMEOUT_CONTROL	driver/gpmc_fpga.c	42;"	d	file:
+KERNELDIR	driver/Makefile	/^KERNELDIR=\/opt\/sdb\/linux-2.6.32-CNG205 $/;"	m
+PAGE_SIZE	usr/test.c	7;"	d	file:
+PWD	driver/Makefile	/^    PWD := $(shell pwd)$/;"	m
+STNOR_GPMC_CONFIG1	driver/gpmc_fpga.c	59;"	d	file:
+STNOR_GPMC_CONFIG2	driver/gpmc_fpga.c	60;"	d	file:
+STNOR_GPMC_CONFIG3	driver/gpmc_fpga.c	61;"	d	file:
+STNOR_GPMC_CONFIG4	driver/gpmc_fpga.c	62;"	d	file:
+STNOR_GPMC_CONFIG5	driver/gpmc_fpga.c	63;"	d	file:
+STNOR_GPMC_CONFIG6	driver/gpmc_fpga.c	64;"	d	file:
+USER_BUFF_SIZE	driver/gpmc_fpga.c	21;"	d	file:
+__this_module	driver/gpmc_fpga.mod.c	/^struct module __this_module$/;"	v	typeref:struct:module
+__used	driver/gpmc_fpga.mod.c	/^__used$/;"	v	file:
+__used	driver/gpmc_fpga.mod.c	/^__used$/;"	v	typeref:struct:____versions	file:
+cdev	driver/gpmc_fpga.c	/^	struct cdev cdev;$/;"	m	struct:fpga_dev	typeref:struct:fpga_dev::cdev	file:
+class	driver/gpmc_fpga.c	/^	struct class *class;$/;"	m	struct:fpga_dev	typeref:struct:fpga_dev::class	file:
+devt	driver/gpmc_fpga.c	/^	dev_t devt;$/;"	m	struct:fpga_dev	file:
+fpga_base	driver/gpmc_fpga.c	/^static void __iomem *fpga_base;$/;"	v	file:
+fpga_dev	driver/gpmc_fpga.c	/^static struct fpga_dev fpga_dev;$/;"	v	typeref:struct:fpga_dev	file:
+fpga_dev	driver/gpmc_fpga.c	/^struct fpga_dev {$/;"	s	file:
+fpga_exit	driver/gpmc_fpga.c	/^module_exit(fpga_exit);$/;"	v
+fpga_exit	driver/gpmc_fpga.c	/^static void __exit fpga_exit(void)$/;"	f	file:
+fpga_fops	driver/gpmc_fpga.c	/^static const struct file_operations fpga_fops = {$/;"	v	typeref:struct:file_operations	file:
+fpga_init	driver/gpmc_fpga.c	/^module_init(fpga_init);$/;"	v
+fpga_init	driver/gpmc_fpga.c	/^static int __init fpga_init(void)$/;"	f	file:
+fpga_init_cdev	driver/gpmc_fpga.c	/^static int __init fpga_init_cdev(void)$/;"	f	file:
+fpga_init_class	driver/gpmc_fpga.c	/^static int __init fpga_init_class(void)$/;"	f	file:
+fpga_open	driver/gpmc_fpga.c	/^static int fpga_open(struct inode *inode, struct file *filp)$/;"	f	file:
+fpga_read	driver/gpmc_fpga.c	/^static ssize_t fpga_read(struct file *filp, char __user *buff, size_t count, loff_t *offp)$/;"	f	file:
+fpga_write	driver/gpmc_fpga.c	/^static ssize_t fpga_write(struct file *filp, const char __user *buff, size_t count, loff_t *f_pos)$/;"	f	file:
+gpmc_nor	driver/gpmc_fpga.c	/^static const u32 gpmc_nor[7] = {$/;"	v	file:
+main	usr/test.c	/^int main(void)$/;"	f
+mem_base	driver/gpmc_fpga.c	/^unsigned long mem_base;$/;"	v
+obj-m	driver/Makefile	/^    obj-m := $(DRIVER).o$/;"	m
+sem	driver/gpmc_fpga.c	/^	struct semaphore sem;$/;"	m	struct:fpga_dev	typeref:struct:fpga_dev::semaphore	file:
+user_buff	driver/gpmc_fpga.c	/^	char *user_buff;$/;"	m	struct:fpga_dev	file:

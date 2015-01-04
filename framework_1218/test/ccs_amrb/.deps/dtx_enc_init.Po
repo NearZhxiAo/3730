@@ -1,0 +1,16 @@
+dtx_enc_init.o dtx_enc_init.o: dtx_enc_init.c dtx_def.h typedef.h cnst.h \
+  q_plsf.h gc_pred.h mode.h dtx_enc_reset.h
+
+dtx_def.h:
+
+typedef.h:
+
+cnst.h:
+
+q_plsf.h:
+
+gc_pred.h:
+
+mode.h:
+
+dtx_enc_reset.h:

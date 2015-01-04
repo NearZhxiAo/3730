@@ -1,0 +1,13 @@
+decoder_homing_frame_test.o decoder_homing_frame_test.o:  \
+ decoder_homing_frame_test.c dhf_test.h typedef.h mode.h table.h \
+  pred_lt_3or6.h
+
+dhf_test.h:
+
+typedef.h:
+
+mode.h:
+
+table.h:
+
+pred_lt_3or6.h:

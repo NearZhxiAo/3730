@@ -1,0 +1,8 @@
+gain_adapt_reset.o gain_adapt_reset.o: gain_adapt_reset.c typedef.h \
+  cnst.h gain_adapt.h
+
+typedef.h:
+
+cnst.h:
+
+gain_adapt.h:

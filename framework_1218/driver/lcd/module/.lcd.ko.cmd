@@ -1,0 +1,1 @@
+cmd_/home/mru/0725/MRU_work/driver/lcd/module/lcd.ko := arm_v5t_le-ld -EL  -r -o /home/mru/0725/MRU_work/driver/lcd/module/lcd.ko /home/mru/0725/MRU_work/driver/lcd/module/lcd.o /home/mru/0725/MRU_work/driver/lcd/module/lcd.mod.o

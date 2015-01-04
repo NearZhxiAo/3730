@@ -1,0 +1,12 @@
+ton_stab_reset.o ton_stab_reset.o: ton_stab_reset.c ton_stab.h typedef.h \
+  mode.h cnst.h set_zero.h
+
+ton_stab.h:
+
+typedef.h:
+
+mode.h:
+
+cnst.h:
+
+set_zero.h:

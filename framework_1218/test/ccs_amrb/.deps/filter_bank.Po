@@ -1,0 +1,29 @@
+filter_bank.o filter_bank.o: filter_bank.c typedef.h basic_op.h table.h \
+  mode.h pred_lt_3or6.h oper_32b.h cnst_vad.h cnst.h vad1.h \
+  first_filter_stage.h filter5.h filter3.h level_calculation.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+oper_32b.h:
+
+cnst_vad.h:
+
+cnst.h:
+
+vad1.h:
+
+first_filter_stage.h:
+
+filter5.h:
+
+filter3.h:
+
+level_calculation.h:

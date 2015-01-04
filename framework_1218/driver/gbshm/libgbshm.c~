@@ -1,0 +1,141 @@
+/************************************************************************
+ * Copyright (C), 2011, liangzhang@xidian.edu.cn
+ * FileName:   libgbshm.c
+ * Description:
+ * Date:	2011-03-16
+ * Version:	V1.0
+ *  *************************************************************************/
+
+#include "system_includes.h"
+#include "system_debug.h"
+#include "libgbshm.h"
+#include "parameter_offset.h"
+
+/******************************************** 
+ *    Function    : Gbshm_init
+ *    Author      : 
+ *    Date        : 2011-03-15 
+ *    Description : 
+ *    Para        : 
+ *    Ret         : not NULL -- succeed
+ *                  NULL     -- failed
+ * **********************************************/
+Gbshm_Handle Gbshm_init()
+{
+    int i = 0;
+    Gbshm_Handle phandle_gbshm = malloc(sizeof(Gbshm_Object));
+    if (phandle_gbshm == NULL)
+    {
+        SYS_ERROR("malloc phandle failed.\r\n");
+        return NULL;
+    }
+
+    phandle_gbshm->gbshm_fd = open("/dev/gbshm", O_RDWR);
+    if ( phandle_gbshm->gbshm_fd <= 0 )
+    {
+        SYS_ERROR("open fd failed.\r\n");
+        free( phandle_gbshm );
+        return NULL;
+    }
+
+    SYS_INFO("libgbshm_init.\r\n");
+
+    phandle_gbshm->gbshm_mmap = 0;
+
+    SYS_INFO("mmap init to 0.\r\n");
+
+    phandle_gbshm->gbshm_mmap = (unsigned int)mmap(0, SHAREMEM_PHYS_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, phandle_gbshm->gbshm_fd, SHAREMEM_PHYS_ADDR);
+    SYS_INFO("after libgbshm_init. shm addr 0x%x \r\n",phandle_gbshm->gbshm_mmap );
+
+    if ( phandle_gbshm->gbshm_mmap <= 0 )
+    {
+        free( phandle_gbshm );
+        SYS_ERROR("mmap failed.\r\n");
+        return NULL;
+    }
+
+    phandle_gbshm->countnum++ ;
+
+    //init mutex
+    if(0 != pthread_mutex_init( (pthread_mutex_t *)(phandle_gbshm->gbshm_mmap) ,NULL))
+    {
+        SYS_ERROR("gbshm mutex init failed\n");
+        return NULL;
+    }
+
+
+    return phandle_gbshm;
+}
+
+
+/******************************************** 
+ *    Function    : libgbshm_destroy
+ *    Author      : 
+ *    Date        : 2011-03-15 
+ *    Description : 
+ *    Para        : 
+ *    Ret         : succeed_type_succeed -- succeed
+ *                  succeed_type_failed  -- failed
+ * **********************************************/
+succeed_type Gbshm_destroy(Gbshm_Handle phandle)
+{
+    if (phandle == NULL)
+    {
+        SYS_ERROR("phandle_gbshm is NULL.\r\n");
+        return succeed_type_failed;
+    }
+    free(phandle);
+    return succeed_type_succeed;
+}
+
+
+/******************************************** 
+ *    Function    : Gbshm_paramGet
+ *    Author      : 
+ *    Date        : 2011-03-15 
+ *    Description : 
+ *    Para        : 
+ *    Ret         : succeed_type_succeed -- succeed
+ *                  succeed_type_failed  -- failed
+ * **********************************************/
+succeed_type Gbshm_paramGet(Gbshm_Handle phandle_gbshm, int offset, void * ptr, int length)
+{
+    int addr = 0;
+    if (ptr ==NULL || length == 0 || phandle_gbshm == NULL)
+    {
+        SYS_ERROR("phandle_gbshm is NULL.\r\n");
+        return succeed_type_failed;
+    }
+    addr =  (phandle_gbshm->gbshm_mmap + offset);
+    memcpy(ptr, (void *)addr, length);
+
+    return succeed_type_succeed;
+}
+
+
+/******************************************** 
+ *    Function    : Gbshm_paramSet
+ *    Author      : 
+ *    Date        : 2011-03-15 
+ *    Description : 
+ *    Para        : 
+ *    Ret         : succeed_type_succeed -- succeed
+ *                  succeed_type_failed  -- failed
+ * **********************************************/
+succeed_type Gbshm_paramSet(Gbshm_Handle phandle_gbshm, int offset, void * ptr, int length)
+{
+    int addr = 0;
+    pthread_mutex_t * pmutex =  (pthread_mutex_t *)(phandle_gbshm->gbshm_mmap);
+
+    if(ptr == NULL || length == 0||phandle_gbshm == NULL)
+    {
+        SYS_ERROR("phandle_gbshm is NULL or other parameter is not valid. \r\n");
+        return succeed_type_failed;
+    }
+    addr = phandle_gbshm->gbshm_mmap + offset;
+    pthread_mutex_lock(pmutex);
+    memcpy((void *)addr, ptr, length);
+    pthread_mutex_unlock(pmutex);
+
+    return succeed_type_succeed;
+}

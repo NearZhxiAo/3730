@@ -1,0 +1,36 @@
+pitch_ol_wgh.o pitch_ol_wgh.o: pitch_ol_wgh.c typedef.h basic_op.h \
+  table.h mode.h pred_lt_3or6.h oper_32b.h cnst.h gmed_n.h inv_sqrt.h \
+  vad1.h cnst_vad.h comp_corr.h hp_max.h pitch_ol_wgh.h lag_max_wgh.h \
+  vad_complex_detection_update.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+oper_32b.h:
+
+cnst.h:
+
+gmed_n.h:
+
+inv_sqrt.h:
+
+vad1.h:
+
+cnst_vad.h:
+
+comp_corr.h:
+
+hp_max.h:
+
+pitch_ol_wgh.h:
+
+lag_max_wgh.h:
+
+vad_complex_detection_update.h:

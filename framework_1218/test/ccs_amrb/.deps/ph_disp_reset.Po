@@ -1,0 +1,18 @@
+ph_disp_reset.o ph_disp_reset.o: ph_disp_reset.c typedef.h basic_op.h \
+  table.h mode.h pred_lt_3or6.h cnst.h copy.h ph_disp.h
+
+typedef.h:
+
+basic_op.h:
+
+table.h:
+
+mode.h:
+
+pred_lt_3or6.h:
+
+cnst.h:
+
+copy.h:
+
+ph_disp.h:
